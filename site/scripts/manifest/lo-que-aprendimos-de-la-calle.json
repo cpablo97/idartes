@@ -1,0 +1,215 @@
+{
+  "calle-01": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-01-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-01-672.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-01.jpg",
+    "width": 672,
+    "height": 672
+  },
+  "calle-02": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-02-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-02-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-02-1200.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-02.jpg",
+    "width": 1200,
+    "height": 1600
+  },
+  "calle-03": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-03-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-03-848.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-03.jpg",
+    "width": 848,
+    "height": 848
+  },
+  "calle-04": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-04-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-04-944.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-04.jpg",
+    "width": 944,
+    "height": 1696
+  },
+  "calle-05": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-05-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-05-900.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-05.jpg",
+    "width": 900,
+    "height": 1600
+  },
+  "calle-07": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-07-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-07-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-07-1200.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-07.jpg",
+    "width": 1200,
+    "height": 1600
+  },
+  "calle-08": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-08-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-08-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-08-1568.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-08.png",
+    "width": 1568,
+    "height": 1499
+  },
+  "calle-09": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-09-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-09-672.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-09.jpg",
+    "width": 672,
+    "height": 672
+  },
+  "calle-10": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-10-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-10-944.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-10.jpg",
+    "width": 944,
+    "height": 950
+  },
+  "calle-11": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-11-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-11-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/calle-11-1200.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-11.jpg",
+    "width": 1200,
+    "height": 1600
+  },
+  "cocrear-brazos": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/cocrear-brazos-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/cocrear-brazos-688.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/cocrear-brazos.jpg",
+    "width": 688,
+    "height": 1208
+  },
+  "contexto-mesa": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/contexto-mesa-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/contexto-mesa-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/contexto-mesa-1600.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/contexto-mesa.jpg",
+    "width": 1600,
+    "height": 942
+  },
+  "deriva-01": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-01-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-01-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-01-1328.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-01.jpg",
+    "width": 1328,
+    "height": 1770
+  },
+  "deriva-02": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-02-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-02-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-02-1334.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-02.jpg",
+    "width": 1334,
+    "height": 1772
+  },
+  "deriva-03": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-03-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-03-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-03-1600.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-03.jpg",
+    "width": 1600,
+    "height": 1177
+  },
+  "deriva-04": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-04-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-04-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-04-1332.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-04.jpg",
+    "width": 1332,
+    "height": 1768
+  },
+  "deriva-05": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-05-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-05-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-05-1304.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-05.jpg",
+    "width": 1304,
+    "height": 1750
+  },
+  "deriva-06": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-06-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-06-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-06-1338.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-06.jpg",
+    "width": 1338,
+    "height": 1752
+  },
+  "deriva-07": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-07-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-07-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-07-1324.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-07.jpg",
+    "width": 1324,
+    "height": 1762
+  },
+  "deriva-08": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-08-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-08-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/deriva-08-1324.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-08.jpg",
+    "width": 1324,
+    "height": 1746
+  },
+  "encuentro-mesa": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/encuentro-mesa-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/encuentro-mesa-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/encuentro-mesa-1332.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/encuentro-mesa.jpg",
+    "width": 1332,
+    "height": 1752
+  },
+  "hero-carreta": {
+    "webp": [
+      "/assets/images/lo-que-aprendimos-de-la-calle/hero-carreta-480.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/hero-carreta-960.webp",
+      "/assets/images/lo-que-aprendimos-de-la-calle/hero-carreta-996.webp"
+    ],
+    "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/hero-carreta.jpg",
+    "width": 996,
+    "height": 1768
+  }
+}

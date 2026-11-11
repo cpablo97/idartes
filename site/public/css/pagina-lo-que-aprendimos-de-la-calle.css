@@ -1,0 +1,107 @@
+/* ============================================================
+   Lo que aprendimos de la calle
+   1) Sección `data` (components/sections/Data.astro): texto + gráfico de círculos + tabla de precios.
+   2) Ajustes de esta página (variantes `v-*` y ámbito body.page-lo-que-aprendimos-de-la-calle).
+   Mobile-first: base = móvil, 600 px tablet, 1000 px escritorio (1rem = 10 px del diseño de 1440).
+   ============================================================ */
+
+/* ---------- 1) Sección `data` ---------- */
+.data { padding: 4rem 2rem 0; --magenta-dato: #ed56c5; }
+.data__title { font-family: var(--doto); font-weight: 900; font-size: 2.4rem; line-height: 1.5; letter-spacing: -.011em; color: var(--morado); }
+.data__body { margin-top: 2.4rem; max-width: 62rem; font-weight: 500; }
+.data__body > p + p { margin-top: 1.5em; }
+.data__link { display: inline-block; margin-left: .6em; font-size: 1.3rem; font-weight: 500; letter-spacing: .1em; white-space: nowrap; color: var(--magenta-dato); text-decoration: underline; text-decoration-color: var(--rosa); text-decoration-thickness: 1px; text-underline-offset: .25em; padding-block: .6rem; }
+.data__link:hover, .data__link:focus-visible { color: var(--morado); text-decoration-color: currentColor; }
+
+/* Gráfico: en móvil el SVG ocupa el ancho y la leyenda va debajo como lista */
+.chart { margin-top: 3.2rem; }
+.chart__svg { width: 100%; height: auto; overflow: visible; }
+.chart__ring { fill: none; stroke-width: 1px; vector-effect: non-scaling-stroke; }
+.chart__legend { display: flex; flex-wrap: wrap; gap: .8rem 2.4rem; margin-top: 2rem; font-weight: 500; line-height: 1.5; }
+.chart__legend li { display: flex; align-items: center; gap: .8rem; white-space: nowrap; }
+.chart__key { flex: none; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: currentColor; }
+
+/* Tabla de precios */
+.data--table { padding-bottom: 6rem; }
+.data--chart + .data--table, .data__body + .precios { margin-top: 4rem; }
+.precios__table { width: 100%; border-collapse: separate; border-spacing: 0; padding: 1.2rem 1.6rem; background: var(--tabla, #0e9640); color: var(--blanco); font-size: 1.5rem; font-weight: 500; line-height: 1.5; }
+.precios__caption { caption-side: top; text-align: left; padding-bottom: 2rem; color: var(--morado); }
+.precios__caption strong { display: block; font-size: 1.8rem; font-weight: 700; }
+.precios__caption span { display: block; margin-top: .4rem; font-size: 1.5rem; font-weight: 500; }
+.precios__table th, .precios__table td { padding: 1.2rem 0; text-align: left; vertical-align: top; font-weight: 500; }
+.precios__table thead th { font-weight: 700; }
+.precios__table tbody th, .precios__table tbody td { border-top: 1px solid var(--blanco); }
+.precios__table td, .precios__table th:last-child:not(:first-child) { text-align: right; white-space: nowrap; padding-left: 1.6rem; }
+.precios__note { margin-top: 1.6rem; max-width: 51.74rem; font-size: 1.4rem; line-height: 1.5; }
+
+@media (min-width: 600px) {
+  .data { padding: 6rem 4rem 0; }
+  .data--table { padding-bottom: 8rem; }
+  .data__title { font-size: 2.8rem; }
+  .precios__table { padding: 2rem 2.4rem; font-size: 1.8rem; }
+  .precios__table th, .precios__table td { padding-block: 1.4rem; }
+  .precios__caption strong { font-size: 2rem; }
+  .precios__caption span { font-size: 1.6rem; }
+  .precios__note { font-size: 1.5rem; }
+}
+
+@media (min-width: 1000px) {
+  .data { padding: 8rem var(--margen) 0; }
+  .data__title { font-size: 3.1rem; white-space: nowrap; }
+  .data__body { margin-top: 6.05rem; max-width: 73.8rem; }
+  .data__link { margin-left: 1.7rem; padding-block: 0; font-size: 1.6rem; line-height: 1; }
+
+  /* El gráfico es un lienzo de --cw × --ch px de diseño a sangre; el SVG y los rótulos van en sus coordenadas del Figma. */
+  .chart { position: relative; margin: 3rem calc(var(--margen) * -1) 0; width: calc(var(--cw) * .1rem); height: calc(var(--ch) * .1rem); }
+  .chart__svg { position: absolute; left: calc(var(--bx) * .1rem); top: calc(var(--by) * .1rem); width: calc(var(--bw) * .1rem); height: calc(var(--bh) * .1rem); }
+  .chart__legend { display: block; margin: 0; }
+  .chart__legend li { position: absolute; left: calc(var(--x) * .1rem); top: calc(var(--y) * .1rem); translate: 0 -50%; }
+  .chart__key { display: none; }
+
+  .data--table { padding-top: 6rem; padding-bottom: 12rem; }
+  .data--chart + .data--table, .data__body + .precios { margin-top: 0; }
+  .precios__table { padding: 3rem; font-size: 2.4rem; }
+  .precios__caption { padding-bottom: 3.45rem; }
+  .precios__caption strong { font-size: 2.4rem; }
+  .precios__caption span { font-size: 2rem; }
+  .precios__table th, .precios__table td { padding: 3.05rem 0; white-space: nowrap; }
+  .precios__table thead th { padding-top: 0; }
+  .precios__table tbody tr:last-child > * { padding-bottom: 0; }
+  .precios__note { margin-top: 2.9rem; font-size: 1.6rem; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Los círculos se trazan y los puntos de la leyenda aparecen al entrar en pantalla. */
+  .js [data-reveal="chart"] .chart__ring { stroke-dasharray: 1; stroke-dashoffset: 0; transition: stroke-dashoffset 1.6s var(--ease) calc(var(--i) * .25s); }
+  .js [data-reveal="chart"]:not(.is-in) .chart__ring { stroke-dashoffset: 1; }
+  .js [data-reveal="chart"] .chart__dot, .js [data-reveal="chart"] .chart__legend li { transition: opacity .6s ease-out calc(.9s + var(--i) * .25s); }
+  .js [data-reveal="chart"]:not(.is-in) .chart__dot, .js [data-reveal="chart"]:not(.is-in) .chart__legend li { opacity: 0; }
+}
+
+/* ---------- 2) Ajustes de la página ---------- */
+/* Velo del 32 % sobre la foto del hero (debajo de los textos). */
+.page-lo-que-aprendimos-de-la-calle .hero__media::after { content: ""; position: absolute; inset: 0; z-index: 0; background: rgba(0, 0, 0, .32); pointer-events: none; }
+
+.v-suave, .v-rotulo, .v-velo { letter-spacing: -.011em; }
+.v-preguntas { letter-spacing: -.022em; }
+/* Móvil y tablet: los titulares no llevan el salto de línea del diseño y «observar(nos)» cabe en una línea. */
+@media (max-width: 999.98px) {
+  .page-lo-que-aprendimos-de-la-calle .display br { display: none; }
+  .display.v-largo { font-size: min(var(--display), 12.4vw); overflow-wrap: normal; }
+  .ci--text.v-preguntas { font-size: clamp(2.2rem, 5.6vw, 3.6rem); max-width: none; }
+}
+/* Tarjeta translúcida sobre la foto a sangre de «Chapinero en contexto». */
+.v-velo { background: rgba(255, 255, 255, .53); padding: 1.6rem; }
+.page-lo-que-aprendimos-de-la-calle .has-band .canvas { min-height: 68vw; justify-content: flex-end; }
+/* En pantallas angostas el justificado abre ríos: las fuentes van en bandera. */
+.ci--text.v-fuentes { text-align: left !important; font-size: 1.4rem; overflow-wrap: anywhere; }
+
+@media (min-width: 600px) {
+  .ci--text.v-fuentes { font-size: 1.5rem; }
+}
+@media (min-width: 1000px) {
+  .page-lo-que-aprendimos-de-la-calle .has-band .canvas { min-height: 0; }
+  .ci--text.v-fuentes { text-align: justify !important; font-size: var(--fs); overflow-wrap: normal; padding-right: .6rem; }
+  /* Del final de las tarjetas (y = 20029) al footer (y = 20269). */
+  .page-lo-que-aprendimos-de-la-calle .explora { padding-bottom: 24rem; }
+}

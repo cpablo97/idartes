@@ -213,13 +213,59 @@ export type ControlsSection = Shared & {
   gamepad: { title: string; groups: { _key: string; title: string; panel: Img; width: number; labels: string[] }[]; photo?: Img };
   keyboard: { title: string; groups: { _key: string; title: string; keys: { _key: string; key: string; label?: string; wide?: boolean }[] }[]; photos?: Img[] };
 };
-/** Datos de precios / gráficos (Lo que aprendimos de la calle). */
+/**
+ * Datos (Lo que aprendimos de la calle): texto con enlace a la fuente, gráfico de círculos y/o tabla.
+ * Todos los bloques son opcionales, así que la misma sección sirve para «texto + gráfico» y para «tabla».
+ */
+export type DataSeries = {
+  _key: string;
+  label: string;
+  /** Cifra que representa el círculo; se anuncia en la leyenda (el dibujo no es proporcional). */
+  value?: number;
+  unit?: string;
+  /** Color del punto y del rótulo de la leyenda. */
+  tone: Tone;
+  /** Color del contorno del círculo; por defecto, `tone`. */
+  ringTone?: Tone;
+  /** Círculo: esquina superior izquierda y diámetro, en px de diseño dentro del lienzo del gráfico. */
+  ring: { x: number; y: number; d: number };
+  /** Centro del punto de la leyenda (va sobre la circunferencia). */
+  dot: { x: number; y: number };
+  /** Separación entre punto y rótulo en px de diseño (16 por defecto). */
+  gap?: number;
+};
+export type DataChart = {
+  /** Título accesible del gráfico. */
+  title: string;
+  description?: string;
+  /** Lienzo del gráfico en px de diseño (1440 = ancho del frame). */
+  width: number;
+  height: number;
+  /** Del círculo mayor al menor. */
+  series: DataSeries[];
+};
+export type DataTable = {
+  /** Título de la tabla (su <caption>). */
+  title: string;
+  subtitle?: string;
+  /** Fondo de la tarjeta. */
+  tone?: Tone;
+  /** Encabezados de columna. */
+  head: string[];
+  /** La primera celda de cada fila es su encabezado. */
+  rows: { _key: string; cells: string[] }[];
+  /** Fuente o nota al pie de la tabla. */
+  note?: Block[];
+};
 export type DataSection = Shared & {
   _type: "data";
+  /** Rótulo de la sección (Doto 31). */
   title?: string;
   body?: Block[];
-  table?: { head: string[]; rows: { _key: string; cells: string[] }[]; note?: string };
+  /** Enlace a los datos; se pinta al final del último párrafo de `body`. */
   link?: { label: string; url: string };
+  chart?: DataChart;
+  table?: DataTable;
 };
 /** Línea de tiempo de pasos (¿Cómo lo hicimos?). */
 export type TimelineSection = Shared & {

@@ -643,6 +643,1851 @@
     },
     {
       "_type": "page",
+      "_id": "page-lo-que-aprendimos-de-la-calle",
+      "title": "Lo que aprendimos de la calle",
+      "slug": {
+        "current": "lo-que-aprendimos-de-la-calle"
+      },
+      "header": "small",
+      "menuTone": "blanco",
+      "footerTone": "#6ae5ba",
+      "dots": "amplio",
+      "seo": {
+        "description": "Lo que cuentan los medios, lo que muestran las cifras y lo que viven quienes reciclan en Chapinero: derivas, precios de referencia y testimonios del laboratorio."
+      },
+      "sections": [
+        {
+          "_type": "hero",
+          "image": {
+            "local": {
+              "webp": [
+                "/assets/images/lo-que-aprendimos-de-la-calle/hero-carreta-480.webp",
+                "/assets/images/lo-que-aprendimos-de-la-calle/hero-carreta-960.webp",
+                "/assets/images/lo-que-aprendimos-de-la-calle/hero-carreta-996.webp"
+              ],
+              "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/hero-carreta.jpg",
+              "width": 996,
+              "height": 1768
+            },
+            "alt": "Vista desde arriba de una recicladora que hala su carreta cargada de bolsas y cartón por una calle de Chapinero",
+            "hotspot": {
+              "x": 0.5,
+              "y": 0.45
+            }
+          },
+          "eyebrow": "Lo que aprendimos de la calle",
+          "phrase": "¿Cómo hacemos visible lo que la ciudad no ve?",
+          "tone": "blanco",
+          "footnote": "Creado junto a recicladores de Chapinero.",
+          "_key": "los0"
+        },
+        {
+          "_type": "collage",
+          "anchor": "mirar",
+          "rows": 414,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La forma en que la ciudad desecha su basura también influye en cómo vemos a quienes la recuperan. ",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los1i0b0c0"
+                    }
+                  ],
+                  "_key": "los1i0b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 10,
+                "cols": 60,
+                "rows": 8
+              },
+              "tone": "#ed56c5",
+              "_key": "los1i0"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-02-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-02-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-02-1200.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-02.jpg",
+                  "width": 1200,
+                  "height": 1600
+                },
+                "alt": "Carreta de reciclaje cargada de cartón frente a locales comerciales",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              "place": {
+                "col": 72,
+                "row": 10,
+                "cols": 25,
+                "rows": 25
+              },
+              "_key": "los1i1"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-01-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-01-672.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-01.jpg",
+                  "width": 672,
+                  "height": 672
+                },
+                "alt": "Triciclo de carga con cabina negra estacionado junto a un muro de ladrillo"
+              },
+              "place": {
+                "col": 7,
+                "row": 29,
+                "cols": 34,
+                "rows": 34
+              },
+              "_key": "los1i2"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-03-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-03-848.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-03.jpg",
+                  "width": 848,
+                  "height": 848
+                },
+                "alt": "Reciclador con chaleco reflectivo junto a una carreta verde en una calle del barrio"
+              },
+              "place": {
+                "col": 97,
+                "row": 35,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "los1i3"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "mirar ",
+                  "_key": "los1i4t0"
+                },
+                {
+                  "_type": "span",
+                  "text": "(una) (y \notra)",
+                  "marks": [
+                    "em"
+                  ],
+                  "_key": "los1i4t1"
+                },
+                {
+                  "_type": "span",
+                  "text": " otra vez",
+                  "_key": "los1i4t2"
+                }
+              ],
+              "tone": "#95ff00",
+              "place": {
+                "col": 43,
+                "row": 81,
+                "cols": 85,
+                "rows": 28,
+                "z": 3
+              },
+              "level": 2,
+              "_key": "los1i4"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-04-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-04-944.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-04.jpg",
+                  "width": 944,
+                  "height": 1696
+                },
+                "alt": "Carreta repleta de bolsas y cajas detenida en una esquina, bajo los cables de un poste"
+              },
+              "place": {
+                "col": 27,
+                "row": 91,
+                "cols": 47,
+                "rows": 85
+              },
+              "_key": "los1i5"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-05-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-05-900.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-05.jpg",
+                  "width": 900,
+                  "height": 1600
+                },
+                "alt": "Carreta inclinada, cargada de cartón y escombros, frente a un edificio de noche"
+              },
+              "place": {
+                "col": 85,
+                "row": 142,
+                "cols": 34,
+                "rows": 34
+              },
+              "_key": "los1i6"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Para entender esta relación, nos acercamos al reciclaje en Chapinero desde tres perspectivas: ",
+                      "_key": "los1i7b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "lo que cuentan los medios, lo que muestran las cifras y lo que viven quienes trabajan en este oficio.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los1i7b0c1"
+                    }
+                  ],
+                  "_key": "los1i7b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 204,
+                "cols": 60,
+                "rows": 15
+              },
+              "tone": "#ed56c5",
+              "_key": "los1i7"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-07-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-07-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-07-1200.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-07.jpg",
+                  "width": 1200,
+                  "height": 1600
+                },
+                "alt": "Carreta de madera recostada contra un árbol en un separador con pasto"
+              },
+              "place": {
+                "col": 72,
+                "row": 204,
+                "cols": 47,
+                "rows": 47
+              },
+              "_key": "los1i8"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-08-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-08-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-08-1568.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-08.png",
+                  "width": 1568,
+                  "height": 1499
+                },
+                "alt": "Reciclador acomoda la carga de su carreta de noche; un perro negro va parado sobre los costales"
+              },
+              "place": {
+                "col": 7,
+                "row": 263,
+                "cols": 78,
+                "rows": 75
+              },
+              "_key": "los1i9"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-09-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-09-672.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-09.jpg",
+                  "width": 672,
+                  "height": 672
+                },
+                "alt": "Carreta con cartón y costales llenos frente a una cortina metálica con grafitis"
+              },
+              "place": {
+                "col": 105,
+                "row": 283,
+                "cols": 34,
+                "rows": 34
+              },
+              "_key": "los1i10"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-10-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-10-944.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-10.jpg",
+                  "width": 944,
+                  "height": 950
+                },
+                "alt": "Carreta cubierta con lonas blancas estacionada en una avenida comercial, con carros y un taxi al fondo"
+              },
+              "place": {
+                "col": 85,
+                "row": 350,
+                "cols": 47,
+                "rows": 48
+              },
+              "_key": "los1i11"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-11-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-11-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/calle-11-1200.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/calle-11.jpg",
+                  "width": 1200,
+                  "height": 1600
+                },
+                "alt": "Carreta volcada entre residuos junto a una obra con cerramiento azul",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.44
+                }
+              },
+              "place": {
+                "col": 18,
+                "row": 372,
+                "cols": 25,
+                "rows": 25
+              },
+              "_key": "los1i12"
+            }
+          ],
+          "_key": "los1"
+        },
+        {
+          "_type": "collage",
+          "anchor": "contexto",
+          "rows": 34,
+          "items": [
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 1,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "los2i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Chapinero en contexto",
+                      "_key": "los2i1b0c0"
+                    }
+                  ],
+                  "_key": "los2i1b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 7,
+                "cols": 60,
+                "rows": 5
+              },
+              "font": "doto",
+              "size": 31,
+              "level": 2,
+              "variant": "rotulo",
+              "_key": "los2i1"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Chapinero es una localidad de contrastes. ",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los2i2b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "\nLos cerros y las quebradas conviven con oficinas, pantallas, bares, comercio y economías informales. ",
+                      "_key": "los2i2b0c1"
+                    }
+                  ],
+                  "_key": "los2i2b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 15,
+                "cols": 58,
+                "rows": 11
+              },
+              "weight": 500,
+              "variant": "suave",
+              "_key": "los2i2"
+            }
+          ],
+          "_key": "los2"
+        },
+        {
+          "_type": "collage",
+          "rows": 85,
+          "band": {
+            "image": {
+              "local": {
+                "webp": [
+                  "/assets/images/lo-que-aprendimos-de-la-calle/contexto-mesa-480.webp",
+                  "/assets/images/lo-que-aprendimos-de-la-calle/contexto-mesa-960.webp",
+                  "/assets/images/lo-que-aprendimos-de-la-calle/contexto-mesa-1600.webp"
+                ],
+                "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/contexto-mesa.jpg",
+                "width": 1600,
+                "height": 942
+              },
+              "alt": ""
+            }
+          },
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Al poner en común nuestras observaciones del barrio, identificamos cinco temas: tecnología, territorio, naturaleza, personas y basura. ",
+                      "_key": "los3i0b0c0"
+                    }
+                  ],
+                  "_key": "los3i0b0"
+                }
+              ],
+              "place": {
+                "col": 79,
+                "row": 43,
+                "cols": 60,
+                "rows": 18
+              },
+              "font": "doto",
+              "tone": "negro",
+              "variant": "velo",
+              "_key": "los3i0"
+            }
+          ],
+          "_key": "los3"
+        },
+        {
+          "_type": "collage",
+          "anchor": "derivas",
+          "rows": 492,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La basura estuvo presente en todas las conversaciones, aunque pocas veces fuera el centro de atención.",
+                      "_key": "los4i0b0c0"
+                    }
+                  ],
+                  "_key": "los4i0b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 10,
+                "cols": 63,
+                "rows": 8
+              },
+              "weight": 500,
+              "variant": "suave",
+              "tone": "#ed56c5",
+              "_key": "los4i0"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-01-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-01-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-01-1328.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-01.jpg",
+                  "width": 1328,
+                  "height": 1770
+                },
+                "alt": "Tres participantes del laboratorio en un ejercicio corporal; uno de ellos, de pie, levanta los puños",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              "place": {
+                "col": 7,
+                "row": 25,
+                "cols": 34,
+                "rows": 34
+              },
+              "_key": "los4i1"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Para explorar el barrio hicimos derivas, recorridos en los que observamos y registramos lo que nos llamaba la atención. ",
+                      "_key": "los4i2b0c0"
+                    }
+                  ],
+                  "_key": "los4i2b0"
+                }
+              ],
+              "place": {
+                "col": 83,
+                "row": 25,
+                "cols": 57,
+                "rows": 11
+              },
+              "weight": 500,
+              "variant": "suave",
+              "_key": "los4i2"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-02-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-02-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-02-1334.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-02.jpg",
+                  "width": 1334,
+                  "height": 1772
+                },
+                "alt": "Notas adhesivas verdes con dibujos y palabras ordenadas sobre una mesa blanca",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.71
+                }
+              },
+              "place": {
+                "col": 83,
+                "row": 37,
+                "cols": 56,
+                "rows": 56
+              },
+              "_key": "los4i3"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "observar(",
+                  "_key": "los4i4t0"
+                },
+                {
+                  "_type": "span",
+                  "text": "nos",
+                  "marks": [
+                    "em"
+                  ],
+                  "_key": "los4i4t1"
+                },
+                {
+                  "_type": "span",
+                  "text": ")",
+                  "_key": "los4i4t2"
+                }
+              ],
+              "tone": "#ff8d67",
+              "place": {
+                "col": 100,
+                "row": 82,
+                "cols": 14,
+                "rows": 85,
+                "z": 3
+              },
+              "rotate": 90,
+              "level": 2,
+              "variant": "largo",
+              "_key": "los4i4"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Durante las derivas observamos detalles del barrio que suelen pasar inadvertidos. ",
+                      "_key": "los4i5b0c0"
+                    }
+                  ],
+                  "_key": "los4i5b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 86,
+                "cols": 59,
+                "rows": 8
+              },
+              "weight": 500,
+              "variant": "suave",
+              "tone": "#ed56c5",
+              "_key": "los4i5"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-03-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-03-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-03-1600.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-03.jpg",
+                  "width": 1600,
+                  "height": 1177
+                },
+                "alt": "Cuadernos de bocetos abiertos con dibujos del barrio y notas adhesivas verdes sobre una mesa",
+                "hotspot": {
+                  "x": 1,
+                  "y": 1
+                }
+              },
+              "place": {
+                "col": 7,
+                "row": 109,
+                "cols": 90,
+                "rows": 58
+              },
+              "_key": "los4i6"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La ponencia de Gabriela Bruna, de Stickerologist!, nos dio otro punto de partida para trabajar con esos hallazgos. Así, hicimos un ejercicio de curaduría urbana.",
+                      "_key": "los4i7b0c0"
+                    }
+                  ],
+                  "_key": "los4i7b0"
+                }
+              ],
+              "place": {
+                "col": 61,
+                "row": 177,
+                "cols": 70,
+                "rows": 11
+              },
+              "weight": 500,
+              "variant": "suave",
+              "_key": "los4i7"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-04-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-04-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-04-1332.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-04.jpg",
+                  "width": 1332,
+                  "height": 1768
+                },
+                "alt": "Gabriela Bruna sentada al borde de una tarima junto a una pantalla que dice «Stickerologist!»; al frente, una mesa con calcomanías",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 1
+                }
+              },
+              "place": {
+                "col": 61,
+                "row": 196,
+                "cols": 67,
+                "rows": 67
+              },
+              "_key": "los4i8"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Con cinta de enmascarar enmarcamos un tubo oxidado, un grafiti, una fuente seca, y les asignamos fichas como si fueran piezas de museo.",
+                      "_key": "los4i9b0c0"
+                    }
+                  ],
+                  "_key": "los4i9b0"
+                }
+              ],
+              "place": {
+                "col": 61,
+                "row": 265,
+                "cols": 63,
+                "rows": 11
+              },
+              "weight": 500,
+              "variant": "suave",
+              "_key": "los4i9"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-05-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-05-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-05-1304.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-05.jpg",
+                  "width": 1304,
+                  "height": 1750
+                },
+                "alt": "Piso de baldosas con un desagüe enmarcado con cinta de enmascarar y una ficha de museo pegada al lado"
+              },
+              "place": {
+                "col": 7,
+                "row": 263,
+                "cols": 45,
+                "rows": 45
+              },
+              "rotate": -90,
+              "_key": "los4i10"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-06-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-06-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-06-1338.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-06.jpg",
+                  "width": 1338,
+                  "height": 1752
+                },
+                "alt": "Participante con gorra pega un marco de cinta de enmascarar sobre el vidrio de una ventana",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.15
+                }
+              },
+              "place": {
+                "col": 63,
+                "row": 308,
+                "cols": 76,
+                "rows": 76
+              },
+              "_key": "los4i11"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-07-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-07-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-07-1324.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-07.jpg",
+                  "width": 1324,
+                  "height": 1762
+                },
+                "alt": "Puerta metálica verde cubierta de grafitis con una ficha de museo pegada"
+              },
+              "place": {
+                "col": 18,
+                "row": 341,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "los4i12"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Así, objetos y lugares cotidianos se convirtieron en puntos de partida para mirar el barrio de otra manera.",
+                      "_key": "los4i13b0c0"
+                    }
+                  ],
+                  "_key": "los4i13b0"
+                }
+              ],
+              "place": {
+                "col": 63,
+                "row": 390,
+                "cols": 60,
+                "rows": 8
+              },
+              "weight": 500,
+              "variant": "suave",
+              "_key": "los4i13"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-08-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-08-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/deriva-08-1324.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/deriva-08.jpg",
+                  "width": 1324,
+                  "height": 1746
+                },
+                "alt": "Mural de un caimán pintado sobre un muro, visto a través de una malla y de ramas con flores moradas"
+              },
+              "place": {
+                "col": 63,
+                "row": 403,
+                "cols": 76,
+                "rows": 76
+              },
+              "_key": "los4i14"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "caminar.",
+                  "_key": "los4i15t0"
+                }
+              ],
+              "tone": "#ff8d67",
+              "place": {
+                "col": 5,
+                "row": 445,
+                "cols": 56,
+                "rows": 14,
+                "z": 3
+              },
+              "level": 2,
+              "_key": "los4i15"
+            }
+          ],
+          "_key": "los4"
+        },
+        {
+          "_type": "collage",
+          "rows": 51,
+          "items": [
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 1,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "los5i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Aunque no encontramos cifras oficiales recientes sobre la cantidad de basura que se genera en Chapinero cada día, nuestros recorridos nos permitieron observar cómo se ",
+                      "_key": "los5i1b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "acumulan los residuos en Chapinero Central.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los5i1b0c1"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " En esta zona confluyen actividades comerciales, obras del Metro, oficinas, universidades, restaurantes y espacios culturales.",
+                      "_key": "los5i1b0c2"
+                    }
+                  ],
+                  "_key": "los5i1b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 17,
+                "cols": 81,
+                "rows": 18
+              },
+              "weight": 500,
+              "variant": "suave",
+              "tone": "#ed56c5",
+              "_key": "los5i1"
+            },
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 51,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "los5i2"
+            }
+          ],
+          "_key": "los5"
+        },
+        {
+          "_type": "data",
+          "anchor": "medios",
+          "title": "Chapinero en los medios",
+          "body": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Durante 2025, El Espectador y Semana publicaron 162 piezas sobre Chapinero: 100 en El Espectador y 62 en Semana. Al clasificarlas por tema, encontramos que la seguridad y la movilidad ocuparon buena parte de la cobertura, con 45 y 40 publicaciones, respectivamente. En movilidad, destacaron las obras del Metro en la avenida Caracas y la calle 72. En cambio, ",
+                  "_key": "los6b0c0"
+                },
+                {
+                  "_type": "span",
+                  "text": "la cultura, la gastronomía y la vivienda tuvieron una presencia mucho menor,",
+                  "marks": [
+                    "strong"
+                  ],
+                  "_key": "los6b0c1"
+                },
+                {
+                  "_type": "span",
+                  "text": " con 12 publicaciones entre las tres categorías.",
+                  "_key": "los6b0c2"
+                }
+              ],
+              "_key": "los6b0"
+            }
+          ],
+          "link": {
+            "label": "Ver Excel",
+            "url": "#"
+          },
+          "chart": {
+            "title": "Temas de la cobertura de Chapinero en El Espectador y Semana durante 2025",
+            "description": "Tres círculos de tamaño decreciente, uno por tema: seguridad, movilidad y vida urbana.",
+            "width": 1440,
+            "height": 940.5,
+            "series": [
+              {
+                "label": "Seguridad",
+                "value": 45,
+                "unit": "publicaciones",
+                "tone": "#ed56c5",
+                "ringTone": "#b05400",
+                "ring": {
+                  "x": 284.25,
+                  "y": 0,
+                  "d": 940.5
+                },
+                "dot": {
+                  "x": 1219.25,
+                  "y": 547.17
+                },
+                "gap": 16,
+                "_key": "los6cs0"
+              },
+              {
+                "label": "Movilidad",
+                "value": 40,
+                "unit": "publicaciones",
+                "tone": "morado",
+                "ring": {
+                  "x": 307.5,
+                  "y": 55.88,
+                  "d": 763.25
+                },
+                "dot": {
+                  "x": 1065.25,
+                  "y": 383
+                },
+                "gap": 14,
+                "_key": "los6cs1"
+              },
+              {
+                "label": "Vida urbana",
+                "tone": "#e56aab",
+                "ring": {
+                  "x": 338.08,
+                  "y": 182.83,
+                  "d": 364.344
+                },
+                "dot": {
+                  "x": 668.13,
+                  "y": 469
+                },
+                "gap": 16,
+                "_key": "los6cs2"
+              }
+            ]
+          },
+          "_key": "los6"
+        },
+        {
+          "_type": "collage",
+          "anchor": "el-valor",
+          "rows": 102,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Los dos medios también mostraron enfoques distintos. El Espectador cubrió asuntos como las obras, los servicios públicos, el ruido y el ambiente. Semana, por su parte, dio mayor espacio a crímenes de alto perfil y a representaciones de Chapinero asociadas con las élites.",
+                      "_key": "los7i0b0c0"
+                    }
+                  ],
+                  "_key": "los7i0b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 7,
+                "cols": 61,
+                "rows": 18
+              },
+              "weight": 500,
+              "_key": "los7i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Lo que pasa todos los días caminando cargando material con una carreta casi nunca es noticia.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los7i1b0c0"
+                    }
+                  ],
+                  "_key": "los7i1b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 28,
+                "cols": 67,
+                "rows": 8
+              },
+              "_key": "los7i1"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "el valor.",
+                  "_key": "los7i2t0"
+                }
+              ],
+              "tone": "morado",
+              "place": {
+                "col": 86,
+                "row": 34,
+                "cols": 53,
+                "rows": 14,
+                "z": 2
+              },
+              "level": 2,
+              "_key": "los7i2"
+            },
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 45,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "los7i3"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "¿Cuánto pagan por el material reciclable?",
+                      "_key": "los7i4b0c0"
+                    }
+                  ],
+                  "_key": "los7i4b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 54,
+                "cols": 90,
+                "rows": 5
+              },
+              "font": "doto",
+              "size": 31,
+              "level": 2,
+              "variant": "rotulo",
+              "_key": "los7i4"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "En Bogotá, más de 26.000 recicladoras y recicladores de oficio están inscritos en el Registro Único de Recicladores de Oficio (RURO) de la UAESP. Sin embargo, no todas las personas que se dedican al reciclaje están registradas. La inscripción es gratuita y no requiere intermediarios.",
+                      "_key": "los7i5b0c0"
+                    }
+                  ],
+                  "_key": "los7i5b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 65,
+                "cols": 78,
+                "rows": 15
+              },
+              "weight": 500,
+              "_key": "los7i5"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Desde el Decreto 596 de 2016, las organizaciones de recicladores pueden prestar el servicio de aprovechamiento y recibir una remuneración a través de la tarifa de aseo.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los7i6b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " ",
+                      "_key": "los7i6b0c1"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "El precio de compra",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los7i6b0c2"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " de los materiales, en cambio, ",
+                      "_key": "los7i6b0c3"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "depende del mercado.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los7i6b0c4"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Varía según el tipo de material, su calidad, presentación, cantidad y comprador.",
+                      "_key": "los7i6b0c5"
+                    }
+                  ],
+                  "_key": "los7i6b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 82,
+                "cols": 75,
+                "rows": 18
+              },
+              "weight": 500,
+              "_key": "los7i6"
+            }
+          ],
+          "_key": "los7"
+        },
+        {
+          "_type": "data",
+          "anchor": "precios",
+          "table": {
+            "title": "Precios de referencia por kilo",
+            "subtitle": "Promedio nacional, febrero de 2025.",
+            "tone": "#0e9640",
+            "head": [
+              "Material y presentación",
+              "Precio por kilo"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Aluminio (lata)",
+                  "$6.326"
+                ],
+                "_key": "los8tr0"
+              },
+              {
+                "cells": [
+                  "PET (botella transparente, suelta)",
+                  "$2.765"
+                ],
+                "_key": "los8tr1"
+              },
+              {
+                "cells": [
+                  "Archivo (papel mezclado)",
+                  "$907"
+                ],
+                "_key": "los8tr2"
+              },
+              {
+                "cells": [
+                  "Chatarra",
+                  "$793"
+                ],
+                "_key": "los8tr3"
+              },
+              {
+                "cells": [
+                  "Cartón (suelto)",
+                  "$604"
+                ],
+                "_key": "los8tr4"
+              },
+              {
+                "cells": [
+                  "Vidrio (entero)",
+                  "$197"
+                ],
+                "_key": "los8tr5"
+              }
+            ],
+            "note": [
+              {
+                "_type": "block",
+                "style": "normal",
+                "children": [
+                  {
+                    "_type": "span",
+                    "text": "Fuente:",
+                    "marks": [
+                      "strong"
+                    ],
+                    "_key": "los8tn0c0"
+                  },
+                  {
+                    "_type": "span",
+                    "text": " Acoplásticos, Encuesta de precios de reciclaje en Colombia, febrero de 2025. Los valores son de referencia y ",
+                    "_key": "los8tn0c1"
+                  },
+                  {
+                    "_type": "span",
+                    "text": "se basan en una encuesta a 35 organizaciones de recicladores en 10 regiones del país.",
+                    "marks": [
+                      "strong"
+                    ],
+                    "_key": "los8tn0c2"
+                  }
+                ],
+                "_key": "los8tn0"
+              }
+            ]
+          },
+          "_key": "los8"
+        },
+        {
+          "_type": "collage",
+          "anchor": "testimonios",
+          "rows": 418,
+          "items": [
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 1,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "los9i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Lo que encontramos nosotros",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los9i1b0c0"
+                    }
+                  ],
+                  "_key": "los9i1b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 15,
+                "cols": 70,
+                "rows": 4
+              },
+              "nowrap": true,
+              "level": 2,
+              "_key": "los9i1"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Hablamos con ",
+                      "_key": "los9i2b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Ariel, Alejandra, Edwin, Yordanis, Marta, Graciela, Sandra, Ginet y Leonardo.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los9i2b0c1"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Conocimos personas que reciclan solos y otras que trabajan en familia. Algunas están inscritas en el registro oficial de recicladores y otras no. Aunque sus experiencias son distintas, las conversaciones nos permitieron conocer las condiciones en las que trabajan y las dificultades que enfrentan en su día a día.",
+                      "_key": "los9i2b0c2"
+                    }
+                  ],
+                  "_key": "los9i2b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 21,
+                "cols": 69,
+                "rows": 25
+              },
+              "_key": "los9i2"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "El precio de un material no siempre es el mismo para quien lo recoge poco y para quien lo vende en mayores cantidades. En una de las conversaciones, una recicladora que trabaja con su familia nos contó que recibían cerca de $800 por kilo de PET. En otra sesión, nos dijeron que el kilo de vidrio se pagaba a unos $50. ",
+                      "_key": "los9i3b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Ambos valores están por debajo de los precios de referencia nacionales que consultamos.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los9i3b0c1"
+                    }
+                  ],
+                  "_key": "los9i3b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 49,
+                "cols": 67,
+                "rows": 25
+              },
+              "_key": "los9i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/encuentro-mesa-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/encuentro-mesa-960.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/encuentro-mesa-1332.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/encuentro-mesa.jpg",
+                  "width": 1332,
+                  "height": 1752
+                },
+                "alt": "Recicladoras, recicladores y miembros del equipo conversan de pie alrededor de una mesa metálica"
+              },
+              "place": {
+                "col": 72,
+                "row": 81,
+                "cols": 67,
+                "rows": 67
+              },
+              "_key": "los9i4"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "co-crear.",
+                  "_key": "los9i5t0"
+                }
+              ],
+              "tone": "#d52c15",
+              "place": {
+                "col": 27,
+                "row": 136,
+                "cols": 85,
+                "rows": 14,
+                "z": 3
+              },
+              "level": 2,
+              "_key": "los9i5"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Los testimonios nos permitieron ver que el valor de referencia no siempre se refleja en el pago que reciben por su material.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los9i6b0c0"
+                    }
+                  ],
+                  "_key": "los9i6b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 160,
+                "cols": 71,
+                "rows": 8
+              },
+              "_key": "los9i6"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Las conversaciones dejaron ver otras dificultades del oficio. Nos hablaron de materiales que llegan mal separados, recorridos en los que se sienten inseguros y barreras para acceder a la educación y la salud. También mencionaron las largas jornadas durante las que pueden pasar muchas horas sin comer ni tomar agua. ",
+                      "_key": "los9i7b0c0"
+                    }
+                  ],
+                  "_key": "los9i7b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Al escucharlos, entendimos que las necesidades no se limitan a las herramientas o a las condiciones físicas del trabajo. También está el ",
+                      "_key": "los9i7b1c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "reconocimiento de su labor y de su aporte a la ciudad, que muchas veces pasa inadvertido.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los9i7b1c1"
+                    }
+                  ],
+                  "_key": "los9i7b1"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 173,
+                "cols": 67,
+                "rows": 40
+              },
+              "_key": "los9i7"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/lo-que-aprendimos-de-la-calle/cocrear-brazos-480.webp",
+                    "/assets/images/lo-que-aprendimos-de-la-calle/cocrear-brazos-688.webp"
+                  ],
+                  "fallback": "/assets/images/lo-que-aprendimos-de-la-calle/cocrear-brazos.jpg",
+                  "width": 688,
+                  "height": 1208
+                },
+                "alt": "Dos participantes hacen un ejercicio corporal: una, con pañoleta de colores, sostiene por la espalda a otra que levanta los brazos"
+              },
+              "place": {
+                "col": 7,
+                "row": 218,
+                "cols": 67,
+                "rows": 118
+              },
+              "_key": "los9i8"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Fuentes: Alcaldía Mayor de Bogotá. «XV Mesa Distrital Deliberativa de Recicladores 2026 en Bogotá». bogota.gov.co, 1 de abril de 2026. Dato sobre las más de 26.000 personas inscritas en el RURO. / Alcaldía Mayor de Bogotá. «UAESP reitera que los trámites de registro para recicladores son totalmente gratuitos». bogota.gov.co, 31 de diciembre de 2025. Información sobre la gratuidad del registro y la ausencia de intermediarios. / Ministerio de Vivienda, Ciudad y Territorio. «Colombia es líder latinoamericano en políticas de inclusión de los recicladores». minvivienda.gov.co, 1 de marzo de 2020. Información sobre el Decreto 596 de 2016 y la remuneración del servicio de aprovechamiento. / Acoplásticos. Encuesta de precios de reciclaje en Colombia. Febrero de 2025. / José Alberto Miranda Álvarez. «Chapinero 2025 en los medios». Clasificación de 162 piezas de El Espectador y Semana. Ejercicio del laboratorio, 2026. / Actas del laboratorio, sesiones 10 a 14, julio y agosto de 2026. Testimonios y precios reportados por los recicladores.",
+                      "_key": "los9i9b0c0"
+                    }
+                  ],
+                  "_key": "los9i9b0"
+                }
+              ],
+              "place": {
+                "col": 83,
+                "row": 282,
+                "cols": 56,
+                "rows": 54
+              },
+              "size": 20,
+              "align": "justify",
+              "variant": "fuentes",
+              "_key": "los9i9"
+            },
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 348,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "los9i10"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Preguntas que quedan abiertas",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "los9i11b0c0"
+                    }
+                  ],
+                  "_key": "los9i11b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 364,
+                "cols": 70,
+                "rows": 4
+              },
+              "nowrap": true,
+              "level": 2,
+              "_key": "los9i11"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "¿Podría crearse una red que conecte a los recicladores y les permita organizarse para vender sus materiales en mejores condiciones?",
+                      "_key": "los9i12b0c0"
+                    }
+                  ],
+                  "_key": "los9i12b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "¿Sabemos quién recoge y recupera los materiales que separamos en casa?",
+                      "_key": "los9i12b1c0"
+                    }
+                  ],
+                  "_key": "los9i12b1"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 371,
+                "cols": 113,
+                "rows": 32
+              },
+              "font": "doto",
+              "size": 42.512,
+              "variant": "preguntas",
+              "_key": "los9i12"
+            },
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 415,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "los9i13"
+            }
+          ],
+          "_key": "los9"
+        },
+        {
+          "_type": "cardGrid",
+          "layout": "row",
+          "title": "Explora más",
+          "items": [
+            {
+              "_type": "card",
+              "label": "Video tutoriales",
+              "href": "/para-recicladores/#videotutoriales",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-como-480.webp",
+                    "/assets/images/inicio/card-como-960.webp",
+                    "/assets/images/inicio/card-como-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-como.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Participante con los ojos vendados explora objetos e hilos sobre el piso"
+              },
+              "size": "s",
+              "_key": "los10i0"
+            },
+            {
+              "_type": "card",
+              "label": "Chapicartón",
+              "href": "/videojuego/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-videojuego-480.webp",
+                    "/assets/images/inicio/card-videojuego-960.webp",
+                    "/assets/images/inicio/card-videojuego-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-videojuego.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Joven jugando Chapicartón en una máquina arcade"
+              },
+              "size": "s",
+              "_key": "los10i1"
+            },
+            {
+              "_type": "card",
+              "label": "Para recicladores",
+              "href": "/para-recicladores/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-recicladores-480.webp",
+                    "/assets/images/inicio/card-recicladores-960.webp",
+                    "/assets/images/inicio/card-recicladores-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-recicladores.jpg",
+                  "width": 1600,
+                  "height": 1271
+                },
+                "alt": "Recicladora sonriente empujando su carreta cargada frente a un camión rojo"
+              },
+              "size": "s",
+              "_key": "los10i2"
+            },
+            {
+              "_type": "card",
+              "label": "Exhibición",
+              "href": "/exhibicion/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-exhibicion-480.webp",
+                    "/assets/images/inicio/card-exhibicion-960.webp",
+                    "/assets/images/inicio/card-exhibicion-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-exhibicion.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Sala de la exhibición con mesas, piezas y pendones"
+              },
+              "size": "s",
+              "_key": "los10i3"
+            }
+          ],
+          "_key": "los10"
+        }
+      ]
+    },
+    {
+      "_type": "page",
       "_id": "page-equipo",
       "title": "Equipo",
       "slug": {
