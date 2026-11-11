@@ -58,7 +58,7 @@ body {
 body.dots-fino { --dot: .09rem; --dot-step: 1.7rem; --dots-step: .5rem; --punto: #dcd9f1; }
 img, picture, svg, iframe { display: block; max-width: 100%; }
 img { height: auto; }
-p, h1, h2, h3, figure, ul, ol { margin: 0; }
+p, h1, h2, h3, h4, figure, ul, ol { margin: 0; }
 ul, ol { padding: 0; list-style: none; }
 a { color: inherit; }
 button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
@@ -251,7 +251,7 @@ main { display: block; }
   .display { font-size: var(--fs, var(--display)); white-space: nowrap; overflow-wrap: normal; }
   .canvas > .display { align-self: start; }
   .display--down, .display--up { writing-mode: vertical-rl; justify-self: start; align-self: start; }
-  .display--up { rotate: 180deg; align-self: end; }
+  .display--up, .canvas > .display--up { rotate: 180deg; align-self: end; }
   .rule { width: 100%; align-self: start; }
   .rule--bleed { width: var(--bleed); justify-self: center; }
   .notice { gap: 3.7rem; }

@@ -80,7 +80,7 @@ export type DisplayTitleItem = {
 };
 export type CardItem = { _type: "card"; _key: string; label: string; href: string; image: Img; size: "s" | "m" | "l"; place: Place };
 /** Línea morada de 1 px; con `bleed` cruza toda la ventana. */
-export type RuleItem = { _type: "rule"; _key: string; place: Place; bleed?: boolean; tone?: Tone };
+export type RuleItem = { _type: "rule"; _key: string; variant?: string; place: Place; bleed?: boolean; tone?: Tone };
 /** Aviso destacado (franja de color con icono de advertencia). */
 export type NoticeItem = { _type: "notice"; _key: string; title: string; body: string; tone?: Tone; place: Place };
 export type CanvasItem = ImageItem | TextItem | DisplayTitleItem | CardItem | RuleItem | NoticeItem;

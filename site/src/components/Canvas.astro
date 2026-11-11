@@ -41,7 +41,7 @@ let firstImage = eagerFirst;
       return <T class:list={["at", "display", it.variant && `v-${it.variant}`, it.italic && "is-italic", it.rotate === 90 && "display--down", it.rotate === -90 && "display--up"]} style={style} data-reveal={it.rotate ? "title-v" : it.align === "right" ? "title-r" : "title"} set:html={spans(it.text)} />;
     }
     if (it._type === "card") return <Card card={it} />;
-    if (it._type === "rule") return <hr class:list={["at", "rule", it.bleed && "rule--bleed"]} style={css(placeStyle(it.place), it.tone ? `color:${color(it.tone)}` : "")} />;
+    if (it._type === "rule") return <hr class:list={["at", "rule", it.variant && `v-${it.variant}`, it.bleed && "rule--bleed"]} style={css(placeStyle(it.place), it.tone ? `color:${color(it.tone)}` : "")} />;
     if (it._type === "notice") {
       return (
         <aside class="at notice" style={css(placeStyle(it.place), it.tone ? `background:${color(it.tone)}` : "")} data-reveal="text">
