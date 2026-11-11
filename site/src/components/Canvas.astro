@@ -1,0 +1,56 @@
+---
+// Lienzo de collage: en escritorio es una retícula de 144 columnas donde cada elemento ocupa su `place`
+// (los solapes salen solos); en tablet y móvil los mismos elementos fluyen en el orden del arreglo.
+import type { CanvasItem, Place } from "../lib/types";
+import Picture from "./Picture.astro";
+import Card from "./Card.astro";
+import { paragraphs, spans, placeStyle, color, css, rem } from "../lib/text";
+
+interface Props { items: CanvasItem[]; rows?: number; dots?: (Place & { over?: boolean })[]; class?: string; eagerFirst?: boolean }
+const { items, rows, dots = [], class: cls, eagerFirst = false } = Astro.props;
+const sizes = (p: Place) => `(min-width: 1000px) ${Math.max(8, Math.round((p.cols / 144) * 100))}vw, 92vw`;
+let firstImage = eagerFirst;
+---
+<div class:list={["canvas", cls]} style={rows ? `--rows:${rows}` : undefined}>
+  {dots.map((d) => <span class:list={["dots", d.over && "dots--over"]} style={placeStyle(d)} aria-hidden="true"></span>)}
+  {items.map((it) => {
+    if (it._type === "imageItem") {
+      const eager = firstImage; firstImage = false;
+      const style = css(placeStyle(it.place), it.rotate ? `--rot:${it.rotate}deg` : "", it.flip ? `--flip:${it.flip === "x" ? "-1 1" : "1 -1"}` : "", it.radius ? `--rad:${rem(it.radius)}` : "", it.drift ? `--drift:${it.drift}` : "");
+      const pic = <Picture img={it.image} sizes={sizes(it.place)} eager={eager} />;
+      return (
+        <figure class:list={["at", "ci", "ci--img", it.fit === "contain" && "ci--contain", it.drift && "drift"]} style={style} data-reveal="img">
+          {it.href ? <a href={it.href}>{pic}</a> : pic}
+          {it.caption && <figcaption>{it.caption}</figcaption>}
+        </figure>
+      );
+    }
+    if (it._type === "textItem") {
+      const ps = paragraphs(it.body);
+      const H = it.level ? (`h${it.level}` as "h1" | "h2" | "h3") : null;
+      const style = css(placeStyle(it.place), it.size ? `--fs:${rem(it.size)}` : "", it.tone ? `color:${color(it.tone)}` : "", it.weight ? `font-weight:${it.weight}` : "", it.align ? `text-align:${it.align}` : "");
+      return (
+        <div class:list={["at", "ci", "ci--text", it.font && `font-${it.font}`, it.nowrap && "nowrap"]} style={style} data-reveal="text">
+          {ps.map((html, i) => (i === 0 && H ? <H set:html={html} /> : <p set:html={html} />))}
+        </div>
+      );
+    }
+    if (it._type === "displayTitle") {
+      const T = it.level ? (`h${it.level}` as "h1" | "h2" | "h3") : "p";
+      const style = css(placeStyle(it.place), `color:${color(it.tone)}`, it.size ? `--fs:${rem(it.size)}` : "", it.align ? `text-align:${it.align}` : "");
+      return <T class:list={["at", "display", it.italic && "is-italic", it.rotate === 90 && "display--down", it.rotate === -90 && "display--up"]} style={style} data-reveal={it.rotate ? "title-v" : it.align === "right" ? "title-r" : "title"} set:html={spans(it.text)} />;
+    }
+    if (it._type === "card") return <Card card={it} />;
+    if (it._type === "rule") return <hr class:list={["at", "rule", it.bleed && "rule--bleed"]} style={css(placeStyle(it.place), it.tone ? `color:${color(it.tone)}` : "")} />;
+    if (it._type === "notice") {
+      return (
+        <aside class="at notice" style={css(placeStyle(it.place), it.tone ? `background:${color(it.tone)}` : "")} data-reveal="text">
+          <svg class="notice__icon" viewBox="0 0 63 54" width="63" height="54" aria-hidden="true"><path fill="currentColor" d="M31.5 0 63 54H0L31.5 0Zm0 11.4L9.9 48.3h43.2L31.5 11.4Zm-2.8 11.3h5.6v14.2h-5.6V22.7Zm0 17h5.6v5.7h-5.6v-5.7Z"/></svg>
+          <p><strong>{it.title}</strong><span>{it.body}</span></p>
+        </aside>
+      );
+    }
+    return null;
+  })}
+  <slot />
+</div>

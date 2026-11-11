@@ -1,0 +1,8 @@
+---
+// TODO: implementar la sección `timeline`.
+import type { TimelineSection, Settings } from "../../lib/types";
+
+interface Props { section: TimelineSection; settings: Settings }
+const { section: s } = Astro.props;
+---
+<section class="sec sec--timeline" id={s.anchor}></section>

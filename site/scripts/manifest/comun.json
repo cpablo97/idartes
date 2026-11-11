@@ -1,0 +1,62 @@
+{
+  "lamina-pendiente-1": {
+    "webp": [
+      "/assets/images/comun/lamina-pendiente-1-480.webp",
+      "/assets/images/comun/lamina-pendiente-1-960.webp",
+      "/assets/images/comun/lamina-pendiente-1-1320.webp"
+    ],
+    "fallback": "/assets/images/comun/lamina-pendiente-1.jpg",
+    "width": 1320,
+    "height": 852
+  },
+  "lamina-pendiente-2": {
+    "webp": [
+      "/assets/images/comun/lamina-pendiente-2-480.webp",
+      "/assets/images/comun/lamina-pendiente-2-960.webp",
+      "/assets/images/comun/lamina-pendiente-2-1320.webp"
+    ],
+    "fallback": "/assets/images/comun/lamina-pendiente-2.jpg",
+    "width": 1320,
+    "height": 852
+  },
+  "lamina-pendiente-3": {
+    "webp": [
+      "/assets/images/comun/lamina-pendiente-3-480.webp",
+      "/assets/images/comun/lamina-pendiente-3-960.webp",
+      "/assets/images/comun/lamina-pendiente-3-1320.webp"
+    ],
+    "fallback": "/assets/images/comun/lamina-pendiente-3.jpg",
+    "width": 1320,
+    "height": 852
+  },
+  "lamina-pendiente-4": {
+    "webp": [
+      "/assets/images/comun/lamina-pendiente-4-480.webp",
+      "/assets/images/comun/lamina-pendiente-4-960.webp",
+      "/assets/images/comun/lamina-pendiente-4-1320.webp"
+    ],
+    "fallback": "/assets/images/comun/lamina-pendiente-4.jpg",
+    "width": 1320,
+    "height": 852
+  },
+  "lamina-pendiente-5": {
+    "webp": [
+      "/assets/images/comun/lamina-pendiente-5-480.webp",
+      "/assets/images/comun/lamina-pendiente-5-960.webp",
+      "/assets/images/comun/lamina-pendiente-5-1320.webp"
+    ],
+    "fallback": "/assets/images/comun/lamina-pendiente-5.jpg",
+    "width": 1320,
+    "height": 852
+  },
+  "lamina-pendiente-6": {
+    "webp": [
+      "/assets/images/comun/lamina-pendiente-6-480.webp",
+      "/assets/images/comun/lamina-pendiente-6-960.webp",
+      "/assets/images/comun/lamina-pendiente-6-1320.webp"
+    ],
+    "fallback": "/assets/images/comun/lamina-pendiente-6.jpg",
+    "width": 1320,
+    "height": 852
+  }
+}

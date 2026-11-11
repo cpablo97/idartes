@@ -1,0 +1,244 @@
+// Tipos del contenido. El seed (src/content/seed.json) tiene exactamente la forma que
+// devolverá la consulta GROQ de Sanity; docs/cms-modelo.md describe el mismo modelo en prosa.
+
+/** Imagen: hoy `local` (variantes generadas por scripts/images.mjs); mañana `asset` de Sanity. `alt` es obligatorio. */
+export type Img = {
+  asset?: { url: string; metadata?: { dimensions?: { width: number; height: number } } };
+  /** Punto focal (0–1) como el hotspot de Sanity: decide qué parte se conserva al recortar. */
+  hotspot?: { x: number; y: number };
+  crop?: unknown;
+  local?: { webp: string[]; fallback: string; width: number; height: number };
+  alt: string;
+};
+
+/** Portable Text simplificado: párrafos con tramos marcados. `medium` = peso 500; `href` vuelve el tramo un enlace. */
+export type Mark = "strong" | "em" | "medium" | "underline";
+export type Span = { _type: "span"; text: string; marks?: Mark[]; href?: string };
+export type Block = { _type: "block"; _key: string; style?: "normal"; children: Span[] };
+
+/** Color: un token de marca (custom property de styles.css) o un hex puntual del diseño. */
+export type Tone = "negro" | "blanco" | "morado" | "rosa" | "magenta" | "amarillo" | "verde" | "rojo" | "cian" | "ocre" | "gris" | `#${string}`;
+
+/**
+ * Posición en la retícula de collage de escritorio: 144 columnas (1 unidad = 10 px en el diseño de 1440)
+ * y filas cuadradas de la misma unidad, contadas desde el borde superior de la sección.
+ * En tablet y móvil la retícula se ignora y los elementos fluyen en el orden del arreglo.
+ */
+export type Place = { col: number; row: number; cols: number; rows?: number; z?: number };
+
+// ---------- Elementos de un lienzo (`collage`, `cardGrid`) ----------
+
+export type ImageItem = {
+  _type: "imageItem";
+  _key: string;
+  image: Img;
+  place: Place;
+  fit?: "cover" | "contain";
+  /** Grados de giro del marco (p. ej. sprites del videojuego). */
+  rotate?: number;
+  flip?: "x" | "y";
+  /** Radio de esquina en px de diseño. */
+  radius?: number;
+  /** Parallax ligado al scroll: desplazamiento máximo en unidades de retícula (0 = quieto). */
+  drift?: number;
+  href?: string;
+  caption?: string;
+};
+export type TextItem = {
+  _type: "textItem";
+  _key: string;
+  body: Block[];
+  place: Place;
+  tone?: Tone;
+  /** Tamaño en px del diseño de 1440 (16, 20, 24, 30, 36, 40, 46…). Por defecto 24. */
+  size?: number;
+  font?: "sans" | "mono" | "doto" | "serif";
+  weight?: number;
+  align?: "left" | "right" | "center" | "justify";
+  nowrap?: boolean;
+  /** Si se define, el primer párrafo se emite como encabezado de ese nivel. */
+  level?: 1 | 2 | 3;
+};
+export type DisplayTitleItem = {
+  _type: "displayTitle";
+  _key: string;
+  /** Tramos del titular; `em` pone el tramo en itálica y "\n" parte la línea. */
+  text: Span[];
+  tone: Tone;
+  italic?: boolean;
+  /** 90 = se lee de arriba abajo; -90 = de abajo arriba. En móvil vuelve a horizontal. */
+  rotate?: 0 | 90 | -90;
+  /** Tamaño en px de diseño; por defecto 119.333. */
+  size?: number;
+  align?: "left" | "right" | "center";
+  level?: 1 | 2 | 3;
+  place: Place;
+};
+export type CardItem = { _type: "card"; _key: string; label: string; href: string; image: Img; size: "s" | "m" | "l"; place: Place };
+/** Línea morada de 1 px; con `bleed` cruza toda la ventana. */
+export type RuleItem = { _type: "rule"; _key: string; place: Place; bleed?: boolean; tone?: Tone };
+/** Aviso destacado (franja de color con icono de advertencia). */
+export type NoticeItem = { _type: "notice"; _key: string; title: string; body: string; tone?: Tone; place: Place };
+export type CanvasItem = ImageItem | TextItem | DisplayTitleItem | CardItem | RuleItem | NoticeItem;
+
+// ---------- Secciones (page builder) ----------
+
+type Shared = { _key: string; anchor?: string };
+/** Banda de fondo a sangre detrás de una sección. */
+export type Band = { color?: Tone | string; image?: Img };
+
+/** Composición libre de fotos, textos, titulares y tarjetas sobre la retícula. */
+export type CollageSection = Shared & {
+  _type: "collage";
+  /** Alto del lienzo en unidades de retícula. */
+  rows: number;
+  items: CanvasItem[];
+  /** Tramas de puntos magenta: `over` las pinta encima de las fotos. */
+  dots?: (Place & { over?: boolean })[];
+  band?: Band;
+};
+/** Cabecera fotográfica a sangre de las páginas interiores. Con `youtubeId` es además un video. */
+export type HeroSection = Shared & {
+  _type: "hero";
+  image: Img;
+  blur?: boolean;
+  /** Rótulo centrado en Doto ("PA EL CAMINO", "CHAPICARTÓN"…). */
+  eyebrow?: string;
+  /** Frase centrada en Xanh Mono 46. */
+  phrase?: string;
+  /** Título de página pequeño centrado (36 px). */
+  title?: string;
+  titleFont?: "mono" | "doto" | "sans";
+  tone?: Tone;
+  footnote?: string;
+  footnoteTone?: Tone;
+  /** `below` pone la nota bajo la foto en vez de sobre ella. */
+  footnotePlace?: "over" | "below";
+  youtubeId?: string;
+  videoTitle?: string;
+};
+/** Índice de tarjetas: `free` las coloca en la retícula (Inicio); `row` es la fila "Explora más". */
+export type CardGridSection = Shared & {
+  _type: "cardGrid";
+  layout: "free" | "row";
+  title?: string;
+  rows?: number;
+  items: (CardItem | DisplayTitleItem)[];
+  dots?: (Place & { over?: boolean })[];
+};
+export type VideoSection = Shared & {
+  _type: "video";
+  /** ID del video de YouTube (lo que va después de `v=`). */
+  youtubeId: string;
+  title: string;
+  intro?: Block[];
+  caption?: Block[];
+  poster?: Img;
+  rule?: boolean;
+};
+export type VideoListSection = Shared & {
+  _type: "videoList";
+  videos: { _key: string; label: string; youtubeId: string; title: string; description?: string; poster?: Img }[];
+};
+export type MapSection = Shared & {
+  _type: "map";
+  title: string;
+  body?: Block[];
+  legend: { _key: string; label: string; color: string }[];
+  /** URL `…/maps/d/embed?mid=…` de Google My Maps. */
+  embedUrl: string;
+  /** Mientras sea true se muestra la captura de referencia en vez del iframe. */
+  pending?: boolean;
+  placeholder?: Img;
+  note?: Block[];
+};
+export type GallerySection = Shared & {
+  _type: "gallery";
+  title?: string;
+  heading?: string;
+  body?: Block[];
+  images: { _key: string; image: Img; caption?: string }[];
+};
+/** Visor de láminas de la bitácora: `slider` se desliza; `book` pasa de a dos páginas. */
+export type BitacoraSection = Shared & { _type: "bitacora"; title?: string; intro?: Block[]; mode: "slider" | "book"; pages: { _key: string; image: Img }[] };
+export type GameEmbedSection = Shared & {
+  _type: "gameEmbed";
+  title: string;
+  /** URL `https://itch.io/embed-upload/<id>` del juego. */
+  embedUrl: string;
+  /** Página pública del juego en itch.io. */
+  pageUrl: string;
+  poster?: Img;
+  pending?: boolean;
+};
+/** Fichas de personas (Equipo). */
+export type PeopleSection = Shared & {
+  _type: "people";
+  title: string;
+  titleTone?: Tone;
+  titleAlign?: "left" | "right";
+  people: { _key: string; name: string; role?: string; bio?: Block[]; photo: Img; flip?: boolean; tone?: Tone | string; links?: { _key: string; label: string; url: string }[] }[];
+};
+/** Controles del videojuego: mando y teclado. */
+export type ControlsSection = Shared & {
+  _type: "controls";
+  title: string;
+  gamepad: { title: string; groups: { _key: string; title: string; panel: Img; width: number; labels: string[] }[]; photo?: Img };
+  keyboard: { title: string; groups: { _key: string; title: string; keys: { _key: string; key: string; label?: string; wide?: boolean }[] }[]; photos?: Img[] };
+};
+/** Datos de precios / gráficos (Lo que aprendimos de la calle). */
+export type DataSection = Shared & {
+  _type: "data";
+  title?: string;
+  body?: Block[];
+  table?: { head: string[]; rows: { _key: string; cells: string[] }[]; note?: string };
+  link?: { label: string; url: string };
+};
+/** Línea de tiempo de pasos (¿Cómo lo hicimos?). */
+export type TimelineSection = Shared & {
+  _type: "timeline";
+  band?: Band;
+  steps: { _key: string; rows: number; items: CanvasItem[] }[];
+};
+
+export type Section =
+  | CollageSection | HeroSection | CardGridSection | VideoSection | VideoListSection | MapSection
+  | GallerySection | BitacoraSection | GameEmbedSection | PeopleSection | ControlsSection | DataSection | TimelineSection;
+
+// ---------- Documentos ----------
+
+export type Seo = { title?: string; description?: string; ogImage?: Img; noindex?: boolean };
+
+export type Page = {
+  _type: "page";
+  _id: string;
+  title: string;
+  slug: { current: string }; // "" para Inicio
+  /** `display`: titular grande + "LAB." (Inicio). `small`: titular de 30 px sobre el hero. `none`: solo MENÚ. */
+  header: "display" | "small" | "none";
+  /** Color de MENÚ y del cuadrito cuando van sobre la foto del hero. */
+  menuTone?: Tone;
+  /** Color de la franja del footer en esta página. */
+  footerTone?: Tone;
+  /** Paso de la trama de puntos del fondo: `fino` (Inicio) o `amplio` (interiores). */
+  dots?: "fino" | "amplio";
+  seo?: Seo;
+  sections: Section[];
+};
+
+export type Settings = {
+  _type: "settings";
+  _id: "settings";
+  siteName: string;
+  siteUrl: string;
+  /** Titular del header ("ciudad y cuerpo", con la "y" en itálica). */
+  headerTitle: Span[];
+  brandLabel: string; // "LAB."
+  menuLabel: string; // "MENÚ"
+  menu: { _key: string; label: string; href: string }[];
+  footer: { credit: string; tone: Tone; logos: { _key: string; image: Img; url?: string }[] };
+  seo: { title: string; description: string; ogImage?: Img };
+  labels: Record<"menu" | "openMenu" | "closeMenu" | "skip" | "play" | "pending" | "prev" | "next" | "close" | "home", string>;
+};
+
+export type Content = { settings: Settings; pages: Page[] };

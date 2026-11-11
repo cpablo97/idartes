@@ -1,0 +1,8 @@
+---
+// TODO: implementar la sección `map`.
+import type { MapSection, Settings } from "../../lib/types";
+
+interface Props { section: MapSection; settings: Settings }
+const { section: s } = Astro.props;
+---
+<section class="sec sec--map" id={s.anchor}></section>

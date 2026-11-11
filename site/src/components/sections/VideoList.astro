@@ -1,0 +1,8 @@
+---
+// TODO: implementar la sección `videoList`.
+import type { VideoListSection, Settings } from "../../lib/types";
+
+interface Props { section: VideoListSection; settings: Settings }
+const { section: s } = Astro.props;
+---
+<section class="sec sec--videoList" id={s.anchor}></section>

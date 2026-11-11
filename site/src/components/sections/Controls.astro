@@ -1,0 +1,8 @@
+---
+// TODO: implementar la sección `controls`.
+import type { ControlsSection, Settings } from "../../lib/types";
+
+interface Props { section: ControlsSection; settings: Settings }
+const { section: s } = Astro.props;
+---
+<section class="sec sec--controls" id={s.anchor}></section>

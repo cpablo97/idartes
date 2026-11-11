@@ -1,0 +1,8 @@
+---
+// TODO: implementar la sección `people`.
+import type { PeopleSection, Settings } from "../../lib/types";
+
+interface Props { section: PeopleSection; settings: Settings }
+const { section: s } = Astro.props;
+---
+<section class="sec sec--people" id={s.anchor}></section>

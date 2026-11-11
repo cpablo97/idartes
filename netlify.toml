@@ -1,0 +1,47 @@
+[build]
+  base = "site"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+  PUBLIC_SITE_URL = "https://ciudadycuerpo.com"
+  # Fase Sanity: al definir PUBLIC_SANITY_PROJECT_ID (y PUBLIC_SANITY_DATASET) aquí,
+  # getContent() deja de leer el seed local y consulta el CMS. Ver site/src/lib/content.ts.
+
+# Contraseña opcional (site/netlify/edge-functions/gate.js): solo actúa mientras exista
+# la variable SITE_PASSWORD en Netlify; sin ella deja pasar todo.
+[[edge_functions]]
+  function = "gate"
+  path = "/*"
+
+# Cabeceras de seguridad. Los embeds (YouTube, itch.io, Google Maps) son iframes salientes,
+# así que X-Frame-Options (que protege de que NOS embeban) puede quedarse en DENY.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# styles.css y los scripts se referencian con ?v=<commit>, así que se pueden cachear para siempre.
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

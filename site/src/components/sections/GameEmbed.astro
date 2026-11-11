@@ -1,0 +1,8 @@
+---
+// TODO: implementar la sección `gameEmbed`.
+import type { GameEmbedSection, Settings } from "../../lib/types";
+
+interface Props { section: GameEmbedSection; settings: Settings }
+const { section: s } = Astro.props;
+---
+<section class="sec sec--gameEmbed" id={s.anchor}></section>

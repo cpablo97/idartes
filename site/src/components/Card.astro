@@ -1,0 +1,14 @@
+---
+// Tarjeta de sección: imagen cuadrada + etiqueta Doto subrayada + ">" (Nothing Font, con Doto de respaldo).
+import type { CardItem } from "../lib/types";
+import Picture from "./Picture.astro";
+import { placeStyle } from "../lib/text";
+
+interface Props { card: Omit<CardItem, "place"> & { place?: CardItem["place"] }; sizes?: string; rounded?: boolean }
+const { card, sizes, rounded = false } = Astro.props;
+const auto = card.place ? `(min-width: 1000px) ${Math.round((card.place.cols / 144) * 100)}vw, 90vw` : "(min-width: 1000px) 22vw, (min-width: 600px) 45vw, 90vw";
+---
+<a class:list={["card", `card--${card.size}`, card.place && "at", rounded && "card--round"]} href={card.href} style={placeStyle(card.place) || undefined} data-reveal="img">
+  <Picture img={card.image} sizes={sizes ?? auto} class="card__img" />
+  <span class="card__label"><span class="card__text">{card.label}</span><span class="card__gt" aria-hidden="true">&gt;</span></span>
+</a>

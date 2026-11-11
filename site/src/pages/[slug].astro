@@ -1,0 +1,17 @@
+---
+import type { Page } from "../lib/types";
+import Base from "../layouts/Base.astro";
+import Sections from "../components/Sections.astro";
+import { getContent } from "../lib/content";
+
+export async function getStaticPaths() {
+  const { pages } = await getContent();
+  return pages.filter((p) => p.slug?.current).map((page) => ({ params: { slug: page.slug.current }, props: { page } }));
+}
+interface Props { page: Page }
+const { page } = Astro.props;
+const content = await getContent();
+---
+<Base content={content} page={page}>
+  <Sections sections={page.sections} settings={content.settings} />
+</Base>

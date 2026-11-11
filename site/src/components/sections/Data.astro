@@ -1,0 +1,8 @@
+---
+// TODO: implementar la sección `data`.
+import type { DataSection, Settings } from "../../lib/types";
+
+interface Props { section: DataSection; settings: Settings }
+const { section: s } = Astro.props;
+---
+<section class="sec sec--data" id={s.anchor}></section>

@@ -1,0 +1,27 @@
+---
+// Cabecera fotográfica a sangre. Con `youtubeId` la foto es el póster del video.
+import type { HeroSection, Settings } from "../../lib/types";
+import Picture from "../Picture.astro";
+import YouTube from "../YouTube.astro";
+import { color } from "../../lib/text";
+
+interface Props { section: HeroSection; settings: Settings }
+const { section: s, settings } = Astro.props;
+const below = s.footnotePlace === "below";
+---
+<section class:list={["sec", "hero", s.blur && "hero--blur"]} id={s.anchor} style={s.tone ? `--hero-tone:${color(s.tone)}` : undefined}>
+  <div class="hero__media">
+    {s.youtubeId
+      ? <YouTube id={s.youtubeId} title={s.videoTitle ?? s.title ?? ""} poster={s.image} playLabel={settings.labels.play} pendingLabel={settings.labels.pending} eager />
+      : <Picture img={s.image} sizes="100vw" class="hero__img" eager />}
+    {(s.eyebrow || s.phrase || s.title) && (
+      <div class="hero__center">
+        {s.eyebrow && <h1 class="hero__eyebrow">{s.eyebrow}</h1>}
+        {s.title && <h1 class:list={["hero__title", s.titleFont && `font-${s.titleFont}`]}>{s.title}</h1>}
+        {s.phrase && <p class="hero__phrase">{s.phrase}</p>}
+      </div>
+    )}
+    {s.footnote && !below && <p class="hero__note" style={s.footnoteTone ? `color:${color(s.footnoteTone)}` : undefined}>{s.footnote}</p>}
+  </div>
+  {s.footnote && below && <p class="hero__note hero__note--below" style={s.footnoteTone ? `color:${color(s.footnoteTone)}` : undefined}>{s.footnote}</p>}
+</section>

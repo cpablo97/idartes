@@ -1,0 +1,645 @@
+{
+  "settings": {
+    "_type": "settings",
+    "_id": "settings",
+    "siteName": "Ciudad y Cuerpo",
+    "siteUrl": "https://ciudadycuerpo.com",
+    "headerTitle": [
+      {
+        "_type": "span",
+        "text": "ciudad ",
+        "_key": "sh0"
+      },
+      {
+        "_type": "span",
+        "text": "y",
+        "marks": [
+          "em"
+        ],
+        "_key": "sh1"
+      },
+      {
+        "_type": "span",
+        "text": " cuerpo",
+        "_key": "sh2"
+      }
+    ],
+    "brandLabel": "LAB.",
+    "menuLabel": "MENÚ",
+    "menu": [
+      {
+        "label": "Home",
+        "href": "/",
+        "_key": "sm0"
+      },
+      {
+        "label": "Para recicladores",
+        "href": "/para-recicladores/",
+        "_key": "sm1"
+      },
+      {
+        "label": "Lo que aprendimos de la calle",
+        "href": "/lo-que-aprendimos-de-la-calle/",
+        "_key": "sm2"
+      },
+      {
+        "label": "¿Cómo lo hicimos?",
+        "href": "/como-lo-hicimos/",
+        "_key": "sm3"
+      },
+      {
+        "label": "Equipo",
+        "href": "/equipo/",
+        "_key": "sm4"
+      },
+      {
+        "label": "Exhibición",
+        "href": "/exhibicion/",
+        "_key": "sm5"
+      },
+      {
+        "label": "Videojuego",
+        "href": "/videojuego/",
+        "_key": "sm6"
+      }
+    ],
+    "footer": {
+      "credit": "Proyecto resultado de ARTEFACTUM — Laboratorio Artístico de Innovación Social: El diseño y lo digital en Chapinero 2026. Instituto Distrital de las Artes (IDARTES).",
+      "tone": "rosa",
+      "logos": [
+        {
+          "image": {
+            "local": {
+              "webp": [],
+              "fallback": "/assets/images/comun/artefactum.svg",
+              "width": 285,
+              "height": 143
+            },
+            "alt": "ARTEfactum es Idartes"
+          },
+          "_key": "sfl0"
+        }
+      ]
+    },
+    "seo": {
+      "title": "Ciudad y Cuerpo — arte, diseño y tecnología con recicladores de Chapinero",
+      "description": "Arte, diseño y tecnología creados junto a personas recicladoras de Chapinero. Proyecto resultado de ARTEFACTUM, Laboratorio Artístico de Innovación Social (IDARTES, 2026).",
+      "ogImage": {
+        "local": {
+          "webp": [
+            "/assets/images/inicio/hero-cuerpo-480.webp",
+            "/assets/images/inicio/hero-cuerpo-960.webp",
+            "/assets/images/inicio/hero-cuerpo-1158.webp"
+          ],
+          "fallback": "/assets/images/inicio/hero-cuerpo.jpg",
+          "width": 1158,
+          "height": 1738
+        },
+        "alt": "Ciudad y Cuerpo"
+      }
+    },
+    "labels": {
+      "menu": "Menú principal",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú",
+      "skip": "Saltar al contenido",
+      "play": "Reproducir video",
+      "pending": "Video pendiente",
+      "prev": "Anterior",
+      "next": "Siguiente",
+      "close": "Cerrar",
+      "home": "Ciudad y Cuerpo, ir al inicio"
+    }
+  },
+  "pages": [
+    {
+      "_type": "page",
+      "_id": "page-inicio",
+      "title": "Inicio",
+      "slug": {
+        "current": ""
+      },
+      "header": "display",
+      "dots": "fino",
+      "footerTone": "rosa",
+      "sections": [
+        {
+          "_type": "collage",
+          "anchor": "inicio",
+          "rows": 138,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Arte, diseño y tecnología creados junto a personas recicladoras de Chapinero.",
+                      "_key": "ins0i0b0c0"
+                    }
+                  ],
+                  "_key": "ins0i0b0"
+                }
+              ],
+              "place": {
+                "col": 11,
+                "row": 2,
+                "cols": 43,
+                "rows": 5
+              },
+              "size": 16,
+              "_key": "ins0i0"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/hero-cuadro-366.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/hero-cuadro.jpg",
+                  "width": 366,
+                  "height": 366
+                },
+                "alt": "Montaje de una proyección durante el laboratorio"
+              },
+              "place": {
+                "col": 31,
+                "row": 10,
+                "cols": 18,
+                "rows": 18,
+                "z": 2
+              },
+              "drift": 2,
+              "_key": "ins0i1"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/hero-taller-480.webp",
+                    "/assets/images/inicio/hero-taller-960.webp",
+                    "/assets/images/inicio/hero-taller-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/hero-taller.jpg",
+                  "width": 1600,
+                  "height": 1200
+                },
+                "alt": "Participantes del laboratorio reunidos alrededor de una mesa con maquetas de cartón"
+              },
+              "place": {
+                "col": 49,
+                "row": 30,
+                "cols": 35,
+                "rows": 27,
+                "z": 3
+              },
+              "drift": 4,
+              "_key": "ins0i2"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/hero-cuerpo-480.webp",
+                    "/assets/images/inicio/hero-cuerpo-960.webp",
+                    "/assets/images/inicio/hero-cuerpo-1158.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/hero-cuerpo.jpg",
+                  "width": 1158,
+                  "height": 1738
+                },
+                "alt": "Figura en duotono naranja y morado suspendida de una carreta de reciclaje",
+                "hotspot": {
+                  "x": 1,
+                  "y": 0.5
+                }
+              },
+              "place": {
+                "col": 79,
+                "row": 8,
+                "cols": 55,
+                "rows": 92,
+                "z": 1
+              },
+              "drift": 1,
+              "_key": "ins0i3"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "¿Cómo pasa la ciudad por el cuerpo de quienes la cargan, la arrastran y la recorren reciclando?",
+                      "_key": "ins0i4b0c0"
+                    }
+                  ],
+                  "_key": "ins0i4b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 64,
+                "cols": 50,
+                "rows": 11,
+                "z": 4
+              },
+              "tone": "ocre",
+              "level": 2,
+              "_key": "ins0i4"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/ilustracion-carreta-480.webp",
+                    "/assets/images/inicio/ilustracion-carreta-960.webp",
+                    "/assets/images/inicio/ilustracion-carreta-1077.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/ilustracion-carreta.jpg",
+                  "width": 1077,
+                  "height": 902
+                },
+                "alt": "Dibujo a línea de un reciclador halando su carreta cargada"
+              },
+              "place": {
+                "col": 6,
+                "row": 71,
+                "cols": 54,
+                "rows": 45
+              },
+              "fit": "contain",
+              "drift": 3,
+              "_key": "ins0i5"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "A través de encuentros, conversaciones, ejercicios y experimentaciones colectivas, nos acercamos a Chapinero para observar sus dinámicas, reconocer sus historias y construir nuevas maneras de relacionarnos con el territorio.",
+                      "_key": "ins0i6b0c0"
+                    }
+                  ],
+                  "_key": "ins0i6b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Un proceso de exploración que se convirtió en herramientas, experiencias y propuestas para la ciudad.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "ins0i6b1c0"
+                    }
+                  ],
+                  "_key": "ins0i6b1"
+                }
+              ],
+              "place": {
+                "col": 79,
+                "row": 103,
+                "cols": 55,
+                "rows": 33
+              },
+              "_key": "ins0i6"
+            },
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 139,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "ins0i7"
+            }
+          ],
+          "_key": "ins0"
+        },
+        {
+          "_type": "video",
+          "anchor": "microdocumental",
+          "youtubeId": "TODO_MICRODOCUMENTAL_ARIEL",
+          "title": "Microdocumental: los recorridos de Ariel, recicladora de oficio",
+          "intro": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Acompañamos a Ariel, recicladora de oficio, en algunos de sus recorridos por la ciudad.",
+                  "_key": "ins1i0c0"
+                }
+              ],
+              "_key": "ins1i0"
+            }
+          ],
+          "caption": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Este microdocumental nos acerca a su trabajo cotidiano y a las experiencias de quienes recuperan materiales y hacen parte de la vida de Chapinero.",
+                  "_key": "ins1c0c0"
+                }
+              ],
+              "_key": "ins1c0"
+            }
+          ],
+          "_key": "ins1"
+        },
+        {
+          "_type": "cardGrid",
+          "layout": "free",
+          "anchor": "indice",
+          "rows": 420,
+          "dots": [
+            {
+              "col": 29,
+              "row": -14,
+              "cols": 95,
+              "rows": 226,
+              "_key": "ins2d0"
+            }
+          ],
+          "items": [
+            {
+              "_type": "card",
+              "label": "Para recicladores",
+              "href": "/para-recicladores/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-recicladores-480.webp",
+                    "/assets/images/inicio/card-recicladores-960.webp",
+                    "/assets/images/inicio/card-recicladores-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-recicladores.jpg",
+                  "width": 1600,
+                  "height": 1271
+                },
+                "alt": "Recicladora sonriente empujando su carreta cargada frente a un camión rojo"
+              },
+              "size": "l",
+              "place": {
+                "col": 7,
+                "row": 21,
+                "cols": 64,
+                "rows": 70
+              },
+              "_key": "ins2i0"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "ciudad ",
+                  "_key": "ins2i1t0"
+                },
+                {
+                  "_type": "span",
+                  "text": "y",
+                  "marks": [
+                    "em"
+                  ],
+                  "_key": "ins2i1t1"
+                },
+                {
+                  "_type": "span",
+                  "text": " cuerpo",
+                  "_key": "ins2i1t2"
+                }
+              ],
+              "tone": "amarillo",
+              "place": {
+                "col": 76,
+                "row": 22,
+                "cols": 14,
+                "rows": 90,
+                "z": 0
+              },
+              "rotate": 90,
+              "_key": "ins2i1"
+            },
+            {
+              "_type": "card",
+              "label": "Lo que aprendimos de la calle",
+              "href": "/lo-que-aprendimos-de-la-calle/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-calle-480.webp",
+                    "/assets/images/inicio/card-calle-960.webp",
+                    "/assets/images/inicio/card-calle-1200.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-calle.jpg",
+                  "width": 1200,
+                  "height": 1600
+                },
+                "alt": "Carreta de reciclaje cargada de costales en una calle de Chapinero",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.35
+                }
+              },
+              "size": "m",
+              "place": {
+                "col": 74,
+                "row": 86,
+                "cols": 43,
+                "rows": 47
+              },
+              "_key": "ins2i2"
+            },
+            {
+              "_type": "card",
+              "label": "¿Cómo lo hicimos?",
+              "href": "/como-lo-hicimos/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-como-480.webp",
+                    "/assets/images/inicio/card-como-960.webp",
+                    "/assets/images/inicio/card-como-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-como.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Participante con los ojos vendados explora objetos e hilos sobre el piso"
+              },
+              "size": "l",
+              "place": {
+                "col": 19,
+                "row": 167,
+                "cols": 64,
+                "rows": 70
+              },
+              "_key": "ins2i3"
+            },
+            {
+              "_type": "card",
+              "label": "Equipo",
+              "href": "/equipo/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-equipo-480.webp",
+                    "/assets/images/inicio/card-equipo-960.webp",
+                    "/assets/images/inicio/card-equipo-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-equipo.jpg",
+                  "width": 1600,
+                  "height": 1066
+                },
+                "alt": "El equipo del laboratorio reunido en círculo"
+              },
+              "size": "s",
+              "place": {
+                "col": 105,
+                "row": 167,
+                "cols": 33,
+                "rows": 37
+              },
+              "_key": "ins2i4"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "atención",
+                  "_key": "ins2i5t0"
+                }
+              ],
+              "tone": "verde",
+              "place": {
+                "col": 63,
+                "row": 225,
+                "cols": 76,
+                "rows": 14,
+                "z": 4
+              },
+              "_key": "ins2i5"
+            },
+            {
+              "_type": "card",
+              "label": "Exhibición",
+              "href": "/exhibicion/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-exhibicion-480.webp",
+                    "/assets/images/inicio/card-exhibicion-960.webp",
+                    "/assets/images/inicio/card-exhibicion-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-exhibicion.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Sala de la exhibición con mesas, piezas y pendones"
+              },
+              "size": "s",
+              "place": {
+                "col": 52,
+                "row": 253,
+                "cols": 33,
+                "rows": 37
+              },
+              "_key": "ins2i6"
+            },
+            {
+              "_type": "card",
+              "label": "Video juego",
+              "href": "/videojuego/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-videojuego-480.webp",
+                    "/assets/images/inicio/card-videojuego-960.webp",
+                    "/assets/images/inicio/card-videojuego-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-videojuego.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Joven jugando Chapicartón en una máquina arcade"
+              },
+              "size": "l",
+              "place": {
+                "col": 75,
+                "row": 303,
+                "cols": 64,
+                "rows": 70
+              },
+              "_key": "ins2i7"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "juego",
+                  "_key": "ins2i8t0"
+                }
+              ],
+              "tone": "rojo",
+              "place": {
+                "col": 7,
+                "row": 337,
+                "cols": 14,
+                "rows": 30
+              },
+              "rotate": -90,
+              "italic": true,
+              "_key": "ins2i8"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "La piel, \n(de)la ciudad.",
+                  "_key": "ins2i9t0"
+                }
+              ],
+              "tone": "cian",
+              "place": {
+                "col": 7,
+                "row": 384,
+                "cols": 100,
+                "rows": 28
+              },
+              "italic": true,
+              "_key": "ins2i9"
+            }
+          ],
+          "_key": "ins2"
+        }
+      ]
+    }
+  ]
+}

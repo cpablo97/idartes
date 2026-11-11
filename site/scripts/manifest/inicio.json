@@ -1,0 +1,100 @@
+{
+  "card-calle": {
+    "webp": [
+      "/assets/images/inicio/card-calle-480.webp",
+      "/assets/images/inicio/card-calle-960.webp",
+      "/assets/images/inicio/card-calle-1200.webp"
+    ],
+    "fallback": "/assets/images/inicio/card-calle.jpg",
+    "width": 1200,
+    "height": 1600
+  },
+  "card-como": {
+    "webp": [
+      "/assets/images/inicio/card-como-480.webp",
+      "/assets/images/inicio/card-como-960.webp",
+      "/assets/images/inicio/card-como-1600.webp"
+    ],
+    "fallback": "/assets/images/inicio/card-como.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "card-equipo": {
+    "webp": [
+      "/assets/images/inicio/card-equipo-480.webp",
+      "/assets/images/inicio/card-equipo-960.webp",
+      "/assets/images/inicio/card-equipo-1600.webp"
+    ],
+    "fallback": "/assets/images/inicio/card-equipo.jpg",
+    "width": 1600,
+    "height": 1066
+  },
+  "card-exhibicion": {
+    "webp": [
+      "/assets/images/inicio/card-exhibicion-480.webp",
+      "/assets/images/inicio/card-exhibicion-960.webp",
+      "/assets/images/inicio/card-exhibicion-1600.webp"
+    ],
+    "fallback": "/assets/images/inicio/card-exhibicion.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "card-recicladores": {
+    "webp": [
+      "/assets/images/inicio/card-recicladores-480.webp",
+      "/assets/images/inicio/card-recicladores-960.webp",
+      "/assets/images/inicio/card-recicladores-1600.webp"
+    ],
+    "fallback": "/assets/images/inicio/card-recicladores.jpg",
+    "width": 1600,
+    "height": 1271
+  },
+  "card-videojuego": {
+    "webp": [
+      "/assets/images/inicio/card-videojuego-480.webp",
+      "/assets/images/inicio/card-videojuego-960.webp",
+      "/assets/images/inicio/card-videojuego-1600.webp"
+    ],
+    "fallback": "/assets/images/inicio/card-videojuego.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "hero-cuadro": {
+    "webp": [
+      "/assets/images/inicio/hero-cuadro-366.webp"
+    ],
+    "fallback": "/assets/images/inicio/hero-cuadro.jpg",
+    "width": 366,
+    "height": 366
+  },
+  "hero-cuerpo": {
+    "webp": [
+      "/assets/images/inicio/hero-cuerpo-480.webp",
+      "/assets/images/inicio/hero-cuerpo-960.webp",
+      "/assets/images/inicio/hero-cuerpo-1158.webp"
+    ],
+    "fallback": "/assets/images/inicio/hero-cuerpo.jpg",
+    "width": 1158,
+    "height": 1738
+  },
+  "hero-taller": {
+    "webp": [
+      "/assets/images/inicio/hero-taller-480.webp",
+      "/assets/images/inicio/hero-taller-960.webp",
+      "/assets/images/inicio/hero-taller-1600.webp"
+    ],
+    "fallback": "/assets/images/inicio/hero-taller.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "ilustracion-carreta": {
+    "webp": [
+      "/assets/images/inicio/ilustracion-carreta-480.webp",
+      "/assets/images/inicio/ilustracion-carreta-960.webp",
+      "/assets/images/inicio/ilustracion-carreta-1077.webp"
+    ],
+    "fallback": "/assets/images/inicio/ilustracion-carreta.jpg",
+    "width": 1077,
+    "height": 902
+  }
+}

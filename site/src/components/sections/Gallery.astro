@@ -1,0 +1,8 @@
+---
+// TODO: implementar la sección `gallery`.
+import type { GallerySection, Settings } from "../../lib/types";
+
+interface Props { section: GallerySection; settings: Settings }
+const { section: s } = Astro.props;
+---
+<section class="sec sec--gallery" id={s.anchor}></section>
