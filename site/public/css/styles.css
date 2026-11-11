@@ -95,7 +95,7 @@ main { display: block; }
 .menu[hidden] { display: none; }
 .menu__close { width: 2.4rem; height: 2.4rem; }
 .menu__close svg { width: 100%; height: 100%; }
-.menu ul { display: flex; flex-direction: column; gap: 1.6rem; align-self: stretch; }
+.menu ul { display: flex; flex-direction: column; gap: 1.6rem; align-self: stretch; font-size: 1.6rem; line-height: 1.5; }
 .menu a { font-size: 1.6rem; font-weight: 700; line-height: 1.5; text-transform: uppercase; text-decoration: none; letter-spacing: -.01em; background: linear-gradient(currentColor, currentColor) 0 100% / 0 2px no-repeat; transition: background-size .3s var(--ease); }
 .menu a:hover, .menu a:focus-visible, .menu a[aria-current="page"] { background-size: 100% 2px; }
 .menu :focus-visible { outline-color: var(--blanco); }
