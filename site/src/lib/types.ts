@@ -27,10 +27,12 @@ export type Tone = "negro" | "blanco" | "morado" | "rosa" | "magenta" | "amarill
 export type Place = { col: number; row: number; cols: number; rows?: number; z?: number };
 
 // ---------- Elementos de un lienzo (`collage`, `cardGrid`) ----------
+// Todos aceptan `variant`: un nombre corto que se vuelve la clase CSS `v-<variant>` para ajustes puntuales.
 
 export type ImageItem = {
   _type: "imageItem";
   _key: string;
+  variant?: string;
   image: Img;
   place: Place;
   fit?: "cover" | "contain";
@@ -47,6 +49,7 @@ export type ImageItem = {
 export type TextItem = {
   _type: "textItem";
   _key: string;
+  variant?: string;
   body: Block[];
   place: Place;
   tone?: Tone;
@@ -62,6 +65,7 @@ export type TextItem = {
 export type DisplayTitleItem = {
   _type: "displayTitle";
   _key: string;
+  variant?: string;
   /** Tramos del titular; `em` pone el tramo en itálica y "\n" parte la línea. */
   text: Span[];
   tone: Tone;

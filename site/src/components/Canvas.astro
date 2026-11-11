@@ -19,7 +19,7 @@ let firstImage = eagerFirst;
       const style = css(placeStyle(it.place), it.rotate ? `--rot:${it.rotate}deg` : "", it.flip ? `--flip:${it.flip === "x" ? "-1 1" : "1 -1"}` : "", it.radius ? `--rad:${rem(it.radius)}` : "", it.drift ? `--drift:${it.drift}` : "");
       const pic = <Picture img={it.image} sizes={sizes(it.place)} eager={eager} />;
       return (
-        <figure class:list={["at", "ci", "ci--img", it.fit === "contain" && "ci--contain", it.drift && "drift"]} style={style} data-reveal="img">
+        <figure class:list={["at", "ci", "ci--img", it.variant && `v-${it.variant}`, it.fit === "contain" && "ci--contain", it.drift && "drift"]} style={style} data-reveal="img">
           {it.href ? <a href={it.href}>{pic}</a> : pic}
           {it.caption && <figcaption>{it.caption}</figcaption>}
         </figure>
@@ -30,7 +30,7 @@ let firstImage = eagerFirst;
       const H = it.level ? (`h${it.level}` as "h1" | "h2" | "h3") : null;
       const style = css(placeStyle(it.place), it.size ? `--fs:${rem(it.size)}` : "", it.tone ? `color:${color(it.tone)}` : "", it.weight ? `font-weight:${it.weight}` : "", it.align ? `text-align:${it.align}` : "");
       return (
-        <div class:list={["at", "ci", "ci--text", it.font && `font-${it.font}`, it.nowrap && "nowrap"]} style={style} data-reveal="text">
+        <div class:list={["at", "ci", "ci--text", it.variant && `v-${it.variant}`, it.font && `font-${it.font}`, it.nowrap && "nowrap"]} style={style} data-reveal="text">
           {ps.map((html, i) => (i === 0 && H ? <H set:html={html} /> : <p set:html={html} />))}
         </div>
       );
@@ -38,7 +38,7 @@ let firstImage = eagerFirst;
     if (it._type === "displayTitle") {
       const T = it.level ? (`h${it.level}` as "h1" | "h2" | "h3") : "p";
       const style = css(placeStyle(it.place), `color:${color(it.tone)}`, it.size ? `--fs:${rem(it.size)}` : "", it.align ? `text-align:${it.align}` : "");
-      return <T class:list={["at", "display", it.italic && "is-italic", it.rotate === 90 && "display--down", it.rotate === -90 && "display--up"]} style={style} data-reveal={it.rotate ? "title-v" : it.align === "right" ? "title-r" : "title"} set:html={spans(it.text)} />;
+      return <T class:list={["at", "display", it.variant && `v-${it.variant}`, it.italic && "is-italic", it.rotate === 90 && "display--down", it.rotate === -90 && "display--up"]} style={style} data-reveal={it.rotate ? "title-v" : it.align === "right" ? "title-r" : "title"} set:html={spans(it.text)} />;
     }
     if (it._type === "card") return <Card card={it} />;
     if (it._type === "rule") return <hr class:list={["at", "rule", it.bleed && "rule--bleed"]} style={css(placeStyle(it.place), it.tone ? `color:${color(it.tone)}` : "")} />;
