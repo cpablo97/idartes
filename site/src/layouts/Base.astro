@@ -62,6 +62,7 @@ const jsonLd = JSON.stringify({
   (function (d) { d.classList.add("js"); var f = function () { d.style.setProperty("--vw", d.clientWidth + "px"); }; f(); addEventListener("resize", f); })(document.documentElement);
 </script>
 <script defer src={`/js/main.js?v=${v}`}></script>
+<script defer src={`/js/pixel.js?v=${v}`}></script>
 <slot name="head" />
 {!noindex && isHome && <script type="application/ld+json" is:inline set:html={jsonLd}></script>}
 </head>
