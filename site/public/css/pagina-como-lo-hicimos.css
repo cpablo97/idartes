@@ -1,0 +1,90 @@
+/* ============================================================
+   ¿Cómo lo hicimos? — sección `timeline` (Timeline.astro) y ajustes de la página.
+   Mobile-first: base = móvil, 600 px tablet, 1000 px escritorio (1rem = 10 px del diseño de 1440).
+   ============================================================ */
+
+/* ---------- Línea de tiempo ---------- */
+.sec--timeline { --tl: #563924; color: var(--tl); padding: 6rem 0 2rem; }
+.tl { position: relative; }
+.tl__step { --dot: 2rem; --dot-top: .5rem; --line-x: 3rem; position: relative; display: grid; grid-template-columns: var(--dot) minmax(0, 1fr); column-gap: 1.4rem; padding-inline: 2rem; }
+.tl__dot { grid-area: 1 / 1; position: relative; z-index: 4; width: var(--dot); height: var(--dot); margin-top: var(--dot-top); border-radius: 50%; background: var(--tl); }
+.tl__title { grid-area: 1 / 2; font-size: 2rem; font-weight: 500; line-height: 1.5; letter-spacing: -.022em; }
+.tl__canvas { grid-area: 2 / 2; padding: 2.4rem 0 6.4rem; gap: 3.2rem; }
+/* Tramo de línea: del centro de este punto al centro del siguiente. ::before = guía tenue, ::after = trazo. */
+.tl__step:not(:last-child)::before, .tl__step:not(:last-child)::after {
+  content: ""; position: absolute; z-index: 3; pointer-events: none;
+  left: calc(var(--line-x) - .5px); width: 1px; top: calc(var(--dot-top) + var(--dot) / 2); bottom: calc(-1 * (var(--dot-top) + var(--dot) / 2));
+  background: var(--tl);
+}
+.tl__step::before { opacity: .22; }
+.tl__step::after { transform-origin: 50% 0; transform: scaleY(var(--p, 1)); }
+.sec--timeline .display { line-height: 1.19; }
+
+@media (max-width: 999px) {
+  .ci--text.v-cita, .ci--text.v-creditos { text-align: left !important; white-space: normal; }
+  .sec--timeline .ci--text { align-self: flex-start; text-align: left !important; }
+}
+
+@media (min-width: 600px) {
+  .tl__step { --dot: 2.6rem; --dot-top: .3rem; --line-x: 5.3rem; padding-inline: 4rem; column-gap: 2rem; }
+  .tl__title { font-size: 2.2rem; }
+  .tl__canvas { padding: 2.8rem 0 8rem; gap: 4rem; }
+}
+
+@media (min-width: 1000px) {
+  .sec--timeline { padding: 17.6rem 0 0; }
+  .tl__step { --dot: 4.6436rem; --dot-top: 0rem; --line-x: 8.322rem; grid-template-columns: minmax(0, 1fr); column-gap: 0; padding: 0; }
+  .tl__step > * { grid-area: 1 / 1; }
+  .tl__dot { justify-self: start; align-self: start; margin-left: 6rem; }
+  .tl__title { position: relative; z-index: 2; justify-self: start; align-self: start; margin: .5rem 0 0 17.2rem; font-size: 2.4rem; }
+  .tl__canvas { padding: 0; gap: 0; }
+  /* Foto que sangra por el borde izquierdo de la ventana (fotograma del microdocumental). */
+  .canvas > .ci--img.v-sangre-izq { width: auto; justify-self: stretch; margin-left: min(0px, calc((144rem - var(--bleed)) / 2)); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .js .tl[data-live] .tl__dot { transition: background-color .5s var(--ease), scale .5s var(--ease); }
+  .js .tl[data-live] .tl__step:not(.is-on) .tl__dot { background: var(--band, #f4fad5); box-shadow: inset 0 0 0 1px var(--tl); scale: .7; }
+  .js .tl[data-live] .tl__step.is-on .tl__dot { animation: tl-pulso 1.1s var(--ease) both; }
+  @keyframes tl-pulso { from { box-shadow: 0 0 0 0 rgba(86, 57, 36, .5); } to { box-shadow: 0 0 0 1.6rem rgba(86, 57, 36, 0); } }
+
+  /* ARREGLO PROVISIONAL (debería ir en styles.css): la aparición de `data-reveal="img"` recorta el propio elemento
+     observado con clip-path al 100 %, y Chromium descuenta ese recorte al calcular la intersección, así que el
+     IntersectionObserver de main.js nunca dispara y las fotos no aparecen. Aquí el recorte pasa a los hijos. */
+  .js body.page-como-lo-hicimos [data-reveal="img"]:not(.is-in) { clip-path: none; }
+  .js body.page-como-lo-hicimos [data-reveal="img"] > * { clip-path: inset(0 0 0 0); transition: clip-path 1.2s var(--ease); transition-delay: var(--delay, 0s); }
+  .js body.page-como-lo-hicimos [data-reveal="img"]:not(.is-in) > * { clip-path: inset(0 0 100% 0); }
+  .js body.page-como-lo-hicimos [data-reveal="img"].is-done > * { clip-path: none; }
+}
+
+/* ---------- Ajustes de la página ---------- */
+/* Velo del 18 % sobre la foto del hero. */
+body.page-como-lo-hicimos .hero__media::after { content: ""; grid-area: 1 / 1; position: relative; background: rgba(0, 0, 0, .18); pointer-events: none; }
+
+/* Enlaces naranjas ("Ver más", "Conoce al equipo"). */
+body.page-como-lo-hicimos .v-enlace a, body.page-como-lo-hicimos .bitacora__intro a { font-size: 1.6rem; font-weight: 600; line-height: 1.5; letter-spacing: .1em; color: #ef8e34; text-decoration: underline; text-decoration-color: #e56aab; text-decoration-thickness: 1px; text-underline-offset: .22em; }
+body.page-como-lo-hicimos .v-enlace a:hover, body.page-como-lo-hicimos .bitacora__intro a:hover { color: var(--morado); }
+body.page-como-lo-hicimos .ci--text.v-enlace { align-self: flex-end; }
+
+/* El microdocumental va a sangre, pegado a los bloques vecinos. */
+body.page-como-lo-hicimos .video { padding: 0; }
+
+/* Fotogramas del microdocumental: traen barras negras propias; el diseño los amplía para esconderlas. */
+.ci--img.v-zoom img { scale: 1.1; }
+body.page-como-lo-hicimos .video .yt__poster img { scale: 1.07; }
+
+@media (min-width: 1000px) {
+  /* Recorte del hero tal como está en el diseño (más cerrado que un `cover` simple). */
+  body.page-como-lo-hicimos .hero__img img { inset: auto; left: -6.39%; top: -27.92%; width: 128.08%; height: 163.28%; max-width: none; }
+
+  body.page-como-lo-hicimos .video > .yt { aspect-ratio: 1440 / 1107.5; }
+
+  /* Bitácora: título a la izquierda, "Ver más" a la derecha, lámina debajo; la sección termina en la línea morada siguiente. */
+  body.page-como-lo-hicimos .bitacora { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; padding: 6.8rem var(--margen) 1.2rem; }
+  body.page-como-lo-hicimos .bitacora__intro { margin: 0; max-width: none; }
+  body.page-como-lo-hicimos .bitacora__stage, body.page-como-lo-hicimos .bitacora__count { grid-column: 1 / -1; }
+  body.page-como-lo-hicimos .bitacora__stage { margin-top: 2.5rem; }
+  body.page-como-lo-hicimos .bitacora__count { margin-top: 1rem; line-height: 1.5; min-height: 2.4rem; }
+
+  body.page-como-lo-hicimos .explora { padding: 25rem var(--margen) 24.5rem; }
+}

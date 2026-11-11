@@ -304,11 +304,26 @@ export type DataSection = Shared & {
   chart?: DataChart;
   table?: DataTable;
 };
-/** Línea de tiempo de pasos (¿Cómo lo hicimos?). */
+/**
+ * Línea de tiempo de pasos (¿Cómo lo hicimos?). Cada paso es un pequeño lienzo de collage que empieza en su punto
+ * y termina en el punto del paso siguiente; el componente dibuja la línea vertical, los puntos y el título de cada paso.
+ */
 export type TimelineSection = Shared & {
   _type: "timeline";
+  /** Encabezado de la sección (solo para lectores de pantalla; en el diseño no se ve). */
+  title?: string;
   band?: Band;
-  steps: { _key: string; rows: number; items: CanvasItem[] }[];
+  /** Tramas de puntos magenta detrás de los pasos; filas contadas desde el borde superior de la sección. */
+  dots?: Place[];
+  steps: {
+    _key: string;
+    /** Título del paso, junto al punto. */
+    title: string;
+    /** Alto del paso en unidades de retícula (de su punto al punto siguiente). */
+    rows: number;
+    /** Elementos del lienzo; la fila 1 es la del punto y el título. */
+    items: CanvasItem[];
+  }[];
 };
 
 export type Section =

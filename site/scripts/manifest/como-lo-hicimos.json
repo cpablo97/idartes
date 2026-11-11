@@ -1,0 +1,496 @@
+{
+  "bitacora-lamina-1": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/bitacora-lamina-1-480.webp",
+      "/assets/images/como-lo-hicimos/bitacora-lamina-1-960.webp",
+      "/assets/images/como-lo-hicimos/bitacora-lamina-1-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/bitacora-lamina-1.jpg",
+    "width": 1600,
+    "height": 1068
+  },
+  "creditos-grupo": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/creditos-grupo-480.webp",
+      "/assets/images/como-lo-hicimos/creditos-grupo-960.webp",
+      "/assets/images/como-lo-hicimos/creditos-grupo-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/creditos-grupo.jpg",
+    "width": 1600,
+    "height": 1066
+  },
+  "creditos-proyector": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/creditos-proyector-480.webp",
+      "/assets/images/como-lo-hicimos/creditos-proyector-960.webp",
+      "/assets/images/como-lo-hicimos/creditos-proyector-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/creditos-proyector.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "hero-taller-estructura": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/hero-taller-estructura-480.webp",
+      "/assets/images/como-lo-hicimos/hero-taller-estructura-960.webp",
+      "/assets/images/como-lo-hicimos/hero-taller-estructura-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/hero-taller-estructura.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "intro-hilos-vendada": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/intro-hilos-vendada-480.webp",
+      "/assets/images/como-lo-hicimos/intro-hilos-vendada-960.webp",
+      "/assets/images/como-lo-hicimos/intro-hilos-vendada-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/intro-hilos-vendada.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "intro-mesa-lci": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/intro-mesa-lci-480.webp",
+      "/assets/images/como-lo-hicimos/intro-mesa-lci-960.webp",
+      "/assets/images/como-lo-hicimos/intro-mesa-lci-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/intro-mesa-lci.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "intro-notas-ejes": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/intro-notas-ejes-480.webp",
+      "/assets/images/como-lo-hicimos/intro-notas-ejes-960.webp",
+      "/assets/images/como-lo-hicimos/intro-notas-ejes-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/intro-notas-ejes.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "intro-pregunta-proyectada": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/intro-pregunta-proyectada-480.webp",
+      "/assets/images/como-lo-hicimos/intro-pregunta-proyectada-960.webp",
+      "/assets/images/como-lo-hicimos/intro-pregunta-proyectada-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/intro-pregunta-proyectada.jpg",
+    "width": 1600,
+    "height": 1066
+  },
+  "intro-proyeccion": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/intro-proyeccion-480.webp",
+      "/assets/images/como-lo-hicimos/intro-proyeccion-960.webp",
+      "/assets/images/como-lo-hicimos/intro-proyeccion-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/intro-proyeccion.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "intro-ronda-sillas": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/intro-ronda-sillas-480.webp",
+      "/assets/images/como-lo-hicimos/intro-ronda-sillas-960.webp",
+      "/assets/images/como-lo-hicimos/intro-ronda-sillas-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/intro-ronda-sillas.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "intro-tablero-ejes": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/intro-tablero-ejes-480.webp",
+      "/assets/images/como-lo-hicimos/intro-tablero-ejes-960.webp",
+      "/assets/images/como-lo-hicimos/intro-tablero-ejes-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/intro-tablero-ejes.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "llevamos-abrazo": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/llevamos-abrazo-480.webp",
+      "/assets/images/como-lo-hicimos/llevamos-abrazo-572.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/llevamos-abrazo.jpg",
+    "width": 572,
+    "height": 314
+  },
+  "llevamos-ejercicio": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/llevamos-ejercicio-480.webp",
+      "/assets/images/como-lo-hicimos/llevamos-ejercicio-960.webp",
+      "/assets/images/como-lo-hicimos/llevamos-ejercicio-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/llevamos-ejercicio.jpg",
+    "width": 1600,
+    "height": 1066
+  },
+  "llevamos-grabacion": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/llevamos-grabacion-480.webp",
+      "/assets/images/como-lo-hicimos/llevamos-grabacion-960.webp",
+      "/assets/images/como-lo-hicimos/llevamos-grabacion-1200.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/llevamos-grabacion.jpg",
+    "width": 1200,
+    "height": 1600
+  },
+  "llevamos-still-zapato": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/llevamos-still-zapato-480.webp",
+      "/assets/images/como-lo-hicimos/llevamos-still-zapato-960.webp",
+      "/assets/images/como-lo-hicimos/llevamos-still-zapato-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/llevamos-still-zapato.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "llevamos-velos": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/llevamos-velos-480.webp",
+      "/assets/images/como-lo-hicimos/llevamos-velos-960.webp",
+      "/assets/images/como-lo-hicimos/llevamos-velos-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/llevamos-velos.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "microdocumental-poster": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/microdocumental-poster-480.webp",
+      "/assets/images/como-lo-hicimos/microdocumental-poster-960.webp",
+      "/assets/images/como-lo-hicimos/microdocumental-poster-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/microdocumental-poster.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "paso01-cuadernos": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso01-cuadernos-480.webp",
+      "/assets/images/como-lo-hicimos/paso01-cuadernos-960.webp",
+      "/assets/images/como-lo-hicimos/paso01-cuadernos-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso01-cuadernos.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "paso02-derivas": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso02-derivas-480.webp",
+      "/assets/images/como-lo-hicimos/paso02-derivas-960.webp",
+      "/assets/images/como-lo-hicimos/paso02-derivas-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso02-derivas.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "paso03-conversacion": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso03-conversacion-480.webp",
+      "/assets/images/como-lo-hicimos/paso03-conversacion-960.webp",
+      "/assets/images/como-lo-hicimos/paso03-conversacion-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso03-conversacion.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "paso04-curaduria": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso04-curaduria-480.webp",
+      "/assets/images/como-lo-hicimos/paso04-curaduria-960.webp",
+      "/assets/images/como-lo-hicimos/paso04-curaduria-1200.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso04-curaduria.jpg",
+    "width": 1200,
+    "height": 1600
+  },
+  "paso05-cuerpo": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso05-cuerpo-480.webp",
+      "/assets/images/como-lo-hicimos/paso05-cuerpo-960.webp",
+      "/assets/images/como-lo-hicimos/paso05-cuerpo-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso05-cuerpo.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "paso06-laboratorios": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso06-laboratorios-480.webp",
+      "/assets/images/como-lo-hicimos/paso06-laboratorios-960.webp",
+      "/assets/images/como-lo-hicimos/paso06-laboratorios-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso06-laboratorios.jpg",
+    "width": 1600,
+    "height": 1076
+  },
+  "paso07-circulo-movimiento": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso07-circulo-movimiento-480.webp",
+      "/assets/images/como-lo-hicimos/paso07-circulo-movimiento-960.webp",
+      "/assets/images/como-lo-hicimos/paso07-circulo-movimiento-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso07-circulo-movimiento.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "paso07-circulo": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso07-circulo-480.webp",
+      "/assets/images/como-lo-hicimos/paso07-circulo-960.webp",
+      "/assets/images/como-lo-hicimos/paso07-circulo-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso07-circulo.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "paso07-constelacion": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso07-constelacion-480.webp",
+      "/assets/images/como-lo-hicimos/paso07-constelacion-960.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso07-constelacion.jpg",
+    "width": 960,
+    "height": 1280
+  },
+  "paso07-grulla": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso07-grulla-480.webp",
+      "/assets/images/como-lo-hicimos/paso07-grulla-960.webp",
+      "/assets/images/como-lo-hicimos/paso07-grulla-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso07-grulla.jpg",
+    "width": 1600,
+    "height": 2844
+  },
+  "paso07-ritual-velas": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso07-ritual-velas-480.webp",
+      "/assets/images/como-lo-hicimos/paso07-ritual-velas-960.webp",
+      "/assets/images/como-lo-hicimos/paso07-ritual-velas-1204.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso07-ritual-velas.jpg",
+    "width": 1204,
+    "height": 1600
+  },
+  "paso07-silueta-luz": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso07-silueta-luz-480.webp",
+      "/assets/images/como-lo-hicimos/paso07-silueta-luz-960.webp",
+      "/assets/images/como-lo-hicimos/paso07-silueta-luz-1200.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso07-silueta-luz.jpg",
+    "width": 1200,
+    "height": 1600
+  },
+  "paso08-arcilla": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso08-arcilla-480.webp",
+      "/assets/images/como-lo-hicimos/paso08-arcilla-960.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso08-arcilla.jpg",
+    "width": 960,
+    "height": 1280
+  },
+  "paso09-votacion": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso09-votacion-480.webp",
+      "/assets/images/como-lo-hicimos/paso09-votacion-960.webp",
+      "/assets/images/como-lo-hicimos/paso09-votacion-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso09-votacion.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "paso10-mapeo": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso10-mapeo-480.webp",
+      "/assets/images/como-lo-hicimos/paso10-mapeo-960.webp",
+      "/assets/images/como-lo-hicimos/paso10-mapeo-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso10-mapeo.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "paso11-boceto-anillas": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso11-boceto-anillas-480.webp",
+      "/assets/images/como-lo-hicimos/paso11-boceto-anillas-960.webp",
+      "/assets/images/como-lo-hicimos/paso11-boceto-anillas-1442.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso11-boceto-anillas.jpg",
+    "width": 1442,
+    "height": 1276
+  },
+  "paso11-boceto-carreta": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso11-boceto-carreta-480.webp",
+      "/assets/images/como-lo-hicimos/paso11-boceto-carreta-960.webp",
+      "/assets/images/como-lo-hicimos/paso11-boceto-carreta-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso11-boceto-carreta.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "paso11-bordado-escarabajo": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso11-bordado-escarabajo-480.webp",
+      "/assets/images/como-lo-hicimos/paso11-bordado-escarabajo-921.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso11-bordado-escarabajo.jpg",
+    "width": 921,
+    "height": 642
+  },
+  "paso11-indumentaria": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso11-indumentaria-480.webp",
+      "/assets/images/como-lo-hicimos/paso11-indumentaria-960.webp",
+      "/assets/images/como-lo-hicimos/paso11-indumentaria-1280.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso11-indumentaria.jpg",
+    "width": 1280,
+    "height": 949
+  },
+  "paso12-prueba-recicladoras": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso12-prueba-recicladoras-480.webp",
+      "/assets/images/como-lo-hicimos/paso12-prueba-recicladoras-483.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso12-prueba-recicladoras.jpg",
+    "width": 483,
+    "height": 861
+  },
+  "paso13-anillas": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso13-anillas-480.webp",
+      "/assets/images/como-lo-hicimos/paso13-anillas-960.webp",
+      "/assets/images/como-lo-hicimos/paso13-anillas-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso13-anillas.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "paso14-personajes": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso14-personajes-480.webp",
+      "/assets/images/como-lo-hicimos/paso14-personajes-960.webp",
+      "/assets/images/como-lo-hicimos/paso14-personajes-1414.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso14-personajes.jpg",
+    "width": 1414,
+    "height": 851
+  },
+  "paso15-mesa-notas": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso15-mesa-notas-480.webp",
+      "/assets/images/como-lo-hicimos/paso15-mesa-notas-960.webp",
+      "/assets/images/como-lo-hicimos/paso15-mesa-notas-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso15-mesa-notas.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "paso16-carreta-parque": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso16-carreta-parque-480.webp",
+      "/assets/images/como-lo-hicimos/paso16-carreta-parque-960.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso16-carreta-parque.jpg",
+    "width": 960,
+    "height": 1280
+  },
+  "paso16-still-ariel-carga": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso16-still-ariel-carga-480.webp",
+      "/assets/images/como-lo-hicimos/paso16-still-ariel-carga-960.webp",
+      "/assets/images/como-lo-hicimos/paso16-still-ariel-carga-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso16-still-ariel-carga.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "paso16-still-manos": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso16-still-manos-480.webp",
+      "/assets/images/como-lo-hicimos/paso16-still-manos-960.webp",
+      "/assets/images/como-lo-hicimos/paso16-still-manos-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso16-still-manos.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "paso17-pacas-carton": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso17-pacas-carton-480.webp",
+      "/assets/images/como-lo-hicimos/paso17-pacas-carton-960.webp",
+      "/assets/images/como-lo-hicimos/paso17-pacas-carton-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso17-pacas-carton.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "paso17-proyeccion-pies": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso17-proyeccion-pies-480.webp",
+      "/assets/images/como-lo-hicimos/paso17-proyeccion-pies-960.webp",
+      "/assets/images/como-lo-hicimos/paso17-proyeccion-pies-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso17-proyeccion-pies.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "paso17-publico": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso17-publico-480.webp",
+      "/assets/images/como-lo-hicimos/paso17-publico-960.webp",
+      "/assets/images/como-lo-hicimos/paso17-publico-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso17-publico.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "paso17-sotano": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso17-sotano-480.webp",
+      "/assets/images/como-lo-hicimos/paso17-sotano-960.webp",
+      "/assets/images/como-lo-hicimos/paso17-sotano-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso17-sotano.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "paso17-velos": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso17-velos-480.webp",
+      "/assets/images/como-lo-hicimos/paso17-velos-960.webp",
+      "/assets/images/como-lo-hicimos/paso17-velos-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso17-velos.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "paso17-videojuego": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/paso17-videojuego-480.webp",
+      "/assets/images/como-lo-hicimos/paso17-videojuego-960.webp",
+      "/assets/images/como-lo-hicimos/paso17-videojuego-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/paso17-videojuego.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "reflexion-dibujo": {
+    "webp": [
+      "/assets/images/como-lo-hicimos/reflexion-dibujo-480.webp",
+      "/assets/images/como-lo-hicimos/reflexion-dibujo-960.webp",
+      "/assets/images/como-lo-hicimos/reflexion-dibujo-1600.webp"
+    ],
+    "fallback": "/assets/images/como-lo-hicimos/reflexion-dibujo.jpg",
+    "width": 1600,
+    "height": 1067
+  }
+}

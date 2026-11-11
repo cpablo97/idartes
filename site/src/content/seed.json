@@ -3578,6 +3578,3382 @@
     },
     {
       "_type": "page",
+      "_id": "page-como-lo-hicimos",
+      "title": "¿Cómo lo hicimos?",
+      "slug": {
+        "current": "como-lo-hicimos"
+      },
+      "header": "small",
+      "menuTone": "blanco",
+      "footerTone": "#67ff8d",
+      "dots": "amplio",
+      "seo": {
+        "description": "Investigar, escuchar y diseñar: el proceso del laboratorio Ciudad y Cuerpo, paso a paso, junto a recicladoras y recicladores de Chapinero."
+      },
+      "sections": [
+        {
+          "_type": "hero",
+          "image": {
+            "local": {
+              "webp": [
+                "/assets/images/como-lo-hicimos/hero-taller-estructura-480.webp",
+                "/assets/images/como-lo-hicimos/hero-taller-estructura-960.webp",
+                "/assets/images/como-lo-hicimos/hero-taller-estructura-1600.webp"
+              ],
+              "fallback": "/assets/images/como-lo-hicimos/hero-taller-estructura.jpg",
+              "width": 1600,
+              "height": 1200
+            },
+            "alt": "Participantes del laboratorio prueban una estructura con anillas en el taller",
+            "hotspot": {
+              "x": 0.23,
+              "y": 0.44
+            }
+          },
+          "eyebrow": "¿CÓMO LO HICIMOS?",
+          "phrase": "Investigar, escuchar y diseñar",
+          "tone": "blanco",
+          "footnote": "Creado junto a recicladores de Chapinero.",
+          "_key": "cos0"
+        },
+        {
+          "_type": "collage",
+          "anchor": "inicio-del-proceso",
+          "rows": 480,
+          "dots": [
+            {
+              "col": 1,
+              "row": 19,
+              "cols": 84,
+              "rows": 226,
+              "over": true,
+              "_key": "cos1d0"
+            }
+          ],
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "El 21 de mayo de 2026 nos reunimos por primera vez en círculo en la Universidad LCI, en Chapinero. ",
+                      "_key": "cos1i0b0c0"
+                    }
+                  ],
+                  "_key": "cos1i0b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 7,
+                "cols": 60
+              },
+              "weight": 500,
+              "_key": "cos1i0"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/intro-mesa-lci-480.webp",
+                    "/assets/images/como-lo-hicimos/intro-mesa-lci-960.webp",
+                    "/assets/images/como-lo-hicimos/intro-mesa-lci-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/intro-mesa-lci.jpg",
+                  "width": 1600,
+                  "height": 1200
+                },
+                "alt": "Participantes del laboratorio escriben y dibujan alrededor de una mesa larga",
+                "hotspot": {
+                  "x": 0.21,
+                  "y": 0.5
+                }
+              },
+              "place": {
+                "col": 7,
+                "row": 26,
+                "cols": 78,
+                "rows": 78
+              },
+              "drift": 2,
+              "_key": "cos1i1"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Veníamos de distintos campos: cine, fotografía, grafiti, moda, diseño, ilustración, arquitectura, baile y canto. Nos convocó ARTEFACTUM Laboratorio Artístico de Innovación Social: El diseño y lo digital en Chapinero 2026, de IDARTES, para explorar la relación entre el diseño, lo digital y el territorio.",
+                      "_key": "cos1i2b0c0"
+                    }
+                  ],
+                  "_key": "cos1i2b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 126,
+                "cols": 60
+              },
+              "weight": 500,
+              "_key": "cos1i2"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/intro-ronda-sillas-480.webp",
+                    "/assets/images/como-lo-hicimos/intro-ronda-sillas-960.webp",
+                    "/assets/images/como-lo-hicimos/intro-ronda-sillas-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/intro-ronda-sillas.jpg",
+                  "width": 1600,
+                  "height": 2133
+                },
+                "alt": "Tres participantes conversan sentados en ronda frente a un panel de LCI Bogotá",
+                "hotspot": {
+                  "x": 0,
+                  "y": 0.63
+                }
+              },
+              "place": {
+                "col": 94,
+                "row": 126,
+                "cols": 45,
+                "rows": 45
+              },
+              "drift": 3,
+              "_key": "cos1i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/intro-proyeccion-480.webp",
+                    "/assets/images/como-lo-hicimos/intro-proyeccion-960.webp",
+                    "/assets/images/como-lo-hicimos/intro-proyeccion-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/intro-proyeccion.jpg",
+                  "width": 1600,
+                  "height": 2133
+                },
+                "alt": "Una pantalla iluminada en una sala oscura muestra una mesa redonda vista desde arriba"
+              },
+              "place": {
+                "col": 7,
+                "row": 170,
+                "cols": 56,
+                "rows": 56
+              },
+              "_key": "cos1i4"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "leer(",
+                  "_key": "cos1i5t0"
+                },
+                {
+                  "_type": "span",
+                  "text": "nos",
+                  "marks": [
+                    "em"
+                  ],
+                  "_key": "cos1i5t1"
+                },
+                {
+                  "_type": "span",
+                  "text": ")",
+                  "_key": "cos1i5t2"
+                }
+              ],
+              "tone": "#67ff8d",
+              "place": {
+                "col": 58,
+                "row": 200,
+                "cols": 85,
+                "rows": 14,
+                "z": 7
+              },
+              "_key": "cos1i5"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "En esa primera ronda aparecieron temas que nos acompañaron durante el proceso: ",
+                      "_key": "cos1i6b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "el agua, los cuerpos, las relaciones de cercanía, los sonidos de la ciudad, la humanidad y la sostenibilidad.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos1i6b0c1"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " ",
+                      "_key": "cos1i6b0c2"
+                    }
+                  ],
+                  "_key": "cos1i6b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 231,
+                "cols": 56
+              },
+              "weight": 500,
+              "_key": "cos1i6"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/intro-tablero-ejes-480.webp",
+                    "/assets/images/como-lo-hicimos/intro-tablero-ejes-960.webp",
+                    "/assets/images/como-lo-hicimos/intro-tablero-ejes-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/intro-tablero-ejes.jpg",
+                  "width": 1600,
+                  "height": 2133
+                },
+                "alt": "Dos participantes observan un tablero blanco con notas adhesivas"
+              },
+              "place": {
+                "col": 74,
+                "row": 240,
+                "cols": 65,
+                "rows": 65
+              },
+              "drift": 2,
+              "_key": "cos1i7"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "A medida que avanzamos, empezamos a encontrar conexiones entre esas inquietudes y una pregunta común: ",
+                      "_key": "cos1i8b0c0"
+                    }
+                  ],
+                  "_key": "cos1i8b0"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 311,
+                "cols": 56
+              },
+              "weight": 500,
+              "tone": "#ffc130",
+              "_key": "cos1i8"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "¿cómo puede una ciudad estar tan conectada por la tecnología y, al mismo tiempo, tan distante de las personas que la habitan?",
+                      "_key": "cos1i9b0c0"
+                    }
+                  ],
+                  "_key": "cos1i9b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 333,
+                "cols": 67
+              },
+              "font": "doto",
+              "level": 2,
+              "_key": "cos1i9"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/intro-notas-ejes-480.webp",
+                    "/assets/images/como-lo-hicimos/intro-notas-ejes-960.webp",
+                    "/assets/images/como-lo-hicimos/intro-notas-ejes-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/intro-notas-ejes.jpg",
+                  "width": 1600,
+                  "height": 1200
+                },
+                "alt": "Notas adhesivas naranjas organizadas sobre dos ejes de cinta amarilla en una pared",
+                "hotspot": {
+                  "x": 0.45,
+                  "y": 0.5
+                }
+              },
+              "place": {
+                "col": 7,
+                "row": 346,
+                "cols": 80,
+                "rows": 80
+              },
+              "_key": "cos1i10"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/intro-pregunta-proyectada-480.webp",
+                    "/assets/images/como-lo-hicimos/intro-pregunta-proyectada-960.webp",
+                    "/assets/images/como-lo-hicimos/intro-pregunta-proyectada-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/intro-pregunta-proyectada.jpg",
+                  "width": 1600,
+                  "height": 1066
+                },
+                "alt": "Siluetas de participantes frente a una pregunta proyectada en la oscuridad"
+              },
+              "place": {
+                "col": 90,
+                "row": 346,
+                "cols": 40,
+                "rows": 40
+              },
+              "drift": 3,
+              "_key": "cos1i11"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/intro-hilos-vendada-480.webp",
+                    "/assets/images/como-lo-hicimos/intro-hilos-vendada-960.webp",
+                    "/assets/images/como-lo-hicimos/intro-hilos-vendada-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/intro-hilos-vendada.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Participante con los ojos vendados explora objetos unidos por hilos sobre el piso"
+              },
+              "place": {
+                "col": 47,
+                "row": 429,
+                "cols": 40,
+                "rows": 40
+              },
+              "drift": 2,
+              "_key": "cos1i12"
+            }
+          ],
+          "_key": "cos1"
+        },
+        {
+          "_type": "timeline",
+          "anchor": "linea-de-tiempo",
+          "title": "El proceso, paso a paso",
+          "band": {
+            "color": "#f4fad5"
+          },
+          "dots": [
+            {
+              "col": 110,
+              "row": 1,
+              "cols": 35,
+              "rows": 683,
+              "_key": "cos2d0"
+            }
+          ],
+          "steps": [
+            {
+              "title": "¿Qué significa cocrear?",
+              "rows": 155,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Pusimos en común nuestras ideas sobre la cocreación y la innovación. ",
+                          "_key": "cos2s0i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s0i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 6,
+                    "cols": 59
+                  },
+                  "_key": "cos2s0i0"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Innovacción",
+                          "marks": [
+                            "underline"
+                          ],
+                          "_key": "cos2s0i1b0c0"
+                        }
+                      ],
+                      "_key": "cos2s0i1b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 23,
+                    "cols": 20
+                  },
+                  "size": 20,
+                  "weight": 500,
+                  "tone": "#f986ec",
+                  "nowrap": true,
+                  "_key": "cos2s0i1"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "“Alquimia creativa.\"",
+                          "_key": "cos2s0i2b0c0"
+                        }
+                      ],
+                      "_key": "cos2s0i2b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 29,
+                    "cols": 18
+                  },
+                  "size": 20,
+                  "weight": 500,
+                  "tone": "#023c0f",
+                  "align": "right",
+                  "nowrap": true,
+                  "variant": "cita",
+                  "_key": "cos2s0i2"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Cocrear",
+                          "marks": [
+                            "underline"
+                          ],
+                          "_key": "cos2s0i3b0c0"
+                        }
+                      ],
+                      "_key": "cos2s0i3b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 132,
+                    "row": 23,
+                    "cols": 8
+                  },
+                  "size": 20,
+                  "weight": 500,
+                  "tone": "#f986ec",
+                  "nowrap": true,
+                  "_key": "cos2s0i3"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso01-cuadernos-480.webp",
+                        "/assets/images/como-lo-hicimos/paso01-cuadernos-960.webp",
+                        "/assets/images/como-lo-hicimos/paso01-cuadernos-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso01-cuadernos.jpg",
+                      "width": 1600,
+                      "height": 2133
+                    },
+                    "alt": "Manos que conversan sobre una mesa con cuadernos, notas adhesivas y marcadores"
+                  },
+                  "place": {
+                    "col": 78,
+                    "row": 29,
+                    "cols": 61,
+                    "rows": 81
+                  },
+                  "_key": "cos2s0i4"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "\"Mosaico construido sinápticamente por el diálogo.\"\n\"Habitar en comunidad. Miceliar.\"\n\"Acompañar, escuchar, compartir y trabajar junto a otros.\"",
+                          "_key": "cos2s0i5b0c0"
+                        }
+                      ],
+                      "_key": "cos2s0i5b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 79,
+                    "row": 113,
+                    "cols": 60
+                  },
+                  "size": 20,
+                  "weight": 500,
+                  "tone": "#023c0f",
+                  "align": "right",
+                  "nowrap": true,
+                  "variant": "cita",
+                  "_key": "cos2s0i5"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "También discutimos los límites entre el diseño y el arte, y qué posibilidades ofrecía cada campo para trabajar sobre problemáticas sociales.",
+                          "_key": "cos2s0i6b0c0"
+                        }
+                      ],
+                      "_key": "cos2s0i6b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 132,
+                    "cols": 52
+                  },
+                  "_key": "cos2s0i6"
+                }
+              ],
+              "_key": "cos2s0"
+            },
+            {
+              "title": "Leer Chapinero",
+              "rows": 115,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Compartimos los hallazgos de nuestras primeras derivas. ",
+                          "_key": "cos2s1i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s1i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 6,
+                    "cols": 63
+                  },
+                  "_key": "cos2s1i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso02-derivas-480.webp",
+                        "/assets/images/como-lo-hicimos/paso02-derivas-960.webp",
+                        "/assets/images/como-lo-hicimos/paso02-derivas-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso02-derivas.jpg",
+                      "width": 1600,
+                      "height": 2133
+                    },
+                    "alt": "Participantes dibujan en sus cuadernos junto a hojas y objetos recogidos en la calle",
+                    "hotspot": {
+                      "x": 0.5,
+                      "y": 0.1
+                    }
+                  },
+                  "place": {
+                    "col": 18,
+                    "row": 19,
+                    "cols": 60,
+                    "rows": 60
+                  },
+                  "_key": "cos2s1i1"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Aunque cada persona había observado aspectos distintos, encontramos coincidencias que nos llevaron a reconocer la fragmentación del territorio y las desconexiones presentes en la vida urbana.",
+                          "_key": "cos2s1i2b0c0"
+                        }
+                      ],
+                      "_key": "cos2s1i2b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 88,
+                    "cols": 59
+                  },
+                  "tone": "#023c0f",
+                  "_key": "cos2s1i2"
+                }
+              ],
+              "_key": "cos2s1"
+            },
+            {
+              "title": "Ampliar la mirada y formular preguntas",
+              "rows": 89,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Con Camila Carozzi Aravena exploramos cómo el diseño puede abrir conversaciones sobre temas complejos. ",
+                          "_key": "cos2s2i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s2i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 63
+                  },
+                  "_key": "cos2s2i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso03-conversacion-480.webp",
+                        "/assets/images/como-lo-hicimos/paso03-conversacion-960.webp",
+                        "/assets/images/como-lo-hicimos/paso03-conversacion-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso03-conversacion.jpg",
+                      "width": 1600,
+                      "height": 2133
+                    },
+                    "alt": "Una invitada conversa con el grupo mientras sostiene una tableta"
+                  },
+                  "place": {
+                    "col": 83,
+                    "row": 14,
+                    "cols": 45,
+                    "rows": 45
+                  },
+                  "_key": "cos2s2i1"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "A partir de ese intercambio, propusimos 15 ideas para investigar otras formas de relacionarnos con el territorio.",
+                          "_key": "cos2s2i2b0c0"
+                        }
+                      ],
+                      "_key": "cos2s2i2b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 83,
+                    "row": 62,
+                    "cols": 45
+                  },
+                  "_key": "cos2s2i2"
+                }
+              ],
+              "_key": "cos2s2"
+            },
+            {
+              "title": "Curaduría urbana",
+              "rows": 113,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Con Gabriela Bruna Serrano exploramos cómo destacar elementos cotidianos que suelen pasar inadvertidos. ",
+                          "_key": "cos2s3i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s3i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 6,
+                    "cols": 63
+                  },
+                  "_key": "cos2s3i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso04-curaduria-480.webp",
+                        "/assets/images/como-lo-hicimos/paso04-curaduria-960.webp",
+                        "/assets/images/como-lo-hicimos/paso04-curaduria-1200.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso04-curaduria.jpg",
+                      "width": 1200,
+                      "height": 1600
+                    },
+                    "alt": "Una invitada presenta frente a una pantalla con imágenes de adhesivos callejeros",
+                    "hotspot": {
+                      "x": 0.5,
+                      "y": 1
+                    }
+                  },
+                  "place": {
+                    "col": 74,
+                    "row": 19,
+                    "cols": 60,
+                    "rows": 60
+                  },
+                  "_key": "cos2s3i1"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Usamos cinta de enmascarar para enmarcar elementos de la calle y convertirlos en objetos de observación, como si fueran piezas de una exposición.",
+                          "_key": "cos2s3i2b0c0"
+                        }
+                      ],
+                      "_key": "cos2s3i2b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 74,
+                    "row": 85,
+                    "cols": 50
+                  },
+                  "_key": "cos2s3i2"
+                }
+              ],
+              "_key": "cos2s3"
+            },
+            {
+              "title": "Pensar desde el cuerpo",
+              "rows": 111,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Con Margaret Arias exploramos el cuerpo como punto de partida para relacionarnos con otras personas y con el entorno. ",
+                          "_key": "cos2s4i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s4i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 63
+                  },
+                  "_key": "cos2s4i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso05-cuerpo-480.webp",
+                        "/assets/images/como-lo-hicimos/paso05-cuerpo-960.webp",
+                        "/assets/images/como-lo-hicimos/paso05-cuerpo-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso05-cuerpo.jpg",
+                      "width": 1600,
+                      "height": 2133
+                    },
+                    "alt": "Participantes con los ojos cerrados junto a una mesa cubierta de hojas con dibujos de líneas",
+                    "hotspot": {
+                      "x": 0.5,
+                      "y": 0
+                    }
+                  },
+                  "place": {
+                    "col": 18,
+                    "row": 21,
+                    "cols": 60,
+                    "rows": 60
+                  },
+                  "_key": "cos2s4i1"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "A través de experiencias sensoriales y ejercicios colectivos, construimos un conjunto de palabras relacionadas con el tacto, la escucha, la piel, la vulnerabilidad y la respiración.",
+                          "_key": "cos2s4i2b0c0"
+                        }
+                      ],
+                      "_key": "cos2s4i2b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 84,
+                    "cols": 60
+                  },
+                  "_key": "cos2s4i2"
+                },
+                {
+                  "_type": "displayTitle",
+                  "text": [
+                    {
+                      "_type": "span",
+                      "text": "conectar.",
+                      "_key": "cos2s4i3t0"
+                    }
+                  ],
+                  "tone": "#678dff",
+                  "place": {
+                    "col": 105,
+                    "row": 18,
+                    "cols": 14,
+                    "rows": 54
+                  },
+                  "rotate": -90,
+                  "_key": "cos2s4i3"
+                }
+              ],
+              "_key": "cos2s4"
+            },
+            {
+              "title": "Encuentro entre laboratorios",
+              "rows": 96,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "El encuentro nos permitió compartir experiencias con otros grupos que también exploraban la relación entre el arte, el diseño, lo digital y el territorio.",
+                          "_key": "cos2s5i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s5i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 63
+                  },
+                  "_key": "cos2s5i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso06-laboratorios-480.webp",
+                        "/assets/images/como-lo-hicimos/paso06-laboratorios-960.webp",
+                        "/assets/images/como-lo-hicimos/paso06-laboratorios-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso06-laboratorios.jpg",
+                      "width": 1600,
+                      "height": 1076
+                    },
+                    "alt": "Decenas de personas sentadas en círculo en un auditorio de madera durante el encuentro de laboratorios",
+                    "hotspot": {
+                      "x": 0.5,
+                      "y": 0.5
+                    }
+                  },
+                  "place": {
+                    "col": 63,
+                    "row": 34,
+                    "cols": 60,
+                    "rows": 39
+                  },
+                  "_key": "cos2s5i1"
+                }
+              ],
+              "_key": "cos2s5"
+            },
+            {
+              "title": "Compartir experiencias",
+              "rows": 214,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Cada participante propuso una experiencia para los demás. Exploramos la luz y la sombra, la reparación simbólica a través de un muñeco, las grullas de papel, una constelación táctil y un ritual con canto",
+                          "_key": "cos2s6i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s6i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 65
+                  },
+                  "_key": "cos2s6i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso07-constelacion-480.webp",
+                        "/assets/images/como-lo-hicimos/paso07-constelacion-960.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso07-constelacion.jpg",
+                      "width": 960,
+                      "height": 1280
+                    },
+                    "alt": "Participantes con los ojos vendados sentados en el piso alrededor de objetos unidos por hilos"
+                  },
+                  "place": {
+                    "col": 79,
+                    "row": 29,
+                    "cols": 60,
+                    "rows": 60
+                  },
+                  "_key": "cos2s6i1"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso07-silueta-luz-480.webp",
+                        "/assets/images/como-lo-hicimos/paso07-silueta-luz-960.webp",
+                        "/assets/images/como-lo-hicimos/paso07-silueta-luz-1200.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso07-silueta-luz.jpg",
+                      "width": 1200,
+                      "height": 1600
+                    },
+                    "alt": "Silueta de una persona detrás de un velo plástico iluminado de azul",
+                    "hotspot": {
+                      "x": 0.5,
+                      "y": 0.74
+                    }
+                  },
+                  "place": {
+                    "col": 18,
+                    "row": 89,
+                    "cols": 54,
+                    "rows": 54
+                  },
+                  "_key": "cos2s6i2"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Las actividades nos permitieron experimentar distintas maneras de comunicar, conectar y construir con otros.",
+                          "_key": "cos2s6i3b0c0"
+                        }
+                      ],
+                      "_key": "cos2s6i3b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 88,
+                    "row": 92,
+                    "cols": 51
+                  },
+                  "weight": 500,
+                  "tone": "#023c0f",
+                  "align": "right",
+                  "_key": "cos2s6i3"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso07-ritual-velas-480.webp",
+                        "/assets/images/como-lo-hicimos/paso07-ritual-velas-960.webp",
+                        "/assets/images/como-lo-hicimos/paso07-ritual-velas-1204.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso07-ritual-velas.jpg",
+                      "width": 1204,
+                      "height": 1600
+                    },
+                    "alt": "Un muñeco de tela sobre una mesa rodeado de velas encendidas",
+                    "hotspot": {
+                      "x": 0.5,
+                      "y": 0.45
+                    }
+                  },
+                  "place": {
+                    "col": 79,
+                    "row": 127,
+                    "cols": 30,
+                    "rows": 30
+                  },
+                  "_key": "cos2s6i4"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso07-grulla-480.webp",
+                        "/assets/images/como-lo-hicimos/paso07-grulla-960.webp",
+                        "/assets/images/como-lo-hicimos/paso07-grulla-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso07-grulla.jpg",
+                      "width": 1600,
+                      "height": 2844
+                    },
+                    "alt": "Una mano sostiene una grulla de papel con estampado de flores",
+                    "hotspot": {
+                      "x": 0.5,
+                      "y": 0.42
+                    }
+                  },
+                  "place": {
+                    "col": 117,
+                    "row": 157,
+                    "cols": 22,
+                    "rows": 22
+                  },
+                  "_key": "cos2s6i5"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso07-circulo-480.webp",
+                        "/assets/images/como-lo-hicimos/paso07-circulo-960.webp",
+                        "/assets/images/como-lo-hicimos/paso07-circulo-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso07-circulo.jpg",
+                      "width": 1600,
+                      "height": 1200
+                    },
+                    "alt": "El grupo sentado en círculo en el piso junta las manos en el centro"
+                  },
+                  "place": {
+                    "col": 41,
+                    "row": 172,
+                    "cols": 31,
+                    "rows": 31
+                  },
+                  "_key": "cos2s6i6"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso07-circulo-movimiento-480.webp",
+                        "/assets/images/como-lo-hicimos/paso07-circulo-movimiento-960.webp",
+                        "/assets/images/como-lo-hicimos/paso07-circulo-movimiento-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso07-circulo-movimiento.jpg",
+                      "width": 1600,
+                      "height": 1067
+                    },
+                    "alt": "Fotografía en blanco y negro del grupo en círculo, desenfocado por el movimiento"
+                  },
+                  "place": {
+                    "col": 74,
+                    "row": 172,
+                    "cols": 40,
+                    "rows": 40
+                  },
+                  "_key": "cos2s6i7"
+                },
+                {
+                  "_type": "displayTitle",
+                  "text": [
+                    {
+                      "_type": "span",
+                      "text": "bailar.",
+                      "_key": "cos2s6i8t0"
+                    }
+                  ],
+                  "tone": "#678dff",
+                  "place": {
+                    "col": 63,
+                    "row": 52,
+                    "cols": 14,
+                    "rows": 42
+                  },
+                  "rotate": -90,
+                  "_key": "cos2s6i8"
+                }
+              ],
+              "_key": "cos2s6"
+            },
+            {
+              "title": "Poner las ideas a prueba",
+              "rows": 133,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Presentamos prototipos en arcilla polimérica y escuchamos cómo los interpretaban los demás. ",
+                          "_key": "cos2s7i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s7i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 65
+                  },
+                  "_key": "cos2s7i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso08-arcilla-480.webp",
+                        "/assets/images/como-lo-hicimos/paso08-arcilla-960.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso08-arcilla.jpg",
+                      "width": 960,
+                      "height": 1280
+                    },
+                    "alt": "Prototipos de arcilla polimérica verde sobre una mesa blanca",
+                    "hotspot": {
+                      "x": 0.5,
+                      "y": 0
+                    }
+                  },
+                  "place": {
+                    "col": 18,
+                    "row": 20,
+                    "cols": 65,
+                    "rows": 76
+                  },
+                  "_key": "cos2s7i1"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "La retroalimentación amplió nuestras perspectivas y, con las preguntas de Stephen Bruque sobre deseabilidad, viabilidad, factibilidad y necesidad, empezamos a evaluar qué propuestas podían desarrollarse y para quiénes tenían sentido.",
+                          "_key": "cos2s7i2b0c0"
+                        }
+                      ],
+                      "_key": "cos2s7i2b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 101,
+                    "cols": 62
+                  },
+                  "_key": "cos2s7i2"
+                },
+                {
+                  "_type": "displayTitle",
+                  "text": [
+                    {
+                      "_type": "span",
+                      "text": "moldear",
+                      "_key": "cos2s7i3t0"
+                    }
+                  ],
+                  "tone": "#678dff",
+                  "place": {
+                    "col": 79,
+                    "row": 27,
+                    "cols": 14,
+                    "rows": 42,
+                    "z": 2
+                  },
+                  "rotate": -90,
+                  "_key": "cos2s7i3"
+                }
+              ],
+              "_key": "cos2s7"
+            },
+            {
+              "title": "Decidir con quién trabajar",
+              "rows": 120,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Llegamos con entrevistas y hallazgos de nuestras exploraciones. Al ponerlos en común, votamos por el grupo con el que queríamos continuar el proceso: ocho de once participantes eligieron trabajar con personas recicladoras.",
+                          "_key": "cos2s8i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s8i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 65
+                  },
+                  "_key": "cos2s8i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso09-votacion-480.webp",
+                        "/assets/images/como-lo-hicimos/paso09-votacion-960.webp",
+                        "/assets/images/como-lo-hicimos/paso09-votacion-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso09-votacion.jpg",
+                      "width": 1600,
+                      "height": 2133
+                    },
+                    "alt": "Participantes se estiran para tocar un objeto en el piso durante un ejercicio grupal",
+                    "hotspot": {
+                      "x": 0.5,
+                      "y": 0.08
+                    }
+                  },
+                  "place": {
+                    "col": 72,
+                    "row": 29,
+                    "cols": 67,
+                    "rows": 67
+                  },
+                  "_key": "cos2s8i1"
+                }
+              ],
+              "_key": "cos2s8"
+            },
+            {
+              "title": "Imaginar otros futuros",
+              "rows": 110,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Pusimos a las personas recicladoras en el centro de un ejercicio de mapeo y llevamos la imaginación hasta una Bogotá futurista, en 2078. De ese ejercicio surgió la idea de desarrollar un videojuego para explorar otras formas de representar y comprender su trabajo.",
+                          "_key": "cos2s9i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s9i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 65
+                  },
+                  "_key": "cos2s9i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso10-mapeo-480.webp",
+                        "/assets/images/como-lo-hicimos/paso10-mapeo-960.webp",
+                        "/assets/images/como-lo-hicimos/paso10-mapeo-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso10-mapeo.jpg",
+                      "width": 1600,
+                      "height": 1200
+                    },
+                    "alt": "Participantes de pie frente a una pared con notas adhesivas de colores"
+                  },
+                  "place": {
+                    "col": 18,
+                    "row": 34,
+                    "cols": 67,
+                    "rows": 50
+                  },
+                  "_key": "cos2s9i1"
+                },
+                {
+                  "_type": "displayTitle",
+                  "text": [
+                    {
+                      "_type": "span",
+                      "text": "prototipar",
+                      "_key": "cos2s9i2t0"
+                    }
+                  ],
+                  "tone": "#678dff",
+                  "place": {
+                    "col": 127,
+                    "row": 1,
+                    "cols": 14,
+                    "rows": 58
+                  },
+                  "rotate": -90,
+                  "_key": "cos2s9i2"
+                }
+              ],
+              "_key": "cos2s9"
+            },
+            {
+              "title": "Explorar posibles respuestas",
+              "rows": 170,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Organizamos el trabajo en tres equipos: videojuego, indumentaria y artefactos. Cada grupo empezó a explorar una forma distinta de responder a lo que habíamos identificado. ",
+                          "_key": "cos2s10i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s10i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 6,
+                    "cols": 65
+                  },
+                  "_key": "cos2s10i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso11-bordado-escarabajo-480.webp",
+                        "/assets/images/como-lo-hicimos/paso11-bordado-escarabajo-921.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso11-bordado-escarabajo.jpg",
+                      "width": 921,
+                      "height": 642
+                    },
+                    "alt": "Muestra de bordado digital de un escarabajo rinoceronte rojo"
+                  },
+                  "place": {
+                    "col": 72,
+                    "row": 33,
+                    "cols": 67,
+                    "rows": 47
+                  },
+                  "_key": "cos2s10i1"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso11-indumentaria-480.webp",
+                        "/assets/images/como-lo-hicimos/paso11-indumentaria-960.webp",
+                        "/assets/images/como-lo-hicimos/paso11-indumentaria-1280.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso11-indumentaria.jpg",
+                      "width": 1280,
+                      "height": 949
+                    },
+                    "alt": "Tablero de referencias de indumentaria titulado «Cuerpos expandidos», con siluetas, texturas y colores"
+                  },
+                  "place": {
+                    "col": 16,
+                    "row": 45,
+                    "cols": 47,
+                    "rows": 35
+                  },
+                  "_key": "cos2s10i2"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "También apareció el escarabajo como símbolo de transformación, una imagen que conectaba con las ideas que veníamos desarrollando.",
+                          "_key": "cos2s10i3b0c0"
+                        }
+                      ],
+                      "_key": "cos2s10i3b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 72,
+                    "row": 83,
+                    "cols": 65
+                  },
+                  "_key": "cos2s10i3"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso11-boceto-carreta-480.webp",
+                        "/assets/images/como-lo-hicimos/paso11-boceto-carreta-960.webp",
+                        "/assets/images/como-lo-hicimos/paso11-boceto-carreta-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso11-boceto-carreta.jpg",
+                      "width": 1600,
+                      "height": 1200
+                    },
+                    "alt": "Boceto a línea de un reciclador empujando una carreta cubierta"
+                  },
+                  "place": {
+                    "col": 16,
+                    "row": 99,
+                    "cols": 58,
+                    "rows": 44
+                  },
+                  "_key": "cos2s10i4"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso11-boceto-anillas-480.webp",
+                        "/assets/images/como-lo-hicimos/paso11-boceto-anillas-960.webp",
+                        "/assets/images/como-lo-hicimos/paso11-boceto-anillas-1442.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso11-boceto-anillas.jpg",
+                      "width": 1442,
+                      "height": 1276
+                    },
+                    "alt": "Dibujo a línea de una figura inclinada que carga una viga al hombro y sostiene una anilla"
+                  },
+                  "place": {
+                    "col": 83,
+                    "row": 121,
+                    "cols": 42,
+                    "rows": 38
+                  },
+                  "_key": "cos2s10i5"
+                },
+                {
+                  "_type": "displayTitle",
+                  "text": [
+                    {
+                      "_type": "span",
+                      "text": "hacer,",
+                      "_key": "cos2s10i6t0"
+                    }
+                  ],
+                  "tone": "#678dff",
+                  "place": {
+                    "col": 55,
+                    "row": 149,
+                    "cols": 40,
+                    "rows": 14,
+                    "z": 3
+                  },
+                  "_key": "cos2s10i6"
+                }
+              ],
+              "_key": "cos2s10"
+            },
+            {
+              "title": "Contrastar nuestras ideas",
+              "rows": 126,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Alejandra, Edwin y Yordanis se sumaron al trabajo y rotaron por las mesas de los tres equipos.",
+                          "_key": "cos2s11i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s11i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 65
+                  },
+                  "_key": "cos2s11i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso12-prueba-recicladoras-480.webp",
+                        "/assets/images/como-lo-hicimos/paso12-prueba-recicladoras-483.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso12-prueba-recicladoras.jpg",
+                      "width": 483,
+                      "height": 861
+                    },
+                    "alt": "Una recicladora acompaña a una joven que prueba un prototipo con los brazos extendidos",
+                    "hotspot": {
+                      "x": 0.5,
+                      "y": 0.5
+                    }
+                  },
+                  "place": {
+                    "col": 74,
+                    "row": 34,
+                    "cols": 64,
+                    "rows": 64
+                  },
+                  "_key": "cos2s11i1"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": " Sus comentarios nos permitieron contrastar nuestras propuestas con la experiencia de quienes ejercen el oficio y revisar decisiones que habíamos tomado sin conocer suficientemente su realidad.",
+                          "_key": "cos2s11i2b0c0"
+                        }
+                      ],
+                      "_key": "cos2s11i2b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 74,
+                    "row": 104,
+                    "cols": 64
+                  },
+                  "_key": "cos2s11i2"
+                },
+                {
+                  "_type": "displayTitle",
+                  "text": [
+                    {
+                      "_type": "span",
+                      "text": "y ",
+                      "_key": "cos2s11i3t0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "hacer.",
+                      "marks": [
+                        "em"
+                      ],
+                      "_key": "cos2s11i3t1"
+                    }
+                  ],
+                  "tone": "#678dff",
+                  "place": {
+                    "col": 12,
+                    "row": 59,
+                    "cols": 60,
+                    "rows": 14
+                  },
+                  "_key": "cos2s11i3"
+                }
+              ],
+              "_key": "cos2s11"
+            },
+            {
+              "title": "Probar y ajustar",
+              "rows": 119,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "En un segundo encuentro con recicladores y con David Feliciano, avanzamos en la revisión de las propuestas. Probamos las anillas y empezamos a definir la biblia del videojuego, un documento para organizar su concepto y los elementos que darían coherencia a la experiencia.",
+                          "_key": "cos2s12i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s12i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 65
+                  },
+                  "_key": "cos2s12i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso13-anillas-480.webp",
+                        "/assets/images/como-lo-hicimos/paso13-anillas-960.webp",
+                        "/assets/images/como-lo-hicimos/paso13-anillas-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso13-anillas.jpg",
+                      "width": 1600,
+                      "height": 2133
+                    },
+                    "alt": "El grupo prueba unas anillas de madera colgadas de una estructura en el taller"
+                  },
+                  "place": {
+                    "col": 74,
+                    "row": 31,
+                    "cols": 64,
+                    "rows": 64
+                  },
+                  "_key": "cos2s12i1"
+                }
+              ],
+              "_key": "cos2s12"
+            },
+            {
+              "title": "Consolidar el videojuego",
+              "rows": 96,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "El videojuego pasó a ocupar un lugar central en el proceso. Nos distribuimos las tareas y comenzamos a desarrollar sus componentes, mientras organizábamos las ideas que formarían parte de su universo y su narrativa.",
+                          "_key": "cos2s13i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s13i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 65
+                  },
+                  "_key": "cos2s13i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso14-personajes-480.webp",
+                        "/assets/images/como-lo-hicimos/paso14-personajes-960.webp",
+                        "/assets/images/como-lo-hicimos/paso14-personajes-1414.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso14-personajes.jpg",
+                      "width": 1414,
+                      "height": 851
+                    },
+                    "alt": "Personajes del videojuego: un perro, una niña y un reciclador de gorra roja con un costal"
+                  },
+                  "place": {
+                    "col": 38,
+                    "row": 30,
+                    "cols": 101,
+                    "rows": 61
+                  },
+                  "_key": "cos2s13i1"
+                }
+              ],
+              "_key": "cos2s13"
+            },
+            {
+              "title": "Identificar necesidades concretas",
+              "rows": 139,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Nos preguntamos qué necesita una persona para realizar su trabajo de reciclaje.",
+                          "marks": [
+                            "strong"
+                          ],
+                          "_key": "cos2s14i0b0c0"
+                        },
+                        {
+                          "_type": "span",
+                          "text": " Al conectar esta pregunta con lo que habíamos escuchado y observado, surgieron propuestas orientadas al día a día: ",
+                          "_key": "cos2s14i0b0c1"
+                        },
+                        {
+                          "_type": "span",
+                          "text": "un mapa con información útil, videotutoriales de cuidado corporal y una página web para reunir estos recursos.",
+                          "marks": [
+                            "strong"
+                          ],
+                          "_key": "cos2s14i0b0c2"
+                        }
+                      ],
+                      "_key": "cos2s14i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 6,
+                    "cols": 65
+                  },
+                  "_key": "cos2s14i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso15-mesa-notas-480.webp",
+                        "/assets/images/como-lo-hicimos/paso15-mesa-notas-960.webp",
+                        "/assets/images/como-lo-hicimos/paso15-mesa-notas-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso15-mesa-notas.jpg",
+                      "width": 1600,
+                      "height": 2133
+                    },
+                    "alt": "Mesa de trabajo cubierta de notas adhesivas rosadas y azules, marcadores y cuadernos"
+                  },
+                  "place": {
+                    "col": 16,
+                    "row": 34,
+                    "cols": 67,
+                    "rows": 89
+                  },
+                  "_key": "cos2s14i1"
+                }
+              ],
+              "_key": "cos2s14"
+            },
+            {
+              "title": "Grabación de videotutoriales y documental",
+              "rows": 193,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Grabamos los videotutoriales junto a recicladores y con el acompañamiento de una fisioterapeuta, que aportó sus conocimientos para desarrollar ejercicios y recomendaciones relacionados con las exigencias físicas de la jornada de trabajo.",
+                          "_key": "cos2s15i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s15i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 58
+                  },
+                  "_key": "cos2s15i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso16-carreta-parque-480.webp",
+                        "/assets/images/como-lo-hicimos/paso16-carreta-parque-960.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso16-carreta-parque.jpg",
+                      "width": 960,
+                      "height": 1280
+                    },
+                    "alt": "Una carreta de reciclaje vacía en un parque durante la grabación"
+                  },
+                  "place": {
+                    "col": 94,
+                    "row": 2,
+                    "cols": 34,
+                    "rows": 34
+                  },
+                  "_key": "cos2s15i1"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso16-still-ariel-carga-480.webp",
+                        "/assets/images/como-lo-hicimos/paso16-still-ariel-carga-960.webp",
+                        "/assets/images/como-lo-hicimos/paso16-still-ariel-carga-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso16-still-ariel-carga.jpg",
+                      "width": 1600,
+                      "height": 900
+                    },
+                    "alt": "Fotograma del microdocumental: Ariel sonríe mientras amarra la carga de su carreta"
+                  },
+                  "place": {
+                    "col": 1,
+                    "row": 45,
+                    "cols": 107,
+                    "rows": 60
+                  },
+                  "variant": "sangre-izq",
+                  "_key": "cos2s15i2"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso16-still-manos-480.webp",
+                        "/assets/images/como-lo-hicimos/paso16-still-manos-960.webp",
+                        "/assets/images/como-lo-hicimos/paso16-still-manos-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso16-still-manos.jpg",
+                      "width": 1600,
+                      "height": 900
+                    },
+                    "alt": "Fotograma del microdocumental: manos que separan botellas plásticas",
+                    "hotspot": {
+                      "x": 0.5,
+                      "y": 0.52
+                    }
+                  },
+                  "place": {
+                    "col": 74,
+                    "row": 116,
+                    "cols": 65,
+                    "rows": 49
+                  },
+                  "variant": "zoom",
+                  "_key": "cos2s15i3"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "También realizamos un breve documental que recoge el mensaje que Ariel compartió con nosotros. Sus palabras nos dejaron una reflexión sobre el oficio y sobre aquello que queríamos transmitir con este proceso.",
+                          "_key": "cos2s15i4b0c0"
+                        }
+                      ],
+                      "_key": "cos2s15i4b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 74,
+                    "row": 167,
+                    "cols": 65
+                  },
+                  "_key": "cos2s15i4"
+                },
+                {
+                  "_type": "displayTitle",
+                  "text": [
+                    {
+                      "_type": "span",
+                      "text": "cargar,",
+                      "_key": "cos2s15i5t0"
+                    }
+                  ],
+                  "tone": "#678dff",
+                  "place": {
+                    "col": 114,
+                    "row": 62,
+                    "cols": 14,
+                    "rows": 42
+                  },
+                  "rotate": -90,
+                  "_key": "cos2s15i5"
+                }
+              ],
+              "_key": "cos2s15"
+            },
+            {
+              "title": "Llevar las ideas al espacio",
+              "rows": 380,
+              "items": [
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Visitamos el sótano de Villa Adelaida, medimos el espacio y empezamos a definir la ubicación de los elementos de la exposición. Los velos, las pacas de cartón y la carreta dejaron de ser ideas sueltas y comenzaron a formar parte de una propuesta de montaje.",
+                          "_key": "cos2s16i0b0c0"
+                        }
+                      ],
+                      "_key": "cos2s16i0b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 18,
+                    "row": 7,
+                    "cols": 65
+                  },
+                  "_key": "cos2s16i0"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso17-sotano-480.webp",
+                        "/assets/images/como-lo-hicimos/paso17-sotano-960.webp",
+                        "/assets/images/como-lo-hicimos/paso17-sotano-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso17-sotano.jpg",
+                      "width": 1600,
+                      "height": 1200
+                    },
+                    "alt": "Dos integrantes del equipo sonríen a la cámara en el sótano de Villa Adelaida"
+                  },
+                  "place": {
+                    "col": 72,
+                    "row": 41,
+                    "cols": 67,
+                    "rows": 50
+                  },
+                  "_key": "cos2s16i1"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso17-pacas-carton-480.webp",
+                        "/assets/images/como-lo-hicimos/paso17-pacas-carton-960.webp",
+                        "/assets/images/como-lo-hicimos/paso17-pacas-carton-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso17-pacas-carton.jpg",
+                      "width": 1600,
+                      "height": 1067
+                    },
+                    "alt": "Pacas de cartón apiladas bajo una luz azul"
+                  },
+                  "place": {
+                    "col": 16,
+                    "row": 60,
+                    "cols": 47,
+                    "rows": 32
+                  },
+                  "_key": "cos2s16i2"
+                },
+                {
+                  "_type": "displayTitle",
+                  "text": [
+                    {
+                      "_type": "span",
+                      "text": "armar,",
+                      "_key": "cos2s16i3t0"
+                    }
+                  ],
+                  "tone": "#678dff",
+                  "place": {
+                    "col": 16,
+                    "row": 46,
+                    "cols": 50,
+                    "rows": 14,
+                    "z": 2
+                  },
+                  "_key": "cos2s16i3"
+                },
+                {
+                  "_type": "textItem",
+                  "body": [
+                    {
+                      "_type": "block",
+                      "style": "normal",
+                      "children": [
+                        {
+                          "_type": "span",
+                          "text": "Comenzamos el montaje en Villa Adelaida. Conseguimos cartón con recicladores del barrio, instalamos los velos y ubicamos los elementos en el espacio. La exposición empezó a tomar forma y a reunir los distintos resultados del laboratorio.",
+                          "_key": "cos2s16i4b0c0"
+                        }
+                      ],
+                      "_key": "cos2s16i4b0"
+                    }
+                  ],
+                  "place": {
+                    "col": 67,
+                    "row": 100,
+                    "cols": 72
+                  },
+                  "weight": 500,
+                  "tone": "#023c0f",
+                  "align": "right",
+                  "_key": "cos2s16i4"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso17-velos-480.webp",
+                        "/assets/images/como-lo-hicimos/paso17-velos-960.webp",
+                        "/assets/images/como-lo-hicimos/paso17-velos-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso17-velos.jpg",
+                      "width": 1600,
+                      "height": 1067
+                    },
+                    "alt": "Velos translúcidos con manchas rojas colgados en la sala de la exposición"
+                  },
+                  "place": {
+                    "col": 16,
+                    "row": 121,
+                    "cols": 60,
+                    "rows": 60
+                  },
+                  "_key": "cos2s16i5"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso17-proyeccion-pies-480.webp",
+                        "/assets/images/como-lo-hicimos/paso17-proyeccion-pies-960.webp",
+                        "/assets/images/como-lo-hicimos/paso17-proyeccion-pies-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso17-proyeccion-pies.jpg",
+                      "width": 1600,
+                      "height": 1067
+                    },
+                    "alt": "Proyección de unos pies con tenis caminando sobre una pared"
+                  },
+                  "place": {
+                    "col": 85,
+                    "row": 189,
+                    "cols": 45,
+                    "rows": 45
+                  },
+                  "_key": "cos2s16i6"
+                },
+                {
+                  "_type": "displayTitle",
+                  "text": [
+                    {
+                      "_type": "span",
+                      "text": "editar,",
+                      "_key": "cos2s16i7t0"
+                    }
+                  ],
+                  "tone": "#678dff",
+                  "place": {
+                    "col": 39,
+                    "row": 222,
+                    "cols": 50,
+                    "rows": 14,
+                    "z": 2
+                  },
+                  "_key": "cos2s16i7"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso17-publico-480.webp",
+                        "/assets/images/como-lo-hicimos/paso17-publico-960.webp",
+                        "/assets/images/como-lo-hicimos/paso17-publico-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso17-publico.jpg",
+                      "width": 1600,
+                      "height": 1067
+                    },
+                    "alt": "Visitantes a contraluz recorren la exposición"
+                  },
+                  "place": {
+                    "col": 49,
+                    "row": 257,
+                    "cols": 90,
+                    "rows": 60
+                  },
+                  "_key": "cos2s16i8"
+                },
+                {
+                  "_type": "imageItem",
+                  "image": {
+                    "local": {
+                      "webp": [
+                        "/assets/images/como-lo-hicimos/paso17-videojuego-480.webp",
+                        "/assets/images/como-lo-hicimos/paso17-videojuego-960.webp",
+                        "/assets/images/como-lo-hicimos/paso17-videojuego-1600.webp"
+                      ],
+                      "fallback": "/assets/images/como-lo-hicimos/paso17-videojuego.jpg",
+                      "width": 1600,
+                      "height": 1067
+                    },
+                    "alt": "Pantalla del videojuego Chapicartón con una ciudad futurista"
+                  },
+                  "place": {
+                    "col": 27,
+                    "row": 325,
+                    "cols": 70,
+                    "rows": 46
+                  },
+                  "_key": "cos2s16i9"
+                }
+              ],
+              "_key": "cos2s16"
+            },
+            {
+              "title": "Continuamos trabajando",
+              "rows": 55,
+              "items": [
+                {
+                  "_type": "displayTitle",
+                  "text": [
+                    {
+                      "_type": "span",
+                      "text": "sentir.",
+                      "_key": "cos2s17i0t0"
+                    }
+                  ],
+                  "tone": "#678dff",
+                  "place": {
+                    "col": 52,
+                    "row": 22,
+                    "cols": 50,
+                    "rows": 14
+                  },
+                  "italic": true,
+                  "_key": "cos2s17i0"
+                }
+              ],
+              "_key": "cos2s17"
+            }
+          ],
+          "_key": "cos2"
+        },
+        {
+          "_type": "collage",
+          "anchor": "reflexion",
+          "rows": 167,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Este proceso  implicó acercarnos a las experiencias de recicladoras y recicladores de oficio. A través de las conversaciones y los espacios de trabajo compartidos, conocimos sus formas de trabajar y las dificultades que enfrentan.",
+                      "_key": "cos3i0b0c0"
+                    }
+                  ],
+                  "_key": "cos3i0b0"
+                }
+              ],
+              "place": {
+                "col": 72,
+                "row": 10,
+                "cols": 67
+              },
+              "weight": 500,
+              "_key": "cos3i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Escuchar sus experiencias nos permitió pregutarnos:",
+                      "_key": "cos3i1b0c0"
+                    }
+                  ],
+                  "_key": "cos3i1b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 37,
+                "cols": 84
+              },
+              "weight": 500,
+              "_key": "cos3i1"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "¿Cómo pasa la ciudad por el cuerpo de quienes la cargan, la arrastran y la recorren reciclando?",
+                      "_key": "cos3i2b0c0"
+                    }
+                  ],
+                  "_key": "cos3i2b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 44,
+                "cols": 90
+              },
+              "size": 40,
+              "font": "doto",
+              "weight": 700,
+              "tone": "#0800ff",
+              "level": 2,
+              "_key": "cos3i2"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Prototipar también es una forma de pensar.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos3i3b0c0"
+                    }
+                  ],
+                  "_key": "cos3i3b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Antes de llegar a las propuestas que presentamos hoy, exploramos muchas otras ideas: ",
+                      "_key": "cos3i3b1c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "un asadero gigante de ratas, un reloj para detener la ciudad durante un minuto, cápsulas con mensajes y un gabinete de curiosidades de Chapinero.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos3i3b1c1"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Cada experimento nos permitió explorar distintas maneras de ",
+                      "_key": "cos3i3b1c2"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "llamar la atención sobre lo que ocurre en la ciudad",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos3i3b1c3"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " ",
+                      "_key": "cos3i3b1c4"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "y abrir preguntas sobre cómo nos relacionamos con ella.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos3i3b1c5"
+                    }
+                  ],
+                  "_key": "cos3i3b1"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Pero cuando empezamos a escuchar a las recicladoras y los recicladores, nuestra mirada cambió. Al principio, queríamos rediseñar la carreta, hasta que ellos nos hicieron ver que no era ese el problema. La carreta funcionaba. ",
+                      "_key": "cos3i3b2c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Lo que hacía falta era que más personas conocieran su trabajo, entendieran su aporte a la ciudad y reconocieran que detrás de cada recorrido hay personas que trabajan por el bienestar de todos.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos3i3b2c1"
+                    }
+                  ],
+                  "_key": "cos3i3b2"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Comprendimos que diseñar no siempre significa crear algo nuevo.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos3i3b3c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " A veces, significa ",
+                      "_key": "cos3i3b3c1"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "escuchar antes de proponer",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos3i3b3c2"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " y encontrar maneras de ",
+                      "_key": "cos3i3b3c3"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "hacer visible aquello que suele pasar inadvertido.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos3i3b3c4"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " No buscaban ser vistos con lástima, sino ser ",
+                      "_key": "cos3i3b3c5"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "reconocidos, saludados y tenidos en cuenta.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos3i3b3c6"
+                    }
+                  ],
+                  "_key": "cos3i3b3"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 78,
+                "cols": 81
+              },
+              "tone": "#be5203",
+              "_key": "cos3i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/reflexion-dibujo-480.webp",
+                    "/assets/images/como-lo-hicimos/reflexion-dibujo-960.webp",
+                    "/assets/images/como-lo-hicimos/reflexion-dibujo-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/reflexion-dibujo.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Manos que dibujan con marcador sobre tablas apoyadas en las piernas"
+              },
+              "place": {
+                "col": 106,
+                "row": 84,
+                "cols": 34,
+                "rows": 34
+              },
+              "drift": 2,
+              "_key": "cos3i4"
+            }
+          ],
+          "_key": "cos3"
+        },
+        {
+          "_type": "video",
+          "anchor": "microdocumental",
+          "youtubeId": "TODO_MICRODOCUMENTAL_ARIEL",
+          "title": "Microdocumental: los recorridos de Ariel, recicladora de oficio",
+          "poster": {
+            "local": {
+              "webp": [
+                "/assets/images/como-lo-hicimos/microdocumental-poster-480.webp",
+                "/assets/images/como-lo-hicimos/microdocumental-poster-960.webp",
+                "/assets/images/como-lo-hicimos/microdocumental-poster-1600.webp"
+              ],
+              "fallback": "/assets/images/como-lo-hicimos/microdocumental-poster.jpg",
+              "width": 1600,
+              "height": 900
+            },
+            "alt": "Fotograma del microdocumental: Ariel, recicladora de oficio, mira a la cámara junto a su carreta",
+            "hotspot": {
+              "x": 0.5,
+              "y": 0.52
+            }
+          },
+          "_key": "cos4"
+        },
+        {
+          "_type": "collage",
+          "rows": 48,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "\"Fue una acumulación de ideas y fricciones que se fue decantando según su viabilidad e impacto.\" ",
+                      "_key": "cos5i0b0c0"
+                    }
+                  ],
+                  "_key": "cos5i0b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "\"Metamorfosis conceptual y convergencia creativa.\"",
+                      "_key": "cos5i0b1c0"
+                    }
+                  ],
+                  "_key": "cos5i0b1"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 13,
+                "cols": 84
+              },
+              "size": 31,
+              "tone": "#0800ff",
+              "_key": "cos5i0"
+            },
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 48,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "cos5i1"
+            }
+          ],
+          "_key": "cos5"
+        },
+        {
+          "_type": "bitacora",
+          "anchor": "bitacora",
+          "title": "Nuestra bitacora",
+          "intro": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Ver más",
+                  "href": "#bitacora",
+                  "_key": "cos6i0c0"
+                }
+              ],
+              "_key": "cos6i0"
+            }
+          ],
+          "mode": "slider",
+          "pages": [
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/bitacora-lamina-1-480.webp",
+                    "/assets/images/como-lo-hicimos/bitacora-lamina-1-960.webp",
+                    "/assets/images/como-lo-hicimos/bitacora-lamina-1-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/bitacora-lamina-1.jpg",
+                  "width": 1600,
+                  "height": 1068
+                },
+                "alt": "Lámina de la bitácora en tres franjas amarilla, azul y morada: «Nosotros, la ciudad y Chapinero», «Primeras exploraciones» y «Enfoque: ¿qué nos mueve?»"
+              },
+              "_key": "cos6p0"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/comun/lamina-pendiente-1-480.webp",
+                    "/assets/images/comun/lamina-pendiente-1-960.webp",
+                    "/assets/images/comun/lamina-pendiente-1-1320.webp"
+                  ],
+                  "fallback": "/assets/images/comun/lamina-pendiente-1.jpg",
+                  "width": 1320,
+                  "height": 852
+                },
+                "alt": "Lámina 2 de la bitácora (pendiente)"
+              },
+              "_key": "cos6p1"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/comun/lamina-pendiente-2-480.webp",
+                    "/assets/images/comun/lamina-pendiente-2-960.webp",
+                    "/assets/images/comun/lamina-pendiente-2-1320.webp"
+                  ],
+                  "fallback": "/assets/images/comun/lamina-pendiente-2.jpg",
+                  "width": 1320,
+                  "height": 852
+                },
+                "alt": "Lámina 3 de la bitácora (pendiente)"
+              },
+              "_key": "cos6p2"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/comun/lamina-pendiente-3-480.webp",
+                    "/assets/images/comun/lamina-pendiente-3-960.webp",
+                    "/assets/images/comun/lamina-pendiente-3-1320.webp"
+                  ],
+                  "fallback": "/assets/images/comun/lamina-pendiente-3.jpg",
+                  "width": 1320,
+                  "height": 852
+                },
+                "alt": "Lámina 4 de la bitácora (pendiente)"
+              },
+              "_key": "cos6p3"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/comun/lamina-pendiente-4-480.webp",
+                    "/assets/images/comun/lamina-pendiente-4-960.webp",
+                    "/assets/images/comun/lamina-pendiente-4-1320.webp"
+                  ],
+                  "fallback": "/assets/images/comun/lamina-pendiente-4.jpg",
+                  "width": 1320,
+                  "height": 852
+                },
+                "alt": "Lámina 5 de la bitácora (pendiente)"
+              },
+              "_key": "cos6p4"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/comun/lamina-pendiente-5-480.webp",
+                    "/assets/images/comun/lamina-pendiente-5-960.webp",
+                    "/assets/images/comun/lamina-pendiente-5-1320.webp"
+                  ],
+                  "fallback": "/assets/images/comun/lamina-pendiente-5.jpg",
+                  "width": 1320,
+                  "height": 852
+                },
+                "alt": "Lámina 6 de la bitácora (pendiente)"
+              },
+              "_key": "cos6p5"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/comun/lamina-pendiente-6-480.webp",
+                    "/assets/images/comun/lamina-pendiente-6-960.webp",
+                    "/assets/images/comun/lamina-pendiente-6-1320.webp"
+                  ],
+                  "fallback": "/assets/images/comun/lamina-pendiente-6.jpg",
+                  "width": 1320,
+                  "height": 852
+                },
+                "alt": "Lámina 7 de la bitácora (pendiente)"
+              },
+              "_key": "cos6p6"
+            }
+          ],
+          "_key": "cos6"
+        },
+        {
+          "_type": "collage",
+          "anchor": "lo-que-nos-llevamos",
+          "rows": 227,
+          "items": [
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 1,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "cos7i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Lo que nos llevamos",
+                      "_key": "cos7i1b0c0"
+                    }
+                  ],
+                  "_key": "cos7i1b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 14,
+                "cols": 60
+              },
+              "weight": 700,
+              "level": 2,
+              "_key": "cos7i1"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/llevamos-velos-480.webp",
+                    "/assets/images/como-lo-hicimos/llevamos-velos-960.webp",
+                    "/assets/images/como-lo-hicimos/llevamos-velos-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/llevamos-velos.jpg",
+                  "width": 1600,
+                  "height": 2133
+                },
+                "alt": "Cuatro participantes en una sala blanca con velos lilas extendidos en el piso"
+              },
+              "place": {
+                "col": 7,
+                "row": 26,
+                "cols": 54,
+                "rows": 54
+              },
+              "drift": 2,
+              "_key": "cos7i2"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Diseñar con otro es aprender a dejar espacio para que ese otro transforme la idea y le dé vida propia.",
+                      "_key": "cos7i3b0c0"
+                    }
+                  ],
+                  "_key": "cos7i3b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 82,
+                "cols": 57
+              },
+              "weight": 500,
+              "_key": "cos7i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/llevamos-still-zapato-480.webp",
+                    "/assets/images/como-lo-hicimos/llevamos-still-zapato-960.webp",
+                    "/assets/images/como-lo-hicimos/llevamos-still-zapato-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/llevamos-still-zapato.jpg",
+                  "width": 1600,
+                  "height": 900
+                },
+                "alt": "Fotograma del microdocumental: un zapato pisa el asfalto",
+                "hotspot": {
+                  "x": 0.48,
+                  "y": 0.53
+                }
+              },
+              "place": {
+                "col": 86,
+                "row": 54,
+                "cols": 34,
+                "rows": 34
+              },
+              "variant": "zoom",
+              "_key": "cos7i4"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La vulnerabilidad como elemento poderoso de cocreación.",
+                      "_key": "cos7i5b0c0"
+                    }
+                  ],
+                  "_key": "cos7i5b0"
+                }
+              ],
+              "place": {
+                "col": 86,
+                "row": 93,
+                "cols": 37
+              },
+              "weight": 500,
+              "_key": "cos7i5"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/llevamos-abrazo-480.webp",
+                    "/assets/images/como-lo-hicimos/llevamos-abrazo-572.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/llevamos-abrazo.jpg",
+                  "width": 572,
+                  "height": 314
+                },
+                "alt": "Una recicladora y una participante se abrazan en el salón del laboratorio"
+              },
+              "place": {
+                "col": 30,
+                "row": 100,
+                "cols": 33,
+                "rows": 33
+              },
+              "_key": "cos7i6"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Crear es lo que podemos dejar.",
+                      "_key": "cos7i7b0c0"
+                    }
+                  ],
+                  "_key": "cos7i7b0"
+                }
+              ],
+              "place": {
+                "col": 30,
+                "row": 136,
+                "cols": 40
+              },
+              "weight": 500,
+              "nowrap": true,
+              "_key": "cos7i7"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/llevamos-grabacion-480.webp",
+                    "/assets/images/como-lo-hicimos/llevamos-grabacion-960.webp",
+                    "/assets/images/como-lo-hicimos/llevamos-grabacion-1200.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/llevamos-grabacion.jpg",
+                  "width": 1200,
+                  "height": 1600
+                },
+                "alt": "Grabación de un videotutorial en un parque: dos personas estiran apoyadas en un poste azul"
+              },
+              "place": {
+                "col": 74,
+                "row": 133,
+                "cols": 54,
+                "rows": 72
+              },
+              "drift": 2,
+              "_key": "cos7i8"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/llevamos-ejercicio-480.webp",
+                    "/assets/images/como-lo-hicimos/llevamos-ejercicio-960.webp",
+                    "/assets/images/como-lo-hicimos/llevamos-ejercicio-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/llevamos-ejercicio.jpg",
+                  "width": 1600,
+                  "height": 1066
+                },
+                "alt": "Dos personas hacen un ejercicio corporal bajo una luz azul"
+              },
+              "place": {
+                "col": 38,
+                "row": 180,
+                "cols": 25,
+                "rows": 25
+              },
+              "_key": "cos7i9"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "El encuentro con los recicladores transformó la manera de entender el diseño.",
+                      "_key": "cos7i10b0c0"
+                    }
+                  ],
+                  "_key": "cos7i10b0"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 207,
+                "cols": 50
+              },
+              "weight": 500,
+              "_key": "cos7i10"
+            }
+          ],
+          "_key": "cos7"
+        },
+        {
+          "_type": "collage",
+          "anchor": "creditos",
+          "rows": 216,
+          "items": [
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 1,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "cos8i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Conoce al equipo",
+                      "href": "/equipo/",
+                      "_key": "cos8i1b0c0"
+                    }
+                  ],
+                  "_key": "cos8i1b0"
+                }
+              ],
+              "place": {
+                "col": 119,
+                "row": 5,
+                "cols": 20
+              },
+              "size": 16,
+              "weight": 600,
+              "tone": "#ef8e34",
+              "align": "right",
+              "nowrap": true,
+              "variant": "enlace",
+              "_key": "cos8i1"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/creditos-proyector-480.webp",
+                    "/assets/images/como-lo-hicimos/creditos-proyector-960.webp",
+                    "/assets/images/como-lo-hicimos/creditos-proyector-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/creditos-proyector.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Fotografía en blanco y negro de una persona de perfil junto al haz de luz de un proyector"
+              },
+              "place": {
+                "col": 7,
+                "row": 11,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "cos8i2"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Artistas cocreadores:",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos8i3b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Camilo Enrique Muñoz Triana · Santiago Andonoff Gaitán · José Alberto Miranda Álvarez · Eduardo Antonio Castro Patiño · Sebastián Espitia Riaño · Camilo Fernando Castañeda Murcia · Yineth Andrea Sandino Cordón · Yenny Alejandra Osma Palacios · Diana Carolina Castañeda Barragán · Nelson Mauricio Rodríguez Ayala · Samuel Olarte Espitia · Carol Sofía Cuervo Lizarazu · Johan Andretty Lozano Suárez · Natalia Patricia Ahumada Baptista · Daniel Felipe García Lagos · Carlos Andrés Saray Orozco / ",
+                      "_key": "cos8i3b0c1"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Laboratorista:",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos8i3b0c2"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Víctor Gómez / ",
+                      "_key": "cos8i3b0c3"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Orientadora metodológica:",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos8i3b0c4"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Laura Ximena Garrido / ",
+                      "_key": "cos8i3b0c5"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Productor de campo:",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos8i3b0c6"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Wilson Dueñas / ",
+                      "_key": "cos8i3b0c7"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Producción general:",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos8i3b0c8"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Claudia Manosalva / ",
+                      "_key": "cos8i3b0c9"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Coordinación Artefactum:",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos8i3b0c10"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Edwin Rodríguez / ",
+                      "_key": "cos8i3b0c11"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Personas recicladoras:",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos8i3b0c12"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Ariel, que nos dejó acompañarla en el microdocumental y nos dio el cartón que hizo parte de la muestra · Alejandra, que participó en las fotografías de silueta y en los videotutoriales, y validó nuestros prototipos · Edwin y Yordanis, que revisaron con nosotros el diseño del videojuego, la ropa y la carreta · Marta, Graciela, Sandra, Ginet y Leonardo, que conversaron con nosotros sobre su oficio y su día a día · Y todas las personas que se detuvieron a hablar con nosotros en la calle / ",
+                      "_key": "cos8i3b0c13"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Invitadas e invitados:",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos8i3b0c14"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Camila Carozzi Aravena, diseñadora · Gabriela Bruna Serrano, investigadora STICKEROLOGIST · Margaret Arias, laboratorista de Artefactum invitada · Stephen Bruque, docente de diseño · David Feliciano, ingeniero mecánico · Julie López, mentora del videojuego · Juan Tirado, realización audiovisual · Carolina Acosta, fisioterapeuta / ",
+                      "_key": "cos8i3b0c15"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Instituciones:",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "cos8i3b0c16"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " IDARTES – ARTEFACTUM · Ministerio de las Culturas, las Artes y los Saberes · Alcaldía Mayor de Bogotá · Universidad LCI Bogotá · Villa Adelaida.",
+                      "_key": "cos8i3b0c17"
+                    }
+                  ],
+                  "_key": "cos8i3b0"
+                }
+              ],
+              "place": {
+                "col": 72,
+                "row": 11,
+                "cols": 67
+              },
+              "size": 20,
+              "weight": 500,
+              "align": "justify",
+              "variant": "creditos",
+              "_key": "cos8i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/como-lo-hicimos/creditos-grupo-480.webp",
+                    "/assets/images/como-lo-hicimos/creditos-grupo-960.webp",
+                    "/assets/images/como-lo-hicimos/creditos-grupo-1600.webp"
+                  ],
+                  "fallback": "/assets/images/como-lo-hicimos/creditos-grupo.jpg",
+                  "width": 1600,
+                  "height": 1066
+                },
+                "alt": "El grupo del laboratorio reunido de pie alrededor de una mesa en la Universidad LCI"
+              },
+              "place": {
+                "col": 7,
+                "row": 94,
+                "cols": 112,
+                "rows": 112
+              },
+              "_key": "cos8i4"
+            },
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 216,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "cos8i5"
+            }
+          ],
+          "_key": "cos8"
+        },
+        {
+          "_type": "cardGrid",
+          "layout": "row",
+          "title": "Explora más",
+          "items": [
+            {
+              "_type": "card",
+              "label": "Video tutoriales",
+              "href": "/para-recicladores/#videotutoriales",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-recicladores-480.webp",
+                    "/assets/images/inicio/card-recicladores-960.webp",
+                    "/assets/images/inicio/card-recicladores-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-recicladores.jpg",
+                  "width": 1600,
+                  "height": 1271
+                },
+                "alt": "Recicladora sonriente empujando su carreta cargada frente a un camión rojo"
+              },
+              "size": "s",
+              "_key": "cos9i0"
+            },
+            {
+              "_type": "card",
+              "label": "Chapicartón",
+              "href": "/videojuego/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-videojuego-480.webp",
+                    "/assets/images/inicio/card-videojuego-960.webp",
+                    "/assets/images/inicio/card-videojuego-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-videojuego.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Joven jugando Chapicartón en una máquina arcade"
+              },
+              "size": "s",
+              "_key": "cos9i1"
+            },
+            {
+              "_type": "card",
+              "label": "Equipo",
+              "href": "/equipo/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-equipo-480.webp",
+                    "/assets/images/inicio/card-equipo-960.webp",
+                    "/assets/images/inicio/card-equipo-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-equipo.jpg",
+                  "width": 1600,
+                  "height": 1066
+                },
+                "alt": "El equipo del laboratorio reunido en círculo"
+              },
+              "size": "s",
+              "_key": "cos9i2"
+            },
+            {
+              "_type": "card",
+              "label": "Exhibición",
+              "href": "/exhibicion/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-exhibicion-480.webp",
+                    "/assets/images/inicio/card-exhibicion-960.webp",
+                    "/assets/images/inicio/card-exhibicion-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-exhibicion.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Sala de la exhibición con mesas, piezas y pendones"
+              },
+              "size": "s",
+              "_key": "cos9i3"
+            }
+          ],
+          "_key": "cos9"
+        }
+      ]
+    },
+    {
+      "_type": "page",
       "_id": "page-equipo",
       "title": "Equipo",
       "slug": {

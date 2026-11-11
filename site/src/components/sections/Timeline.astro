@@ -1,8 +1,27 @@
 ---
-// TODO: implementar la sección `timeline`.
+// Línea de tiempo: una lista ordenada de pasos. Cada paso es un lienzo de collage (Canvas) con su punto y su título;
+// la línea vertical se dibuja por tramos (de un punto al siguiente) y timeline.js la va "trazando" con el scroll.
+// Sin JS o con movimiento reducido la línea y los puntos se ven completos.
 import type { TimelineSection, Settings } from "../../lib/types";
+import Canvas from "../Canvas.astro";
+import { color, placeStyle } from "../../lib/text";
 
 interface Props { section: TimelineSection; settings: Settings }
 const { section: s } = Astro.props;
+const H = s.title ? "h3" : "h2";
 ---
-<section class="sec sec--timeline" id={s.anchor}></section>
+<section class:list={["sec", "sec--timeline", s.band && "has-band"]} id={s.anchor} style={s.band?.color ? `--band:${color(s.band.color as string)}` : undefined}>
+  {s.band && <div class="band" aria-hidden="true"></div>}
+  {(s.dots ?? []).map((d) => <span class="dots" style={placeStyle(d)} aria-hidden="true"></span>)}
+  {s.title && <h2 class="sr">{s.title}</h2>}
+  <ol class="tl" role="list" data-timeline>
+    {s.steps.map((step) => (
+      <li class="tl__step">
+        <span class="tl__dot" aria-hidden="true"></span>
+        <H class="tl__title" data-reveal="text">{step.title}</H>
+        <Canvas items={step.items} rows={step.rows} class="tl__canvas" />
+      </li>
+    ))}
+  </ol>
+</section>
+<script is:inline src="/js/timeline.js" defer></script>
