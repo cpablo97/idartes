@@ -167,13 +167,20 @@ export type GallerySection = Shared & {
 export type BitacoraSection = Shared & { _type: "bitacora"; title?: string; intro?: Block[]; mode: "slider" | "book"; pages: { _key: string; image: Img }[] };
 export type GameEmbedSection = Shared & {
   _type: "gameEmbed";
+  /** Nombre del juego: arma el botón ("Jugar Chapicartón") y el título del iframe. */
   title: string;
-  /** URL `https://itch.io/embed-upload/<id>` del juego. */
+  /** URL `https://itch.io/embed-upload/<id>` del juego (itch.io → Distribute → Embed game). */
   embedUrl: string;
-  /** Página pública del juego en itch.io. */
+  /** Página pública del juego en itch.io; siempre queda como enlace visible. */
   pageUrl: string;
+  /** Imagen de la fachada mientras no se ha pulsado "Jugar". */
   poster?: Img;
+  /** Mientras sea true no hay botón ni iframe: solo el hueco pendiente con el enlace. */
   pending?: boolean;
+  /** Texto del botón; por defecto "Jugar <title>". */
+  playLabel?: string;
+  /** Texto del enlace a itch.io; por defecto "Abrir en itch.io". */
+  linkLabel?: string;
 };
 /**
  * Grupo de fichas de persona (Equipo): titular del grupo + una ficha por persona (foto a la izquierda, texto a la derecha).
@@ -206,12 +213,39 @@ export type PeopleSection = Shared & {
   roleTone?: Tone;
   people: Person[];
 };
+/** Tecla del teclado: `key` es lo que se lee en la tecla; con `icon` se dibuja una flecha y `key` queda como texto accesible. */
+export type ControlKey = { _key: string; key: string; label?: string; icon?: "up" | "down" | "left" | "right"; size?: "space" | "wide" };
 /** Controles del videojuego: mando y teclado. */
 export type ControlsSection = Shared & {
   _type: "controls";
   title: string;
-  gamepad: { title: string; groups: { _key: string; title: string; panel: Img; width: number; labels: string[] }[]; photo?: Img };
-  keyboard: { title: string; groups: { _key: string; title: string; keys: { _key: string; key: string; label?: string; wide?: boolean }[] }[]; photos?: Img[] };
+  gamepad: {
+    title: string;
+    groups: {
+      _key: string;
+      title: string;
+      /** Dibujo del panel (SVG con su fondo lila). `alt` describe los botones que muestra. */
+      panel: Img;
+      /** Ancho del panel en px de diseño (el alto es siempre 234). */
+      width: number;
+      /** Etiquetas bajo el panel: `x` = centro de la etiqueta en px de diseño desde el borde izquierdo del panel; "\n" parte la línea. */
+      labels: { _key: string; text: string; x: number }[];
+    }[];
+    photo?: Img;
+  };
+  keyboard: {
+    title: string;
+    groups: {
+      _key: string;
+      title: string;
+      /** Texto entre un grupo de teclas y el siguiente ("O"). */
+      joiner?: string;
+      /** `cross` = T invertida (W / A S D); `row` = fila con etiquetas debajo; `indent` desplaza la fila. */
+      clusters: { _key: string; layout: "cross" | "row"; indent?: boolean; keys: ControlKey[] }[];
+    }[];
+    /** Fotos decorativas: [teclado, mouse]. */
+    photos?: Img[];
+  };
 };
 /**
  * Datos (Lo que aprendimos de la calle): texto con enlace a la fuente, gráfico de círculos y/o tabla.

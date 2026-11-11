@@ -1,8 +1,26 @@
 ---
-// TODO: implementar la sección `gameEmbed`.
+// Videojuego embebido de itch.io a ancho completo, como fachada liviana:
+// póster + botón "Jugar …"; el iframe solo se carga al hacer clic (public/js/game-embed.js).
+// Con `pending` (aún no hay URL de embed) se pinta el hueco pendiente con el enlace a itch.io.
 import type { GameEmbedSection, Settings } from "../../lib/types";
+import Picture from "../Picture.astro";
 
 interface Props { section: GameEmbedSection; settings: Settings }
 const { section: s } = Astro.props;
+const pending = s.pending || !s.embedUrl || /TODO/.test(s.embedUrl);
+const play = s.playLabel ?? `Jugar ${s.title}`;
+const link = s.linkLabel ?? "Abrir en itch.io";
 ---
-<section class="sec sec--gameEmbed" id={s.anchor}></section>
+<section class:list={["sec", "game", pending && "game--pending", !s.poster && "game--empty"]} id={s.anchor} aria-label={s.title}>
+  <div class="game__frame" data-game={pending ? undefined : s.embedUrl} data-title={s.title}>
+    {s.poster && <Picture img={s.poster} sizes="100vw" class="game__poster" />}
+    <div class="game__face">
+      {pending
+        ? <p class="game__pending">Videojuego pendiente: {s.title}</p>
+        : <button class="game__btn" type="button"><span class="game__play" aria-hidden="true"></span><span>{play}</span></button>}
+      <a class="game__link" href={s.pageUrl} target="_blank" rel="noopener">{link}<span class="sr"> ({s.title}, se abre en otra pestaña)</span><span aria-hidden="true"> ↗</span></a>
+    </div>
+  </div>
+  <p class="game__bar" hidden><a class="game__link" href={s.pageUrl} target="_blank" rel="noopener">{link}<span class="sr"> ({s.title}, se abre en otra pestaña)</span><span aria-hidden="true"> ↗</span></a></p>
+</section>
+{!pending && <script is:inline src="/js/game-embed.js" defer></script>}

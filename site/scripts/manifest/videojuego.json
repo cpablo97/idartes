@@ -1,0 +1,369 @@
+{
+  "bocetos-biblia": {
+    "webp": [
+      "/assets/images/videojuego/bocetos-biblia-480.webp",
+      "/assets/images/videojuego/bocetos-biblia-960.webp",
+      "/assets/images/videojuego/bocetos-biblia-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/bocetos-biblia.png",
+    "width": 1600,
+    "height": 900
+  },
+  "captura-carreta": {
+    "webp": [
+      "/assets/images/videojuego/captura-carreta-480.webp",
+      "/assets/images/videojuego/captura-carreta-960.webp",
+      "/assets/images/videojuego/captura-carreta-1280.webp"
+    ],
+    "fallback": "/assets/images/videojuego/captura-carreta.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "captura-final": {
+    "webp": [
+      "/assets/images/videojuego/captura-final-480.webp",
+      "/assets/images/videojuego/captura-final-960.webp",
+      "/assets/images/videojuego/captura-final-1280.webp"
+    ],
+    "fallback": "/assets/images/videojuego/captura-final.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "captura-laberinto": {
+    "webp": [
+      "/assets/images/videojuego/captura-laberinto-480.webp",
+      "/assets/images/videojuego/captura-laberinto-960.webp",
+      "/assets/images/videojuego/captura-laberinto-1280.webp"
+    ],
+    "fallback": "/assets/images/videojuego/captura-laberinto.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "captura-menu": {
+    "webp": [
+      "/assets/images/videojuego/captura-menu-480.webp",
+      "/assets/images/videojuego/captura-menu-960.webp",
+      "/assets/images/videojuego/captura-menu-1280.webp"
+    ],
+    "fallback": "/assets/images/videojuego/captura-menu.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "captura-reciclables": {
+    "webp": [
+      "/assets/images/videojuego/captura-reciclables-480.webp",
+      "/assets/images/videojuego/captura-reciclables-960.webp",
+      "/assets/images/videojuego/captura-reciclables-1280.webp"
+    ],
+    "fallback": "/assets/images/videojuego/captura-reciclables.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "captura-vidrios": {
+    "webp": [
+      "/assets/images/videojuego/captura-vidrios-480.webp",
+      "/assets/images/videojuego/captura-vidrios-960.webp",
+      "/assets/images/videojuego/captura-vidrios-1280.webp"
+    ],
+    "fallback": "/assets/images/videojuego/captura-vidrios.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "fondo-ciudad-teal": {
+    "webp": [
+      "/assets/images/videojuego/fondo-ciudad-teal-480.webp",
+      "/assets/images/videojuego/fondo-ciudad-teal-960.webp",
+      "/assets/images/videojuego/fondo-ciudad-teal-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/fondo-ciudad-teal.jpg",
+    "width": 1600,
+    "height": 512
+  },
+  "fondo-ciudad-verde": {
+    "webp": [
+      "/assets/images/videojuego/fondo-ciudad-verde-480.webp",
+      "/assets/images/videojuego/fondo-ciudad-verde-960.webp",
+      "/assets/images/videojuego/fondo-ciudad-verde-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/fondo-ciudad-verde.jpg",
+    "width": 1600,
+    "height": 512
+  },
+  "fondo-neon": {
+    "webp": [
+      "/assets/images/videojuego/fondo-neon-480.webp",
+      "/assets/images/videojuego/fondo-neon-960.webp",
+      "/assets/images/videojuego/fondo-neon-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/fondo-neon.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "foto-biblia-impresa": {
+    "webp": [
+      "/assets/images/videojuego/foto-biblia-impresa-480.webp",
+      "/assets/images/videojuego/foto-biblia-impresa-960.webp",
+      "/assets/images/videojuego/foto-biblia-impresa-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/foto-biblia-impresa.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "foto-jugador-arcade": {
+    "webp": [
+      "/assets/images/videojuego/foto-jugador-arcade-480.webp",
+      "/assets/images/videojuego/foto-jugador-arcade-960.webp",
+      "/assets/images/videojuego/foto-jugador-arcade-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/foto-jugador-arcade.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "foto-nino-luz-verde": {
+    "webp": [
+      "/assets/images/videojuego/foto-nino-luz-verde-480.webp",
+      "/assets/images/videojuego/foto-nino-luz-verde-960.webp",
+      "/assets/images/videojuego/foto-nino-luz-verde-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/foto-nino-luz-verde.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "foto-proceso": {
+    "webp": [
+      "/assets/images/videojuego/foto-proceso-480.webp",
+      "/assets/images/videojuego/foto-proceso-960.webp",
+      "/assets/images/videojuego/foto-proceso-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/foto-proceso.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "foto-publico-arcade": {
+    "webp": [
+      "/assets/images/videojuego/foto-publico-arcade-480.webp",
+      "/assets/images/videojuego/foto-publico-arcade-960.webp",
+      "/assets/images/videojuego/foto-publico-arcade-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/foto-publico-arcade.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "foto-taller": {
+    "webp": [
+      "/assets/images/videojuego/foto-taller-480.webp",
+      "/assets/images/videojuego/foto-taller-960.webp",
+      "/assets/images/videojuego/foto-taller-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/foto-taller.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "hero-arcade": {
+    "webp": [
+      "/assets/images/videojuego/hero-arcade-480.webp",
+      "/assets/images/videojuego/hero-arcade-960.webp",
+      "/assets/images/videojuego/hero-arcade-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/hero-arcade.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "hoja-items": {
+    "webp": [
+      "/assets/images/videojuego/hoja-items-480.webp",
+      "/assets/images/videojuego/hoja-items-904.webp"
+    ],
+    "fallback": "/assets/images/videojuego/hoja-items.png",
+    "width": 904,
+    "height": 1280
+  },
+  "item-arepa": {
+    "webp": [
+      "/assets/images/videojuego/item-arepa-480.webp",
+      "/assets/images/videojuego/item-arepa-960.webp",
+      "/assets/images/videojuego/item-arepa-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/item-arepa.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "item-botella-plastico": {
+    "webp": [
+      "/assets/images/videojuego/item-botella-plastico-480.webp",
+      "/assets/images/videojuego/item-botella-plastico-960.webp",
+      "/assets/images/videojuego/item-botella-plastico-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/item-botella-plastico.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "item-botella-verde": {
+    "webp": [
+      "/assets/images/videojuego/item-botella-verde-480.webp",
+      "/assets/images/videojuego/item-botella-verde-960.webp",
+      "/assets/images/videojuego/item-botella-verde-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/item-botella-verde.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "item-caja-huevos": {
+    "webp": [
+      "/assets/images/videojuego/item-caja-huevos-480.webp",
+      "/assets/images/videojuego/item-caja-huevos-960.webp",
+      "/assets/images/videojuego/item-caja-huevos-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/item-caja-huevos.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "item-caneca": {
+    "webp": [
+      "/assets/images/videojuego/item-caneca-480.webp",
+      "/assets/images/videojuego/item-caneca-960.webp",
+      "/assets/images/videojuego/item-caneca-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/item-caneca.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "item-carreta": {
+    "webp": [
+      "/assets/images/videojuego/item-carreta-480.webp",
+      "/assets/images/videojuego/item-carreta-960.webp",
+      "/assets/images/videojuego/item-carreta-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/item-carreta.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "item-carton-leche": {
+    "webp": [
+      "/assets/images/videojuego/item-carton-leche-480.webp",
+      "/assets/images/videojuego/item-carton-leche-960.webp",
+      "/assets/images/videojuego/item-carton-leche-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/item-carton-leche.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "item-manguera": {
+    "webp": [
+      "/assets/images/videojuego/item-manguera-480.webp",
+      "/assets/images/videojuego/item-manguera-960.webp",
+      "/assets/images/videojuego/item-manguera-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/item-manguera.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "lateral-arcade-1": {
+    "webp": [
+      "/assets/images/videojuego/lateral-arcade-1-480.webp",
+      "/assets/images/videojuego/lateral-arcade-1-960.webp",
+      "/assets/images/videojuego/lateral-arcade-1-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/lateral-arcade-1.png",
+    "width": 1600,
+    "height": 2984
+  },
+  "lateral-arcade-2": {
+    "webp": [
+      "/assets/images/videojuego/lateral-arcade-2-480.webp",
+      "/assets/images/videojuego/lateral-arcade-2-960.webp",
+      "/assets/images/videojuego/lateral-arcade-2-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/lateral-arcade-2.png",
+    "width": 1600,
+    "height": 2984
+  },
+  "logo-chapicarton": {
+    "webp": [
+      "/assets/images/videojuego/logo-chapicarton-480.webp",
+      "/assets/images/videojuego/logo-chapicarton-960.webp",
+      "/assets/images/videojuego/logo-chapicarton-1600.webp"
+    ],
+    "fallback": "/assets/images/videojuego/logo-chapicarton.png",
+    "width": 1600,
+    "height": 726
+  },
+  "mando": {
+    "webp": [
+      "/assets/images/videojuego/mando-480.webp",
+      "/assets/images/videojuego/mando-960.webp",
+      "/assets/images/videojuego/mando-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/mando.png",
+    "width": 1000,
+    "height": 722
+  },
+  "maqueta-arcade": {
+    "webp": [
+      "/assets/images/videojuego/maqueta-arcade-421.webp"
+    ],
+    "fallback": "/assets/images/videojuego/maqueta-arcade.png",
+    "width": 421,
+    "height": 726
+  },
+  "mouse": {
+    "webp": [
+      "/assets/images/videojuego/mouse-480.webp",
+      "/assets/images/videojuego/mouse-960.webp",
+      "/assets/images/videojuego/mouse-980.webp"
+    ],
+    "fallback": "/assets/images/videojuego/mouse.png",
+    "width": 980,
+    "height": 980
+  },
+  "sprite-botella-calavera": {
+    "webp": [
+      "/assets/images/videojuego/sprite-botella-calavera-480.webp",
+      "/assets/images/videojuego/sprite-botella-calavera-960.webp",
+      "/assets/images/videojuego/sprite-botella-calavera-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/sprite-botella-calavera.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "sprite-botella-verde": {
+    "webp": [
+      "/assets/images/videojuego/sprite-botella-verde-480.webp",
+      "/assets/images/videojuego/sprite-botella-verde-960.webp",
+      "/assets/images/videojuego/sprite-botella-verde-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/sprite-botella-verde.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "sprite-botella-vidrio": {
+    "webp": [
+      "/assets/images/videojuego/sprite-botella-vidrio-480.webp",
+      "/assets/images/videojuego/sprite-botella-vidrio-960.webp",
+      "/assets/images/videojuego/sprite-botella-vidrio-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/sprite-botella-vidrio.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "sprite-caja-carton": {
+    "webp": [
+      "/assets/images/videojuego/sprite-caja-carton-480.webp",
+      "/assets/images/videojuego/sprite-caja-carton-960.webp",
+      "/assets/images/videojuego/sprite-caja-carton-1000.webp"
+    ],
+    "fallback": "/assets/images/videojuego/sprite-caja-carton.png",
+    "width": 1000,
+    "height": 1000
+  },
+  "teclado": {
+    "webp": [
+      "/assets/images/videojuego/teclado-480.webp",
+      "/assets/images/videojuego/teclado-960.webp",
+      "/assets/images/videojuego/teclado-1144.webp"
+    ],
+    "fallback": "/assets/images/videojuego/teclado.png",
+    "width": 1144,
+    "height": 1144
+  }
+}
