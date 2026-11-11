@@ -133,7 +133,7 @@ main { display: block; }
 
 /* ---------- Tarjeta de sección ---------- */
 .card { display: flex; flex-direction: column; gap: 2rem; text-decoration: none; color: var(--gris); width: 100%; }
-.card__img { display: block; aspect-ratio: 1; overflow: hidden; background: #d9d9d9; }
+.card__img { display: block; aspect-ratio: 1; overflow: hidden; }
 .card__img img { width: 100%; height: 100%; object-fit: cover; transition: scale .8s var(--ease), filter .5s; }
 .card__label { display: flex; align-items: center; gap: 1rem; font-family: var(--doto); font-weight: 700; font-size: 1.8rem; line-height: 1.2; letter-spacing: 0; text-transform: uppercase; }
 .card__text { text-decoration: underline; text-decoration-thickness: from-font; text-underline-position: from-font; }
@@ -144,7 +144,7 @@ main { display: block; }
 .card--m { width: 78%; align-self: flex-end; }
 .card--s { width: 58%; }
 .card--s:nth-of-type(even) { align-self: flex-end; }
-.card--round .card__img { border-radius: 1.24rem; background: #edeff7; }
+.card--round .card__img { border-radius: 1.24rem; }
 .card--round, .explora .card { width: 100%; }
 .card--round .card__label { font-weight: 900; font-size: 1.5714rem; gap: 1.32rem; }
 
@@ -306,6 +306,8 @@ main { display: block; }
   .js [data-reveal="img"]:not(.is-in) > * { clip-path: inset(0 0 100% 0); }
   .js [data-reveal="img"]:not(.is-in) { filter: brightness(1.9) saturate(.2); }
   .js [data-reveal="img"].is-done > * { clip-path: none; }
+  /* Cuando el efecto píxel (pixel.js) se hace cargo, el recorte lo lleva la propia foto desde JS. */
+  .js [data-reveal="img"].is-pixel, .js [data-reveal="img"].is-pixel > * { clip-path: none; filter: none; transition: none; }
   .js [data-reveal="text"]:not(.is-in) { opacity: 0; translate: 0 2.4rem; }
   .js [data-reveal="title"]:not(.is-in) { opacity: 0; translate: -18rem 0; }
   .js [data-reveal="title-r"]:not(.is-in) { opacity: 0; translate: 18rem 0; }

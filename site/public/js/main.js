@@ -68,6 +68,8 @@
     const io = new IntersectionObserver((entries) => {
       for (const en of entries) {
         if (!en.isIntersecting) continue;
+        // Las fotos se forman con el efecto píxel (pixel.js); si no aplica, queda la aparición por CSS.
+        if (en.target.dataset.reveal === "img" && window.__pixelReveal?.(en.target)) en.target.classList.add("is-pixel");
         en.target.classList.add("is-in");
         setTimeout(() => en.target.classList.add("is-done"), 1500);
         io.unobserve(en.target);
