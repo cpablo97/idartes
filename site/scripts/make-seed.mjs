@@ -35,6 +35,6 @@ for (const name of ORDER) {
 
 const out = path.resolve(here, "../src/content/seed.json");
 const json = JSON.stringify({ settings, pages }, null, 2) + "\n";
-if (/figma\.com/.test(json)) throw new Error("El seed contiene una URL de figma.com");
+if (/figma\.com/.test(json)) throw new Error("El seed contiene una URL temporal de Figma");
 await writeFile(out, json);
 console.log(`${pages.length} páginas → ${path.relative(process.cwd(), out)} (${(json.length / 1024).toFixed(0)} kB)`);

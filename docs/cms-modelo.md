@@ -150,7 +150,8 @@ se pinta como hueco pendiente.
 `table?`: `{ title, subtitle?, tone?, head[], rows[] { cells[] }, note? }`.
 
 ### `timeline`
-`band?` y `steps[]`; cada paso es un pequeño lienzo con sus elementos. Los campos exactos están en `types.ts`.
+`title?` (encabezado solo para lectores de pantalla), `band?`, `dots[]?` y `steps[]`: `{ title, rows, items[] }`.
+Cada paso es un pequeño lienzo (los mismos elementos de `collage`); la fila 1 es la del punto y su título.
 
 ## Contenido marcado como pendiente en el seed
 
