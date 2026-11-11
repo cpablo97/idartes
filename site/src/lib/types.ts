@@ -175,13 +175,36 @@ export type GameEmbedSection = Shared & {
   poster?: Img;
   pending?: boolean;
 };
-/** Fichas de personas (Equipo). */
+/**
+ * Grupo de fichas de persona (Equipo): titular del grupo + una ficha por persona (foto a la izquierda, texto a la derecha).
+ * El recorte de cada foto sale del `hotspot` de la imagen (punto que se conserva) y de `zoom` (acercamiento sobre el encuadre "cover").
+ */
+export type Person = {
+  _key: string;
+  name: string;
+  /** Disciplinas, separadas por " · ". */
+  role?: string;
+  bio?: Block[];
+  photo: Img;
+  /** Acercamiento de la foto: 1 = llena el marco; 2 = al doble. El `hotspot` de la foto es el punto fijo. */
+  zoom?: number;
+  /** Foto espejada horizontalmente. */
+  flip?: boolean;
+  /** Color de esta ficha, si difiere del grupo. */
+  tone?: Tone;
+  links?: { _key: string; label: string; url: string }[];
+};
 export type PeopleSection = Shared & {
   _type: "people";
+  /** Titular del grupo ("Cocreadores", "Laboratorista"…). */
   title: string;
   titleTone?: Tone;
   titleAlign?: "left" | "right";
-  people: { _key: string; name: string; role?: string; bio?: Block[]; photo: Img; flip?: boolean; tone?: Tone | string; links?: { _key: string; label: string; url: string }[] }[];
+  /** Color de fondo de las fichas del grupo. */
+  tone?: Tone;
+  /** Color de la línea de disciplinas (clara sobre lila, morada sobre los colores vivos). */
+  roleTone?: Tone;
+  people: Person[];
 };
 /** Controles del videojuego: mando y teclado. */
 export type ControlsSection = Shared & {

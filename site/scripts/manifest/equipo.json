@@ -1,0 +1,202 @@
+{
+  "camilo-castaneda": {
+    "webp": [
+      "/assets/images/equipo/camilo-castaneda-480.webp",
+      "/assets/images/equipo/camilo-castaneda-960.webp",
+      "/assets/images/equipo/camilo-castaneda-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/camilo-castaneda.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "camilo-munoz": {
+    "webp": [
+      "/assets/images/equipo/camilo-munoz-480.webp",
+      "/assets/images/equipo/camilo-munoz-960.webp",
+      "/assets/images/equipo/camilo-munoz-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/camilo-munoz.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "carlos-saray": {
+    "webp": [
+      "/assets/images/equipo/carlos-saray-480.webp",
+      "/assets/images/equipo/carlos-saray-960.webp",
+      "/assets/images/equipo/carlos-saray-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/carlos-saray.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "carol-cuervo": {
+    "webp": [
+      "/assets/images/equipo/carol-cuervo-480.webp",
+      "/assets/images/equipo/carol-cuervo-960.webp",
+      "/assets/images/equipo/carol-cuervo-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/carol-cuervo.jpg",
+    "width": 1600,
+    "height": 1066
+  },
+  "daniel-garcia": {
+    "webp": [
+      "/assets/images/equipo/daniel-garcia-480.webp",
+      "/assets/images/equipo/daniel-garcia-960.webp",
+      "/assets/images/equipo/daniel-garcia-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/daniel-garcia.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "diana-castaneda": {
+    "webp": [
+      "/assets/images/equipo/diana-castaneda-480.webp",
+      "/assets/images/equipo/diana-castaneda-960.webp",
+      "/assets/images/equipo/diana-castaneda-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/diana-castaneda.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "eduardo-castro": {
+    "webp": [
+      "/assets/images/equipo/eduardo-castro-480.webp",
+      "/assets/images/equipo/eduardo-castro-960.webp",
+      "/assets/images/equipo/eduardo-castro-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/eduardo-castro.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "hero-equipo": {
+    "webp": [
+      "/assets/images/equipo/hero-equipo-480.webp",
+      "/assets/images/equipo/hero-equipo-960.webp",
+      "/assets/images/equipo/hero-equipo-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/hero-equipo.jpg",
+    "width": 1600,
+    "height": 1066
+  },
+  "johan-lozano": {
+    "webp": [
+      "/assets/images/equipo/johan-lozano-480.webp",
+      "/assets/images/equipo/johan-lozano-960.webp",
+      "/assets/images/equipo/johan-lozano-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/johan-lozano.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "jose-miranda": {
+    "webp": [
+      "/assets/images/equipo/jose-miranda-480.webp",
+      "/assets/images/equipo/jose-miranda-960.webp",
+      "/assets/images/equipo/jose-miranda-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/jose-miranda.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "laura-garrido": {
+    "webp": [
+      "/assets/images/equipo/laura-garrido-480.webp",
+      "/assets/images/equipo/laura-garrido-960.webp",
+      "/assets/images/equipo/laura-garrido-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/laura-garrido.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "natalia-ahumada": {
+    "webp": [
+      "/assets/images/equipo/natalia-ahumada-480.webp",
+      "/assets/images/equipo/natalia-ahumada-960.webp",
+      "/assets/images/equipo/natalia-ahumada-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/natalia-ahumada.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "nelson-rodriguez": {
+    "webp": [
+      "/assets/images/equipo/nelson-rodriguez-480.webp",
+      "/assets/images/equipo/nelson-rodriguez-960.webp",
+      "/assets/images/equipo/nelson-rodriguez-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/nelson-rodriguez.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "samuel-olarte": {
+    "webp": [
+      "/assets/images/equipo/samuel-olarte-480.webp",
+      "/assets/images/equipo/samuel-olarte-960.webp",
+      "/assets/images/equipo/samuel-olarte-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/samuel-olarte.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "santiago-andonoff": {
+    "webp": [
+      "/assets/images/equipo/santiago-andonoff-480.webp",
+      "/assets/images/equipo/santiago-andonoff-960.webp",
+      "/assets/images/equipo/santiago-andonoff-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/santiago-andonoff.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "sebastian-espitia": {
+    "webp": [
+      "/assets/images/equipo/sebastian-espitia-480.webp",
+      "/assets/images/equipo/sebastian-espitia-960.webp",
+      "/assets/images/equipo/sebastian-espitia-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/sebastian-espitia.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "victor-gomez": {
+    "webp": [
+      "/assets/images/equipo/victor-gomez-480.webp",
+      "/assets/images/equipo/victor-gomez-960.webp",
+      "/assets/images/equipo/victor-gomez-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/victor-gomez.jpg",
+    "width": 1600,
+    "height": 2133
+  },
+  "wilson-duenas": {
+    "webp": [
+      "/assets/images/equipo/wilson-duenas-480.webp",
+      "/assets/images/equipo/wilson-duenas-960.webp",
+      "/assets/images/equipo/wilson-duenas-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/wilson-duenas.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "yenny-osma": {
+    "webp": [
+      "/assets/images/equipo/yenny-osma-480.webp",
+      "/assets/images/equipo/yenny-osma-960.webp",
+      "/assets/images/equipo/yenny-osma-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/yenny-osma.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "yineth-sandino": {
+    "webp": [
+      "/assets/images/equipo/yineth-sandino-480.webp",
+      "/assets/images/equipo/yineth-sandino-960.webp",
+      "/assets/images/equipo/yineth-sandino-1600.webp"
+    ],
+    "fallback": "/assets/images/equipo/yineth-sandino.jpg",
+    "width": 1600,
+    "height": 1067
+  }
+}

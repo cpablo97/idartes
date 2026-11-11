@@ -640,6 +640,933 @@
           "_key": "ins2"
         }
       ]
+    },
+    {
+      "_type": "page",
+      "_id": "page-equipo",
+      "title": "Equipo",
+      "slug": {
+        "current": "equipo"
+      },
+      "header": "none",
+      "menuTone": "ocre",
+      "footerTone": "#9c67ff",
+      "dots": "amplio",
+      "seo": {
+        "description": "Las personas que participaron en el laboratorio Ciudad y Cuerpo: cocreadores, laboratorista, orientadora metodológica y productor de campo."
+      },
+      "sections": [
+        {
+          "_type": "hero",
+          "image": {
+            "local": {
+              "webp": [
+                "/assets/images/equipo/hero-equipo-480.webp",
+                "/assets/images/equipo/hero-equipo-960.webp",
+                "/assets/images/equipo/hero-equipo-1600.webp"
+              ],
+              "fallback": "/assets/images/equipo/hero-equipo.jpg",
+              "width": 1600,
+              "height": 1066
+            },
+            "alt": "El equipo del laboratorio reunido de pie alrededor de una mesa en un salón amplio"
+          },
+          "title": "Equipo",
+          "tone": "#ed56c5",
+          "footnote": "Creado junto a recicladores de Chapinero.",
+          "footnoteTone": "blanco",
+          "_key": "eqs0"
+        },
+        {
+          "_type": "collage",
+          "rows": 30,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Este laboratorio fue un espacio de encuentro entre artistas, diseñadores y creadores de distintas disciplinas.",
+                      "_key": "eqs1i0b0c0"
+                    }
+                  ],
+                  "_key": "eqs1i0b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Conoce a las personas que participaron en este proceso y que, desde sus experiencias y conocimientos, aportaron a la construcción colectiva del laboratorio.",
+                      "_key": "eqs1i0b1c0"
+                    }
+                  ],
+                  "_key": "eqs1i0b1"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 13,
+                "cols": 67,
+                "rows": 18
+              },
+              "variant": "intro",
+              "_key": "eqs1i0"
+            }
+          ],
+          "_key": "eqs1"
+        },
+        {
+          "_type": "people",
+          "anchor": "cocreadores",
+          "title": "Cocreadores",
+          "titleTone": "morado",
+          "titleAlign": "right",
+          "tone": "#a486ba",
+          "roleTone": "#eae8ff",
+          "people": [
+            {
+              "name": "Camilo Enrique Muñoz Triana",
+              "role": "Gestión cultural · Arte interdisciplinar",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Fundador y director de DiversArte, colectivo que integra pintura, música, fotografía, danza y patinaje urbano. Le interesa conectar el arte, la tecnología y la participación comunitaria.",
+                      "_key": "eqs2p0b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p0b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/camilo-munoz-480.webp",
+                    "/assets/images/equipo/camilo-munoz-960.webp",
+                    "/assets/images/equipo/camilo-munoz-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/camilo-munoz.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Joven de gorra verde juega Chapicartón en una máquina arcade de cartón"
+              },
+              "_key": "eqs2p0"
+            },
+            {
+              "name": "Santiago Andonoff Gaitán",
+              "role": "Diseño industrial · Agroecología",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Diseñador industrial interesado en la creación de espacios sostenibles, las huertas y la agricultura orgánica. Explora las relaciones entre territorio, conocimiento ancestral y herramientas digitales.",
+                      "_key": "eqs2p1b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p1b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/santiago-andonoff-480.webp",
+                    "/assets/images/equipo/santiago-andonoff-960.webp",
+                    "/assets/images/equipo/santiago-andonoff-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/santiago-andonoff.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Participantes conversan en una sesión del laboratorio: dos sentados y dos de pie frente a un pendón",
+                "hotspot": {
+                  "x": 0.23,
+                  "y": 0.35
+                }
+              },
+              "zoom": 2.7601,
+              "_key": "eqs2p1"
+            },
+            {
+              "name": "José Alberto Miranda Álvarez",
+              "role": "Periodismo · Producción de contenidos",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Comunicador social y periodista con experiencia en producción audiovisual, edición y coordinación de contenidos digitales. Le interesa explorar narrativas experimentales que conecten la comunicación, el diseño y lo social.",
+                      "_key": "eqs2p2b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p2b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/jose-miranda-480.webp",
+                    "/assets/images/equipo/jose-miranda-960.webp",
+                    "/assets/images/equipo/jose-miranda-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/jose-miranda.jpg",
+                  "width": 1600,
+                  "height": 2133
+                },
+                "alt": "Joven de buzo negro expone gesticulando junto a una pantalla con una presentación magenta",
+                "hotspot": {
+                  "x": 0,
+                  "y": 0.52
+                }
+              },
+              "zoom": 1.2235,
+              "_key": "eqs2p2"
+            },
+            {
+              "name": "Eduardo Antonio Castro Patiño",
+              "role": "Arquitectura · UX/UI · Diseño interactivo",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Arquitecto en formación complementaria en UX/UI, interesado en integrar el diseño espacial, las herramientas de inteligencia artificial y las experiencias interactivas para explorar nuevas formas de creación.",
+                      "_key": "eqs2p3b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p3b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/eduardo-castro-480.webp",
+                    "/assets/images/equipo/eduardo-castro-960.webp",
+                    "/assets/images/equipo/eduardo-castro-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/eduardo-castro.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Un hombre de buzo negro y una mujer de gafas escriben en sus libretas, sentados uno junto al otro",
+                "hotspot": {
+                  "x": 0,
+                  "y": 0.53
+                }
+              },
+              "zoom": 1.3463,
+              "_key": "eqs2p3"
+            },
+            {
+              "name": "Sebastián Espitia Riaño",
+              "role": "Producción audiovisual · Animación",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Creador audiovisual con experiencia académica en guion, storyboard, edición, animación y diseño sonoro. Explora la construcción de historias a través de medios digitales y lenguajes visuales.",
+                      "_key": "eqs2p4b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p4b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/sebastian-espitia-480.webp",
+                    "/assets/images/equipo/sebastian-espitia-960.webp",
+                    "/assets/images/equipo/sebastian-espitia-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/sebastian-espitia.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Tres participantes dibujan inclinados sobre una mesa blanca, bajo una estructura metálica roja",
+                "hotspot": {
+                  "x": 0,
+                  "y": 0.17
+                }
+              },
+              "zoom": 1.1998,
+              "flip": true,
+              "_key": "eqs2p4"
+            },
+            {
+              "name": "Camilo Fernando Castañeda Murcia",
+              "role": "Diseño gráfico · Comunicación visual",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Diseñador gráfico enfocado en conceptos creativos, ilustración y comunicación visual. Su trabajo combina diseño digital, contenidos y narrativas gráficas con interés en la experimentación y el impacto social.",
+                      "_key": "eqs2p5b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p5b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/camilo-castaneda-480.webp",
+                    "/assets/images/equipo/camilo-castaneda-960.webp",
+                    "/assets/images/equipo/camilo-castaneda-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/camilo-castaneda.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Hombre de brazo tatuado se apoya en una mesa mientras dos mujeres escriben y un fotógrafo las retrata",
+                "hotspot": {
+                  "x": 0.42,
+                  "y": 0.66
+                }
+              },
+              "zoom": 2.7261,
+              "_key": "eqs2p5"
+            },
+            {
+              "name": "Yineth Andrea Sandino Cordón",
+              "role": "Diseño gráfico · Identidad visual",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Estudiante de Diseño Gráfico con experiencia en proyectos de identidad de marca, dirección de arte y animación. Le interesa el diseño como herramienta para conectar personas, territorios y tecnologías.",
+                      "_key": "eqs2p6b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p6b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/yineth-sandino-480.webp",
+                    "/assets/images/equipo/yineth-sandino-960.webp",
+                    "/assets/images/equipo/yineth-sandino-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/yineth-sandino.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Una joven de cabello largo acompaña a una mujer con los ojos vendados que huele un objeto",
+                "hotspot": {
+                  "x": 1,
+                  "y": 0.14
+                }
+              },
+              "zoom": 1.1621,
+              "flip": true,
+              "_key": "eqs2p6"
+            },
+            {
+              "name": "Yenny Alejandra Osma Palacios",
+              "role": "Diseño de modas · Confección",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Diseñadora de modas en formación, con experiencia en un taller familiar de confección. Explora la creación de prendas mediante el patronaje, la costura, la deconstrucción y la reutilización de retazos.",
+                      "_key": "eqs2p7b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p7b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/yenny-osma-480.webp",
+                    "/assets/images/equipo/yenny-osma-960.webp",
+                    "/assets/images/equipo/yenny-osma-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/yenny-osma.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Dos mujeres conversan en la exhibición, frente a una ventana de madera",
+                "hotspot": {
+                  "x": 0,
+                  "y": 0.34
+                }
+              },
+              "zoom": 1.0955,
+              "flip": true,
+              "_key": "eqs2p7"
+            },
+            {
+              "name": "Diana Carolina Castañeda Barragán",
+              "role": "Danza · Audiovisual · Gestión cultural",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Artista interdisciplinar, bailarina y coreógrafa que investiga las relaciones entre cuerpo, imagen y sonido. Su práctica integra danza, videoperformance y tecnologías interactivas para crear experiencias participativas.",
+                      "_key": "eqs2p8b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p8b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/diana-castaneda-480.webp",
+                    "/assets/images/equipo/diana-castaneda-960.webp",
+                    "/assets/images/equipo/diana-castaneda-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/diana-castaneda.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Fotografía en blanco y negro de una bailarina que se arquea hacia atrás atravesada por un haz de luz",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.18
+                }
+              },
+              "flip": true,
+              "_key": "eqs2p8"
+            },
+            {
+              "name": "Nelson Mauricio Rodríguez Ayala",
+              "role": "Diseño de modas · Vestuario escénico",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Diseñador de modas con experiencia en patronaje, confección e ilustración de vestuario para teatro. Explora la indumentaria como una forma de construir personajes, narrativas y universos visuales.",
+                      "_key": "eqs2p9b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p9b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/nelson-rodriguez-480.webp",
+                    "/assets/images/equipo/nelson-rodriguez-960.webp",
+                    "/assets/images/equipo/nelson-rodriguez-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/nelson-rodriguez.jpg",
+                  "width": 1600,
+                  "height": 2133
+                },
+                "alt": "Joven asomado entre telas blancas colgantes iluminadas de azul",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.34
+                }
+              },
+              "zoom": 1.0332,
+              "flip": true,
+              "_key": "eqs2p9"
+            },
+            {
+              "name": "Samuel Olarte Espitia",
+              "role": "Arte · Psicología · Innovación social",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Artista y estudiante de Psicología interesado en la educación, la gestión cultural y el bienestar humano. Investiga las relaciones entre inteligencia artificial, aprendizaje y prácticas artísticas con enfoque social.",
+                      "_key": "eqs2p10b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p10b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/samuel-olarte-480.webp",
+                    "/assets/images/equipo/samuel-olarte-960.webp",
+                    "/assets/images/equipo/samuel-olarte-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/samuel-olarte.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Silueta de un hombre de gorra inclinado hacia el haz de un proyector en una sala a oscuras",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.07
+                }
+              },
+              "flip": true,
+              "_key": "eqs2p10"
+            },
+            {
+              "name": "Carol Sofía Cuervo Lizarazu",
+              "role": "Diseño de modas · Desarrollo de prendas",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Diseñadora de modas en formación con experiencia en patronaje, confección y desarrollo de prendas. Combina exploración conceptual, atención al detalle y conocimiento técnico para convertir ideas en propuestas de vestuario.",
+                      "_key": "eqs2p11b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p11b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/carol-cuervo-480.webp",
+                    "/assets/images/equipo/carol-cuervo-960.webp",
+                    "/assets/images/equipo/carol-cuervo-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/carol-cuervo.jpg",
+                  "width": 1600,
+                  "height": 1066
+                },
+                "alt": "Participantes arrodillados en el piso tienden hilos entre objetos durante un ejercicio del laboratorio",
+                "hotspot": {
+                  "x": 0,
+                  "y": 0.45
+                }
+              },
+              "zoom": 1.5761,
+              "_key": "eqs2p11"
+            },
+            {
+              "name": "Johan Andretty Lozano Suárez",
+              "role": "Diseño gráfico · Moda · Narrativas visuales",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Diseñador gráfico y de modas que combina ilustración, vestuario y experimentación textil. Su trabajo explora imaginarios fantásticos, estéticas maximalistas y narrativas inspiradas en la cultura latinoamericana.",
+                      "_key": "eqs2p12b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p12b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/johan-lozano-480.webp",
+                    "/assets/images/equipo/johan-lozano-960.webp",
+                    "/assets/images/equipo/johan-lozano-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/johan-lozano.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Joven de gafas y cabello rojo conversa con visitantes de la exhibición junto a un panel azul"
+              },
+              "_key": "eqs2p12"
+            },
+            {
+              "name": "Natalia Patricia Ahumada Baptista",
+              "role": "Diseño de modas · Vestuario",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Diseñadora de modas en formación, con conocimientos de patronaje industrial y desarrollo de prendas. Le interesa la exploración creativa del vestuario y el fortalecimiento de su práctica artística y profesional.",
+                      "_key": "eqs2p13b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p13b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/natalia-ahumada-480.webp",
+                    "/assets/images/equipo/natalia-ahumada-960.webp",
+                    "/assets/images/equipo/natalia-ahumada-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/natalia-ahumada.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Grupo reunido en penumbra alrededor de una mesa iluminada con velas",
+                "hotspot": {
+                  "x": 0.93,
+                  "y": 0.38
+                }
+              },
+              "zoom": 1.902,
+              "_key": "eqs2p13"
+            },
+            {
+              "name": "Daniel Felipe García Lagos",
+              "role": "Ilustración · Diseño gráfico · Moda",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Ilustrador con experiencia en desarrollo de piezas gráficas y manejo de herramientas digitales. Actualmente amplía su formación hacia el diseño de modas, con interés en conectar la ilustración y la experimentación visual.",
+                      "_key": "eqs2p14b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p14b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/daniel-garcia-480.webp",
+                    "/assets/images/equipo/daniel-garcia-960.webp",
+                    "/assets/images/equipo/daniel-garcia-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/daniel-garcia.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Joven de chaqueta de jean explica una pieza de la exhibición a tres visitantes"
+              },
+              "_key": "eqs2p14"
+            },
+            {
+              "name": "Carlos Andrés Saray Orozco",
+              "role": "Artes visuales · Educación · Investigación-creación",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Artista visual y docente con experiencia en procesos pedagógicos, ilustración y creación colectiva. Su trayectoria integra prácticas artísticas y educativas, con interés en investigar las relaciones entre cultura, tecnología y territorio.",
+                      "_key": "eqs2p15b0c0"
+                    }
+                  ],
+                  "_key": "eqs2p15b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/carlos-saray-480.webp",
+                    "/assets/images/equipo/carlos-saray-960.webp",
+                    "/assets/images/equipo/carlos-saray-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/carlos-saray.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Hombre con los ojos vendados palpa objetos dispuestos en el piso durante un ejercicio sensorial",
+                "hotspot": {
+                  "x": 1,
+                  "y": 0.27
+                }
+              },
+              "zoom": 1.1344,
+              "_key": "eqs2p15"
+            }
+          ],
+          "_key": "eqs2"
+        },
+        {
+          "_type": "people",
+          "anchor": "laboratorista",
+          "title": "Laboratorista",
+          "titleTone": "morado",
+          "tone": "#ffe867",
+          "roleTone": "morado",
+          "people": [
+            {
+              "name": "Victor Gómez Rodríguez",
+              "role": "Diseño digital · Tipografía · Diseño editorial",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Diseñador y tipógrafo, magíster en Diseño de la Universidad de los Andes. Cuenta con más de quince años de experiencia en diseño digital, editorial y tipográfico. Su trabajo abarca el diseño de sitios web, aplicaciones, publicaciones y sistemas de señalética, además de explorar campos como el diseño de interacción y de servicios. En 2023, su tipografía Alestalgia fue seleccionada en la Bienal Tipos Latinos. En ARTEFACTUM acompañó el proceso desde su experiencia en diseño y creación.",
+                      "_key": "eqs3p0b0c0"
+                    }
+                  ],
+                  "_key": "eqs3p0b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/victor-gomez-480.webp",
+                    "/assets/images/equipo/victor-gomez-960.webp",
+                    "/assets/images/equipo/victor-gomez-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/victor-gomez.jpg",
+                  "width": 1600,
+                  "height": 2133
+                },
+                "alt": "Hombre de camisa verde levanta los brazos sonriendo mientras dos participantes le ponen una hoja seca en el pecho",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              "_key": "eqs3p0"
+            }
+          ],
+          "_key": "eqs3"
+        },
+        {
+          "_type": "people",
+          "anchor": "orientadora-metodologica",
+          "title": "Orientadora metodológica",
+          "titleTone": "#67ff8d",
+          "tone": "#ff67cf",
+          "roleTone": "morado",
+          "people": [
+            {
+              "name": "Laura Garrido",
+              "role": "Creación textil · Cartografía afectiva · Memoria y territorio",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Artista y facilitadora de procesos de creación artística que exploran las relaciones entre memoria, territorio y afectividad. Su trabajo integra prácticas textiles, reparación de materiales y cartografía afectiva como medios para reconocer historias y transformaciones del territorio, propiciando espacios de exploración y creación colectiva.",
+                      "_key": "eqs4p0b0c0"
+                    }
+                  ],
+                  "_key": "eqs4p0b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/laura-garrido-480.webp",
+                    "/assets/images/equipo/laura-garrido-960.webp",
+                    "/assets/images/equipo/laura-garrido-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/laura-garrido.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Mujer de gafas y chaqueta de jean toma notas en una libreta, rodeada de otros participantes",
+                "hotspot": {
+                  "x": 0.38,
+                  "y": 0.38
+                }
+              },
+              "zoom": 1.5411,
+              "_key": "eqs4p0"
+            }
+          ],
+          "_key": "eqs4"
+        },
+        {
+          "_type": "people",
+          "anchor": "productor-de-campo",
+          "title": "Productor de campo",
+          "titleTone": "#ff67cf",
+          "tone": "#67ff8d",
+          "roleTone": "morado",
+          "people": [
+            {
+              "name": "Wilson Dueñas",
+              "role": "Artes visuales · Educación artística · Realización audiovisual",
+              "bio": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Artista visual, docente, diseñador y fotógrafo independiente con más de quince años de experiencia en procesos culturales. Su trayectoria reúne conocimientos en realización audiovisual, fotografía, producción y montaje, así como en manejo de grupos y formación artística. Ha participado en procesos de gestión cultural territorial y formación artística en Bogotá.",
+                      "_key": "eqs5p0b0c0"
+                    }
+                  ],
+                  "_key": "eqs5p0b0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/equipo/wilson-duenas-480.webp",
+                    "/assets/images/equipo/wilson-duenas-960.webp",
+                    "/assets/images/equipo/wilson-duenas-1600.webp"
+                  ],
+                  "fallback": "/assets/images/equipo/wilson-duenas.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Retrato en penumbra de un hombre de gorra, gafas y barba",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0
+                }
+              },
+              "_key": "eqs5p0"
+            }
+          ],
+          "_key": "eqs5"
+        },
+        {
+          "_type": "collage",
+          "rows": 18,
+          "items": [
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 18,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "eqs6i0"
+            }
+          ],
+          "_key": "eqs6"
+        },
+        {
+          "_type": "cardGrid",
+          "layout": "row",
+          "title": "Explora más",
+          "items": [
+            {
+              "_type": "card",
+              "label": "Lo que aprendimos de la calle",
+              "href": "/lo-que-aprendimos-de-la-calle/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-calle-480.webp",
+                    "/assets/images/inicio/card-calle-960.webp",
+                    "/assets/images/inicio/card-calle-1200.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-calle.jpg",
+                  "width": 1200,
+                  "height": 1600
+                },
+                "alt": "Carreta de reciclaje cargada de costales en una calle de Chapinero",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.35
+                }
+              },
+              "size": "s",
+              "_key": "eqs7i0"
+            },
+            {
+              "_type": "card",
+              "label": "Chapicartón",
+              "href": "/videojuego/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-videojuego-480.webp",
+                    "/assets/images/inicio/card-videojuego-960.webp",
+                    "/assets/images/inicio/card-videojuego-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-videojuego.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Joven jugando Chapicartón en una máquina arcade"
+              },
+              "size": "s",
+              "_key": "eqs7i1"
+            },
+            {
+              "_type": "card",
+              "label": "¿Cómo lo hicimos?",
+              "href": "/como-lo-hicimos/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-como-480.webp",
+                    "/assets/images/inicio/card-como-960.webp",
+                    "/assets/images/inicio/card-como-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-como.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Participante con los ojos vendados explora objetos e hilos sobre el piso"
+              },
+              "size": "s",
+              "_key": "eqs7i2"
+            },
+            {
+              "_type": "card",
+              "label": "Exhibición",
+              "href": "/exhibicion/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-exhibicion-480.webp",
+                    "/assets/images/inicio/card-exhibicion-960.webp",
+                    "/assets/images/inicio/card-exhibicion-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-exhibicion.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Sala de la exhibición con mesas, piezas y pendones"
+              },
+              "size": "s",
+              "_key": "eqs7i3"
+            }
+          ],
+          "_key": "eqs7"
+        }
+      ]
     }
   ]
 }

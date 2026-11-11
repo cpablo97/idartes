@@ -1,0 +1,61 @@
+/* ============================================================
+   Equipo — sección `people` (fichas de persona) y ajustes de la página.
+   Base = móvil; 600 px tablet; 1000 px escritorio fiel al Figma (1rem = 10 px de diseño).
+   ============================================================ */
+
+/* ---------- people: grupo de fichas ---------- */
+.people { --ficha: #a486ba; --ficha-rol: #eae8ff; --ficha-tinta: #060037; padding: 3rem 2rem 0; }
+.people__title { position: relative; z-index: 1; font-family: var(--mono); font-weight: 400; letter-spacing: 0; line-height: 1.19; color: var(--morado);
+  /* el titular más largo sin espacios ("Laboratorista", 13 letras de medio em) debe caber en una línea */
+  font-size: min(9rem, calc((100vw - 4rem) / 6.6)); margin-bottom: -.22em; }
+.people--right .people__title { text-align: right; }
+.people__list { display: flex; flex-direction: column; gap: 3.2rem; }
+
+.person { display: flex; flex-direction: column; gap: 1.6rem; padding: 1.2rem 1.2rem 2rem; background: var(--ficha); color: var(--ficha-tinta); }
+.person__photo { position: relative; overflow: hidden; aspect-ratio: 909.755 / 560; background: rgba(6, 0, 55, .12); }
+.person__photo picture, .person__photo img { display: block; width: 100%; height: 100%; }
+.person__photo img { object-fit: cover; }
+.person__photo.is-zoom img { scale: var(--zoom, 1); transform-origin: var(--fx, 50%) var(--fy, 50%); }
+.person__photo.is-flip picture { scale: -1 1; }
+.person__text { display: flex; flex-direction: column; font-weight: 500; line-height: 1.5; letter-spacing: -.022em; }
+.person__name { font-size: 2.2rem; font-weight: 500; line-height: 1.3; }
+.person__role { margin-top: .8rem; font-size: 1.3rem; color: var(--ficha-rol); }
+/* tracking medido sobre el render del diseño (≈ −0,38 px a 20 px), para que las líneas corten igual */
+.person__bio { margin-top: 1.4rem; font-size: 1.7rem; letter-spacing: -.019em; }
+.person__bio > * + * { margin-top: 1em; }
+.person__links { display: flex; flex-wrap: wrap; gap: .8rem 1.6rem; margin-top: 1.6rem; font-size: 1.5rem; }
+.person__links a { text-decoration-thickness: 1px; text-underline-offset: .18em; }
+
+/* ---------- ajustes de la página ---------- */
+.page-equipo .sec--collage .rule { align-self: end; }
+
+@media (min-width: 600px) {
+  .people { padding: 4rem 4rem 0; }
+  .people__title { font-size: min(9rem, calc((100vw - 8rem) / 6.6)); }
+  .people__list { gap: 4.8rem; }
+  .person { padding: 2rem 2rem 2.8rem; gap: 2rem; }
+  .person__text { max-width: 60rem; }
+  .person__name { font-size: 2.4rem; }
+  .person__bio { font-size: 1.8rem; }
+}
+
+@media (min-width: 1000px) {
+  /* El titular mide 107 px de caja y empieza 87 px sobre la ficha: sus descendentes pisan el borde. */
+  .people { padding: 0 var(--margen); margin-top: 10rem; }
+  .people__title { font-size: 9rem; white-space: nowrap; margin-bottom: -2.01rem; }
+  .people__list { gap: 9rem; }
+  .person { flex-direction: row; align-items: flex-start; gap: 2.4rem; padding: 2rem; min-height: 60rem; }
+  .person__photo { flex: 1 1 0; min-width: 0; height: 56rem; aspect-ratio: auto; }
+  .person__text { flex: none; width: 34.6245rem; max-width: none; }
+  .person__name { font-size: 2.4rem; line-height: 1.5; }
+  .person__role { font-size: 1.2rem; }
+  .person__bio { margin-top: 1.6rem; font-size: 2rem; }
+
+  /* Intro: interlineado "normal" del diseño (30 px) y ancho de 667 px. */
+  .page-equipo .v-intro { line-height: 1.25; max-width: 66.7rem; }
+  .page-equipo .v-intro > * + * { margin-top: 1.25em; }
+  .page-equipo .sec--collage + .people { margin-top: .26rem; }
+  /* En el diseño "Laboratorista" queda a 90 px de la ficha anterior; los otros dos titulares, a 100. */
+  .page-equipo #laboratorista { margin-top: 9rem; }
+  .page-equipo .explora { padding-bottom: 19.8rem; }
+}
