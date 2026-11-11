@@ -1567,6 +1567,2041 @@
           "_key": "eqs7"
         }
       ]
+    },
+    {
+      "_type": "page",
+      "_id": "page-exhibicion",
+      "title": "Exhibición",
+      "slug": {
+        "current": "exhibicion"
+      },
+      "header": "none",
+      "menuTone": "ocre",
+      "dots": "amplio",
+      "footerTone": "#9c67ff",
+      "seo": {
+        "description": "La ciudad que pasa por el cuerpo: recorrido por la exposición en Villa Adelaida, con la bitácora, los artefactos, la indumentaria, la carreta, las siluetas, el microdocumental y el videojuego Chapicartón."
+      },
+      "sections": [
+        {
+          "_type": "hero",
+          "anchor": "microdocumental",
+          "image": {
+            "local": {
+              "webp": [
+                "/assets/images/exhibicion/hero-proyeccion-pasos-480.webp",
+                "/assets/images/exhibicion/hero-proyeccion-pasos-960.webp",
+                "/assets/images/exhibicion/hero-proyeccion-pasos-1600.webp"
+              ],
+              "fallback": "/assets/images/exhibicion/hero-proyeccion-pasos.jpg",
+              "width": 1600,
+              "height": 1067
+            },
+            "alt": "Proyección fragmentada sobre paneles de cartón: los pies de dos personas caminando por la calle"
+          },
+          "youtubeId": "TODO_MICRODOCUMENTAL_EXHIBICION",
+          "videoTitle": "Microdocumental: La ciudad que no vemos",
+          "footnote": "Creado junto a recicladores de Chapinero.",
+          "footnoteTone": "#0d0c19",
+          "footnotePlace": "below",
+          "_key": "exs0"
+        },
+        {
+          "_type": "collage",
+          "anchor": "intro",
+          "rows": 360,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La ciudad que pasa por el cuerpo",
+                      "_key": "exs1i0b0c0"
+                    }
+                  ],
+                  "_key": "exs1i0b0"
+                }
+              ],
+              "place": {
+                "col": 31,
+                "row": 8,
+                "cols": 72,
+                "rows": 6
+              },
+              "font": "mono",
+              "size": 36,
+              "tone": "negro",
+              "align": "center",
+              "level": 1,
+              "variant": "titulo",
+              "_key": "exs1i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La ciudad se puede recorrer de muchas maneras.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "exs1i1b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Está en los trayectos que hacemos a diario, en los lugares que habitamos, en los materiales que circulan y en las relaciones que construimos con quienes la transitan.",
+                      "_key": "exs1i1b0c1"
+                    }
+                  ],
+                  "_key": "exs1i1b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 27,
+                "cols": 56,
+                "rows": 22
+              },
+              "tone": "ocre",
+              "_key": "exs1i1"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/nino-bitacora-impresa-480.webp",
+                    "/assets/images/exhibicion/nino-bitacora-impresa-960.webp",
+                    "/assets/images/exhibicion/nino-bitacora-impresa-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/nino-bitacora-impresa.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Un niño observa una bitácora impresa sobre la mesa, rodeado de otros visitantes"
+              },
+              "place": {
+                "col": 74,
+                "row": 27,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "exs1i2"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/mediador-visitantes-480.webp",
+                    "/assets/images/exhibicion/mediador-visitantes-960.webp",
+                    "/assets/images/exhibicion/mediador-visitantes-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/mediador-visitantes.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Un cocreador conversa con dos visitantes mayores frente a un pendón de la exposición"
+              },
+              "place": {
+                "col": 7,
+                "row": 51,
+                "cols": 22,
+                "rows": 22
+              },
+              "_key": "exs1i3"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "No todas las personas la experimentan de la misma forma. Hay trabajos, recorridos y experiencias que hacen parte de su funcionamiento cotidiano, pero que pocas veces nos detenemos a observar.",
+                      "_key": "exs1i4b0c0"
+                    }
+                  ],
+                  "_key": "exs1i4b0"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 75,
+                "cols": 65,
+                "rows": 15
+              },
+              "weight": 500,
+              "tone": "ocre",
+              "_key": "exs1i4"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/visitantes-lamina-480.webp",
+                    "/assets/images/exhibicion/visitantes-lamina-960.webp",
+                    "/assets/images/exhibicion/visitantes-lamina-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/visitantes-lamina.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Tres jóvenes revisan una lámina impresa sobre una mesa de la exposición"
+              },
+              "place": {
+                "col": 7,
+                "row": 96,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "exs1i5"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/visitantes-mesa-480.webp",
+                    "/assets/images/exhibicion/visitantes-mesa-960.webp",
+                    "/assets/images/exhibicion/visitantes-mesa-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/visitantes-mesa.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Dos visitantes conversan junto a una mesa, entre pendones de la exposición"
+              },
+              "place": {
+                "col": 52,
+                "row": 96,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "exs1i6"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/conversacion-pendones-480.webp",
+                    "/assets/images/exhibicion/conversacion-pendones-960.webp",
+                    "/assets/images/exhibicion/conversacion-pendones-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/conversacion-pendones.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Un joven de saco amarillo conversa con otro visitante frente a los pendones"
+              },
+              "place": {
+                "col": 97,
+                "row": 96,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "exs1i7"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La ciudad que pasa por el cuerpo nació de una exploración colectiva sobre esas formas de relacionarnos con el entorno. Durante cinco meses, 16 cocreadores de distintas disciplinas y experiencias participaron en un proceso de observación, conversación, experimentación y creación en Chapinero.",
+                      "_key": "exs1i8b0c0"
+                    }
+                  ],
+                  "_key": "exs1i8b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 147,
+                "cols": 67,
+                "rows": 19
+              },
+              "weight": 500,
+              "tone": "#023c0f",
+              "variant": "m666",
+              "_key": "exs1i8"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Lo que comenzó como una pregunta amplia sobre la ciudad fue tomando dirección a medida que recorríamos el territorio, compartíamos ideas y nos encontrábamos con otras formas de vivirlo.",
+                      "_key": "exs1i9b0c0"
+                    }
+                  ],
+                  "_key": "exs1i9b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 168,
+                "cols": 67,
+                "rows": 15
+              },
+              "weight": 500,
+              "tone": "#023c0f",
+              "variant": "m666",
+              "_key": "exs1i9"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/visitante-pendon-480.webp",
+                    "/assets/images/exhibicion/visitante-pendon-960.webp",
+                    "/assets/images/exhibicion/visitante-pendon-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/visitante-pendon.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Un visitante lee un pendón azul con círculos rojos en una sala de Villa Adelaida"
+              },
+              "place": {
+                "col": 83,
+                "row": 157,
+                "cols": 56,
+                "rows": 56
+              },
+              "_key": "exs1i10"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "exponer.",
+                  "_key": "exs1i11t0"
+                }
+              ],
+              "tone": "#ff67c7",
+              "place": {
+                "col": 39,
+                "row": 196,
+                "cols": 85,
+                "rows": 14,
+                "z": 5
+              },
+              "_key": "exs1i11"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/visitantes-mayores-penumbra-480.webp",
+                    "/assets/images/exhibicion/visitantes-mayores-penumbra-960.webp",
+                    "/assets/images/exhibicion/visitantes-mayores-penumbra-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/visitantes-mayores-penumbra.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Un joven y dos personas mayores miran una pantalla en la penumbra de la sala"
+              },
+              "place": {
+                "col": 7,
+                "row": 223,
+                "cols": 61,
+                "rows": 61
+              },
+              "_key": "exs1i12"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "En ese camino nos acercamos al oficio del reciclaje. A través de los encuentros con recicladoras y recicladores, conocimos una manera particular de recorrer la ciudad, sus experiencias nos permitieron comprender que la ciudad también se construye desde el trabajo que hace posible recuperar y reincorporar materiales a los ciclos de aprovechamiento.",
+                      "_key": "exs1i13b0c0"
+                    }
+                  ],
+                  "_key": "exs1i13b0"
+                }
+              ],
+              "place": {
+                "col": 83,
+                "row": 233,
+                "cols": 56,
+                "rows": 30
+              },
+              "weight": 500,
+              "tone": "ocre",
+              "_key": "exs1i13"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/visitante-luz-azul-480.webp",
+                    "/assets/images/exhibicion/visitante-luz-azul-960.webp",
+                    "/assets/images/exhibicion/visitante-luz-azul-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/visitante-luz-azul.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Una mujer mayor, iluminada por luz azul, prueba el mando del videojuego"
+              },
+              "place": {
+                "col": 83,
+                "row": 282,
+                "cols": 50,
+                "rows": 50
+              },
+              "_key": "exs1i14"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "El cuerpo apareció entonces como un punto de encuentro entre el territorio y el oficio. No como una idea abstracta, sino como aquello que camina, hala, carga, se mueve y se adapta a las condiciones de cada jornada. ",
+                      "_key": "exs1i15b0c0"
+                    }
+                  ],
+                  "_key": "exs1i15b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 315,
+                "cols": 64,
+                "rows": 15
+              },
+              "weight": 500,
+              "tone": "morado",
+              "variant": "m639",
+              "_key": "exs1i15"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Desde esta perspectiva surgieron diferentes propuestas que buscaron acercarse a esas experiencias a través de lenguajes visuales, audiovisuales, materiales y digitales.",
+                      "_key": "exs1i16b0c0"
+                    }
+                  ],
+                  "_key": "exs1i16b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 332,
+                "cols": 65,
+                "rows": 11
+              },
+              "weight": 500,
+              "tone": "morado",
+              "variant": "m647",
+              "_key": "exs1i16"
+            },
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 355,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "exs1i17"
+            }
+          ],
+          "_key": "exs1"
+        },
+        {
+          "_type": "collage",
+          "anchor": "bitacora",
+          "rows": 122,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Bitácora",
+                      "_key": "exs2i0b0c0"
+                    }
+                  ],
+                  "_key": "exs2i0b0"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 7,
+                "cols": 65,
+                "rows": 4
+              },
+              "weight": 700,
+              "level": 2,
+              "_key": "exs2i0"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/sala-bitacora-480.webp",
+                    "/assets/images/exhibicion/sala-bitacora-960.webp",
+                    "/assets/images/exhibicion/sala-bitacora-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/sala-bitacora.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Sala de la exposición con mesas de piezas y los pendones de la bitácora montados sobre bastidores"
+              },
+              "place": {
+                "col": 7,
+                "row": 7,
+                "cols": 65,
+                "rows": 43
+              },
+              "_key": "exs2i1"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Desde la primera sesión, cada participante recibió una agenda para registrar sus observaciones, ideas y experiencias. La bitácora se convirtió en una herramienta para documentar el recorrido individual y conservar la memoria de lo que íbamos descubriendo como grupo.",
+                      "_key": "exs2i2b0c0"
+                    }
+                  ],
+                  "_key": "exs2i2b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Al finalizar el laboratorio, reunimos los registros de veinte jueves y organizamos el material en nueve islas temáticas. Estas permitían recorrer cronológicamente las distintas etapas del proceso, desde las primeras exploraciones sobre nosotros, la ciudad y Chapinero hasta las reflexiones que surgieron al cierre del laboratorio.",
+                      "_key": "exs2i2b1c0"
+                    }
+                  ],
+                  "_key": "exs2i2b1"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Los registros se imprimieron y montaron sobre bastidores forrados en cartón. La elección del material buscaba conectar la presentación de la memoria del laboratorio con uno de los materiales centrales del oficio del reciclaje.",
+                      "_key": "exs2i2b2c0"
+                    }
+                  ],
+                  "_key": "exs2i2b2"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 16,
+                "cols": 65,
+                "rows": 66
+              },
+              "variant": "m648",
+              "_key": "exs2i2"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/mediador-pareja-480.webp",
+                    "/assets/images/exhibicion/mediador-pareja-960.webp",
+                    "/assets/images/exhibicion/mediador-pareja-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/mediador-pareja.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Un cocreador explica un pendón amarillo a una pareja de visitantes mayores"
+              },
+              "place": {
+                "col": 29,
+                "row": 76,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "exs2i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/piezas-ceramica-origami-480.webp",
+                    "/assets/images/exhibicion/piezas-ceramica-origami-960.webp",
+                    "/assets/images/exhibicion/piezas-ceramica-origami-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/piezas-ceramica-origami.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Piezas de cerámica blanca y grullas de origami sobre una mesa de la muestra"
+              },
+              "place": {
+                "col": 108,
+                "row": 87,
+                "cols": 31,
+                "rows": 20
+              },
+              "_key": "exs2i4"
+            }
+          ],
+          "_key": "exs2"
+        },
+        {
+          "_type": "collage",
+          "anchor": "artefactos",
+          "rows": 174,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Artefactos para el cuerpo",
+                      "_key": "exs3i0b0c0"
+                    }
+                  ],
+                  "_key": "exs3i0b0"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 6,
+                "cols": 63,
+                "rows": 4
+              },
+              "weight": 700,
+              "level": 2,
+              "_key": "exs3i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Al observar el movimiento de la carreta, identificamos que quien la conduce alterna entre jalarla y empujarla, y cambia varias veces la forma de sujetar la lanza. Estos movimientos implican esfuerzos para las manos, las muñecas y la espalda. A partir de esta observación surgió la pregunta de cómo acompañar esos movimientos sin interferir con las labores del oficio.",
+                      "_key": "exs3i1b0c0"
+                    }
+                  ],
+                  "_key": "exs3i1b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Algunos cocreadores exploraron un sistema de anillas que permitiera realizar movimientos de rotación de la muñeca sin soltar la lanza de la carreta. Como todavía no contábamos con una carreta para probar la propuesta, el primer acercamiento con los recicladores se realizó utilizando un perchero como sustituto. La idea no los convenció inicialmente, pero fueron ellos quienes propusieron probarla directamente en una carreta.",
+                      "_key": "exs3i1b1c0"
+                    }
+                  ],
+                  "_key": "exs3i1b1"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "A partir de ese primer acercamiento, exploramos otras alternativas, como bandas elásticas, una riata y un mecanismo de pernos que permitía acumular tensión. Samuel y Diana realizaron pruebas en el parque para evaluar el funcionamiento de estos elementos y explorar sus posibilidades de uso.",
+                      "_key": "exs3i1b2c0"
+                    }
+                  ],
+                  "_key": "exs3i1b2"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Los encuentros con los recicladores también nos permitieron replantear el objetivo de estas exploraciones. Nos señalaron que la carreta no necesitaba ser rediseñada y que la necesidad estaba en facilitar algunos momentos de su uso, especialmente al iniciar el desplazamiento y al detenerla.",
+                      "_key": "exs3i1b3c0"
+                    }
+                  ],
+                  "_key": "exs3i1b3"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 15,
+                "cols": 65,
+                "rows": 101
+              },
+              "variant": "m648",
+              "_key": "exs3i1"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/mesa-artefactos-guantes-480.webp",
+                    "/assets/images/exhibicion/mesa-artefactos-guantes-960.webp",
+                    "/assets/images/exhibicion/mesa-artefactos-guantes-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/mesa-artefactos-guantes.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Mesa con guantes negros, piezas textiles bordadas y bandas elásticas verdes"
+              },
+              "place": {
+                "col": 7,
+                "row": 36,
+                "cols": 65,
+                "rows": 65
+              },
+              "_key": "exs3i2"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/mesa-prototipos-480.webp",
+                    "/assets/images/exhibicion/mesa-prototipos-960.webp",
+                    "/assets/images/exhibicion/mesa-prototipos-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/mesa-prototipos.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Mesa azul con prototipos: guantes, una riata, bandas elásticas y figuras de papel"
+              },
+              "place": {
+                "col": 29,
+                "row": 123,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "exs3i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/mano-alambre-480.webp",
+                    "/assets/images/exhibicion/mano-alambre-960.webp",
+                    "/assets/images/exhibicion/mano-alambre-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/mano-alambre.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Silueta de una mano hecha en alambre negro sobre una mesa"
+              },
+              "place": {
+                "col": 109,
+                "row": 129,
+                "cols": 30,
+                "rows": 30
+              },
+              "_key": "exs3i4"
+            }
+          ],
+          "_key": "exs3"
+        },
+        {
+          "_type": "collage",
+          "anchor": "armadura",
+          "rows": 149,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Una armadura cotidiana",
+                      "_key": "exs4i0b0c0"
+                    }
+                  ],
+                  "_key": "exs4i0b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 10,
+                "cols": 64,
+                "rows": 4
+              },
+              "weight": 700,
+              "level": 2,
+              "_key": "exs4i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Durante los encuentros surgió la preocupación por la falta de prendas que protegieran adecuadamente a quienes realizan el oficio del reciclaje. A partir de esta observación, comenzamos a explorar la posibilidad de desarrollar una indumentaria que acompañara las condiciones de trabajo y ofreciera protección durante la jornada.",
+                      "_key": "exs4i1b0c0"
+                    }
+                  ],
+                  "_key": "exs4i1b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "El desarrollo comenzó con una lluvia de ideas, referencias visuales y moodboards que dieron paso a los primeros bocetos. Estas propuestas se fueron ajustando a partir de las conversaciones con los recicladores. Después avanzamos hacia el patronaje, el corte y la confección de las prendas.",
+                      "_key": "exs4i1b1c0"
+                    }
+                  ],
+                  "_key": "exs4i1b1"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "En esta etapa apareció el escarabajo como símbolo de la propuesta, por su relación con la transformación de la materia orgánica y los procesos de descomposición. Sin embargo, las observaciones de los recicladores ayudaron a definir aspectos mucho más concretos de la indumentaria: preferían prendas discretas, con pocos elementos reflectivos, menos bolsillos y uno de uso reservado para guardar el dinero. También señalaron la importancia de contar con abrigo para las jornadas nocturnas.",
+                      "_key": "exs4i1b2c0"
+                    }
+                  ],
+                  "_key": "exs4i1b2"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La propuesta contempló un conjunto de dos piezas en denim ignífugo de alta resistencia, con corte recto, bolsillos funcionales, bordado de escarabajo y refuerzos acolchados en cuerina. Se exploraron además complementos como guantes largos, una faja y protecciones para distintas partes ",
+                      "_key": "exs4i1b3c0"
+                    }
+                  ],
+                  "_key": "exs4i1b3"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Al considerar el costo de fabricar un uniforme completo, surgió otra posibilidad: desarrollar refuerzos que cada persona pudiera incorporar a su propia ropa mediante costuras, utilizando retazos recuperados. Así, la propuesta también exploraba una alternativa modular y más accesible.",
+                      "_key": "exs4i1b4c0"
+                    }
+                  ],
+                  "_key": "exs4i1b4"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 19,
+                "cols": 65,
+                "rows": 126
+              },
+              "variant": "m644",
+              "_key": "exs4i1"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/chaleco-chapicarton-480.webp",
+                    "/assets/images/exhibicion/chaleco-chapicarton-960.webp",
+                    "/assets/images/exhibicion/chaleco-chapicarton-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/chaleco-chapicarton.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Chaleco de denim negro con la palabra Chapicartón, apoyado sobre una estructura de alambre"
+              },
+              "place": {
+                "col": 85,
+                "row": 18,
+                "cols": 54,
+                "rows": 54
+              },
+              "_key": "exs4i2"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "proteger",
+                  "_key": "exs4i3t0"
+                }
+              ],
+              "tone": "#ff67c7",
+              "place": {
+                "col": 119,
+                "row": 44,
+                "cols": 14,
+                "rows": 85,
+                "z": 5
+              },
+              "rotate": -90,
+              "_key": "exs4i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/chaleco-maniqui-480.webp",
+                    "/assets/images/exhibicion/chaleco-maniqui-960.webp",
+                    "/assets/images/exhibicion/chaleco-maniqui-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/chaleco-maniqui.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Chaleco negro con refuerzos exhibido sobre una mesa, con una cabeza de alambre y pendones al fondo"
+              },
+              "place": {
+                "col": 85,
+                "row": 114,
+                "cols": 31,
+                "rows": 31
+              },
+              "_key": "exs4i4"
+            }
+          ],
+          "_key": "exs4"
+        },
+        {
+          "_type": "collage",
+          "anchor": "carreta",
+          "rows": 213,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La carreta en Chapinero",
+                      "_key": "exs5i0b0c0"
+                    }
+                  ],
+                  "_key": "exs5i0b0"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 46,
+                "cols": 65,
+                "rows": 4
+              },
+              "weight": 700,
+              "level": 2,
+              "_key": "exs5i0"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/visitante-velos-azules-480.webp",
+                    "/assets/images/exhibicion/visitante-velos-azules-960.webp",
+                    "/assets/images/exhibicion/visitante-velos-azules-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/visitante-velos-azules.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Una visitante de perfil entre velos iluminados de azul"
+              },
+              "place": {
+                "col": 7,
+                "row": 6,
+                "cols": 45,
+                "rows": 45
+              },
+              "_key": "exs5i1"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/velos-rojos-480.webp",
+                    "/assets/images/exhibicion/velos-rojos-960.webp",
+                    "/assets/images/exhibicion/velos-rojos-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/velos-rojos.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Velos translúcidos colgados en una sala oscura, iluminados de rojo y magenta"
+              },
+              "place": {
+                "col": 74,
+                "row": 10,
+                "cols": 30,
+                "rows": 30
+              },
+              "_key": "exs5i2"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La carreta es una herramienta fundamental para el oficio del reciclaje. También es uno de los elementos que hace visible la presencia de quienes recorren la ciudad recuperando materiales. Por eso, decidimos llevarla al espacio público y convertirla en parte de la exposición.",
+                      "_key": "exs5i3b0c0"
+                    }
+                  ],
+                  "_key": "exs5i3b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Intervenimos una carreta incorporando algunos de los prototipos de agarre desarrollados durante el laboratorio. Luego la ubicamos en el exterior de Villa Adelaida, donde funcionaba como una invitación a acercarse a la exposición, entrar y tomarse una fotografía. De esta manera, una herramienta cotidiana del oficio pasó a ocupar un lugar dentro de la muestra y a generar un punto de encuentro con los visitantes.",
+                      "_key": "exs5i3b1c0"
+                    }
+                  ],
+                  "_key": "exs5i3b1"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 56,
+                "cols": 62,
+                "rows": 52
+              },
+              "variant": "m616",
+              "_key": "exs5i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/velo-proyeccion-silueta-480.webp",
+                    "/assets/images/exhibicion/velo-proyeccion-silueta-960.webp",
+                    "/assets/images/exhibicion/velo-proyeccion-silueta-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/velo-proyeccion-silueta.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Fotografía de silueta en tonos morados proyectada sobre un velo",
+                "hotspot": {
+                  "x": 0.09,
+                  "y": 0.5
+                }
+              },
+              "place": {
+                "col": 7,
+                "row": 73,
+                "cols": 60,
+                "rows": 60
+              },
+              "_key": "exs5i4"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/velo-dibujo-480.webp",
+                    "/assets/images/exhibicion/velo-dibujo-960.webp",
+                    "/assets/images/exhibicion/velo-dibujo-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/velo-dibujo.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Velo iluminado de azul con el dibujo a mano de un cuerpo cargando"
+              },
+              "place": {
+                "col": 74,
+                "row": 112,
+                "cols": 20,
+                "rows": 20
+              },
+              "_key": "exs5i5"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/visitante-velos-blancos-480.webp",
+                    "/assets/images/exhibicion/visitante-velos-blancos-960.webp",
+                    "/assets/images/exhibicion/visitante-velos-blancos-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/visitante-velos-blancos.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Un visitante con gorra observa los velos color hueso colgados en la sala"
+              },
+              "place": {
+                "col": 85,
+                "row": 150,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "exs5i6"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/pacas-carton-azul-480.webp",
+                    "/assets/images/exhibicion/pacas-carton-azul-960.webp",
+                    "/assets/images/exhibicion/pacas-carton-azul-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/pacas-carton-azul.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Pacas de cartón apiladas bajo una luz azul",
+                "hotspot": {
+                  "x": 1,
+                  "y": 0.5
+                }
+              },
+              "place": {
+                "col": 7,
+                "row": 155,
+                "cols": 65,
+                "rows": 59
+              },
+              "variant": "pacas",
+              "_key": "exs5i7"
+            }
+          ],
+          "_key": "exs5"
+        },
+        {
+          "_type": "collage",
+          "anchor": "cuerpo",
+          "rows": 144,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "El cuerpo que carga",
+                      "_key": "exs6i0b0c0"
+                    }
+                  ],
+                  "_key": "exs6i0b0"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 4,
+                "cols": 65,
+                "rows": 4
+              },
+              "weight": 700,
+              "level": 2,
+              "_key": "exs6i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "¿Cómo se expresa el esfuerzo del reciclaje en el cuerpo? Esta pregunta nos llevó a observar las posturas, los movimientos y las fuerzas que intervienen al cargar y desplazar una carreta. Nos interesaba explorar visualmente aquello que ocurre durante el trabajo y que no siempre resulta evidente para quien observa desde afuera.",
+                      "_key": "exs6i1b0c0"
+                    }
+                  ],
+                  "_key": "exs6i1b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Para esta exploración realizamos fotografías de silueta con Alejandra como modelo. A través de distintas posturas buscamos registrar los movimientos asociados al oficio y convertirlos en imágenes que permitieran observar el cuerpo desde otra perspectiva. Las fotografías fueron realizadas por Juan Tirado, mientras que José Miranda desarrolló las intervenciones y la exploración gráfica de las siluetas.",
+                      "_key": "exs6i1b1c0"
+                    }
+                  ],
+                  "_key": "exs6i1b1"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "En la entrada de la exposición suspendimos pacas de cartón que retomaban la forma en que se apila este material durante el reciclaje. Su disposición buscaba introducir visualmente el volumen y la presencia de las cargas.",
+                      "_key": "exs6i1b2c0"
+                    }
+                  ],
+                  "_key": "exs6i1b2"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La instalación se complementó con velos de color hueso intervenidos a mano con crayola y carboncillo. Sobre estas superficies se proyectaban las fotografías de silueta, mezclando las imágenes con las marcas y trazos realizados por los cocreadores.",
+                      "_key": "exs6i1b3c0"
+                    }
+                  ],
+                  "_key": "exs6i1b3"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 14,
+                "cols": 61,
+                "rows": 105
+              },
+              "variant": "m607",
+              "_key": "exs6i1"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/visitante-velo-luz-480.webp",
+                    "/assets/images/exhibicion/visitante-velo-luz-960.webp",
+                    "/assets/images/exhibicion/visitante-velo-luz-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/visitante-velo-luz.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Un visitante entre velos morados, junto al destello de un proyector"
+              },
+              "place": {
+                "col": 7,
+                "row": 29,
+                "cols": 31,
+                "rows": 31
+              },
+              "_key": "exs6i2"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/paca-suspendida-480.webp",
+                    "/assets/images/exhibicion/paca-suspendida-960.webp",
+                    "/assets/images/exhibicion/paca-suspendida-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/paca-suspendida.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Paca de cartón suspendida en un nicho iluminado de azul, vista tras otras pacas desenfocadas"
+              },
+              "place": {
+                "col": 41,
+                "row": 29,
+                "cols": 31,
+                "rows": 31
+              },
+              "_key": "exs6i3"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "moverse",
+                  "_key": "exs6i4t0"
+                }
+              ],
+              "tone": "#ff67c7",
+              "place": {
+                "col": 29,
+                "row": 4,
+                "cols": 14,
+                "rows": 85,
+                "z": 5
+              },
+              "rotate": -90,
+              "_key": "exs6i4"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/visitante-velos-perfil-480.webp",
+                    "/assets/images/exhibicion/visitante-velos-perfil-960.webp",
+                    "/assets/images/exhibicion/visitante-velos-perfil-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/visitante-velos-perfil.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Una visitante de perfil, en penumbra, frente a los velos iluminados"
+              },
+              "place": {
+                "col": 29,
+                "row": 86,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "exs6i5"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/velo-silueta-roja-480.webp",
+                    "/assets/images/exhibicion/velo-silueta-roja-960.webp",
+                    "/assets/images/exhibicion/velo-silueta-roja-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/velo-silueta-roja.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Velo intervenido con trazos rojos sobre el que se proyecta una silueta"
+              },
+              "place": {
+                "col": 74,
+                "row": 129,
+                "cols": 65,
+                "rows": 16
+              },
+              "variant": "velo",
+              "_key": "exs6i6"
+            }
+          ],
+          "_key": "exs6"
+        },
+        {
+          "_type": "collage",
+          "anchor": "ciudad",
+          "rows": 217,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La ciudad que no vemos",
+                      "_key": "exs7i0b0c0"
+                    }
+                  ],
+                  "_key": "exs7i0b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 6,
+                "cols": 60,
+                "rows": 4
+              },
+              "weight": 700,
+              "level": 2,
+              "_key": "exs7i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Para acercarnos a la experiencia de recorrer Chapinero desde el oficio del reciclaje, decidimos acompañar a Ariel durante uno de sus recorridos. Nos interesaba observar la ciudad desde su experiencia y registrar aspectos del trayecto que pueden pasar inadvertidos para quienes la recorren de otra manera.",
+                      "_key": "exs7i1b0c0"
+                    }
+                  ],
+                  "_key": "exs7i1b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Durante el recorrido realizamos tomas desde el punto de vista de Ariel y planos generales que permitieran reconocer tanto su experiencia como los espacios por los que transitaba. El material se convirtió en un microdocumental que recoge parte de ese encuentro y propone una mirada de la ciudad desde su recorrido.",
+                      "_key": "exs7i1b1c0"
+                    }
+                  ],
+                  "_key": "exs7i1b1"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "El espacio destinado a la proyección se construyó utilizando cartón tanto en el piso como en las pantallas. La imagen se distribuyó en fragmentos sobre paneles ubicados a diferentes distancias. Para completar la imagen, los visitantes debían desplazarse por la sala y encontrar las relaciones entre las distintas proyecciones. Así, el recorrido físico por el espacio hacía parte de la forma de ver el documental.",
+                      "_key": "exs7i1b2c0"
+                    }
+                  ],
+                  "_key": "exs7i1b2"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 16,
+                "cols": 60,
+                "rows": 87
+              },
+              "variant": "m596",
+              "_key": "exs7i1"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/still-carreta-calle-480.webp",
+                    "/assets/images/exhibicion/still-carreta-calle-960.webp",
+                    "/assets/images/exhibicion/still-carreta-calle-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/still-carreta-calle.jpg",
+                  "width": 1600,
+                  "height": 900
+                },
+                "alt": "Fotograma del microdocumental: Ariel hala su carreta por una plazoleta de Chapinero"
+              },
+              "place": {
+                "col": 85,
+                "row": 66,
+                "cols": 45,
+                "rows": 45
+              },
+              "_key": "exs7i2"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/still-titulo-480.webp",
+                    "/assets/images/exhibicion/still-titulo-960.webp",
+                    "/assets/images/exhibicion/still-titulo-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/still-titulo.jpg",
+                  "width": 1600,
+                  "height": 900
+                },
+                "alt": "Fotograma del microdocumental: una calle de Chapinero con la frase «La ciudad que pasa por el cuerpo» repetida"
+              },
+              "place": {
+                "col": 7,
+                "row": 105,
+                "cols": 65,
+                "rows": 48
+              },
+              "_key": "exs7i3"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "cuidar",
+                  "_key": "exs7i4t0"
+                }
+              ],
+              "tone": "#ff67c7",
+              "place": {
+                "col": 74,
+                "row": 157,
+                "cols": 14,
+                "rows": 36,
+                "z": 5
+              },
+              "rotate": -90,
+              "_key": "exs7i4"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/still-ariel-carreta-480.webp",
+                    "/assets/images/exhibicion/still-ariel-carreta-960.webp",
+                    "/assets/images/exhibicion/still-ariel-carreta-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/still-ariel-carreta.jpg",
+                  "width": 1600,
+                  "height": 900
+                },
+                "alt": "Fotograma del microdocumental: Ariel, de saco rojo y gorra, junto a su carreta cargada"
+              },
+              "place": {
+                "col": 7,
+                "row": 166,
+                "cols": 30,
+                "rows": 30
+              },
+              "_key": "exs7i5"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/proyeccion-fragmentos-480.webp",
+                    "/assets/images/exhibicion/proyeccion-fragmentos-960.webp",
+                    "/assets/images/exhibicion/proyeccion-fragmentos-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/proyeccion-fragmentos.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "El microdocumental proyectado en fragmentos sobre paneles de cartón"
+              },
+              "place": {
+                "col": 97,
+                "row": 176,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "exs7i6"
+            }
+          ],
+          "_key": "exs7"
+        },
+        {
+          "_type": "collage",
+          "anchor": "chapicarton",
+          "rows": 221,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Chapicartón",
+                      "_key": "exs8i0b0c0"
+                    }
+                  ],
+                  "_key": "exs8i0b0"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 17,
+                "cols": 65,
+                "rows": 4
+              },
+              "weight": 700,
+              "level": 2,
+              "_key": "exs8i0"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/arcade-jugador-480.webp",
+                    "/assets/images/exhibicion/arcade-jugador-960.webp",
+                    "/assets/images/exhibicion/arcade-jugador-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/arcade-jugador.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Un visitante juega Chapicartón en la máquina arcade roja, en una sala iluminada de azul"
+              },
+              "place": {
+                "col": 7,
+                "row": 2,
+                "cols": 65,
+                "rows": 65
+              },
+              "_key": "exs8i1"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "El videojuego surgió de un ejercicio de imaginación colectiva a partir de la pregunta: ¿qué pasaría si...? Durante una exploración sobre posibles escenarios para Bogotá en el año 2078, comenzamos a construir situaciones y personajes que nos permitieran pensar otras formas de habitar la ciudad.",
+                      "_key": "exs8i2b0c0"
+                    }
+                  ],
+                  "_key": "exs8i2b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La idea inicial fue evolucionando. Lo que comenzó como un juego de gran escala, ambientado en una ciudad futurista, terminó convirtiéndose en una experiencia centrada en un día de trabajo de una persona recicladora. Edwin, reciclador que participó en el laboratorio, revisó la propuesta y aportó observaciones que ayudaron a orientar su desarrollo. Antes de pasar a programación, organizamos la historia, los personajes y las dinámicas del juego en una biblia de diseño.",
+                      "_key": "exs8i2b1c0"
+                    }
+                  ],
+                  "_key": "exs8i2b1"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "El videojuego se presentó en una máquina arcade construida para la exposición. Se diseñó con partidas cortas, de manera que distintos visitantes pudieran acercarse a jugar durante el recorrido. También se exhibieron tres páginas de la biblia de diseño impresas en gran formato, para compartir parte del proceso de construcción del juego y mostrar cómo se organizó la idea antes de convertirse en una experiencia interactiva.",
+                      "_key": "exs8i2b2c0"
+                    }
+                  ],
+                  "_key": "exs8i2b2"
+                }
+              ],
+              "place": {
+                "col": 74,
+                "row": 27,
+                "cols": 65,
+                "rows": 88
+              },
+              "_key": "exs8i2"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/mando-arcade-480.webp",
+                    "/assets/images/exhibicion/mando-arcade-960.webp",
+                    "/assets/images/exhibicion/mando-arcade-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/mando-arcade.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Manos sosteniendo el mando del arcade, iluminadas de azul"
+              },
+              "place": {
+                "col": 38,
+                "row": 84,
+                "cols": 34,
+                "rows": 34
+              },
+              "_key": "exs8i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/pantalla-chapicarton-480.webp",
+                    "/assets/images/exhibicion/pantalla-chapicarton-960.webp",
+                    "/assets/images/exhibicion/pantalla-chapicarton-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/pantalla-chapicarton.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Pantalla del videojuego Chapicartón con una ciudad futurista en pixel art"
+              },
+              "place": {
+                "col": 74,
+                "row": 118,
+                "cols": 65,
+                "rows": 65
+              },
+              "_key": "exs8i4"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/nino-jugando-480.webp",
+                    "/assets/images/exhibicion/nino-jugando-960.webp",
+                    "/assets/images/exhibicion/nino-jugando-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/nino-jugando.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Un niño juega con el mando mientras otros visitantes lo observan"
+              },
+              "place": {
+                "col": 7,
+                "row": 134,
+                "cols": 42,
+                "rows": 42
+              },
+              "_key": "exs8i5"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "curiosear",
+                  "_key": "exs8i6t0"
+                }
+              ],
+              "tone": "#ff67c7",
+              "place": {
+                "col": 35,
+                "row": 105,
+                "cols": 14,
+                "rows": 54,
+                "z": 5
+              },
+              "rotate": -90,
+              "_key": "exs8i6"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/publico-arcade-480.webp",
+                    "/assets/images/exhibicion/publico-arcade-960.webp",
+                    "/assets/images/exhibicion/publico-arcade-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/publico-arcade.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Visitantes de espaldas reunidos alrededor de la máquina arcade"
+              },
+              "place": {
+                "col": 38,
+                "row": 182,
+                "cols": 34,
+                "rows": 34
+              },
+              "_key": "exs8i7"
+            }
+          ],
+          "_key": "exs8"
+        },
+        {
+          "_type": "collage",
+          "anchor": "cierre",
+          "rows": 114,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "La exposición en Villa Adelaida reunió esas exploraciones en un recorrido por distintos espacios. ",
+                      "_key": "exs9i0b0c0"
+                    }
+                  ],
+                  "_key": "exs9i0b0"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "En el primer piso, la bitácora permitió reconstruir cronológicamente el proceso mediante sus registros, objetos y prototipos. Las pacas de cartón en el sótano retomaron la disposición de los materiales que hacen parte del oficio, mientras que los velos, intervenidos con bordados y pinturas, se convirtieron en superficies para proyectar y compartir imágenes. ",
+                      "_key": "exs9i0b1c0"
+                    }
+                  ],
+                  "_key": "exs9i0b1"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "El microdocumental acercó a los visitantes a la experiencia de Ariel, el espacio construido en cartón propuso otra manera de observarla. Finalmente, el videojuego abrió un espacio de interacción a partir de una de las propuestas desarrolladas durante el laboratorio.",
+                      "_key": "exs9i0b2c0"
+                    }
+                  ],
+                  "_key": "exs9i0b2"
+                },
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Más que presentar respuestas definitivas, La ciudad que pasa por el cuerpo reúne distintas maneras de observar, interpretar y relacionarse con Chapinero. Cada pieza conserva algo de las preguntas, conversaciones y decisiones que dieron forma al proceso. En conjunto, invitan a mirar con más atención los recorridos cotidianos, los trabajos que sostienen la vida urbana y las personas que, con sus propias experiencias, también construyen la ciudad.",
+                      "_key": "exs9i0b3c0"
+                    }
+                  ],
+                  "_key": "exs9i0b3"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 7,
+                "cols": 73,
+                "rows": 80
+              },
+              "weight": 500,
+              "tone": "ocre",
+              "variant": "m727",
+              "_key": "exs9i0"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/exhibicion/still-ariel-perfil-480.webp",
+                    "/assets/images/exhibicion/still-ariel-perfil-960.webp",
+                    "/assets/images/exhibicion/still-ariel-perfil-1600.webp"
+                  ],
+                  "fallback": "/assets/images/exhibicion/still-ariel-perfil.jpg",
+                  "width": 1600,
+                  "height": 900
+                },
+                "alt": "Fotograma del microdocumental: el rostro de Ariel de perfil, con gorra blanca",
+                "hotspot": {
+                  "x": 0.63,
+                  "y": 0.47
+                }
+              },
+              "place": {
+                "col": 85,
+                "row": 10,
+                "cols": 54,
+                "rows": 54
+              },
+              "variant": "perfil",
+              "_key": "exs9i1"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "ver lo que\nsiempre ha\nestado ahí.",
+                  "_key": "exs9i2t0"
+                }
+              ],
+              "tone": "#ff67c7",
+              "place": {
+                "col": 67,
+                "row": 87,
+                "cols": 72,
+                "rows": 28,
+                "z": 5
+              },
+              "align": "right",
+              "variant": "cierre",
+              "_key": "exs9i2"
+            },
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 115,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "exs9i3"
+            }
+          ],
+          "_key": "exs9"
+        },
+        {
+          "_type": "cardGrid",
+          "layout": "row",
+          "title": "Explora más",
+          "items": [
+            {
+              "_type": "card",
+              "label": "Lo que aprendimos de la calle",
+              "href": "/lo-que-aprendimos-de-la-calle/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-calle-480.webp",
+                    "/assets/images/inicio/card-calle-960.webp",
+                    "/assets/images/inicio/card-calle-1200.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-calle.jpg",
+                  "width": 1200,
+                  "height": 1600
+                },
+                "alt": "Carreta de reciclaje cargada de costales en una calle de Chapinero",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.35
+                }
+              },
+              "size": "s",
+              "_key": "exs10i0"
+            },
+            {
+              "_type": "card",
+              "label": "Chapicartón",
+              "href": "/videojuego/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-videojuego-480.webp",
+                    "/assets/images/inicio/card-videojuego-960.webp",
+                    "/assets/images/inicio/card-videojuego-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-videojuego.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Joven jugando Chapicartón en una máquina arcade"
+              },
+              "size": "s",
+              "_key": "exs10i1"
+            },
+            {
+              "_type": "card",
+              "label": "¿Cómo lo hicimos?",
+              "href": "/como-lo-hicimos/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-como-480.webp",
+                    "/assets/images/inicio/card-como-960.webp",
+                    "/assets/images/inicio/card-como-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-como.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Participante con los ojos vendados explora objetos e hilos sobre el piso"
+              },
+              "size": "s",
+              "_key": "exs10i2"
+            },
+            {
+              "_type": "card",
+              "label": "Equipo",
+              "href": "/equipo/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-equipo-480.webp",
+                    "/assets/images/inicio/card-equipo-960.webp",
+                    "/assets/images/inicio/card-equipo-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-equipo.jpg",
+                  "width": 1600,
+                  "height": 1066
+                },
+                "alt": "El equipo del laboratorio reunido en círculo"
+              },
+              "size": "s",
+              "_key": "exs10i3"
+            }
+          ],
+          "_key": "exs10"
+        }
+      ]
     }
   ]
 }

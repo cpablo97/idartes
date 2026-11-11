@@ -1,0 +1,38 @@
+/* ============================================================
+   Exhibición — ajustes de la página (ámbito: body.page-exhibicion)
+   ============================================================ */
+
+/* Título de página (Xanh Mono 36, centrado bajo el hero). */
+body.page-exhibicion .v-titulo h1 { line-height: 1.2; }
+
+/* Fotos que en el diseño salen de su lienzo y entran en el bloque siguiente: en flujo son cuadradas. */
+body.page-exhibicion .v-pacas, body.page-exhibicion .v-velo { aspect-ratio: 1; }
+
+/* Fotograma del cierre: el diseño lo amplía (167 % × 107 %) para dejar fuera las franjas negras del video. */
+body.page-exhibicion .v-perfil img { width: 167.15%; height: 106.81%; max-width: none; margin: -3.17% 0 0 -42.14%; object-fit: fill; }
+
+/* Tablet: subtítulo y cuerpo de cada bloque comparten margen izquierdo (el base alterna los textos pares a la derecha). */
+@media (min-width: 600px) and (max-width: 999.98px) {
+  body.page-exhibicion .ci--text, body.page-exhibicion .ci--text:nth-of-type(even) { align-self: flex-start; }
+}
+
+@media (min-width: 1000px) {
+  body.page-exhibicion .v-pacas, body.page-exhibicion .v-velo { aspect-ratio: auto; height: 64.8rem; }
+
+  /* Titulares girados (−90°): arrancan en el borde inferior de su caja. */
+  body.page-exhibicion .canvas > .display--up { align-self: end; }
+
+  /* Anchos exactos de las cajas de texto (la retícula va de 10 en 10 px), para que las líneas partan como en el diseño. */
+  body.page-exhibicion .v-m596 { max-width: 59.575rem; }
+  body.page-exhibicion .v-m607 { max-width: 60.727rem; }
+  body.page-exhibicion .v-m616 { max-width: 61.566rem; }
+  body.page-exhibicion .v-m639 { max-width: 63.865rem; }
+  body.page-exhibicion .v-m644 { max-width: 64.403rem; }
+  body.page-exhibicion .v-m647 { max-width: 64.729rem; }
+  body.page-exhibicion .v-m648 { max-width: 64.759rem; }
+  body.page-exhibicion .v-m666 { max-width: 66.631rem; }
+  body.page-exhibicion .v-m727 { max-width: 72.668rem; }
+
+  /* «Explora más»: rótulo en y = 18232 del diseño y 240 px de aire antes del footer. */
+  body.page-exhibicion .explora { padding-top: 11.4rem; padding-bottom: 24.3rem; }
+}
