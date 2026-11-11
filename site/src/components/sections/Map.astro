@@ -1,8 +1,36 @@
 ---
-// TODO: implementar la sección `map`.
+// Mapa: banda negra (título, texto y leyenda) + mapa a sangre + nota de fuentes.
+// Mientras `pending` sea true se muestra la captura de referencia; después, el iframe de Google My Maps.
 import type { MapSection, Settings } from "../../lib/types";
+import Picture from "../Picture.astro";
+import { paragraphs } from "../../lib/text";
 
 interface Props { section: MapSection; settings: Settings }
 const { section: s } = Astro.props;
+const pending = s.pending || !s.embedUrl || /mid=TODO/.test(s.embedUrl);
 ---
-<section class="sec sec--map" id={s.anchor}></section>
+<section class="sec map" id={s.anchor}>
+  <div class="map__head">
+    <div class="band" aria-hidden="true"></div>
+    <div class="map__intro" data-reveal="text">
+      <h2 class="map__title">{s.title}</h2>
+      {s.body && <div class="map__body">{paragraphs(s.body).map((h) => <p set:html={h} />)}</div>}
+    </div>
+    {s.legend.length > 0 && (
+      <ul class="map__legend" data-reveal="text">
+        {s.legend.map((l) => <li><span class="map__dot" style={`background:${l.color}`} aria-hidden="true"></span>{l.label}</li>)}
+      </ul>
+    )}
+  </div>
+  <div class:list={["map__frame", "bleed", pending && "map__frame--pending"]}>
+    {pending ? (
+      <Fragment>
+        {s.placeholder && <Picture img={s.placeholder} sizes="100vw" class="map__placeholder" />}
+        <p class="map__pending">{s.pendingLabel ?? "Mapa pendiente"}</p>
+      </Fragment>
+    ) : (
+      <iframe src={s.embedUrl} title={s.title} loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    )}
+  </div>
+  {s.note && <div class="map__note" data-reveal="text">{paragraphs(s.note).map((h) => <p set:html={h} />)}</div>}
+</section>

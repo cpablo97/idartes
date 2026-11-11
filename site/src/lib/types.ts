@@ -153,6 +153,8 @@ export type MapSection = Shared & {
   embedUrl: string;
   /** Mientras sea true se muestra la captura de referencia en vez del iframe. */
   pending?: boolean;
+  /** Rótulo sobre la captura mientras el mapa esté pendiente ("Mapa pendiente"). */
+  pendingLabel?: string;
   placeholder?: Img;
   note?: Block[];
 };
@@ -161,6 +163,7 @@ export type GallerySection = Shared & {
   title?: string;
   heading?: string;
   body?: Block[];
+  /** Fotos de la espiral (entre 8 y 12 es lo que mejor se ve). */
   images: { _key: string; image: Img; caption?: string }[];
 };
 /** Visor de láminas de la bitácora: `slider` se desliza; `book` pasa de a dos páginas. */

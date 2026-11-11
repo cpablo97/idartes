@@ -1,8 +1,45 @@
 ---
-// TODO: implementar la sección `gallery`.
+// Galería en espiral: las fotos van como tarjetas curvadas sobre la pared de un túnel visto de frente
+// (la "forma" que pidió el diseñador). Cada tarjeta se parte en franjas verticales que, giradas una a una,
+// le dan la curva. gallery.js activa el 3D; sin JS o con `prefers-reduced-motion` queda una rejilla normal.
 import type { GallerySection, Settings } from "../../lib/types";
+import Picture from "../Picture.astro";
+import { paragraphs } from "../../lib/text";
 
 interface Props { section: GallerySection; settings: Settings }
-const { section: s } = Astro.props;
+const { section: s, settings } = Astro.props;
+const STRIPS = 6;
+const label = s.title ?? "Galería";
+const sizes = "(min-width: 1000px) 40vw, (min-width: 600px) 30vw, 46vw";
 ---
-<section class="sec sec--gallery" id={s.anchor}></section>
+<section class="sec gallery" id={s.anchor} data-gallery>
+  <div class="gallery__head" data-reveal="text">
+    {s.title && <h2 class="sec__label">{s.title}</h2>}
+    {s.heading && <p class="gallery__heading">{s.heading}</p>}
+    {s.body && <div class="gallery__body">{paragraphs(s.body).map((h) => <p set:html={h} />)}</div>}
+  </div>
+  <div class="gallery__stage bleed" role="group" aria-roledescription="carrusel" aria-label={`${label}: ${s.images.length} fotos`}>
+    <ul class="gallery__ring" style={`--strips:${STRIPS}`}>
+      {s.images.map((g) => (
+        <li class="gallery__card">
+          <figure class="gallery__fig">
+            {Array.from({ length: STRIPS }, (_, k) => (
+              <span class="gallery__strip" style={`--k:${k}`} aria-hidden={k ? "true" : undefined}>
+                <Picture img={k ? { ...g.image, alt: "" } : g.image} sizes={sizes} />
+              </span>
+            ))}
+            {g.caption && <figcaption>{g.caption}</figcaption>}
+          </figure>
+        </li>
+      ))}
+    </ul>
+    <button class="gallery__nav gallery__nav--prev" type="button" aria-label={settings.labels.prev} hidden>
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.4 22 5.4 12l10-10 1.8 1.8L9 12l8.2 8.2L15.4 22Z"/></svg>
+    </button>
+    <button class="gallery__nav gallery__nav--next" type="button" aria-label={settings.labels.next} hidden>
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8.6 22 6.8 20.2 15 12 6.8 3.8 8.6 2l10 10-10 10Z"/></svg>
+    </button>
+    <p class="gallery__count" aria-live="polite" hidden><span data-current>1</span> / {s.images.length}</p>
+  </div>
+</section>
+<script is:inline src="/js/gallery.js" defer></script>

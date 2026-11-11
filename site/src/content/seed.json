@@ -643,6 +643,1096 @@
     },
     {
       "_type": "page",
+      "_id": "page-para-recicladores",
+      "title": "Para recicladores",
+      "slug": {
+        "current": "para-recicladores"
+      },
+      "header": "small",
+      "dots": "amplio",
+      "footerTone": "#ffe867",
+      "seo": {
+        "description": "Datos útiles y movimientos que te sirven en la jornada: un mapa de Chapinero con lugares para comer, ir al baño y vender materiales, y cinco videotutoriales para cuidar el cuerpo. Creado junto a recicladores de Chapinero."
+      },
+      "sections": [
+        {
+          "_type": "hero",
+          "image": {
+            "local": {
+              "webp": [
+                "/assets/images/para-recicladores/hero-dibujos-480.webp",
+                "/assets/images/para-recicladores/hero-dibujos-960.webp",
+                "/assets/images/para-recicladores/hero-dibujos-1600.webp"
+              ],
+              "fallback": "/assets/images/para-recicladores/hero-dibujos.jpg",
+              "width": 1600,
+              "height": 941
+            },
+            "alt": "Dibujos a lápiz sobre papel calcado, hilos de lana, recortes verdes y un bolígrafo verde sobre una mesa del laboratorio"
+          },
+          "blur": true,
+          "eyebrow": "PA EL CAMINO",
+          "phrase": "Datos útiles y movimientos que te sirven en la jornada.",
+          "footnote": "Creado junto a recicladores de Chapinero.",
+          "_key": "pas0"
+        },
+        {
+          "_type": "collage",
+          "rows": 316,
+          "dots": [
+            {
+              "col": 22,
+              "row": 74,
+              "cols": 95,
+              "rows": 226,
+              "over": true,
+              "_key": "pas1d0"
+            }
+          ],
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Cada recorrido tiene su historia.",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "pas1i0b0c0"
+                    }
+                  ],
+                  "_key": "pas1i0b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 17,
+                "cols": 56,
+                "rows": 4
+              },
+              "nowrap": true,
+              "level": 2,
+              "_key": "pas1i0"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/duotono-costal-480.webp",
+                    "/assets/images/para-recicladores/duotono-costal-960.webp",
+                    "/assets/images/para-recicladores/duotono-costal-1166.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/duotono-costal.jpg",
+                  "width": 1166,
+                  "height": 1692
+                },
+                "alt": "Figura en duotono naranja y morado que avanza agachada con un costal a la espalda",
+                "hotspot": {
+                  "x": 0.66,
+                  "y": 0.79
+                }
+              },
+              "place": {
+                "col": 63,
+                "row": 17,
+                "cols": 18,
+                "rows": 18,
+                "z": 2
+              },
+              "drift": 2,
+              "_key": "pas1i1"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/mano-madera-480.webp",
+                    "/assets/images/para-recicladores/mano-madera-960.webp",
+                    "/assets/images/para-recicladores/mano-madera-1156.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/mano-madera.jpg",
+                  "width": 1156,
+                  "height": 1738
+                },
+                "alt": "Una mano agarra con fuerza el extremo de una tabla de madera gastada"
+              },
+              "place": {
+                "col": 7,
+                "row": 27,
+                "cols": 33,
+                "rows": 33,
+                "z": 1
+              },
+              "drift": 1,
+              "_key": "pas1i2"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Quienes recorren Chapinero recuperando materiales conocen la ciudad de una manera particular: sus calles, sus ritmos, sus lugares y todo lo que ocurre en el camino.",
+                      "_key": "pas1i3b0c0"
+                    }
+                  ],
+                  "_key": "pas1i3b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 66,
+                "cols": 67,
+                "rows": 11,
+                "z": 3
+              },
+              "tone": "rosa",
+              "_key": "pas1i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/duotono-colgada-480.webp",
+                    "/assets/images/para-recicladores/duotono-colgada-960.webp",
+                    "/assets/images/para-recicladores/duotono-colgada-1158.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/duotono-colgada.jpg",
+                  "width": 1158,
+                  "height": 1738
+                },
+                "alt": "Figura en duotono naranja y morado suspendida de los brazos de una carreta de reciclaje",
+                "hotspot": {
+                  "x": 1,
+                  "y": 0.5
+                }
+              },
+              "place": {
+                "col": 83,
+                "row": 43,
+                "cols": 56,
+                "rows": 92,
+                "z": 1
+              },
+              "drift": 1,
+              "_key": "pas1i4"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/cuclillas-carreta-480.webp",
+                    "/assets/images/para-recicladores/cuclillas-carreta-960.webp",
+                    "/assets/images/para-recicladores/cuclillas-carreta-1600.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/cuclillas-carreta.jpg",
+                  "width": 1600,
+                  "height": 1134
+                },
+                "alt": "Mujer en cuclillas, con las manos juntas, al lado de la rueda de una carreta"
+              },
+              "place": {
+                "col": 29,
+                "row": 83,
+                "cols": 33,
+                "rows": 33,
+                "z": 2
+              },
+              "drift": 3,
+              "_key": "pas1i5"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "De esas experiencias nació este proyecto. ",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "pas1i6b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Junto a Ariel, Alejandra, Edwin, Yordanis y otros compañeros del oficio, creamos herramientas pensadas desde sus recorridos y su manera de vivir la ciudad.",
+                      "marks": [
+                        "medium"
+                      ],
+                      "_key": "pas1i6b0c1"
+                    }
+                  ],
+                  "_key": "pas1i6b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 147,
+                "cols": 63,
+                "rows": 15,
+                "z": 3
+              },
+              "_key": "pas1i6"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/carreta-calle-480.webp",
+                    "/assets/images/para-recicladores/carreta-calle-960.webp",
+                    "/assets/images/para-recicladores/carreta-calle-1600.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/carreta-calle.jpg",
+                  "width": 1600,
+                  "height": 1200
+                },
+                "alt": "Una persona empuja por la calle una carreta de reciclaje en la que va subida otra persona",
+                "hotspot": {
+                  "x": 0.61,
+                  "y": 0.5
+                }
+              },
+              "place": {
+                "col": 7,
+                "row": 174,
+                "cols": 34,
+                "rows": 27,
+                "z": 2
+              },
+              "drift": 2,
+              "_key": "pas1i7"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/reciclador-gorra-480.webp",
+                    "/assets/images/para-recicladores/reciclador-gorra-960.webp",
+                    "/assets/images/para-recicladores/reciclador-gorra-1600.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/reciclador-gorra.jpg",
+                  "width": 1600,
+                  "height": 1271
+                },
+                "alt": "Reciclador con gorra que sonríe mientras carga una tabla junto a su carreta llena de costales"
+              },
+              "place": {
+                "col": 61,
+                "row": 174,
+                "cols": 67,
+                "rows": 58,
+                "z": 1
+              },
+              "drift": 1,
+              "_key": "pas1i8"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/manos-tabla-480.webp",
+                    "/assets/images/para-recicladores/manos-tabla-960.webp",
+                    "/assets/images/para-recicladores/manos-tabla-1160.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/manos-tabla.jpg",
+                  "width": 1160,
+                  "height": 1738
+                },
+                "alt": "Dos brazos levantados sostienen una tabla de madera sobre la cabeza",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.5
+                }
+              },
+              "place": {
+                "col": 16,
+                "row": 230,
+                "cols": 18,
+                "rows": 18,
+                "z": 2
+              },
+              "drift": 3,
+              "_key": "pas1i9"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "la ciudad en \nlas costilas.",
+                  "_key": "pas1i10t0"
+                }
+              ],
+              "tone": "#9c3841",
+              "place": {
+                "col": 43,
+                "row": 265,
+                "cols": 85,
+                "rows": 28,
+                "z": 4
+              },
+              "_key": "pas1i10"
+            }
+          ],
+          "_key": "pas1"
+        },
+        {
+          "_type": "map",
+          "anchor": "mapa",
+          "title": "Puntos clave para tu recorrido",
+          "body": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Aquí encontrarás un mapa de Chapinero con lugares \npara comer, ir al baño y vender tus materiales.",
+                  "_key": "pas2b0c0"
+                }
+              ],
+              "_key": "pas2b0"
+            }
+          ],
+          "legend": [
+            {
+              "label": "Comedores comunitarios",
+              "color": "#0048d8",
+              "_key": "pas2l0"
+            },
+            {
+              "label": "Baños publicos",
+              "color": "#95ff00",
+              "_key": "pas2l1"
+            },
+            {
+              "label": "Centros de acopio",
+              "color": "#ffe100",
+              "_key": "pas2l2"
+            }
+          ],
+          "embedUrl": "https://www.google.com/maps/d/embed?mid=TODO",
+          "pending": true,
+          "pendingLabel": "Mapa pendiente",
+          "placeholder": {
+            "local": {
+              "webp": [
+                "/assets/images/para-recicladores/mapa-captura-480.webp",
+                "/assets/images/para-recicladores/mapa-captura-657.webp"
+              ],
+              "fallback": "/assets/images/para-recicladores/mapa-captura.jpg",
+              "width": 657,
+              "height": 333
+            },
+            "alt": "Captura de referencia: mapa en grises de Chapinero con puntos numerados"
+          },
+          "note": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Fuentes y actualización, ",
+                  "marks": [
+                    "strong"
+                  ],
+                  "_key": "pas2n0c0"
+                },
+                {
+                  "_type": "span",
+                  "text": "La información del mapa viene de [fuentes: Secretaría de Integración Social, UAESP, Alcaldía Local de Chapinero, recorridos del equipo]. La revisamos por última vez el [fecha]. Los horarios pueden cambiar: si encuentras algo distinto, cuéntanos en Instagram ",
+                  "_key": "pas2n0c1"
+                },
+                {
+                  "_type": "span",
+                  "text": "@cargarbogota.",
+                  "marks": [
+                    "strong",
+                    "underline"
+                  ],
+                  "href": "https://www.instagram.com/cargarbogota/",
+                  "_key": "pas2n0c2"
+                }
+              ],
+              "_key": "pas2n0"
+            }
+          ],
+          "_key": "pas2"
+        },
+        {
+          "_type": "collage",
+          "rows": 179,
+          "items": [
+            {
+              "_type": "rule",
+              "place": {
+                "col": 1,
+                "row": 1,
+                "cols": 144,
+                "rows": 1
+              },
+              "bleed": true,
+              "_key": "pas3i0"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Video tutoriales",
+                      "_key": "pas3i1b0c0"
+                    }
+                  ],
+                  "_key": "pas3i1b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 4,
+                "cols": 60,
+                "rows": 5
+              },
+              "size": 31,
+              "font": "doto",
+              "nowrap": true,
+              "level": 2,
+              "_key": "pas3i1"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Tu cuerpo te acompaña en cada recorrido y también merece cuidado. ",
+                      "marks": [
+                        "strong"
+                      ],
+                      "_key": "pas3i2b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Junto a los recicladores, creamos cinco videos con ejercicios y consejos que puedes poner en práctica durante la jornada. ",
+                      "_key": "pas3i2b0c1"
+                    }
+                  ],
+                  "_key": "pas3i2b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 16,
+                "cols": 81,
+                "rows": 11
+              },
+              "_key": "pas3i2"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/cargando-tabla-480.webp",
+                    "/assets/images/para-recicladores/cargando-tabla-960.webp",
+                    "/assets/images/para-recicladores/cargando-tabla-1022.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/cargando-tabla.jpg",
+                  "width": 1022,
+                  "height": 1546
+                },
+                "alt": "Mujer inclinada hacia adelante que carga una tabla de madera en un parque",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.17
+                }
+              },
+              "place": {
+                "col": 41,
+                "row": 33,
+                "cols": 33,
+                "rows": 33,
+                "z": 2
+              },
+              "drift": 2,
+              "_key": "pas3i3"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/brazos-arriba-480.webp",
+                    "/assets/images/para-recicladores/brazos-arriba-960.webp",
+                    "/assets/images/para-recicladores/brazos-arriba-1168.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/brazos-arriba.jpg",
+                  "width": 1168,
+                  "height": 1762
+                },
+                "alt": "Mujer de espaldas, con los brazos arriba, sostiene los brazos de madera de una carreta en un parque"
+              },
+              "place": {
+                "col": 83,
+                "row": 66,
+                "cols": 56,
+                "rows": 92,
+                "z": 1
+              },
+              "drift": 1,
+              "_key": "pas3i4"
+            },
+            {
+              "_type": "imageItem",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/estiramiento-barra-480.webp",
+                    "/assets/images/para-recicladores/estiramiento-barra-960.webp",
+                    "/assets/images/para-recicladores/estiramiento-barra-1180.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/estiramiento-barra.jpg",
+                  "width": 1180,
+                  "height": 1768
+                },
+                "alt": "Mujer que estira la espalda agarrada de una barra roja de un parque",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.16
+                }
+              },
+              "place": {
+                "col": 7,
+                "row": 94,
+                "cols": 33,
+                "rows": 33,
+                "z": 2
+              },
+              "drift": 3,
+              "_key": "pas3i5"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Encuentra nuevas formas de moverte, aliviar tensiones y cuidar tu cuerpo mientras trabajas.",
+                      "_key": "pas3i6b0c0"
+                    }
+                  ],
+                  "_key": "pas3i6b0"
+                }
+              ],
+              "place": {
+                "col": 7,
+                "row": 139,
+                "cols": 61,
+                "rows": 8,
+                "z": 3
+              },
+              "_key": "pas3i6"
+            },
+            {
+              "_type": "notice",
+              "title": "Aviso:",
+              "body": "Si sientes un dolor fuerte o que no se va, consulta en un centro de salud. Estos videos no reemplazan la atención médica.",
+              "tone": "#d89009",
+              "place": {
+                "col": 7,
+                "row": 156,
+                "cols": 132,
+                "rows": 10,
+                "z": 5
+              },
+              "_key": "pas3i7"
+            }
+          ],
+          "_key": "pas3"
+        },
+        {
+          "_type": "videoList",
+          "anchor": "videotutoriales",
+          "videos": [
+            {
+              "label": "Video 1",
+              "youtubeId": "TODO_VIDEO_1",
+              "title": "Prepara tu cuerpo antes de salir",
+              "description": "Antes de arrancar la jornada, dedica unos minutos a mover hombros, escápulas y muñecas. Son zonas que usas constantemente al empujar, levantar y cargar material.",
+              "_key": "pas4v0"
+            },
+            {
+              "label": "Video 2",
+              "youtubeId": "TODO_VIDEO_2",
+              "title": "Tren inferior: dale fuerza a tus piernas",
+              "description": "En este video aprenderás ejercicios como sentadillas, estocadas y elevaciones de talón, además de formas de recoger material del suelo cuidando la postura.",
+              "_key": "pas4v1"
+            },
+            {
+              "label": "Video 3",
+              "youtubeId": "TODO_VIDEO_3",
+              "title": "Trabajo escapular: mueve mejor tus hombros",
+              "description": "Al empujar la carreta y cargar material, tus hombros y tu espalda hacen un gran esfuerzo. Aquí encontrarás ejercicios para trabajar las escápulas y mejorar el control de los hombros.",
+              "_key": "pas4v2"
+            },
+            {
+              "label": "Video 4",
+              "youtubeId": "TODO_VIDEO_4",
+              "title": "Abdomen: encuentra tu punto de apoyo",
+              "description": "En este video encontrarás ejercicios de distintos niveles, que puedes hacer en el piso, con apoyo o colgado de una barra, para trabajar la estabilidad del cuerpo.",
+              "_key": "pas4v3"
+            },
+            {
+              "label": "Video 5",
+              "youtubeId": "TODO_VIDEO_5",
+              "title": "Tracciones: dale un respiro a tu espalda",
+              "description": "En este video encontrarás ejercicios de estiramiento y tracción, incluidas algunas opciones con una barra. Hazlos con calma y sin forzar el movimiento.",
+              "_key": "pas4v4"
+            }
+          ],
+          "_key": "pas4"
+        },
+        {
+          "_type": "collage",
+          "rows": 52,
+          "items": [
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "Equipo: Alejandra, Recicladora / Instrucción y narración: Diana Carolina Castañeda Barragán /Producción: Juan Tirado y Samuel Olarte Espitia / Posproducción: José Alberto Miranda Álvarez / Asesoría en fisioterapia: Carolina Acosta / ",
+                      "marks": [
+                        "medium"
+                      ],
+                      "_key": "pas5i0b0c0"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Artistas cocreadores: ",
+                      "_key": "pas5i0b0c1"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Camilo Enrique Muñoz Triana , Santiago Andonoff Gaitán, Eduardo Antonio Castro Patiño, Sebastián Espitia Riaño, Camilo Fernando Castañeda Murcia, Yineth Andrea Sandino Cordón, Yenny Alejandra Osma Palacios, Nelson Mauricio Rodríguez Ayala, Carol Sofía Cuervo Lizarazu, Johan Andretty Lozano Suárez, Natalia Patricia Ahumada Baptista, Daniel Felipe García Lagos, Carlos Andrés Saray Orozco / ",
+                      "marks": [
+                        "medium"
+                      ],
+                      "_key": "pas5i0b0c2"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Laboratorista:",
+                      "_key": "pas5i0b0c3"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Víctor Gómez / ",
+                      "marks": [
+                        "medium"
+                      ],
+                      "_key": "pas5i0b0c4"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Orientadora metodológica:",
+                      "_key": "pas5i0b0c5"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Laura Ximena Garrido /",
+                      "marks": [
+                        "medium"
+                      ],
+                      "_key": "pas5i0b0c6"
+                    },
+                    {
+                      "_type": "span",
+                      "text": " Productor de campo: ",
+                      "_key": "pas5i0b0c7"
+                    },
+                    {
+                      "_type": "span",
+                      "text": "Wilson Dueñas",
+                      "marks": [
+                        "medium"
+                      ],
+                      "_key": "pas5i0b0c8"
+                    }
+                  ],
+                  "_key": "pas5i0b0"
+                }
+              ],
+              "place": {
+                "col": 72,
+                "row": 8,
+                "cols": 67,
+                "rows": 33
+              },
+              "size": 20,
+              "align": "justify",
+              "variant": "creditos",
+              "_key": "pas5i0"
+            }
+          ],
+          "_key": "pas5"
+        },
+        {
+          "_type": "gallery",
+          "anchor": "galeria",
+          "title": "Galería",
+          "heading": "¿De dónde salió todo esto? ",
+          "body": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "Lo conversamos con recicladores y, a partir de sus experiencias, identificamos cuatro temas clave: dónde comer, dónde hacer una pausa, dónde vender el material y cómo cuidar el cuerpo durante el trabajo.",
+                  "_key": "pas6b0c0"
+                }
+              ],
+              "_key": "pas6b0"
+            }
+          ],
+          "images": [
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/reciclador-gorra-480.webp",
+                    "/assets/images/para-recicladores/reciclador-gorra-960.webp",
+                    "/assets/images/para-recicladores/reciclador-gorra-1600.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/reciclador-gorra.jpg",
+                  "width": 1600,
+                  "height": 1271
+                },
+                "alt": "Reciclador con gorra que sonríe mientras carga una tabla junto a su carreta llena de costales"
+              },
+              "_key": "pas6i0"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/brazos-arriba-480.webp",
+                    "/assets/images/para-recicladores/brazos-arriba-960.webp",
+                    "/assets/images/para-recicladores/brazos-arriba-1168.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/brazos-arriba.jpg",
+                  "width": 1168,
+                  "height": 1762
+                },
+                "alt": "Mujer de espaldas, con los brazos arriba, sostiene los brazos de madera de una carreta en un parque"
+              },
+              "_key": "pas6i1"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/carreta-calle-480.webp",
+                    "/assets/images/para-recicladores/carreta-calle-960.webp",
+                    "/assets/images/para-recicladores/carreta-calle-1600.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/carreta-calle.jpg",
+                  "width": 1600,
+                  "height": 1200
+                },
+                "alt": "Una persona empuja por la calle una carreta de reciclaje en la que va subida otra persona"
+              },
+              "_key": "pas6i2"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/duotono-colgada-480.webp",
+                    "/assets/images/para-recicladores/duotono-colgada-960.webp",
+                    "/assets/images/para-recicladores/duotono-colgada-1158.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/duotono-colgada.jpg",
+                  "width": 1158,
+                  "height": 1738
+                },
+                "alt": "Figura en duotono naranja y morado suspendida de los brazos de una carreta de reciclaje"
+              },
+              "_key": "pas6i3"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/cuclillas-carreta-480.webp",
+                    "/assets/images/para-recicladores/cuclillas-carreta-960.webp",
+                    "/assets/images/para-recicladores/cuclillas-carreta-1600.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/cuclillas-carreta.jpg",
+                  "width": 1600,
+                  "height": 1134
+                },
+                "alt": "Mujer en cuclillas, con las manos juntas, al lado de la rueda de una carreta"
+              },
+              "_key": "pas6i4"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/mano-madera-480.webp",
+                    "/assets/images/para-recicladores/mano-madera-960.webp",
+                    "/assets/images/para-recicladores/mano-madera-1156.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/mano-madera.jpg",
+                  "width": 1156,
+                  "height": 1738
+                },
+                "alt": "Una mano agarra con fuerza el extremo de una tabla de madera gastada"
+              },
+              "_key": "pas6i5"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/cargando-tabla-480.webp",
+                    "/assets/images/para-recicladores/cargando-tabla-960.webp",
+                    "/assets/images/para-recicladores/cargando-tabla-1022.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/cargando-tabla.jpg",
+                  "width": 1022,
+                  "height": 1546
+                },
+                "alt": "Mujer inclinada hacia adelante que carga una tabla de madera en un parque"
+              },
+              "_key": "pas6i6"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/duotono-costal-480.webp",
+                    "/assets/images/para-recicladores/duotono-costal-960.webp",
+                    "/assets/images/para-recicladores/duotono-costal-1166.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/duotono-costal.jpg",
+                  "width": 1166,
+                  "height": 1692
+                },
+                "alt": "Figura en duotono naranja y morado que avanza agachada con un costal a la espalda"
+              },
+              "_key": "pas6i7"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/estiramiento-barra-480.webp",
+                    "/assets/images/para-recicladores/estiramiento-barra-960.webp",
+                    "/assets/images/para-recicladores/estiramiento-barra-1180.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/estiramiento-barra.jpg",
+                  "width": 1180,
+                  "height": 1768
+                },
+                "alt": "Mujer que estira la espalda agarrada de una barra roja de un parque"
+              },
+              "_key": "pas6i8"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/para-recicladores/manos-tabla-480.webp",
+                    "/assets/images/para-recicladores/manos-tabla-960.webp",
+                    "/assets/images/para-recicladores/manos-tabla-1160.webp"
+                  ],
+                  "fallback": "/assets/images/para-recicladores/manos-tabla.jpg",
+                  "width": 1160,
+                  "height": 1738
+                },
+                "alt": "Dos brazos levantados sostienen una tabla de madera sobre la cabeza"
+              },
+              "_key": "pas6i9"
+            }
+          ],
+          "_key": "pas6"
+        },
+        {
+          "_type": "cardGrid",
+          "layout": "row",
+          "title": "Explora más",
+          "items": [
+            {
+              "_type": "card",
+              "label": "Lo que aprendimos de la calle",
+              "href": "/lo-que-aprendimos-de-la-calle/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-calle-480.webp",
+                    "/assets/images/inicio/card-calle-960.webp",
+                    "/assets/images/inicio/card-calle-1200.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-calle.jpg",
+                  "width": 1200,
+                  "height": 1600
+                },
+                "alt": "Carreta de reciclaje cargada de costales en una calle de Chapinero",
+                "hotspot": {
+                  "x": 0.5,
+                  "y": 0.35
+                }
+              },
+              "size": "s",
+              "_key": "pas7i0"
+            },
+            {
+              "_type": "card",
+              "label": "Chapicartón",
+              "href": "/videojuego/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-videojuego-480.webp",
+                    "/assets/images/inicio/card-videojuego-960.webp",
+                    "/assets/images/inicio/card-videojuego-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-videojuego.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Joven jugando Chapicartón en una máquina arcade"
+              },
+              "size": "s",
+              "_key": "pas7i1"
+            },
+            {
+              "_type": "card",
+              "label": "¿Cómo lo hicimos?",
+              "href": "/como-lo-hicimos/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-como-480.webp",
+                    "/assets/images/inicio/card-como-960.webp",
+                    "/assets/images/inicio/card-como-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-como.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Participante con los ojos vendados explora objetos e hilos sobre el piso"
+              },
+              "size": "s",
+              "_key": "pas7i2"
+            },
+            {
+              "_type": "card",
+              "label": "Exhibición",
+              "href": "/exhibicion/",
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/inicio/card-exhibicion-480.webp",
+                    "/assets/images/inicio/card-exhibicion-960.webp",
+                    "/assets/images/inicio/card-exhibicion-1600.webp"
+                  ],
+                  "fallback": "/assets/images/inicio/card-exhibicion.jpg",
+                  "width": 1600,
+                  "height": 1067
+                },
+                "alt": "Sala de la exhibición con mesas, piezas y pendones"
+              },
+              "size": "s",
+              "_key": "pas7i3"
+            }
+          ],
+          "_key": "pas7"
+        },
+        {
+          "_type": "collage",
+          "rows": 35,
+          "items": [
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "el peso, ",
+                  "_key": "pas8i0t0"
+                }
+              ],
+              "tone": "#d52c15",
+              "place": {
+                "col": 33,
+                "row": 1,
+                "cols": 57,
+                "rows": 14
+              },
+              "align": "right",
+              "_key": "pas8i0"
+            },
+            {
+              "_type": "displayTitle",
+              "text": [
+                {
+                  "_type": "span",
+                  "text": "a peso.",
+                  "_key": "pas8i1t0"
+                }
+              ],
+              "tone": "#d52c15",
+              "place": {
+                "col": 51,
+                "row": 16,
+                "cols": 57,
+                "rows": 14
+              },
+              "align": "right",
+              "_key": "pas8i1"
+            }
+          ],
+          "_key": "pas8"
+        }
+      ]
+    },
+    {
+      "_type": "page",
       "_id": "page-lo-que-aprendimos-de-la-calle",
       "title": "Lo que aprendimos de la calle",
       "slug": {

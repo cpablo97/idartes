@@ -1,8 +1,20 @@
 ---
-// TODO: implementar la sección `videoList`.
+// Lista de videotutoriales: por cada video, línea a sangre + etiqueta "Video N" + fachada de YouTube a sangre + título y descripción.
 import type { VideoListSection, Settings } from "../../lib/types";
+import YouTube from "../YouTube.astro";
 
 interface Props { section: VideoListSection; settings: Settings }
-const { section: s } = Astro.props;
+const { section: s, settings } = Astro.props;
 ---
-<section class="sec sec--videoList" id={s.anchor}></section>
+<section class="sec videolist" id={s.anchor}>
+  {s.videos.map((v) => (
+    <article class="videolist__item">
+      <p class="videolist__label">{v.label}</p>
+      <YouTube id={v.youtubeId} title={v.title} poster={v.poster} playLabel={settings.labels.play} pendingLabel={settings.labels.pending} class="bleed" />
+      <div class="videolist__text" data-reveal="text">
+        <h3 class="videolist__title">{v.title}</h3>
+        {v.description && <p class="videolist__desc">{v.description}</p>}
+      </div>
+    </article>
+  ))}
+</section>
