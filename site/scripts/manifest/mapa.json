@@ -1,0 +1,11 @@
+{
+  "toku": {
+    "webp": [
+      "/assets/images/mapa/toku-480.webp",
+      "/assets/images/mapa/toku-592.webp"
+    ],
+    "fallback": "/assets/images/mapa/toku.png",
+    "width": 592,
+    "height": 240
+  }
+}

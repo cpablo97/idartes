@@ -144,17 +144,45 @@ export type VideoListSection = Shared & {
   _type: "videoList";
   videos: { _key: string; label: string; youtubeId: string; title: string; description?: string; poster?: Img }[];
 };
+/** Lugar del mapa. `category` es la `key` de una entrada de la leyenda. */
+export type MapPlace = {
+  _key: string;
+  name: string;
+  category: string;
+  /** Tipo de lugar que se lee bajo el nombre ("Comedor comunitario"). */
+  kind?: string;
+  lat: number;
+  lng: number;
+  address: string;
+  service?: string;
+  /** Horario tal como se lee ("Sábados · 12:00–3:00 p. m."). */
+  schedule?: string;
+  /** Horario estructurado para el chip Abierto/Cerrado: días 0 (domingo) a 6 (sábado), horas en 24 h "HH:MM", hora de Bogotá. */
+  hours?: { _key: string; days: number[]; open: string; close: string }[];
+  photo?: Img;
+  /** Lugar inventado de relleno: la tarjeta lo marca como "Ejemplo". */
+  demo?: boolean;
+};
+/** Mapa propio (Leaflet + mapa base de CARTO) con marcadores por categoría, filtro en la leyenda y tarjeta de lugar. */
 export type MapSection = Shared & {
   _type: "map";
   title: string;
   body?: Block[];
-  legend: { _key: string; label: string; color: string }[];
-  /** URL `…/maps/d/embed?mid=…` de Google My Maps. */
-  embedUrl: string;
-  /** Mientras sea true se muestra la captura de referencia en vez del iframe. */
-  pending?: boolean;
-  /** Rótulo sobre la captura mientras el mapa esté pendiente ("Mapa pendiente"). */
-  pendingLabel?: string;
+  /** Categorías: su color pinta los marcadores y cada una filtra sus lugares. */
+  legend: { _key: string; key: string; label: string; color: string }[];
+  center: { lat: number; lng: number };
+  zoom: number;
+  /**
+   * Mapa base: plantilla de mosaicos `{z}/{x}/{y}`. Sin este campo se usa OpenStreetMap (no pide clave).
+   * Para CARTO: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?api_key=<clave>".
+   */
+  tilesUrl?: string;
+  /** Pasa el mapa base a grises (el de OpenStreetMap viene a color). */
+  tilesGray?: boolean;
+  places: MapPlace[];
+  /** Aviso sobre el mapa mientras haya lugares de relleno ("Lugares de ejemplo"). */
+  demoLabel?: string;
+  /** Imagen que se ve mientras el mapa carga o si no hay JavaScript. */
   placeholder?: Img;
   note?: Block[];
 };

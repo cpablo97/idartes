@@ -963,3 +963,84 @@ body.page-exhibicion .v-perfil img { width: 167.15%; height: 106.81%; max-width:
   .key { transition: translate .15s var(--ease), box-shadow .15s; }
   .keys li:hover .key { translate: 0 .2rem; box-shadow: inset 0 2px 3px rgba(255, 255, 255, .15); }
 }
+
+/* ============================================================
+   Mapa de lugares (Leaflet): leyenda que filtra, marcadores, tarjeta y lista
+   ============================================================ */
+.map__filter { display: flex; align-items: center; gap: inherit; font: inherit; letter-spacing: inherit; color: inherit; text-align: left; transition: opacity .2s; }
+.map__legend li { gap: 1.6rem; }
+.map__filter { gap: 1.6rem; }
+.map__filter[aria-pressed="false"] { opacity: .45; text-decoration: line-through; }
+.map__filter[aria-pressed="false"] .map__dot { background: transparent !important; box-shadow: inset 0 0 0 2px currentColor; }
+.map__filter:focus-visible { outline-color: var(--blanco); }
+.map__frame { isolation: isolate; }
+.map__canvas { position: absolute; inset: 0; z-index: 1; background: transparent; font: inherit; opacity: 0; transition: opacity .6s; }
+.map.is-ready .map__canvas { opacity: 1; background: #e9e9e7; }
+.map__pending { z-index: 3; pointer-events: none; }
+.map__marker { background: none; border: 0; }
+.map__marker:focus-visible { outline: 3px solid var(--magenta); outline-offset: 4px; border-radius: 50%; }
+.map__point { display: block; width: 100%; height: 100%; border-radius: 50%; border: 3px solid var(--blanco); box-shadow: 0 1px 4px rgba(0, 0, 0, .45); transition: scale .2s var(--ease); }
+.map__marker:hover .map__point { scale: 1.2; }
+.map__pin { position: absolute; left: 50%; bottom: 60%; width: 11rem; max-width: none; height: auto; translate: -50% 0; pointer-events: none; opacity: 0; scale: .4; transform-origin: 50% 92%; transition: opacity .2s, scale .35s var(--ease); }
+.map__marker.is-active { z-index: 1000 !important; }
+.map__marker.is-active .map__pin { opacity: 1; scale: 1; }
+.map__marker.is-active .map__point { scale: .62; }
+.map .leaflet-container { font-family: var(--sans); }
+.map--gray .leaflet-tile-pane { filter: grayscale(1) contrast(.86) brightness(1.08); }
+.map .leaflet-control-attribution { font-size: 1.1rem; letter-spacing: 0; }
+.map .leaflet-control-zoom a { color: var(--negro); }
+
+.map__cards { position: absolute; z-index: 4; left: 1rem; right: 1rem; bottom: 1rem; max-height: 58%; display: flex; pointer-events: none; }
+.map .map__frame { aspect-ratio: auto; height: min(88svh, 72rem); max-height: none; }
+.place__photo { display: none; }
+.place { pointer-events: auto; width: 100%; max-height: 100%; overflow: auto; display: flex; flex-direction: column; align-items: flex-end; gap: .8rem; padding: 1.6rem; background: var(--blanco); color: var(--negro); font-size: 1.6rem; line-height: 1.5; letter-spacing: -.022em; box-shadow: 0 .4rem 2.4rem rgba(0, 0, 0, .18); }
+.place[hidden] { display: none; }
+.place__close { width: 2.4rem; height: 2.4rem; display: grid; place-items: center; margin: -.5rem -.5rem -.5rem 0; }
+.place__dot { width: 1.47rem; height: 1.47rem; border-radius: 50%; }
+.place__photo { align-self: stretch; height: 12rem; overflow: hidden; }
+.place__photo img { width: 100%; height: 100%; object-fit: cover; }
+.place__chips { display: flex; gap: .6rem; }
+.place__chip { padding: .4rem; border-radius: .5rem; background: #def2e2; color: #009631; font-size: 1.2rem; font-weight: 600; line-height: 1.5; letter-spacing: -.022em; }
+.place__chip[hidden] { display: none; }
+.place__chip.is-closed { background: #fde3e1; color: #b3261e; }
+.place__chip--demo { background: var(--lila); color: var(--morado); }
+.place__head, .place__rows { align-self: stretch; }
+.place__name { font-size: 2.4rem; font-weight: 700; line-height: 1.5; outline: none; }
+.place__kind { font-size: 1.6rem; margin-top: .8rem; }
+.place__rows { display: flex; flex-direction: column; gap: .8rem; margin: 0; }
+.place__row { display: flex; align-items: flex-start; gap: .8rem; }
+.place__row img { flex: none; width: 2.4rem; height: 2.4rem; }
+.place__row dt { font-size: 1.8rem; font-weight: 600; }
+.place__row dd { margin: .8rem 0 0; font-size: 1.6rem; }
+.place__go { align-self: center; display: flex; align-items: center; gap: .8rem; padding: .8rem; border-radius: .5rem; background: #e2e2e2; color: var(--negro); font-size: 1.8rem; font-weight: 600; text-decoration: none; margin-top: 1.6rem; position: relative; transition: background-color .2s; }
+.place__go::before { content: ""; position: absolute; left: 50%; top: -1.6rem; width: 100vw; max-width: 29.6rem; translate: -50% 0; border-top: 1px solid #e2e2e2; }
+.place__go:hover, .place__go:focus-visible { background: var(--amarillo); }
+.place__go img { width: 2.4rem; height: 2.4rem; }
+
+.map__list { padding: 2rem 2rem 0; color: var(--morado); font-size: 1.6rem; }
+.map__list summary { cursor: pointer; font-family: var(--doto); font-weight: 800; font-size: 1.6rem; text-transform: uppercase; color: var(--gris); text-decoration: underline; text-underline-offset: .2em; }
+.map__list summary:hover { color: var(--morado); }
+.map__group { margin-top: 2.4rem; }
+.map__group[hidden] { display: none; }
+.map__group h3 { display: flex; align-items: center; gap: 1rem; font-size: 1.8rem; font-weight: 700; }
+.map__group .map__dot { width: 1.6rem; height: 1.6rem; box-shadow: 0 0 0 1px rgba(0, 0, 0, .2); }
+.map__group ul { margin-top: 1rem; display: grid; gap: 1.2rem; }
+.map__group li { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem 1.2rem; padding-bottom: 1.2rem; border-bottom: 1px solid var(--lila); }
+.map__goto { font-weight: 700; color: var(--morado); text-decoration: underline; text-underline-offset: .18em; text-align: left; }
+.map__group li > span:not(.place__chip) { flex: 1 1 26rem; color: var(--negro); }
+.map__group li > a { color: var(--ocre); font-weight: 600; }
+
+@media (min-width: 600px) {
+  .map__cards { left: 4rem; right: auto; bottom: 2rem; width: 32.8rem; max-height: calc(100% - 4rem); }
+  .place__photo { display: block; }
+  .map__list { padding-inline: 4rem; }
+}
+@media (min-width: 1000px) {
+  .map__legend li, .map__filter { gap: 2.8rem; }
+  .map .map__frame { height: 73.75rem; }
+  .map__cards { left: max(6.767rem, calc(50% - 72rem + 6.767rem)); top: .88rem; bottom: auto; width: 32.8rem; max-height: calc(100% - 1.76rem); }
+  .place { box-shadow: none; }
+  .map__list { padding: 2.4rem var(--margen) 0; }
+  .map__group ul { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 4rem; }
+  .map__note { min-height: 0; padding-bottom: 12rem; }
+}

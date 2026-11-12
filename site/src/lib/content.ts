@@ -30,6 +30,7 @@ export const QUERY = `{
       items[]{..., image${image}},
       image${image},
       placeholder${image},
+      places[]{..., photo${image}},
       band{..., image${image}},
       people[]{..., photo${image}},
       steps[]{..., items[]{..., image${image}}},

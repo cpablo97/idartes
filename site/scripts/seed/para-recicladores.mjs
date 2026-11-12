@@ -1,6 +1,7 @@
 // Para recicladores — frame 1:133 (1440 × 16776). Las y son las del frame de Figma.
 import { images, crop, t, b, m, a, body, canvas, image, text, title, rule, explora } from "./_lib.mjs";
 const img = images("para-recicladores");
+const imgMapa = images("mapa");
 const inicio = images("inicio");
 
 const intro = canvas(927);
@@ -71,15 +72,30 @@ export default {
       title: "Puntos clave para tu recorrido",
       body: body("Aquí encontrarás un mapa de Chapinero con lugares \npara comer, ir al baño y vender tus materiales."),
       legend: [
-        { label: "Comedores comunitarios", color: "#0048d8" },
-        { label: "Baños publicos", color: "#95ff00" }, // (sic) sin tilde en el diseño
-        { label: "Centros de acopio", color: "#ffe100" },
+        { key: "comedor", label: "Comedores comunitarios", color: "#0048d8" },
+        { key: "bano", label: "Baños publicos", color: "#95ff00" }, // (sic) sin tilde en el diseño
+        { key: "acopio", label: "Centros de acopio", color: "#ffe100" },
       ],
-      // TODO: reemplazar por la URL de inserción del mapa de Google My Maps (…/maps/d/embed?mid=<id>) y poner `pending: false`.
-      embedUrl: "https://www.google.com/maps/d/embed?mid=TODO",
-      pending: true,
-      pendingLabel: "Mapa pendiente",
-      placeholder: img("mapa-captura", "Captura de referencia: mapa en grises de Chapinero con puntos numerados"),
+      center: { lat: 4.6448, lng: -74.0652 },
+      zoom: 15,
+      // Mapa base: OpenStreetMap pasado a grises. TODO (opcional): con una clave de CARTO, usar
+      // tilesUrl: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?api_key=<clave>" y quitar tilesGray.
+      tilesGray: true,
+      // TODO: reemplazar por los lugares reales. Salvo "Toku" (el ejemplo del diseño), todos son INVENTADOS de relleno
+      // (`demo: true`): nombres, direcciones, servicios y horarios no existen. Al cargar los reales, quitar `demoLabel`.
+      demoLabel: "Lugares de ejemplo",
+      places: [
+        { name: "Toku", category: "comedor", kind: "Comedor comunitario", lat: 4.6441, lng: -74.0627, address: "Carrera 7 #57-05", service: "Almuerzos, alimentación comunitaria", schedule: "Sábados · 12:00–3:00 p. m.", hours: [{ days: [6], open: "12:00", close: "15:00" }], photo: imgMapa("toku", "Letrero de Toku entre plantas"), demo: true },
+        { name: "La Olla Común", category: "comedor", kind: "Comedor comunitario", lat: 4.6519, lng: -74.0661, address: "Calle 63 #9-40", service: "Desayunos y almuerzos", schedule: "Lunes a viernes · 7:00 a. m.–2:00 p. m.", hours: [{ days: [1, 2, 3, 4, 5], open: "07:00", close: "14:00" }], demo: true },
+        { name: "El Fogón de la 45", category: "comedor", kind: "Comedor comunitario", lat: 4.6337, lng: -74.0669, address: "Carrera 13 #45-20", service: "Almuerzos", schedule: "Lunes a sábado · 11:30 a. m.–2:30 p. m.", hours: [{ days: [1, 2, 3, 4, 5, 6], open: "11:30", close: "14:30" }], demo: true },
+        { name: "Baño público Calle 60", category: "bano", kind: "Baño público", lat: 4.6468, lng: -74.0644, address: "Calle 60 con carrera 9", service: "Baños y lavamanos, sin costo", schedule: "Todos los días · 6:00 a. m.–8:00 p. m.", hours: [{ days: [0, 1, 2, 3, 4, 5, 6], open: "06:00", close: "20:00" }], demo: true },
+        { name: "Baño público Calle 53", category: "bano", kind: "Baño público", lat: 4.6402, lng: -74.0655, address: "Calle 53 con carrera 13", service: "Baños, lavamanos y punto de agua", schedule: "Lunes a sábado · 7:00 a. m.–6:00 p. m.", hours: [{ days: [1, 2, 3, 4, 5, 6], open: "07:00", close: "18:00" }], demo: true },
+        { name: "Baño público Calle 67", category: "bano", kind: "Baño público", lat: 4.6556, lng: -74.0612, address: "Calle 67 con carrera 7", service: "Baños y lavamanos", schedule: "Todos los días · 24 horas", hours: [{ days: [0, 1, 2, 3, 4, 5, 6], open: "00:00", close: "24:00" }], demo: true },
+        { name: "Bodega La Balanza", category: "acopio", kind: "Centro de acopio", lat: 4.6489, lng: -74.0697, address: "Avenida Caracas #61-18", service: "Compra de cartón, papel, plástico y vidrio", schedule: "Lunes a sábado · 6:00 a. m.–6:00 p. m.", hours: [{ days: [1, 2, 3, 4, 5, 6], open: "06:00", close: "18:00" }], demo: true },
+        { name: "Acopio El Cartón", category: "acopio", kind: "Centro de acopio", lat: 4.6381, lng: -74.0702, address: "Avenida Caracas #49-32", service: "Compra de cartón, archivo y chatarra", schedule: "Lunes a viernes · 7:00 a. m.–5:00 p. m.", hours: [{ days: [1, 2, 3, 4, 5], open: "07:00", close: "17:00" }], demo: true },
+        { name: "Punto de acopio La 39", category: "acopio", kind: "Centro de acopio", lat: 4.6292, lng: -74.0676, address: "Calle 39 #13-50", service: "Compra de PET, aluminio y cartón", schedule: "Lunes a domingo · 8:00 a. m.–8:00 p. m.", hours: [{ days: [0, 1, 2, 3, 4, 5, 6], open: "08:00", close: "20:00" }], demo: true },
+      ],
+      placeholder: img("mapa-captura", ""),
       // TODO: completar "[fuentes: …]" y "[fecha]" (marcadores literales del diseño) y confirmar la cuenta de Instagram.
       note: body([
         b("Fuentes y actualización, "),

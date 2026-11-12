@@ -1014,24 +1014,284 @@
           ],
           "legend": [
             {
+              "key": "comedor",
               "label": "Comedores comunitarios",
               "color": "#0048d8",
               "_key": "pas2l0"
             },
             {
+              "key": "bano",
               "label": "Baños publicos",
               "color": "#95ff00",
               "_key": "pas2l1"
             },
             {
+              "key": "acopio",
               "label": "Centros de acopio",
               "color": "#ffe100",
               "_key": "pas2l2"
             }
           ],
-          "embedUrl": "https://www.google.com/maps/d/embed?mid=TODO",
-          "pending": true,
-          "pendingLabel": "Mapa pendiente",
+          "center": {
+            "lat": 4.6448,
+            "lng": -74.0652
+          },
+          "zoom": 15,
+          "tilesGray": true,
+          "demoLabel": "Lugares de ejemplo",
+          "places": [
+            {
+              "name": "Toku",
+              "category": "comedor",
+              "kind": "Comedor comunitario",
+              "lat": 4.6441,
+              "lng": -74.0627,
+              "address": "Carrera 7 #57-05",
+              "service": "Almuerzos, alimentación comunitaria",
+              "schedule": "Sábados · 12:00–3:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    6
+                  ],
+                  "open": "12:00",
+                  "close": "15:00",
+                  "_key": "pas2p0h0"
+                }
+              ],
+              "photo": {
+                "local": {
+                  "webp": [
+                    "/assets/images/mapa/toku-480.webp",
+                    "/assets/images/mapa/toku-592.webp"
+                  ],
+                  "fallback": "/assets/images/mapa/toku.png",
+                  "width": 592,
+                  "height": 240
+                },
+                "alt": "Letrero de Toku entre plantas"
+              },
+              "demo": true,
+              "_key": "pas2p0"
+            },
+            {
+              "name": "La Olla Común",
+              "category": "comedor",
+              "kind": "Comedor comunitario",
+              "lat": 4.6519,
+              "lng": -74.0661,
+              "address": "Calle 63 #9-40",
+              "service": "Desayunos y almuerzos",
+              "schedule": "Lunes a viernes · 7:00 a. m.–2:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "open": "07:00",
+                  "close": "14:00",
+                  "_key": "pas2p1h0"
+                }
+              ],
+              "demo": true,
+              "_key": "pas2p1"
+            },
+            {
+              "name": "El Fogón de la 45",
+              "category": "comedor",
+              "kind": "Comedor comunitario",
+              "lat": 4.6337,
+              "lng": -74.0669,
+              "address": "Carrera 13 #45-20",
+              "service": "Almuerzos",
+              "schedule": "Lunes a sábado · 11:30 a. m.–2:30 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "open": "11:30",
+                  "close": "14:30",
+                  "_key": "pas2p2h0"
+                }
+              ],
+              "demo": true,
+              "_key": "pas2p2"
+            },
+            {
+              "name": "Baño público Calle 60",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.6468,
+              "lng": -74.0644,
+              "address": "Calle 60 con carrera 9",
+              "service": "Baños y lavamanos, sin costo",
+              "schedule": "Todos los días · 6:00 a. m.–8:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "open": "06:00",
+                  "close": "20:00",
+                  "_key": "pas2p3h0"
+                }
+              ],
+              "demo": true,
+              "_key": "pas2p3"
+            },
+            {
+              "name": "Baño público Calle 53",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.6402,
+              "lng": -74.0655,
+              "address": "Calle 53 con carrera 13",
+              "service": "Baños, lavamanos y punto de agua",
+              "schedule": "Lunes a sábado · 7:00 a. m.–6:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "open": "07:00",
+                  "close": "18:00",
+                  "_key": "pas2p4h0"
+                }
+              ],
+              "demo": true,
+              "_key": "pas2p4"
+            },
+            {
+              "name": "Baño público Calle 67",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.6556,
+              "lng": -74.0612,
+              "address": "Calle 67 con carrera 7",
+              "service": "Baños y lavamanos",
+              "schedule": "Todos los días · 24 horas",
+              "hours": [
+                {
+                  "days": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "open": "00:00",
+                  "close": "24:00",
+                  "_key": "pas2p5h0"
+                }
+              ],
+              "demo": true,
+              "_key": "pas2p5"
+            },
+            {
+              "name": "Bodega La Balanza",
+              "category": "acopio",
+              "kind": "Centro de acopio",
+              "lat": 4.6489,
+              "lng": -74.0697,
+              "address": "Avenida Caracas #61-18",
+              "service": "Compra de cartón, papel, plástico y vidrio",
+              "schedule": "Lunes a sábado · 6:00 a. m.–6:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "open": "06:00",
+                  "close": "18:00",
+                  "_key": "pas2p6h0"
+                }
+              ],
+              "demo": true,
+              "_key": "pas2p6"
+            },
+            {
+              "name": "Acopio El Cartón",
+              "category": "acopio",
+              "kind": "Centro de acopio",
+              "lat": 4.6381,
+              "lng": -74.0702,
+              "address": "Avenida Caracas #49-32",
+              "service": "Compra de cartón, archivo y chatarra",
+              "schedule": "Lunes a viernes · 7:00 a. m.–5:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "open": "07:00",
+                  "close": "17:00",
+                  "_key": "pas2p7h0"
+                }
+              ],
+              "demo": true,
+              "_key": "pas2p7"
+            },
+            {
+              "name": "Punto de acopio La 39",
+              "category": "acopio",
+              "kind": "Centro de acopio",
+              "lat": 4.6292,
+              "lng": -74.0676,
+              "address": "Calle 39 #13-50",
+              "service": "Compra de PET, aluminio y cartón",
+              "schedule": "Lunes a domingo · 8:00 a. m.–8:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "open": "08:00",
+                  "close": "20:00",
+                  "_key": "pas2p8h0"
+                }
+              ],
+              "demo": true,
+              "_key": "pas2p8"
+            }
+          ],
           "placeholder": {
             "local": {
               "webp": [
@@ -1042,7 +1302,7 @@
               "width": 657,
               "height": 333
             },
-            "alt": "Captura de referencia: mapa en grises de Chapinero con puntos numerados"
+            "alt": ""
           },
           "note": [
             {

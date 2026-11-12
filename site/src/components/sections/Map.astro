@@ -1,15 +1,24 @@
 ---
-// Mapa: banda negra (título, texto y leyenda) + mapa a sangre + nota de fuentes.
-// Mientras `pending` sea true se muestra la captura de referencia; después, el iframe de Google My Maps.
+// Mapa propio (Leaflet): banda negra (título, texto y leyenda que filtra) + mapa a sangre con marcadores por categoría
+// + tarjeta del lugar elegido + lista accesible de los mismos lugares + nota de fuentes.
+// public/js/map.js carga Leaflet solo cuando la sección se acerca a la pantalla. Sin JavaScript quedan
+// la imagen de respaldo y la lista, que tiene toda la información.
 import type { MapSection, Settings } from "../../lib/types";
 import Picture from "../Picture.astro";
 import { paragraphs } from "../../lib/text";
 
 interface Props { section: MapSection; settings: Settings }
-const { section: s } = Astro.props;
-const pending = s.pending || !s.embedUrl || /mid=TODO/.test(s.embedUrl);
+const { section: s, settings } = Astro.props;
+const cat = (key: string) => s.legend.find((l) => l.key === key);
+const route = (lat: number, lng: number) => `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+const data = JSON.stringify({
+  center: s.center,
+  zoom: s.zoom,
+  tilesUrl: s.tilesUrl ?? null,
+  places: s.places.map((p) => ({ id: p._key, name: p.name, category: p.category, color: cat(p.category)?.color ?? "#000", lat: p.lat, lng: p.lng, hours: p.hours ?? null })),
+}).replace(/</g, "\\u003c");
 ---
-<section class="sec map" id={s.anchor}>
+<section class:list={["sec", "map", s.tilesGray && "map--gray"]} id={s.anchor} data-map>
   <div class="map__head">
     <div class="band" aria-hidden="true"></div>
     <div class="map__intro" data-reveal="text">
@@ -17,20 +26,65 @@ const pending = s.pending || !s.embedUrl || /mid=TODO/.test(s.embedUrl);
       {s.body && <div class="map__body">{paragraphs(s.body).map((h) => <p set:html={h} />)}</div>}
     </div>
     {s.legend.length > 0 && (
-      <ul class="map__legend" data-reveal="text">
-        {s.legend.map((l) => <li><span class="map__dot" style={`background:${l.color}`} aria-hidden="true"></span>{l.label}</li>)}
+      <ul class="map__legend" data-reveal="text" aria-label="Filtrar lugares por tipo">
+        {s.legend.map((l) => (
+          <li><button class="map__filter" type="button" aria-pressed="true" data-cat={l.key}><span class="map__dot" style={`background:${l.color}`} aria-hidden="true"></span>{l.label}</button></li>
+        ))}
       </ul>
     )}
   </div>
-  <div class:list={["map__frame", "bleed", pending && "map__frame--pending"]}>
-    {pending ? (
-      <Fragment>
-        {s.placeholder && <Picture img={s.placeholder} sizes="100vw" class="map__placeholder" />}
-        <p class="map__pending">{s.pendingLabel ?? "Mapa pendiente"}</p>
-      </Fragment>
-    ) : (
-      <iframe src={s.embedUrl} title={s.title} loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-    )}
+
+  <div class="map__frame bleed">
+    {s.placeholder && <Picture img={s.placeholder} sizes="100vw" class="map__placeholder" />}
+    <div class="map__canvas" role="region" aria-label={`Mapa: ${s.title}`}></div>
+    {s.demoLabel && <p class="map__pending">{s.demoLabel}</p>}
+    <div class="map__cards">
+      {s.places.map((p) => (
+        <article class="place" id={`lugar-${p._key}`} data-place={p._key} aria-labelledby={`lugar-${p._key}-nombre`} hidden>
+          <button class="place__close" type="button" aria-label={settings.labels.close}><img src="/assets/icons/mapa/cerrar.svg" width="14" height="14" alt="" /></button>
+          <span class="place__dot" style={`background:${cat(p.category)?.color}`} aria-hidden="true"></span>
+          {p.photo && <Picture img={p.photo} sizes="296px" class="place__photo" />}
+          <p class="place__chips">
+            {p.demo && <span class="place__chip place__chip--demo">Ejemplo</span>}
+            <span class="place__chip place__chip--state" data-state hidden></span>
+          </p>
+          <div class="place__head">
+            <h3 class="place__name" id={`lugar-${p._key}-nombre`} tabindex="-1">{p.name}</h3>
+            {(p.kind ?? cat(p.category)?.label) && <p class="place__kind">{p.kind ?? cat(p.category)?.label}</p>}
+          </div>
+          <dl class="place__rows">
+            <div class="place__row"><img src="/assets/icons/mapa/direccion.svg" width="24" height="24" alt="" /><div><dt>Dirección</dt><dd>{p.address}</dd></div></div>
+            {p.service && <div class="place__row"><img src="/assets/icons/mapa/servicio.svg" width="24" height="24" alt="" /><div><dt>Servicio</dt><dd>{p.service}</dd></div></div>}
+            {p.schedule && <div class="place__row"><img src="/assets/icons/mapa/horario.svg" width="24" height="24" alt="" /><div><dt>Horario</dt><dd>{p.schedule}</dd></div></div>}
+          </dl>
+          <a class="place__go" href={route(p.lat, p.lng)} target="_blank" rel="noopener"><img src="/assets/icons/mapa/como-llegar.svg" width="24" height="24" alt="" />Cómo llegar<span class="sr"> a {p.name} (se abre en Google Maps)</span></a>
+        </article>
+      ))}
+    </div>
   </div>
+
+  <details class="map__list">
+    <summary>Ver la lista de lugares ({s.places.length})</summary>
+    {s.legend.map((l) => {
+      const places = s.places.filter((p) => p.category === l.key);
+      return places.length > 0 && (
+        <div class="map__group" data-cat={l.key}>
+          <h3><span class="map__dot" style={`background:${l.color}`} aria-hidden="true"></span>{l.label}</h3>
+          <ul>
+            {places.map((p) => (
+              <li>
+                <button class="map__goto" type="button" data-goto={p._key}>{p.name}</button>{p.demo && <span class="place__chip place__chip--demo">Ejemplo</span>}
+                <span>{[p.address, p.service, p.schedule].filter(Boolean).join(" · ")}</span>
+                <a href={route(p.lat, p.lng)} target="_blank" rel="noopener">Cómo llegar<span class="sr"> a {p.name}</span></a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    })}
+  </details>
+
   {s.note && <div class="map__note" data-reveal="text">{paragraphs(s.note).map((h) => <p set:html={h} />)}</div>}
+  <script type="application/json" class="map__data" is:inline set:html={data}></script>
 </section>
+<script is:inline src="/js/map.js" defer></script>

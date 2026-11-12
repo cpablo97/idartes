@@ -77,7 +77,7 @@ Todas llevan `_type`, `_key` y `anchor?` (id para enlaces internos).
 | `cardGrid` | `CardGrid.astro` | Índice de Inicio (`free`) y fila "Explora más" (`row`) |
 | `video` | `Video.astro` | Microdocumental (Inicio, ¿Cómo lo hicimos?) |
 | `videoList` | `VideoList.astro` | Cinco videotutoriales (Para recicladores) |
-| `map` | `Map.astro` | Mapa de Google (Para recicladores) |
+| `map` | `Map.astro` | Mapa de lugares (Para recicladores) |
 | `gallery` | `Gallery.astro` | Galería en espiral (Para recicladores) |
 | `bitacora` | `Bitacora.astro` | Visor de láminas (¿Cómo lo hicimos?, Videojuego) |
 | `gameEmbed` | `GameEmbed.astro` | Juego de itch.io (Videojuego) |
@@ -123,8 +123,24 @@ se pinta como hueco pendiente.
 `videos[]`: `{ label, youtubeId, title, description?, poster? }`.
 
 ### `map`
-`title`, `body?`, `legend[]` (`{ label, color }`), `embedUrl` (Google My Maps, `…/maps/d/embed?mid=…`),
-`pending?`, `pendingLabel?`, `placeholder?` (captura que se muestra mientras esté pendiente), `note?` (fuentes).
+Mapa propio con Leaflet (no es un embed de Google).
+
+| Campo | Tipo | Notas |
+|---|---|---|
+| `title`, `body?` | string, texto | Banda negra |
+| `legend[]` | `{ key, label, color }` | Categorías: pintan los marcadores y cada una filtra sus lugares |
+| `center` | `{ lat, lng }` | Centro inicial |
+| `zoom` | number | 15 muestra Chapinero |
+| `tilesUrl?` | string | Mapa base. Vacío = OpenStreetMap (sin clave). Para CARTO: `https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?api_key=<clave>` |
+| `tilesGray?` | boolean | Pasa el mapa base a grises |
+| `places[]` | lugar | Ver abajo. En Sanity conviene un documento `place` y aquí referencias |
+| `demoLabel?` | string | Aviso mientras haya lugares de relleno |
+| `placeholder?` | imagen | Se ve mientras carga el mapa o sin JavaScript |
+| `note?` | texto | Fuentes y fecha de actualización |
+
+**Lugar**: `name`, `category` (la `key` de la leyenda), `kind?` ("Comedor comunitario"), `lat`, `lng` (en Sanity: tipo `geopoint`),
+`address`, `service?`, `schedule?` (horario como se lee), `hours[]?` (`{ days[], open, close }`: días 0 = domingo a 6 = sábado,
+horas "HH:MM" en 24 h, hora de Bogotá; alimenta el chip Abierto/Cerrado), `photo?`, `demo?` (lugar inventado: la tarjeta dice "Ejemplo").
 
 ### `gallery`
 `title?`, `heading?`, `body?`, `images[]` (`{ image, caption? }`; entre 8 y 12 fotos).
@@ -158,7 +174,7 @@ Cada paso es un pequeño lienzo (los mismos elementos de `collage`); la fila 1 e
 Buscar `TODO` en `site/scripts/seed/*.mjs`:
 
 - IDs de YouTube: microdocumentales (Inicio, ¿Cómo lo hicimos?, Exhibición) y los cinco videotutoriales.
-- URL del mapa de Google My Maps, y los textos "[fuentes: …]" y "[fecha]" de su nota.
+- Lugares reales del mapa (hoy son inventados, marcados `demo`), y los textos "[fuentes: …]" y "[fecha]" de su nota.
 - URL del embed de itch.io de Chapicartón.
 - Láminas reales de la bitácora (hoy hay láminas de relleno) y fotos definitivas de la galería.
 - URL del Excel "Chapinero 2025 en los medios".
