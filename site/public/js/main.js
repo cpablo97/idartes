@@ -9,6 +9,14 @@
   const root = document.documentElement;
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---------- Cada página abre arriba ---------- */
+  // El navegador recuerda el scroll de cada página y lo repone al volver; aquí no se quiere:
+  // siempre se entra por el principio, salvo que la dirección traiga un ancla (#videotutoriales).
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  const toTop = () => { if (!location.hash) scrollTo({ top: 0, left: 0, behavior: "instant" }); };
+  toTop();
+  addEventListener("pageshow", toTop); // también al volver con "atrás" desde la caché del navegador
+
   /* ---------- Menú: aria-expanded, foco atrapado, Esc y clic fuera ---------- */
   const btn = $(".menu-btn");
   const menu = $("#menu");
