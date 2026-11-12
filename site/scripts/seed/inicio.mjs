@@ -52,7 +52,7 @@ export default {
       dots: [cards.dots(280, 2610, 950, 2264)],
       items: [
         card("Para recicladores", "/para-recicladores/", img("card-recicladores", "Recicladora sonriente empujando su carreta cargada frente a un camión rojo"), "l", cards.at(60, 2962, 643, 700)),
-        title([t("ciudad "), i("y"), t(" cuerpo")], "amarillo", cards.at(751, 2974, 142, 895, 0), { rotate: 90 }),
+        title([t("ciudad "), i("y"), t(" cuerpo")], "amarillo", cards.at(751, 2974, 142, 895, 5), { rotate: 90 }),
         card("Lo que aprendimos de la calle", "/lo-que-aprendimos-de-la-calle/", img("card-calle", "Carreta de reciclaje cargada de costales en una calle de Chapinero", { x: 0.5, y: 0.35 }), "m", cards.at(732, 3605, 425, 470)),
         card("¿Cómo lo hicimos?", "/como-lo-hicimos/", img("card-como", "Participante con los ojos vendados explora objetos e hilos sobre el piso"), "l", cards.at(179, 4417, 643, 700)),
         card("Equipo", "/equipo/", img("card-equipo", "El equipo del laboratorio reunido en círculo"), "s", cards.at(1044, 4417, 334, 370)),

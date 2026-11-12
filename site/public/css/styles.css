@@ -250,6 +250,8 @@ main { display: block; }
   .ci--text, .ci--text:nth-of-type(even) { font-size: var(--fs, 2.4rem); max-width: none; align-self: start; }
   .display { font-size: var(--fs, var(--display)); white-space: nowrap; overflow-wrap: normal; }
   .canvas > .display { align-self: start; }
+  /* Un titular montado sobre una foto o una tarjeta no debe tapar sus clics. */
+  .canvas > .display { pointer-events: none; }
   .display--down, .display--up { writing-mode: vertical-rl; justify-self: start; align-self: start; }
   .display--up, .canvas > .display--up { rotate: 180deg; align-self: end; }
   .rule { width: 100%; align-self: start; }
