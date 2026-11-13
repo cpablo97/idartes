@@ -1,0 +1,17 @@
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Node / Astro / Sanity
+node_modules/
+site/dist/
+site/.astro/
+studio/dist/
+.env
+.env.*
+!.env.example
+studio/.sanity/
+.claude/
+
+# Originales pesados exportados de Figma / Drive (entrada de site/scripts/images.mjs)
+assets/originales/

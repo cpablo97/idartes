@@ -1,0 +1,19 @@
+---
+import type { Page, Settings } from "../lib/types";
+import Picture from "./Picture.astro";
+import { color } from "../lib/text";
+
+interface Props { settings: Settings; page?: Page }
+const { settings, page } = Astro.props;
+const tone = color(page?.footerTone ?? settings.footer.tone);
+---
+<footer class="footer" style={`--footer:${tone}`}>
+  <div class="footer__in">
+    <p class="footer__credit">{settings.footer.credit}</p>
+    <ul class="footer__logos">
+      {settings.footer.logos.map((l) => (
+        <li>{l.url ? <a href={l.url} target="_blank" rel="noopener"><Picture img={l.image} sizes="285px" /></a> : <Picture img={l.image} sizes="285px" />}</li>
+      ))}
+    </ul>
+  </div>
+</footer>

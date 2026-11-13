@@ -1,0 +1,21 @@
+---
+import type { CardGridSection, CardItem } from "../../lib/types";
+import Canvas from "../Canvas.astro";
+import Card from "../Card.astro";
+
+interface Props { section: CardGridSection }
+const { section: s } = Astro.props;
+---
+{s.layout === "free" ? (
+  <section class="sec sec--cards" id={s.anchor}>
+    {s.title && <h2 class="sec__label">{s.title}</h2>}
+    <Canvas items={s.items} rows={s.rows} dots={s.dots} />
+  </section>
+) : (
+  <section class="sec explora" id={s.anchor}>
+    {s.title && <h2 class="sec__label">{s.title}</h2>}
+    <ul class="explora__row">
+      {(s.items.filter((i) => i._type === "card") as CardItem[]).map((c) => { const { place, ...card } = c; return <li><Card card={card} rounded /></li>; })}
+    </ul>
+  </section>
+)}

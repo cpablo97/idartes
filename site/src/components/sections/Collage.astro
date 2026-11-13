@@ -1,0 +1,13 @@
+---
+import type { CollageSection } from "../../lib/types";
+import Canvas from "../Canvas.astro";
+import Picture from "../Picture.astro";
+import { color } from "../../lib/text";
+
+interface Props { section: CollageSection; index: number }
+const { section: s, index } = Astro.props;
+---
+<section class:list={["sec", "sec--collage", s.band && "has-band"]} id={s.anchor} style={s.band?.color ? `--band:${color(s.band.color as string)}` : undefined}>
+  {s.band && <div class="band" aria-hidden="true">{s.band.image && <Picture img={s.band.image} sizes="100vw" />}</div>}
+  <Canvas items={s.items} rows={s.rows} dots={s.dots} eagerFirst={index === 0} />
+</section>

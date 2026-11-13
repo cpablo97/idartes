@@ -1,0 +1,38 @@
+---
+// Page builder: cada `_type` de page.sections[] se pinta con su componente.
+import type { Section, Settings } from "../lib/types";
+import Collage from "./sections/Collage.astro";
+import Hero from "./sections/Hero.astro";
+import CardGrid from "./sections/CardGrid.astro";
+import Video from "./sections/Video.astro";
+import VideoList from "./sections/VideoList.astro";
+import Map from "./sections/Map.astro";
+import Gallery from "./sections/Gallery.astro";
+import Bitacora from "./sections/Bitacora.astro";
+import GameEmbed from "./sections/GameEmbed.astro";
+import People from "./sections/People.astro";
+import Controls from "./sections/Controls.astro";
+import Data from "./sections/Data.astro";
+import Timeline from "./sections/Timeline.astro";
+
+interface Props { sections: Section[]; settings: Settings }
+const { sections, settings } = Astro.props;
+---
+{sections.map((s, i) => {
+  switch (s._type) {
+    case "collage": return <Collage section={s} index={i} />;
+    case "hero": return <Hero section={s} settings={settings} />;
+    case "cardGrid": return <CardGrid section={s} />;
+    case "video": return <Video section={s} settings={settings} />;
+    case "videoList": return <VideoList section={s} settings={settings} />;
+    case "map": return <Map section={s} settings={settings} />;
+    case "gallery": return <Gallery section={s} settings={settings} />;
+    case "bitacora": return <Bitacora section={s} settings={settings} />;
+    case "gameEmbed": return <GameEmbed section={s} settings={settings} />;
+    case "people": return <People section={s} settings={settings} />;
+    case "controls": return <Controls section={s} settings={settings} />;
+    case "data": return <Data section={s} settings={settings} />;
+    case "timeline": return <Timeline section={s} settings={settings} />;
+    default: return null;
+  }
+})}

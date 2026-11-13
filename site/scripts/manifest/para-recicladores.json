@@ -1,0 +1,121 @@
+{
+  "brazos-arriba": {
+    "webp": [
+      "/assets/images/para-recicladores/brazos-arriba-480.webp",
+      "/assets/images/para-recicladores/brazos-arriba-960.webp",
+      "/assets/images/para-recicladores/brazos-arriba-1168.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/brazos-arriba.jpg",
+    "width": 1168,
+    "height": 1762
+  },
+  "cargando-tabla": {
+    "webp": [
+      "/assets/images/para-recicladores/cargando-tabla-480.webp",
+      "/assets/images/para-recicladores/cargando-tabla-960.webp",
+      "/assets/images/para-recicladores/cargando-tabla-1022.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/cargando-tabla.jpg",
+    "width": 1022,
+    "height": 1546
+  },
+  "carreta-calle": {
+    "webp": [
+      "/assets/images/para-recicladores/carreta-calle-480.webp",
+      "/assets/images/para-recicladores/carreta-calle-960.webp",
+      "/assets/images/para-recicladores/carreta-calle-1600.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/carreta-calle.jpg",
+    "width": 1600,
+    "height": 1200
+  },
+  "cuclillas-carreta": {
+    "webp": [
+      "/assets/images/para-recicladores/cuclillas-carreta-480.webp",
+      "/assets/images/para-recicladores/cuclillas-carreta-960.webp",
+      "/assets/images/para-recicladores/cuclillas-carreta-1600.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/cuclillas-carreta.jpg",
+    "width": 1600,
+    "height": 1134
+  },
+  "duotono-colgada": {
+    "webp": [
+      "/assets/images/para-recicladores/duotono-colgada-480.webp",
+      "/assets/images/para-recicladores/duotono-colgada-960.webp",
+      "/assets/images/para-recicladores/duotono-colgada-1158.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/duotono-colgada.jpg",
+    "width": 1158,
+    "height": 1738
+  },
+  "duotono-costal": {
+    "webp": [
+      "/assets/images/para-recicladores/duotono-costal-480.webp",
+      "/assets/images/para-recicladores/duotono-costal-960.webp",
+      "/assets/images/para-recicladores/duotono-costal-1166.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/duotono-costal.jpg",
+    "width": 1166,
+    "height": 1692
+  },
+  "estiramiento-barra": {
+    "webp": [
+      "/assets/images/para-recicladores/estiramiento-barra-480.webp",
+      "/assets/images/para-recicladores/estiramiento-barra-960.webp",
+      "/assets/images/para-recicladores/estiramiento-barra-1180.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/estiramiento-barra.jpg",
+    "width": 1180,
+    "height": 1768
+  },
+  "hero-dibujos": {
+    "webp": [
+      "/assets/images/para-recicladores/hero-dibujos-480.webp",
+      "/assets/images/para-recicladores/hero-dibujos-960.webp",
+      "/assets/images/para-recicladores/hero-dibujos-1600.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/hero-dibujos.jpg",
+    "width": 1600,
+    "height": 941
+  },
+  "mano-madera": {
+    "webp": [
+      "/assets/images/para-recicladores/mano-madera-480.webp",
+      "/assets/images/para-recicladores/mano-madera-960.webp",
+      "/assets/images/para-recicladores/mano-madera-1156.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/mano-madera.jpg",
+    "width": 1156,
+    "height": 1738
+  },
+  "manos-tabla": {
+    "webp": [
+      "/assets/images/para-recicladores/manos-tabla-480.webp",
+      "/assets/images/para-recicladores/manos-tabla-960.webp",
+      "/assets/images/para-recicladores/manos-tabla-1160.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/manos-tabla.jpg",
+    "width": 1160,
+    "height": 1738
+  },
+  "mapa-captura": {
+    "webp": [
+      "/assets/images/para-recicladores/mapa-captura-480.webp",
+      "/assets/images/para-recicladores/mapa-captura-657.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/mapa-captura.jpg",
+    "width": 657,
+    "height": 333
+  },
+  "reciclador-gorra": {
+    "webp": [
+      "/assets/images/para-recicladores/reciclador-gorra-480.webp",
+      "/assets/images/para-recicladores/reciclador-gorra-960.webp",
+      "/assets/images/para-recicladores/reciclador-gorra-1600.webp"
+    ],
+    "fallback": "/assets/images/para-recicladores/reciclador-gorra.jpg",
+    "width": 1600,
+    "height": 1271
+  }
+}

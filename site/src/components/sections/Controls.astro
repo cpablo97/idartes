@@ -1,0 +1,63 @@
+---
+// Controles del videojuego: banda lila con los paneles del mando (dibujo SVG + etiquetas en texto real)
+// y las teclas del teclado hechas con <kbd>.
+import type { ControlsSection, ControlKey, Settings } from "../../lib/types";
+import Picture from "../Picture.astro";
+
+interface Props { section: ControlsSection; settings: Settings }
+const { section: s } = Astro.props;
+const lines = (t: string) => t.split("\n");
+const turn = { right: 0, down: 90, left: 180, up: -90 } as const;
+const pct = (x: number, w: number) => `${Math.round((x / w) * 10000) / 100}%`;
+const keyClass = (k: ControlKey) => ["key", k.size && `key--${k.size}`, k.icon && "key--icon"];
+---
+<section class="sec controls" id={s.anchor}>
+  <h2 class="controls__title" data-reveal="text">{s.title}</h2>
+
+  <div class="controls__block controls__pad">
+    <h3 class="controls__sub">{s.gamepad.title}</h3>
+    <div class="controls__groups">
+      {s.gamepad.groups.map((g) => (
+        <div class="pad" style={`--pw:${g.width}`} data-reveal="text">
+          <h4 class="controls__name">{g.title}</h4>
+          <Picture img={g.panel} sizes="(min-width: 1000px) 45vw, 92vw" class="pad__panel" />
+          <ul class="pad__labels">
+            {g.labels.map((l) => <li style={`--x:${pct(l.x, g.width)}`}>{lines(l.text).map((t, i) => <>{i > 0 && <br />}{t}</>)}</li>)}
+          </ul>
+        </div>
+      ))}
+      {s.gamepad.photo && <Picture img={s.gamepad.photo} sizes="(min-width: 1000px) 34vw, 80vw" class="controls__mando" data-reveal="img" />}
+    </div>
+  </div>
+
+  <div class="controls__block controls__kb">
+    <h3 class="controls__sub">{s.keyboard.title}</h3>
+    <div class="controls__keys">
+      {s.keyboard.groups.map((g) => (
+        <div class="keys" data-reveal="text">
+          <h4 class="controls__name">{g.title}</h4>
+          <div class="keys__body">
+            {g.clusters.map((c, n) => (
+              <>
+                {n > 0 && g.joiner && <span class="keys__or">{g.joiner}</span>}
+                <ul class:list={["keys__set", `keys__set--${c.layout}`, c.indent && "keys__set--indent"]}>
+                  {c.keys.map((k) => (
+                    <li class={k.size ? `is-${k.size}` : undefined}>
+                      <kbd class:list={keyClass(k)}>
+                        {k.icon
+                          ? <><span class="sr">{k.key}</span><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style={turn[k.icon] ? `rotate:${turn[k.icon]}deg` : undefined}><path fill="currentColor" d="M12.6 12 8 7.4 9.4 6l6 6-6 6L8 16.6l4.6-4.6Z"/></svg></>
+                          : k.key}
+                      </kbd>
+                      {k.label && <span class="key__label">{lines(k.label).map((t, i) => <>{i > 0 && <br />}{t}</>)}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+    {s.keyboard.photos?.map((p, i) => <Picture img={p} sizes="(min-width: 1000px) 40vw, 70vw" class={`controls__photo controls__photo--${i + 1}`} />)}
+  </div>
+</section>

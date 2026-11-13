@@ -1,0 +1,75 @@
+---
+// Datos: rótulo + texto con enlace a la fuente, gráfico de círculos con leyenda y/o tabla de precios.
+// El gráfico es SVG (círculos y puntos, decorativo) + una lista HTML que hace de leyenda y de texto alternativo;
+// la tabla es una <table> real con <caption> y encabezados de fila y de columna.
+import type { DataSection, Settings } from "../../lib/types";
+import { paragraphs, color, escape } from "../../lib/text";
+
+interface Props { section: DataSection; settings: Settings }
+const { section: s } = Astro.props;
+const ps = paragraphs(s.body);
+const ext = s.link ? /^https?:/.test(s.link.url) : false;
+const link = s.link ? ` <a class="data__link" href="${escape(s.link.url)}"${ext ? ' target="_blank" rel="noopener"' : ""}>${escape(s.link.label)}</a>` : "";
+
+// Gráfico: el viewBox se ciñe a lo dibujado (círculos + puntos) para que en móvil ocupe todo el ancho;
+// en escritorio el SVG se coloca en su sitio dentro del lienzo de `width` × `height` px de diseño.
+const R = 13.5; // radio del punto de la leyenda (⌀27 en el diseño)
+const c = s.chart;
+const n = (v: number) => Math.round(v * 100) / 100;
+const box = c && (() => {
+  const xs = c.series.flatMap((d) => [d.ring.x, d.ring.x + d.ring.d, d.dot.x - R, d.dot.x + R]);
+  const ys = c.series.flatMap((d) => [d.ring.y, d.ring.y + d.ring.d, d.dot.y - R, d.dot.y + R]);
+  const x = Math.min(...xs) - 1, y = Math.min(...ys) - 1;
+  return { x: n(x), y: n(y), w: n(Math.max(...xs) + 1 - x), h: n(Math.max(...ys) + 1 - y) };
+})();
+const t = s.table;
+---
+<section class:list={["sec", "data", c && "data--chart", t && "data--table"]} id={s.anchor}>
+  {s.title && <h2 class="data__title" data-reveal="text">{s.title}</h2>}
+  {(ps.length > 0 || link) && (
+    <div class="data__body" data-reveal="text">
+      {ps.map((html, i) => <p set:html={i === ps.length - 1 ? html + link : html} />)}
+      {ps.length === 0 && <p set:html={link} />}
+    </div>
+  )}
+
+  {c && box && (
+    <figure class="chart" style={`--cw:${c.width};--ch:${c.height};--bx:${box.x};--by:${box.y};--bw:${box.w};--bh:${box.h}`} data-reveal="chart">
+      <svg class="chart__svg" viewBox={`${box.x} ${box.y} ${box.w} ${box.h}`} aria-hidden="true" focusable="false">
+        {c.series.map((d, i) => (
+          <circle class="chart__ring" cx={n(d.ring.x + d.ring.d / 2)} cy={n(d.ring.y + d.ring.d / 2)} r={n(d.ring.d / 2)} pathLength="1" style={`stroke:${color(d.ringTone ?? d.tone)};--i:${i}`} />
+        ))}
+        {c.series.map((d, i) => <circle class="chart__dot" cx={n(d.dot.x)} cy={n(d.dot.y)} r={R} style={`fill:${color(d.tone)};--i:${i}`} />)}
+      </svg>
+      <figcaption class="sr">{c.title}{c.description ? `. ${c.description}` : ""}</figcaption>
+      <ul class="chart__legend">
+        {c.series.map((d, i) => (
+          <li style={`--x:${n(d.dot.x + R + (d.gap ?? 16))};--y:${n(d.dot.y)};--i:${i};color:${color(d.tone)}`}>
+            <span class="chart__key" aria-hidden="true"></span>
+            <span>{d.label}{d.value != null && <span class="sr">: {d.value}{d.unit ? ` ${d.unit}` : ""}</span>}</span>
+          </li>
+        ))}
+      </ul>
+    </figure>
+  )}
+
+  {t && (
+    <div class="precios">
+      <table class="precios__table" style={t.tone ? `--tabla:${color(t.tone)}` : undefined}>
+        <caption class="precios__caption">
+          <strong>{t.title}</strong>
+          {t.subtitle && <span>{t.subtitle}</span>}
+        </caption>
+        <thead>
+          <tr>{t.head.map((h) => <th scope="col">{h}</th>)}</tr>
+        </thead>
+        <tbody>
+          {t.rows.map((r) => (
+            <tr>{r.cells.map((cell, i) => (i === 0 ? <th scope="row">{cell}</th> : <td>{cell}</td>))}</tr>
+          ))}
+        </tbody>
+      </table>
+      {t.note && <div class="precios__note" data-reveal="text">{paragraphs(t.note).map((html) => <p set:html={html} />)}</div>}
+    </div>
+  )}
+</section>

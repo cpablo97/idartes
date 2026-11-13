@@ -1,0 +1,13 @@
+---
+import type { Settings, VideoSection } from "../../lib/types";
+import YouTube from "../YouTube.astro";
+import { paragraphs } from "../../lib/text";
+
+interface Props { section: VideoSection; settings: Settings }
+const { section: s, settings } = Astro.props;
+---
+<section class:list={["sec", "video", s.rule && "video--rule"]} id={s.anchor}>
+  {s.intro && <div class="video__intro" data-reveal="text">{paragraphs(s.intro).map((h) => <p set:html={h} />)}</div>}
+  <YouTube id={s.youtubeId} title={s.title} poster={s.poster} playLabel={settings.labels.play} pendingLabel={settings.labels.pending} class="bleed" />
+  {s.caption && <div class="video__caption" data-reveal="text">{paragraphs(s.caption).map((h) => <p set:html={h} />)}</div>}
+</section>

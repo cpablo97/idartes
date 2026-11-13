@@ -1,0 +1,35 @@
+---
+// Visor de láminas de la bitácora.
+//   slider: una lámina a la vez que se desliza (¿Cómo lo hicimos?).
+//   book:   libro abierto de dos páginas que se pasa de a pliego (Videojuego); en móvil, una página.
+// Sin JS sigue siendo una tira con scroll horizontal y scroll-snap.
+import type { BitacoraSection, Settings } from "../../lib/types";
+import Picture from "../Picture.astro";
+import { paragraphs } from "../../lib/text";
+
+interface Props { section: BitacoraSection; settings: Settings }
+const { section: s, settings } = Astro.props;
+const book = s.mode === "book";
+const label = s.title ?? "Bitácora";
+---
+<section class:list={["sec", "bitacora", `bitacora--${s.mode}`]} id={s.anchor} data-bitacora={s.mode}>
+  {s.title && <h2 class="bitacora__title">{s.title}</h2>}
+  {s.intro && <div class="bitacora__intro">{paragraphs(s.intro).map((h) => <p set:html={h} />)}</div>}
+  <div class="bitacora__stage">
+    <button class="bitacora__nav bitacora__nav--prev" type="button" aria-label={settings.labels.prev} hidden>
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.4 22 5.4 12l10-10 1.8 1.8L9 12l8.2 8.2L15.4 22Z"/></svg>
+    </button>
+    <ol class="bitacora__track" tabindex="0" aria-label={`${label}: ${s.pages.length} láminas`}>
+      {s.pages.map((p, i) => (
+        <li class="bitacora__page" aria-label={`${i + 1} / ${s.pages.length}`}>
+          <Picture img={p.image} sizes={book ? "(min-width: 700px) 46vw, 92vw" : "(min-width: 1000px) 88vw, 100vw"} eager={false} />
+        </li>
+      ))}
+    </ol>
+    <button class="bitacora__nav bitacora__nav--next" type="button" aria-label={settings.labels.next} hidden>
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8.6 22 6.8 20.2 15 12 6.8 3.8 8.6 2l10 10-10 10Z"/></svg>
+    </button>
+  </div>
+  <p class="bitacora__count" aria-live="polite" hidden><span data-current>1</span> / <span data-total>{s.pages.length}</span></p>
+</section>
+<script is:inline src="/js/bitacora.js" defer></script>

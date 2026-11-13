@@ -1,0 +1,30 @@
+---
+import type { Page, Settings } from "../lib/types";
+import { spans, color } from "../lib/text";
+
+interface Props { settings: Settings; page?: Page }
+const { settings, page } = Astro.props;
+const variant = page?.header ?? "display";
+const isHome = (page?.slug?.current ?? "x") === "";
+const here = page ? (page.slug.current ? `/${page.slug.current}/` : "/") : "";
+const Title = isHome ? "h1" : "p";
+---
+<div class="menubar" style={page?.menuTone ? `--menu-tone:${color(page.menuTone)}` : undefined}>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label={settings.labels.openMenu} data-label-open={settings.labels.openMenu} data-label-close={settings.labels.closeMenu}>
+    <span class="menu-btn__sq" aria-hidden="true"></span><span class="menu-btn__label">{settings.menuLabel}</span>
+  </button>
+  <nav class="menu" id="menu" aria-label={settings.labels.menu} hidden>
+    <button class="menu__close" type="button" aria-label={settings.labels.closeMenu}>
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.4 19 5 17.6 10.6 12 5 6.4 6.4 5 12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19Z"/></svg>
+    </button>
+    <ul>
+      {settings.menu.map((m) => <li><a href={m.href} aria-current={m.href === here ? "page" : undefined}>{m.label}</a></li>)}
+    </ul>
+  </nav>
+</div>
+{variant !== "none" && (
+  <header class:list={["header", `header--${variant}`]}>
+    <a class="header__brand" href="/" aria-label={settings.labels.home}>{settings.brandLabel}</a>
+    <Title class="header__title">{isHome ? <Fragment set:html={spans(settings.headerTitle)} /> : <a href="/" set:html={spans(settings.headerTitle)} />}</Title>
+  </header>
+)}

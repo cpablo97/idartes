@@ -1,0 +1,372 @@
+{
+  "arcade-jugador": {
+    "webp": [
+      "/assets/images/exhibicion/arcade-jugador-480.webp",
+      "/assets/images/exhibicion/arcade-jugador-960.webp",
+      "/assets/images/exhibicion/arcade-jugador-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/arcade-jugador.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "chaleco-chapicarton": {
+    "webp": [
+      "/assets/images/exhibicion/chaleco-chapicarton-480.webp",
+      "/assets/images/exhibicion/chaleco-chapicarton-960.webp",
+      "/assets/images/exhibicion/chaleco-chapicarton-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/chaleco-chapicarton.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "chaleco-maniqui": {
+    "webp": [
+      "/assets/images/exhibicion/chaleco-maniqui-480.webp",
+      "/assets/images/exhibicion/chaleco-maniqui-960.webp",
+      "/assets/images/exhibicion/chaleco-maniqui-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/chaleco-maniqui.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "conversacion-pendones": {
+    "webp": [
+      "/assets/images/exhibicion/conversacion-pendones-480.webp",
+      "/assets/images/exhibicion/conversacion-pendones-960.webp",
+      "/assets/images/exhibicion/conversacion-pendones-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/conversacion-pendones.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "hero-proyeccion-pasos": {
+    "webp": [
+      "/assets/images/exhibicion/hero-proyeccion-pasos-480.webp",
+      "/assets/images/exhibicion/hero-proyeccion-pasos-960.webp",
+      "/assets/images/exhibicion/hero-proyeccion-pasos-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/hero-proyeccion-pasos.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "mando-arcade": {
+    "webp": [
+      "/assets/images/exhibicion/mando-arcade-480.webp",
+      "/assets/images/exhibicion/mando-arcade-960.webp",
+      "/assets/images/exhibicion/mando-arcade-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/mando-arcade.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "mano-alambre": {
+    "webp": [
+      "/assets/images/exhibicion/mano-alambre-480.webp",
+      "/assets/images/exhibicion/mano-alambre-960.webp",
+      "/assets/images/exhibicion/mano-alambre-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/mano-alambre.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "mediador-pareja": {
+    "webp": [
+      "/assets/images/exhibicion/mediador-pareja-480.webp",
+      "/assets/images/exhibicion/mediador-pareja-960.webp",
+      "/assets/images/exhibicion/mediador-pareja-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/mediador-pareja.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "mediador-visitantes": {
+    "webp": [
+      "/assets/images/exhibicion/mediador-visitantes-480.webp",
+      "/assets/images/exhibicion/mediador-visitantes-960.webp",
+      "/assets/images/exhibicion/mediador-visitantes-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/mediador-visitantes.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "mesa-artefactos-guantes": {
+    "webp": [
+      "/assets/images/exhibicion/mesa-artefactos-guantes-480.webp",
+      "/assets/images/exhibicion/mesa-artefactos-guantes-960.webp",
+      "/assets/images/exhibicion/mesa-artefactos-guantes-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/mesa-artefactos-guantes.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "mesa-prototipos": {
+    "webp": [
+      "/assets/images/exhibicion/mesa-prototipos-480.webp",
+      "/assets/images/exhibicion/mesa-prototipos-960.webp",
+      "/assets/images/exhibicion/mesa-prototipos-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/mesa-prototipos.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "nino-bitacora-impresa": {
+    "webp": [
+      "/assets/images/exhibicion/nino-bitacora-impresa-480.webp",
+      "/assets/images/exhibicion/nino-bitacora-impresa-960.webp",
+      "/assets/images/exhibicion/nino-bitacora-impresa-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/nino-bitacora-impresa.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "nino-jugando": {
+    "webp": [
+      "/assets/images/exhibicion/nino-jugando-480.webp",
+      "/assets/images/exhibicion/nino-jugando-960.webp",
+      "/assets/images/exhibicion/nino-jugando-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/nino-jugando.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "paca-suspendida": {
+    "webp": [
+      "/assets/images/exhibicion/paca-suspendida-480.webp",
+      "/assets/images/exhibicion/paca-suspendida-960.webp",
+      "/assets/images/exhibicion/paca-suspendida-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/paca-suspendida.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "pacas-carton-azul": {
+    "webp": [
+      "/assets/images/exhibicion/pacas-carton-azul-480.webp",
+      "/assets/images/exhibicion/pacas-carton-azul-960.webp",
+      "/assets/images/exhibicion/pacas-carton-azul-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/pacas-carton-azul.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "pantalla-chapicarton": {
+    "webp": [
+      "/assets/images/exhibicion/pantalla-chapicarton-480.webp",
+      "/assets/images/exhibicion/pantalla-chapicarton-960.webp",
+      "/assets/images/exhibicion/pantalla-chapicarton-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/pantalla-chapicarton.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "piezas-ceramica-origami": {
+    "webp": [
+      "/assets/images/exhibicion/piezas-ceramica-origami-480.webp",
+      "/assets/images/exhibicion/piezas-ceramica-origami-960.webp",
+      "/assets/images/exhibicion/piezas-ceramica-origami-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/piezas-ceramica-origami.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "proyeccion-fragmentos": {
+    "webp": [
+      "/assets/images/exhibicion/proyeccion-fragmentos-480.webp",
+      "/assets/images/exhibicion/proyeccion-fragmentos-960.webp",
+      "/assets/images/exhibicion/proyeccion-fragmentos-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/proyeccion-fragmentos.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "publico-arcade": {
+    "webp": [
+      "/assets/images/exhibicion/publico-arcade-480.webp",
+      "/assets/images/exhibicion/publico-arcade-960.webp",
+      "/assets/images/exhibicion/publico-arcade-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/publico-arcade.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "sala-bitacora": {
+    "webp": [
+      "/assets/images/exhibicion/sala-bitacora-480.webp",
+      "/assets/images/exhibicion/sala-bitacora-960.webp",
+      "/assets/images/exhibicion/sala-bitacora-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/sala-bitacora.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "still-ariel-carreta": {
+    "webp": [
+      "/assets/images/exhibicion/still-ariel-carreta-480.webp",
+      "/assets/images/exhibicion/still-ariel-carreta-960.webp",
+      "/assets/images/exhibicion/still-ariel-carreta-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/still-ariel-carreta.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "still-ariel-perfil": {
+    "webp": [
+      "/assets/images/exhibicion/still-ariel-perfil-480.webp",
+      "/assets/images/exhibicion/still-ariel-perfil-960.webp",
+      "/assets/images/exhibicion/still-ariel-perfil-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/still-ariel-perfil.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "still-carreta-calle": {
+    "webp": [
+      "/assets/images/exhibicion/still-carreta-calle-480.webp",
+      "/assets/images/exhibicion/still-carreta-calle-960.webp",
+      "/assets/images/exhibicion/still-carreta-calle-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/still-carreta-calle.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "still-titulo": {
+    "webp": [
+      "/assets/images/exhibicion/still-titulo-480.webp",
+      "/assets/images/exhibicion/still-titulo-960.webp",
+      "/assets/images/exhibicion/still-titulo-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/still-titulo.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "velo-dibujo": {
+    "webp": [
+      "/assets/images/exhibicion/velo-dibujo-480.webp",
+      "/assets/images/exhibicion/velo-dibujo-960.webp",
+      "/assets/images/exhibicion/velo-dibujo-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/velo-dibujo.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "velo-proyeccion-silueta": {
+    "webp": [
+      "/assets/images/exhibicion/velo-proyeccion-silueta-480.webp",
+      "/assets/images/exhibicion/velo-proyeccion-silueta-960.webp",
+      "/assets/images/exhibicion/velo-proyeccion-silueta-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/velo-proyeccion-silueta.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "velo-silueta-roja": {
+    "webp": [
+      "/assets/images/exhibicion/velo-silueta-roja-480.webp",
+      "/assets/images/exhibicion/velo-silueta-roja-960.webp",
+      "/assets/images/exhibicion/velo-silueta-roja-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/velo-silueta-roja.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "velos-rojos": {
+    "webp": [
+      "/assets/images/exhibicion/velos-rojos-480.webp",
+      "/assets/images/exhibicion/velos-rojos-960.webp",
+      "/assets/images/exhibicion/velos-rojos-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/velos-rojos.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "visitante-luz-azul": {
+    "webp": [
+      "/assets/images/exhibicion/visitante-luz-azul-480.webp",
+      "/assets/images/exhibicion/visitante-luz-azul-960.webp",
+      "/assets/images/exhibicion/visitante-luz-azul-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/visitante-luz-azul.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "visitante-pendon": {
+    "webp": [
+      "/assets/images/exhibicion/visitante-pendon-480.webp",
+      "/assets/images/exhibicion/visitante-pendon-960.webp",
+      "/assets/images/exhibicion/visitante-pendon-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/visitante-pendon.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "visitante-velo-luz": {
+    "webp": [
+      "/assets/images/exhibicion/visitante-velo-luz-480.webp",
+      "/assets/images/exhibicion/visitante-velo-luz-960.webp",
+      "/assets/images/exhibicion/visitante-velo-luz-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/visitante-velo-luz.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "visitante-velos-azules": {
+    "webp": [
+      "/assets/images/exhibicion/visitante-velos-azules-480.webp",
+      "/assets/images/exhibicion/visitante-velos-azules-960.webp",
+      "/assets/images/exhibicion/visitante-velos-azules-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/visitante-velos-azules.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "visitante-velos-blancos": {
+    "webp": [
+      "/assets/images/exhibicion/visitante-velos-blancos-480.webp",
+      "/assets/images/exhibicion/visitante-velos-blancos-960.webp",
+      "/assets/images/exhibicion/visitante-velos-blancos-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/visitante-velos-blancos.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "visitante-velos-perfil": {
+    "webp": [
+      "/assets/images/exhibicion/visitante-velos-perfil-480.webp",
+      "/assets/images/exhibicion/visitante-velos-perfil-960.webp",
+      "/assets/images/exhibicion/visitante-velos-perfil-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/visitante-velos-perfil.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "visitantes-lamina": {
+    "webp": [
+      "/assets/images/exhibicion/visitantes-lamina-480.webp",
+      "/assets/images/exhibicion/visitantes-lamina-960.webp",
+      "/assets/images/exhibicion/visitantes-lamina-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/visitantes-lamina.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "visitantes-mayores-penumbra": {
+    "webp": [
+      "/assets/images/exhibicion/visitantes-mayores-penumbra-480.webp",
+      "/assets/images/exhibicion/visitantes-mayores-penumbra-960.webp",
+      "/assets/images/exhibicion/visitantes-mayores-penumbra-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/visitantes-mayores-penumbra.jpg",
+    "width": 1600,
+    "height": 1067
+  },
+  "visitantes-mesa": {
+    "webp": [
+      "/assets/images/exhibicion/visitantes-mesa-480.webp",
+      "/assets/images/exhibicion/visitantes-mesa-960.webp",
+      "/assets/images/exhibicion/visitantes-mesa-1600.webp"
+    ],
+    "fallback": "/assets/images/exhibicion/visitantes-mesa.jpg",
+    "width": 1600,
+    "height": 1067
+  }
+}

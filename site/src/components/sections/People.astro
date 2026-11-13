@@ -1,0 +1,41 @@
+---
+// Grupo de fichas de persona (Equipo): titular en Xanh Mono que pisa el borde de la primera ficha
+// y, por persona, foto a la izquierda + nombre, disciplinas y reseña a la derecha.
+import type { PeopleSection, Settings } from "../../lib/types";
+import Picture from "../Picture.astro";
+import { paragraphs, color, css } from "../../lib/text";
+
+interface Props { section: PeopleSection; settings: Settings }
+const { section: s } = Astro.props;
+const right = s.titleAlign === "right";
+const pct = (n: number) => `${Math.round(n * 100)}%`;
+---
+<section class:list={["sec", "people", right && "people--right"]} id={s.anchor} style={css(s.tone ? `--ficha:${color(s.tone)}` : "", s.roleTone ? `--ficha-rol:${color(s.roleTone)}` : "")}>
+  <h2 class="people__title" style={s.titleTone ? `color:${color(s.titleTone)}` : undefined} data-reveal={right ? "title-r" : "title"}>{s.title}</h2>
+  <ul class="people__list">
+    {s.people.map((p) => {
+      const zoom = p.zoom && p.zoom > 1 ? p.zoom : 0;
+      const h = p.photo.hotspot ?? { x: 0.5, y: 0.5 };
+      // El zoom crece desde el punto focal: así el encuadre es el mismo recorte del diseño a cualquier tamaño.
+      const frame = zoom ? `--zoom:${zoom};--fx:${pct(h.x)};--fy:${pct(h.y)}` : undefined;
+      const sizes = `(min-width: 1000px) ${Math.round(63 * Math.max(1, zoom))}vw, ${Math.round(92 * Math.max(1, zoom))}vw`;
+      return (
+        <li class="person" style={p.tone ? `--ficha:${color(p.tone)}` : undefined}>
+          <figure class:list={["person__photo", p.flip && "is-flip", zoom > 0 && "is-zoom"]} style={frame} data-reveal="img">
+            <Picture img={p.photo} sizes={sizes} />
+          </figure>
+          <div class="person__text" data-reveal="text">
+            <h3 class="person__name">{p.name}</h3>
+            {p.role && <p class="person__role">{p.role}</p>}
+            {p.bio && <div class="person__bio">{paragraphs(p.bio).map((html) => <p set:html={html} />)}</div>}
+            {p.links && p.links.length > 0 && (
+              <ul class="person__links">
+                {p.links.map((l) => <li><a href={l.url} target="_blank" rel="noopener">{l.label}</a></li>)}
+              </ul>
+            )}
+          </div>
+        </li>
+      );
+    })}
+  </ul>
+</section>

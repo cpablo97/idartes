@@ -1,0 +1,16 @@
+---
+// Único punto por donde los componentes pintan imágenes: resuelve `local` (seed) o `asset` (Sanity).
+import type { Img } from "../lib/types";
+import { sources, focus } from "../lib/image";
+
+interface Props { img: Img; sizes: string; widths?: number[]; class?: string; eager?: boolean; style?: string; [k: string]: unknown }
+const { img, widths, sizes, class: cls, eager = false, style, ...rest } = Astro.props;
+const s = sources(img, widths);
+const pos = focus(img);
+---
+{s && (
+  <picture class={cls} style={style} {...rest}>
+    {s.srcset && <source type="image/webp" srcset={s.srcset} sizes={sizes} />}
+    <img src={s.fallback} width={s.width} height={s.height} alt={img.alt ?? ""} loading={eager ? "eager" : "lazy"} fetchpriority={eager ? "high" : undefined} decoding="async" style={pos ? `object-position:${pos}` : undefined} />
+  </picture>
+)}

@@ -1,0 +1,18 @@
+---
+// Fachada liviana de YouTube: miniatura + botón; el iframe de youtube-nocookie.com se carga solo al hacer clic (main.js).
+// Un id que empieza por "TODO" se pinta como hueco pendiente, sin botón.
+import type { Img } from "../lib/types";
+import Picture from "./Picture.astro";
+
+interface Props { id: string; title: string; poster?: Img; playLabel: string; pendingLabel: string; eager?: boolean; class?: string }
+const { id, title, poster, playLabel, pendingLabel, eager = false, class: cls } = Astro.props;
+const pending = !id || id.startsWith("TODO");
+---
+<div class:list={["yt", cls, pending && "yt--pending", !poster && "yt--empty"]} data-yt={pending ? undefined : id} data-title={title}>
+  {poster && <Picture img={poster} sizes="100vw" class="yt__poster" eager={eager} />}
+  {pending ? (
+    <p class="yt__pending"><span class="yt__play" aria-hidden="true"></span><span>{pendingLabel}: {title}</span></p>
+  ) : (
+    <button class="yt__btn" type="button" aria-label={`${playLabel}: ${title}`}><span class="yt__play" aria-hidden="true"></span></button>
+  )}
+</div>

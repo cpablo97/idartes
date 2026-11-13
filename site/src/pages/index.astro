@@ -1,0 +1,12 @@
+---
+import Base from "../layouts/Base.astro";
+import Sections from "../components/Sections.astro";
+import { getContent, getPage } from "../lib/content";
+
+const content = await getContent();
+const page = await getPage("");
+if (!page) throw new Error("Falta la página de Inicio (slug vacío) en el contenido.");
+---
+<Base content={content} page={page}>
+  <Sections sections={page.sections} settings={content.settings} />
+</Base>
