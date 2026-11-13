@@ -228,6 +228,7 @@
                 "z": 1
               },
               "drift": 1,
+              "variant": "ancha",
               "_key": "ins0i3"
             },
             {
@@ -239,11 +240,39 @@
                   "children": [
                     {
                       "_type": "span",
-                      "text": "¿Cómo pasa la ciudad por el cuerpo de quienes la cargan, la arrastran y la recorren reciclando?",
+                      "text": "Un proceso de exploración que se convirtió en herramientas, experiencias y propuestas para la ciudad.",
+                      "marks": [
+                        "strong"
+                      ],
                       "_key": "ins0i4b0c0"
                     }
                   ],
                   "_key": "ins0i4b0"
+                }
+              ],
+              "place": {
+                "col": 79,
+                "row": 125,
+                "cols": 55,
+                "rows": 11
+              },
+              "variant": "sobre-foto",
+              "_key": "ins0i4"
+            },
+            {
+              "_type": "textItem",
+              "body": [
+                {
+                  "_type": "block",
+                  "style": "normal",
+                  "children": [
+                    {
+                      "_type": "span",
+                      "text": "¿Cómo pasa la ciudad por el cuerpo de quienes la cargan, la arrastran y la recorren reciclando?",
+                      "_key": "ins0i5b0c0"
+                    }
+                  ],
+                  "_key": "ins0i5b0"
                 }
               ],
               "place": {
@@ -255,7 +284,8 @@
               },
               "tone": "ocre",
               "level": 2,
-              "_key": "ins0i4"
+              "variant": "pregunta",
+              "_key": "ins0i5"
             },
             {
               "_type": "imageItem",
@@ -280,7 +310,7 @@
               },
               "fit": "contain",
               "drift": 3,
-              "_key": "ins0i5"
+              "_key": "ins0i6"
             },
             {
               "_type": "textItem",
@@ -292,34 +322,19 @@
                     {
                       "_type": "span",
                       "text": "A través de encuentros, conversaciones, ejercicios y experimentaciones colectivas, nos acercamos a Chapinero para observar sus dinámicas, reconocer sus historias y construir nuevas maneras de relacionarnos con el territorio.",
-                      "_key": "ins0i6b0c0"
+                      "_key": "ins0i7b0c0"
                     }
                   ],
-                  "_key": "ins0i6b0"
-                },
-                {
-                  "_type": "block",
-                  "style": "normal",
-                  "children": [
-                    {
-                      "_type": "span",
-                      "text": "Un proceso de exploración que se convirtió en herramientas, experiencias y propuestas para la ciudad.",
-                      "marks": [
-                        "strong"
-                      ],
-                      "_key": "ins0i6b1c0"
-                    }
-                  ],
-                  "_key": "ins0i6b1"
+                  "_key": "ins0i7b0"
                 }
               ],
               "place": {
                 "col": 79,
                 "row": 103,
                 "cols": 55,
-                "rows": 33
+                "rows": 19
               },
-              "_key": "ins0i6"
+              "_key": "ins0i7"
             },
             {
               "_type": "rule",
@@ -330,7 +345,7 @@
                 "rows": 1
               },
               "bleed": true,
-              "_key": "ins0i7"
+              "_key": "ins0i8"
             }
           ],
           "_key": "ins0"

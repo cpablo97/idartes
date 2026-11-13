@@ -22,15 +22,14 @@ export default {
         text(body("Arte, diseño y tecnología creados junto a personas recicladoras de Chapinero."), hero.at(104, 213, 430, 50), { size: 16 }),
         image(img("hero-cuadro", "Montaje de una proyección durante el laboratorio"), hero.at(299, 290, 183, 183, 2), { drift: 2 }),
         image(img("hero-taller", "Participantes del laboratorio reunidos alrededor de una mesa con maquetas de cartón"), hero.at(484, 488, 353, 265, 3), { drift: 4 }),
-        image(img("hero-cuerpo", "Figura en duotono naranja y morado suspendida de una carreta de reciclaje", crop(-9.46, 0, 109.46, 100)), hero.at(782, 271, 545, 922, 1), { drift: 1 }),
-        text(body("¿Cómo pasa la ciudad por el cuerpo de quienes la cargan, la arrastran y la recorren reciclando?"), hero.at(60, 825, 500, 110, 4), { tone: "ocre", level: 2 }),
+        image(img("hero-cuerpo", "Figura en duotono naranja y morado suspendida de una carreta de reciclaje", crop(-9.46, 0, 109.46, 100)), hero.at(782, 271, 545, 922, 1), { drift: 1, variant: "ancha" }),
+        // Va justo después de la foto para que en móvil quede montada sobre ella; en escritorio su `place` la deja bajo el párrafo.
+        text(body([b("Un proceso de exploración que se convirtió en herramientas, experiencias y propuestas para la ciudad.")]), hero.at(782, 1439, 545, 110), { variant: "sobre-foto" }),
+        text(body("¿Cómo pasa la ciudad por el cuerpo de quienes la cargan, la arrastran y la recorren reciclando?"), hero.at(60, 825, 500, 110, 4), { tone: "ocre", level: 2, variant: "pregunta" }),
         image(img("ilustracion-carreta", "Dibujo a línea de un reciclador halando su carreta cargada"), hero.at(46, 896, 538, 451), { fit: "contain", drift: 3 }),
         text(
-          body(
-            "A través de encuentros, conversaciones, ejercicios y experimentaciones colectivas, nos acercamos a Chapinero para observar sus dinámicas, reconocer sus historias y construir nuevas maneras de relacionarnos con el territorio.",
-            [b("Un proceso de exploración que se convirtió en herramientas, experiencias y propuestas para la ciudad.")],
-          ),
-          hero.at(782, 1223, 545, 330),
+          body("A través de encuentros, conversaciones, ejercicios y experimentaciones colectivas, nos acercamos a Chapinero para observar sus dinámicas, reconocer sus historias y construir nuevas maneras de relacionarnos con el territorio."),
+          hero.at(782, 1223, 545, 190),
         ),
         { _type: "rule", place: hero.at(0, 1577, 1440, 10), bleed: true },
       ],
