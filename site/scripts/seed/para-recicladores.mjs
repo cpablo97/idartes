@@ -78,9 +78,6 @@ export default {
       ],
       center: { lat: 4.6448, lng: -74.0652 },
       zoom: 15,
-      // Mapa base: OpenStreetMap pasado a grises. TODO (opcional): con una clave de CARTO, usar
-      // tilesUrl: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?api_key=<clave>" y quitar tilesGray.
-      tilesGray: true,
       // TODO: reemplazar por los lugares reales. Salvo "Toku" (el ejemplo del diseño), todos son INVENTADOS de relleno
       // (`demo: true`): nombres, direcciones, servicios y horarios no existen. Al cargar los reales, quitar `demoLabel`.
       demoLabel: "Lugares de ejemplo",

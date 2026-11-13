@@ -1,5 +1,6 @@
 /* ============================================================
-   Mapa de lugares: Leaflet (autoalojado en /js/vendor) + mapa base de OpenStreetMap o el que indique la sección.
+   Mapa de lugares: Leaflet (autoalojado en /js/vendor) sobre un mapa base propio (calles y parques
+   de OpenStreetMap dibujados con los colores del sitio; ver scripts/mapa-base.py). Sin mosaicos externos.
    Leaflet se carga solo cuando la sección se acerca a la pantalla.
    Marcadores por categoría, filtro desde la leyenda, tarjeta del lugar elegido,
    chip Abierto/Cerrado según la hora de Bogotá, teclado (Enter en un marcador, Esc cierra).
@@ -8,10 +9,6 @@
   "use strict";
   if (window.__mapa) return;
   window.__mapa = true;
-  // Mapa base por defecto: OpenStreetMap (sin clave). La sección puede traer otro en `tilesUrl` (p. ej. CARTO con su clave).
-  const OSM = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
-  const link = (href, text) => `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
-  const attribution = (url) => "&copy; " + link("https://www.openstreetmap.org/copyright", "OpenStreetMap") + (/cartocdn/.test(url) ? " &copy; " + link("https://carto.com/attributions", "CARTO") : "");
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   let leaflet = null;
@@ -37,8 +34,7 @@
     return hours.some((h) => h.days.includes(day) && now >= mins(h.open) && now < mins(h.close));
   }
 
-  function init(root, L) {
-    const data = JSON.parse(root.querySelector(".map__data").textContent);
+  function init(root, L, data, base) {
     const canvas = root.querySelector(".map__canvas");
     const frame = root.querySelector(".map__frame");
     const cards = Array.from(root.querySelectorAll(".place"));
@@ -46,11 +42,31 @@
     const hidden = new Set();
     let active = null;
 
-    const map = L.map(canvas, { center: [data.center.lat, data.center.lng], zoom: data.zoom, scrollWheelZoom: false, zoomControl: false, zoomAnimation: !reduced, fadeAnimation: !reduced, markerZoomAnimation: !reduced });
+    const [west, south, east, north] = base.bbox;
+    const map = L.map(canvas, {
+      center: [data.center.lat, data.center.lng], zoom: data.zoom, minZoom: 14, maxZoom: 18,
+      maxBounds: [[south, west], [north, east]], maxBoundsViscosity: 1,
+      preferCanvas: true, scrollWheelZoom: false, zoomControl: false,
+      zoomAnimation: !reduced, fadeAnimation: !reduced, markerZoomAnimation: !reduced,
+    });
     L.control.zoom({ position: "bottomright", zoomInTitle: "Acercar", zoomOutTitle: "Alejar" }).addTo(map);
-    const tiles = data.tilesUrl || OSM;
-    L.tileLayer(tiles, { attribution: attribution(tiles), maxZoom: 19, minZoom: 12, subdomains: "abcd" }).addTo(map);
-    map.attributionControl.setPrefix(false);
+    map.attributionControl.setPrefix(false).addAttribution('<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">' + base.attribution + "</a>");
+
+    // Mapa base propio: sin mosaicos ni servidores externos, solo líneas y áreas con los colores del sitio.
+    const css = getComputedStyle(root);
+    const color = (name, fallback) => css.getPropertyValue(name).trim() || fallback;
+    const decode = (flat) => { const pts = []; let y = 0, x = 0; for (let i = 0; i < flat.length; i += 2) { y += flat[i]; x += flat[i + 1]; pts.push([y / base.scale, x / base.scale]); } return pts; };
+    const lines = (list, style) => L.polyline(list.map(decode), { interactive: false, lineCap: "round", lineJoin: "round", ...style }).addTo(map);
+    L.polygon(base.parks.map((ring) => [decode(ring)]), { interactive: false, stroke: false, fillColor: color("--mapa-parque", "#3eaf3f"), fillOpacity: 0.45 }).addTo(map);
+    const minor = lines(base.minor, { color: color("--mapa-calle", "#fff"), weight: 2 });
+    const mid = lines(base.mid, { color: color("--mapa-calle", "#fff"), weight: 4 });
+    const major = lines(base.major, { color: color("--mapa-via", "#5b0e96"), weight: 2.5 });
+    // El grosor acompaña al zoom para que el mapa no se empaste de lejos ni se quede flaco de cerca.
+    const widths = () => { const k = Math.pow(1.6, map.getZoom() - 15); minor.setStyle({ weight: Math.max(1, 2 * k) }); mid.setStyle({ weight: Math.max(1.5, 4 * k) }); major.setStyle({ weight: Math.max(1.5, 2.5 * k) }); };
+    map.on("zoomend", widths); widths();
+    for (const l of base.labels) {
+      L.marker([l.lat, l.lng], { interactive: false, keyboard: false, zIndexOffset: -1000, icon: L.divIcon({ className: "map__street", iconSize: [0, 0], html: `<span style="--a:${l.angle}deg">${l.text.replace(/^Avenida /, "")}</span>` }) }).addTo(map);
+    }
     // La rueda del ratón desplaza la página; solo hace zoom después de tocar el mapa.
     map.on("click", () => map.scrollWheelZoom.enable());
     canvas.addEventListener("mouseleave", () => map.scrollWheelZoom.disable());
@@ -115,7 +131,10 @@
   }
 
   document.querySelectorAll("[data-map]").forEach((root) => {
-    const start = () => loadLeaflet().then((L) => init(root, L)).catch(() => root.classList.add("is-failed"));
+    const data = JSON.parse(root.querySelector(".map__data").textContent);
+    const start = () => Promise.all([loadLeaflet(), fetch(data.base).then((r) => r.json())])
+      .then(([L, base]) => init(root, L, data, base))
+      .catch(() => root.classList.add("is-failed"));
     if (!("IntersectionObserver" in window)) return start();
     const io = new IntersectionObserver((en) => { if (en.some((e) => e.isIntersecting)) { io.disconnect(); start(); } }, { rootMargin: "800px 0px" });
     io.observe(root);

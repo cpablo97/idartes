@@ -977,7 +977,7 @@ body.page-exhibicion .v-perfil img { width: 167.15%; height: 106.81%; max-width:
 .map__filter:focus-visible { outline-color: var(--blanco); }
 .map__frame { isolation: isolate; }
 .map__canvas { position: absolute; inset: 0; z-index: 1; background: transparent; font: inherit; opacity: 0; transition: opacity .6s; }
-.map.is-ready .map__canvas { opacity: 1; background: #e9e9e7; }
+.map.is-ready .map__canvas { opacity: 1; }
 .map__pending { z-index: 3; pointer-events: none; }
 .map__marker { background: none; border: 0; }
 .map__marker:focus-visible { outline: 3px solid var(--magenta); outline-offset: 4px; border-radius: 50%; }
@@ -988,7 +988,11 @@ body.page-exhibicion .v-perfil img { width: 167.15%; height: 106.81%; max-width:
 .map__marker.is-active .map__pin { opacity: 1; scale: 1; }
 .map__marker.is-active .map__point { scale: .62; }
 .map .leaflet-container { font-family: var(--sans); }
-.map--gray .leaflet-tile-pane { filter: grayscale(1) contrast(.86) brightness(1.08); }
+/* Mapa base propio: manzanas grises, calles blancas, vías principales en morado y parques en verde. */
+.map.is-ready .map__canvas { background: var(--mapa-fondo); }
+.map { --mapa-fondo: #e9e8ee; --mapa-calle: #fff; --mapa-via: var(--morado); --mapa-parque: var(--verde); }
+.map__street { font-family: var(--doto); font-weight: 800; font-size: 1.2rem; line-height: 1; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; color: var(--morado); pointer-events: none; }
+.map__street span { display: inline-block; translate: -50% -50%; rotate: var(--a, 0deg); padding: .2rem .5rem; background: var(--mapa-fondo); }
 .map .leaflet-control-attribution { font-size: 1.1rem; letter-spacing: 0; }
 .map .leaflet-control-zoom a { color: var(--negro); }
 

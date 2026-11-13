@@ -21,11 +21,11 @@ const route = (lat: number, lng: number) => `https://www.google.com/maps/dir/?ap
 const data = JSON.stringify({
   center: s.center,
   zoom: s.zoom,
-  tilesUrl: s.tilesUrl ?? null,
+  base: s.baseMap ?? "/assets/mapa/chapinero.json",
   places: s.places.map((p) => ({ id: p._key, name: p.name, category: p.category, color: cat(p.category)?.color ?? "#000", lat: p.lat, lng: p.lng, hours: p.hours ?? null })),
 }).replace(/</g, "\\u003c");
 ---
-<section class:list={["sec", "map", s.tilesGray && "map--gray"]} id={s.anchor} data-map>
+<section class="sec map" id={s.anchor} data-map>
   <div class="map__head">
     <div class="band" aria-hidden="true"></div>
     <div class="map__intro" data-reveal="text">

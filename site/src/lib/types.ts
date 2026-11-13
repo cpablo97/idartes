@@ -163,7 +163,7 @@ export type MapPlace = {
   /** Lugar inventado de relleno: la tarjeta lo marca como "Ejemplo". */
   demo?: boolean;
 };
-/** Mapa propio (Leaflet + mapa base de CARTO) con marcadores por categoría, filtro en la leyenda y tarjeta de lugar. */
+/** Mapa propio (Leaflet sobre un mapa base dibujado por nosotros) con marcadores por categoría, filtro en la leyenda y tarjeta de lugar. */
 export type MapSection = Shared & {
   _type: "map";
   title: string;
@@ -173,12 +173,10 @@ export type MapSection = Shared & {
   center: { lat: number; lng: number };
   zoom: number;
   /**
-   * Mapa base: plantilla de mosaicos `{z}/{x}/{y}`. Sin este campo se usa OpenStreetMap (no pide clave).
-   * Para CARTO: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?api_key=<clave>".
+   * Mapa base propio: archivo generado por scripts/mapa-base.py con las calles y parques de la zona
+   * (datos de OpenStreetMap). Por defecto "/assets/mapa/chapinero.json".
    */
-  tilesUrl?: string;
-  /** Pasa el mapa base a grises (el de OpenStreetMap viene a color). */
-  tilesGray?: boolean;
+  baseMap?: string;
   places: MapPlace[];
   /** Aviso sobre el mapa mientras haya lugares de relleno ("Lugares de ejemplo"). */
   demoLabel?: string;

@@ -123,7 +123,8 @@ se pinta como hueco pendiente.
 `videos[]`: `{ label, youtubeId, title, description?, poster? }`.
 
 ### `map`
-Mapa propio con Leaflet (no es un embed de Google).
+Mapa propio con Leaflet (no es un embed de Google). El mapa base también es propio: calles y parques de OpenStreetMap
+dibujados con los colores del sitio, sin mosaicos de terceros.
 
 | Campo | Tipo | Notas |
 |---|---|---|
@@ -131,8 +132,7 @@ Mapa propio con Leaflet (no es un embed de Google).
 | `legend[]` | `{ key, label, color }` | Categorías: pintan los marcadores y cada una filtra sus lugares |
 | `center` | `{ lat, lng }` | Centro inicial |
 | `zoom` | number | 15 muestra Chapinero |
-| `tilesUrl?` | string | Mapa base. Vacío = OpenStreetMap (sin clave). Para CARTO: `https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?api_key=<clave>` |
-| `tilesGray?` | boolean | Pasa el mapa base a grises |
+| `baseMap?` | string | Archivo del mapa base propio (por defecto `/assets/mapa/chapinero.json`); se genera con `site/scripts/mapa-base.py` |
 | `places[]` | lugar | Ver abajo. En Sanity conviene un documento `place` y aquí referencias |
 | `demoLabel?` | string | Aviso mientras haya lugares de relleno |
 | `placeholder?` | imagen | Se ve mientras carga el mapa o sin JavaScript |
