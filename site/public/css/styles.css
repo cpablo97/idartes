@@ -235,6 +235,8 @@ main { display: block; }
   .canvas > .ci--img + .ci--text.v-sobre-foto > * { position: absolute; left: 1.2rem; right: 1.2rem; bottom: 1.6rem; margin: 0; line-height: 1.5; }
   .canvas > .ci--img + .ci--text.v-sobre-foto strong { padding: .12em .4em; background: var(--morado); color: var(--blanco); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 
+  /* Dos titulares seguidos son renglones de una misma frase ("el peso, / a peso."): van pegados, sin el aire entre elementos. */
+  .canvas > .display:not(.card + .display, .ci--img + .display) + .display { margin-top: calc(-3.6rem - .12em); }
   /* Los titulares siguen el lado que tienen en el diseño. */
   .canvas > .display { align-self: flex-start; max-width: 100%; }
   .canvas > .display[style*="text-align:right"] { align-self: flex-end; }
@@ -246,6 +248,7 @@ main { display: block; }
 @media (min-width: 600px) {
   body { font-size: 1.8rem; }
   .canvas { padding: 6rem 4rem; gap: 5rem; }
+  .canvas > .display:not(.card + .display, .ci--img + .display) + .display { margin-top: calc(-5rem - .12em); }
   .ci--img { --mw: min(100%, max(38%, calc(var(--w) * 1.05%))); }
   .ci--text { max-width: 58rem; }
   .ci--text:nth-of-type(even) { align-self: flex-end; }
