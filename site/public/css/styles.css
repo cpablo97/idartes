@@ -114,8 +114,7 @@ main { display: block; }
 /* ---------- Lienzo (móvil y tablet: flujo) ---------- */
 .canvas { position: relative; display: flex; flex-direction: column; gap: 3.6rem; padding: 4rem 2rem; }
 .dots { display: none; }
-.ci--img { overflow: hidden; width: min(100%, max(46%, calc(var(--w) * 1.25%))); aspect-ratio: var(--w) / var(--h, var(--w)); border-radius: var(--rad, 0); rotate: var(--rot, 0deg); scale: var(--flip, 1 1); }
-.ci--img:nth-of-type(even) { align-self: flex-end; }
+.ci--img { overflow: hidden; --mw: min(100%, max(46%, calc(var(--w) * 1.25%))); width: var(--mw); aspect-ratio: var(--w) / var(--h, var(--w)); border-radius: var(--rad, 0); rotate: var(--rot, 0deg); scale: var(--flip, 1 1); }
 .ci--img picture, .ci--img img, .ci--img a { display: block; width: 100%; height: 100%; }
 .ci--img img { object-fit: cover; }
 .ci--contain { overflow: visible; }
@@ -141,9 +140,9 @@ main { display: block; }
 .card:hover, .card:focus-visible { color: var(--morado); }
 .card:hover .card__img img, .card:focus-visible .card__img img { scale: 1.04; filter: saturate(1.25) contrast(1.05); }
 .card:hover .card__gt, .card:focus-visible .card__gt { translate: .6rem 0; }
-.card--m { width: 78%; align-self: flex-end; }
-.card--s { width: 58%; }
-.card--s:nth-of-type(even) { align-self: flex-end; }
+.card { --mw: 100%; }
+.card--m { --mw: 78%; width: var(--mw); }
+.card--s { --mw: 58%; width: var(--mw); }
 .card--round .card__img { border-radius: 1.24rem; }
 .card--round, .explora .card { width: 100%; }
 .card--round .card__label { font-weight: 900; font-size: 1.5714rem; gap: 1.32rem; }
@@ -202,17 +201,47 @@ main { display: block; }
 .notfound li a:hover { color: var(--morado); }
 
 /* ============================================================
+   Collage en flujo (móvil y tablet, < 1000 px)
+   Sin retícula, pero con la misma intención que en escritorio:
+   - cada foto o tarjeta se corre a izquierda o derecha según la columna que ocupa en el diseño;
+   - las fotos seguidas se solapan;
+   - los titulares display se montan sobre la foto o tarjeta vecina en vez de quedar sueltos.
+   ============================================================ */
+@media (max-width: 999.98px) {
+  .canvas > .ci--img, .canvas > .card {
+    --free: calc((var(--c) - 1) / max(1, 144 - var(--w)));
+    align-self: flex-start;
+    margin-left: calc(min(1, var(--free)) * (100% - var(--mw)));
+  }
+  .canvas > .ci--img + .ci--img { margin-top: -7.2rem; }
+  .canvas > .ci--img { z-index: 1; }
+  .canvas > .ci--img:nth-of-type(even) { z-index: 2; }
+
+  .canvas > .display { position: relative; z-index: 3; pointer-events: none; text-wrap: balance; }
+  /* Titular después de una foto: sube entero sobre su borde inferior (el translate lo ancla por abajo, tenga una línea o dos). */
+  .canvas > .ci--img + .display { margin-top: -4.4rem; margin-bottom: calc(.8rem - 1.19em); translate: 0 -100%; }
+  /* Titular después de una tarjeta: salta la etiqueta y queda sobre la foto; el margen de abajo devuelve el sitio de la etiqueta. */
+  .canvas > .card + .display { margin-top: -8.4rem; margin-bottom: calc(4.8rem - 1.19em); translate: 0 -100%; }
+  /* Titular antes de una foto o tarjeta (y que no viene de otra): baja hasta pisar su borde superior. */
+  .canvas > .display:not(.ci--img + .display, .card + .display):has(+ .ci--img),
+  .canvas > .display:not(.ci--img + .display, .card + .display):has(+ .card) { margin-bottom: calc(-3.6rem - .45em); }
+  /* Los titulares siguen el lado que tienen en el diseño. */
+  .canvas > .display { align-self: flex-start; max-width: 100%; }
+  .canvas > .display[style*="text-align:right"] { align-self: flex-end; }
+}
+
+/* ============================================================
    Tablet (600–999 px): mismo flujo, con más aire y dos columnas donde cabe
    ============================================================ */
 @media (min-width: 600px) {
   body { font-size: 1.8rem; }
   .canvas { padding: 6rem 4rem; gap: 5rem; }
-  .ci--img { width: min(100%, max(38%, calc(var(--w) * 1.05%))); }
+  .ci--img { --mw: min(100%, max(38%, calc(var(--w) * 1.05%))); }
   .ci--text { max-width: 58rem; }
   .ci--text:nth-of-type(even) { align-self: flex-end; }
-  .card--l { width: 80%; }
-  .card--m { width: 56%; }
-  .card--s { width: 42%; }
+  .card--l { --mw: 80%; width: var(--mw); }
+  .card--m { --mw: 56%; }
+  .card--s { --mw: 42%; }
   .explora { padding: 8rem 4rem; }
   .explora__row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .explora .card__label { font-size: 1.3rem; }
@@ -895,9 +924,9 @@ body.page-exhibicion .v-perfil img { width: 167.15%; height: 106.81%; max-width:
 .page-videojuego .ci--text { letter-spacing: 0; }
 .page-videojuego .ci--text.v-creditos { letter-spacing: -.0264em; }
 .v-creditos > * + * { margin-top: 0; }
-.ci--img.v-ancha, .ci--img.v-captura { width: 100%; }
-.ci--img.v-sprite { width: 42%; }
-.ci--img.v-logo { width: 72%; }
+.ci--img.v-ancha, .ci--img.v-captura { --mw: 100%; }
+.ci--img.v-sprite { --mw: 42%; }
+.ci--img.v-logo { --mw: 72%; }
 @media (max-width: 599.98px) { .v-creditos { text-align: left !important; } }
 @media (max-width: 999.98px) { .v-salto br { display: none; } .v-creditos > p { display: inline; } }
 
@@ -920,8 +949,8 @@ body.page-exhibicion .v-perfil img { width: 167.15%; height: 106.81%; max-width:
   .key__label { font-size: 1.8rem; }
   .controls__photo--1 { width: 54rem; max-width: 70%; margin-left: 12%; }
   .controls__photo--2 { width: 26rem; margin-left: 60%; margin-top: -6rem; }
-  .ci--img.v-sprite { width: 30%; }
-  .ci--img.v-logo { width: 56%; }
+  .ci--img.v-sprite { --mw: 30%; }
+  .ci--img.v-logo { --mw: 56%; }
 }
 
 @media (min-width: 1000px) {
