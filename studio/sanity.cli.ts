@@ -7,4 +7,7 @@ export default defineCliConfig({
   },
   // https://ciudadycuerpo.sanity.studio
   studioHost: "ciudadycuerpo",
+  deployment: {
+    appId: "itouqc04wl4z7xtfdwaqq0s8",
+  },
 });
