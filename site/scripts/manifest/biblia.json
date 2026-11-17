@@ -1,0 +1,742 @@
+{
+  "pagina-01": {
+    "webp": [
+      "/assets/images/biblia/pagina-01-480.webp",
+      "/assets/images/biblia/pagina-01-960.webp",
+      "/assets/images/biblia/pagina-01-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-01.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-02": {
+    "webp": [
+      "/assets/images/biblia/pagina-02-480.webp",
+      "/assets/images/biblia/pagina-02-960.webp",
+      "/assets/images/biblia/pagina-02-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-02.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-03": {
+    "webp": [
+      "/assets/images/biblia/pagina-03-480.webp",
+      "/assets/images/biblia/pagina-03-960.webp",
+      "/assets/images/biblia/pagina-03-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-03.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-04": {
+    "webp": [
+      "/assets/images/biblia/pagina-04-480.webp",
+      "/assets/images/biblia/pagina-04-960.webp",
+      "/assets/images/biblia/pagina-04-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-04.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-05": {
+    "webp": [
+      "/assets/images/biblia/pagina-05-480.webp",
+      "/assets/images/biblia/pagina-05-960.webp",
+      "/assets/images/biblia/pagina-05-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-05.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-06": {
+    "webp": [
+      "/assets/images/biblia/pagina-06-480.webp",
+      "/assets/images/biblia/pagina-06-960.webp",
+      "/assets/images/biblia/pagina-06-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-06.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-07": {
+    "webp": [
+      "/assets/images/biblia/pagina-07-480.webp",
+      "/assets/images/biblia/pagina-07-960.webp",
+      "/assets/images/biblia/pagina-07-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-07.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-08": {
+    "webp": [
+      "/assets/images/biblia/pagina-08-480.webp",
+      "/assets/images/biblia/pagina-08-960.webp",
+      "/assets/images/biblia/pagina-08-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-08.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-09": {
+    "webp": [
+      "/assets/images/biblia/pagina-09-480.webp",
+      "/assets/images/biblia/pagina-09-960.webp",
+      "/assets/images/biblia/pagina-09-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-09.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-10": {
+    "webp": [
+      "/assets/images/biblia/pagina-10-480.webp",
+      "/assets/images/biblia/pagina-10-960.webp",
+      "/assets/images/biblia/pagina-10-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-10.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-11": {
+    "webp": [
+      "/assets/images/biblia/pagina-11-480.webp",
+      "/assets/images/biblia/pagina-11-960.webp",
+      "/assets/images/biblia/pagina-11-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-11.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-12": {
+    "webp": [
+      "/assets/images/biblia/pagina-12-480.webp",
+      "/assets/images/biblia/pagina-12-960.webp",
+      "/assets/images/biblia/pagina-12-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-12.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-13": {
+    "webp": [
+      "/assets/images/biblia/pagina-13-480.webp",
+      "/assets/images/biblia/pagina-13-960.webp",
+      "/assets/images/biblia/pagina-13-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-13.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-14": {
+    "webp": [
+      "/assets/images/biblia/pagina-14-480.webp",
+      "/assets/images/biblia/pagina-14-960.webp",
+      "/assets/images/biblia/pagina-14-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-14.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-15": {
+    "webp": [
+      "/assets/images/biblia/pagina-15-480.webp",
+      "/assets/images/biblia/pagina-15-960.webp",
+      "/assets/images/biblia/pagina-15-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-15.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-16": {
+    "webp": [
+      "/assets/images/biblia/pagina-16-480.webp",
+      "/assets/images/biblia/pagina-16-960.webp",
+      "/assets/images/biblia/pagina-16-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-16.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-17": {
+    "webp": [
+      "/assets/images/biblia/pagina-17-480.webp",
+      "/assets/images/biblia/pagina-17-960.webp",
+      "/assets/images/biblia/pagina-17-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-17.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-18": {
+    "webp": [
+      "/assets/images/biblia/pagina-18-480.webp",
+      "/assets/images/biblia/pagina-18-960.webp",
+      "/assets/images/biblia/pagina-18-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-18.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-19": {
+    "webp": [
+      "/assets/images/biblia/pagina-19-480.webp",
+      "/assets/images/biblia/pagina-19-960.webp",
+      "/assets/images/biblia/pagina-19-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-19.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-20": {
+    "webp": [
+      "/assets/images/biblia/pagina-20-480.webp",
+      "/assets/images/biblia/pagina-20-960.webp",
+      "/assets/images/biblia/pagina-20-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-20.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-21": {
+    "webp": [
+      "/assets/images/biblia/pagina-21-480.webp",
+      "/assets/images/biblia/pagina-21-960.webp",
+      "/assets/images/biblia/pagina-21-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-21.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-22": {
+    "webp": [
+      "/assets/images/biblia/pagina-22-480.webp",
+      "/assets/images/biblia/pagina-22-960.webp",
+      "/assets/images/biblia/pagina-22-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-22.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-23": {
+    "webp": [
+      "/assets/images/biblia/pagina-23-480.webp",
+      "/assets/images/biblia/pagina-23-960.webp",
+      "/assets/images/biblia/pagina-23-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-23.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-24": {
+    "webp": [
+      "/assets/images/biblia/pagina-24-480.webp",
+      "/assets/images/biblia/pagina-24-960.webp",
+      "/assets/images/biblia/pagina-24-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-24.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-25": {
+    "webp": [
+      "/assets/images/biblia/pagina-25-480.webp",
+      "/assets/images/biblia/pagina-25-960.webp",
+      "/assets/images/biblia/pagina-25-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-25.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-26": {
+    "webp": [
+      "/assets/images/biblia/pagina-26-480.webp",
+      "/assets/images/biblia/pagina-26-960.webp",
+      "/assets/images/biblia/pagina-26-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-26.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-27": {
+    "webp": [
+      "/assets/images/biblia/pagina-27-480.webp",
+      "/assets/images/biblia/pagina-27-960.webp",
+      "/assets/images/biblia/pagina-27-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-27.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-28": {
+    "webp": [
+      "/assets/images/biblia/pagina-28-480.webp",
+      "/assets/images/biblia/pagina-28-960.webp",
+      "/assets/images/biblia/pagina-28-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-28.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-29": {
+    "webp": [
+      "/assets/images/biblia/pagina-29-480.webp",
+      "/assets/images/biblia/pagina-29-960.webp",
+      "/assets/images/biblia/pagina-29-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-29.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-30": {
+    "webp": [
+      "/assets/images/biblia/pagina-30-480.webp",
+      "/assets/images/biblia/pagina-30-960.webp",
+      "/assets/images/biblia/pagina-30-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-30.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-31": {
+    "webp": [
+      "/assets/images/biblia/pagina-31-480.webp",
+      "/assets/images/biblia/pagina-31-960.webp",
+      "/assets/images/biblia/pagina-31-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-31.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-32": {
+    "webp": [
+      "/assets/images/biblia/pagina-32-480.webp",
+      "/assets/images/biblia/pagina-32-960.webp",
+      "/assets/images/biblia/pagina-32-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-32.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-33": {
+    "webp": [
+      "/assets/images/biblia/pagina-33-480.webp",
+      "/assets/images/biblia/pagina-33-960.webp",
+      "/assets/images/biblia/pagina-33-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-33.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-34": {
+    "webp": [
+      "/assets/images/biblia/pagina-34-480.webp",
+      "/assets/images/biblia/pagina-34-960.webp",
+      "/assets/images/biblia/pagina-34-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-34.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-35": {
+    "webp": [
+      "/assets/images/biblia/pagina-35-480.webp",
+      "/assets/images/biblia/pagina-35-960.webp",
+      "/assets/images/biblia/pagina-35-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-35.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-36": {
+    "webp": [
+      "/assets/images/biblia/pagina-36-480.webp",
+      "/assets/images/biblia/pagina-36-960.webp",
+      "/assets/images/biblia/pagina-36-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-36.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-37": {
+    "webp": [
+      "/assets/images/biblia/pagina-37-480.webp",
+      "/assets/images/biblia/pagina-37-960.webp",
+      "/assets/images/biblia/pagina-37-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-37.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-38": {
+    "webp": [
+      "/assets/images/biblia/pagina-38-480.webp",
+      "/assets/images/biblia/pagina-38-960.webp",
+      "/assets/images/biblia/pagina-38-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-38.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-39": {
+    "webp": [
+      "/assets/images/biblia/pagina-39-480.webp",
+      "/assets/images/biblia/pagina-39-960.webp",
+      "/assets/images/biblia/pagina-39-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-39.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-40": {
+    "webp": [
+      "/assets/images/biblia/pagina-40-480.webp",
+      "/assets/images/biblia/pagina-40-960.webp",
+      "/assets/images/biblia/pagina-40-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-40.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-41": {
+    "webp": [
+      "/assets/images/biblia/pagina-41-480.webp",
+      "/assets/images/biblia/pagina-41-960.webp",
+      "/assets/images/biblia/pagina-41-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-41.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-42": {
+    "webp": [
+      "/assets/images/biblia/pagina-42-480.webp",
+      "/assets/images/biblia/pagina-42-960.webp",
+      "/assets/images/biblia/pagina-42-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-42.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-43": {
+    "webp": [
+      "/assets/images/biblia/pagina-43-480.webp",
+      "/assets/images/biblia/pagina-43-960.webp",
+      "/assets/images/biblia/pagina-43-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-43.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-44": {
+    "webp": [
+      "/assets/images/biblia/pagina-44-480.webp",
+      "/assets/images/biblia/pagina-44-960.webp",
+      "/assets/images/biblia/pagina-44-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-44.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-45": {
+    "webp": [
+      "/assets/images/biblia/pagina-45-480.webp",
+      "/assets/images/biblia/pagina-45-960.webp",
+      "/assets/images/biblia/pagina-45-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-45.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-46": {
+    "webp": [
+      "/assets/images/biblia/pagina-46-480.webp",
+      "/assets/images/biblia/pagina-46-960.webp",
+      "/assets/images/biblia/pagina-46-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-46.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-47": {
+    "webp": [
+      "/assets/images/biblia/pagina-47-480.webp",
+      "/assets/images/biblia/pagina-47-960.webp",
+      "/assets/images/biblia/pagina-47-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-47.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-48": {
+    "webp": [
+      "/assets/images/biblia/pagina-48-480.webp",
+      "/assets/images/biblia/pagina-48-960.webp",
+      "/assets/images/biblia/pagina-48-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-48.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-49": {
+    "webp": [
+      "/assets/images/biblia/pagina-49-480.webp",
+      "/assets/images/biblia/pagina-49-960.webp",
+      "/assets/images/biblia/pagina-49-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-49.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-50": {
+    "webp": [
+      "/assets/images/biblia/pagina-50-480.webp",
+      "/assets/images/biblia/pagina-50-960.webp",
+      "/assets/images/biblia/pagina-50-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-50.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-51": {
+    "webp": [
+      "/assets/images/biblia/pagina-51-480.webp",
+      "/assets/images/biblia/pagina-51-960.webp",
+      "/assets/images/biblia/pagina-51-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-51.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-52": {
+    "webp": [
+      "/assets/images/biblia/pagina-52-480.webp",
+      "/assets/images/biblia/pagina-52-960.webp",
+      "/assets/images/biblia/pagina-52-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-52.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-53": {
+    "webp": [
+      "/assets/images/biblia/pagina-53-480.webp",
+      "/assets/images/biblia/pagina-53-960.webp",
+      "/assets/images/biblia/pagina-53-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-53.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-54": {
+    "webp": [
+      "/assets/images/biblia/pagina-54-480.webp",
+      "/assets/images/biblia/pagina-54-960.webp",
+      "/assets/images/biblia/pagina-54-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-54.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-55": {
+    "webp": [
+      "/assets/images/biblia/pagina-55-480.webp",
+      "/assets/images/biblia/pagina-55-960.webp",
+      "/assets/images/biblia/pagina-55-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-55.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-56": {
+    "webp": [
+      "/assets/images/biblia/pagina-56-480.webp",
+      "/assets/images/biblia/pagina-56-960.webp",
+      "/assets/images/biblia/pagina-56-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-56.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-57": {
+    "webp": [
+      "/assets/images/biblia/pagina-57-480.webp",
+      "/assets/images/biblia/pagina-57-960.webp",
+      "/assets/images/biblia/pagina-57-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-57.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-58": {
+    "webp": [
+      "/assets/images/biblia/pagina-58-480.webp",
+      "/assets/images/biblia/pagina-58-960.webp",
+      "/assets/images/biblia/pagina-58-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-58.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-59": {
+    "webp": [
+      "/assets/images/biblia/pagina-59-480.webp",
+      "/assets/images/biblia/pagina-59-960.webp",
+      "/assets/images/biblia/pagina-59-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-59.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-60": {
+    "webp": [
+      "/assets/images/biblia/pagina-60-480.webp",
+      "/assets/images/biblia/pagina-60-960.webp",
+      "/assets/images/biblia/pagina-60-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-60.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-61": {
+    "webp": [
+      "/assets/images/biblia/pagina-61-480.webp",
+      "/assets/images/biblia/pagina-61-960.webp",
+      "/assets/images/biblia/pagina-61-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-61.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-62": {
+    "webp": [
+      "/assets/images/biblia/pagina-62-480.webp",
+      "/assets/images/biblia/pagina-62-960.webp",
+      "/assets/images/biblia/pagina-62-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-62.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-63": {
+    "webp": [
+      "/assets/images/biblia/pagina-63-480.webp",
+      "/assets/images/biblia/pagina-63-960.webp",
+      "/assets/images/biblia/pagina-63-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-63.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-64": {
+    "webp": [
+      "/assets/images/biblia/pagina-64-480.webp",
+      "/assets/images/biblia/pagina-64-960.webp",
+      "/assets/images/biblia/pagina-64-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-64.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-65": {
+    "webp": [
+      "/assets/images/biblia/pagina-65-480.webp",
+      "/assets/images/biblia/pagina-65-960.webp",
+      "/assets/images/biblia/pagina-65-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-65.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-66": {
+    "webp": [
+      "/assets/images/biblia/pagina-66-480.webp",
+      "/assets/images/biblia/pagina-66-960.webp",
+      "/assets/images/biblia/pagina-66-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-66.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-67": {
+    "webp": [
+      "/assets/images/biblia/pagina-67-480.webp",
+      "/assets/images/biblia/pagina-67-960.webp",
+      "/assets/images/biblia/pagina-67-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-67.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-68": {
+    "webp": [
+      "/assets/images/biblia/pagina-68-480.webp",
+      "/assets/images/biblia/pagina-68-960.webp",
+      "/assets/images/biblia/pagina-68-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-68.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-69": {
+    "webp": [
+      "/assets/images/biblia/pagina-69-480.webp",
+      "/assets/images/biblia/pagina-69-960.webp",
+      "/assets/images/biblia/pagina-69-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-69.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-70": {
+    "webp": [
+      "/assets/images/biblia/pagina-70-480.webp",
+      "/assets/images/biblia/pagina-70-960.webp",
+      "/assets/images/biblia/pagina-70-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-70.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-71": {
+    "webp": [
+      "/assets/images/biblia/pagina-71-480.webp",
+      "/assets/images/biblia/pagina-71-960.webp",
+      "/assets/images/biblia/pagina-71-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-71.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-72": {
+    "webp": [
+      "/assets/images/biblia/pagina-72-480.webp",
+      "/assets/images/biblia/pagina-72-960.webp",
+      "/assets/images/biblia/pagina-72-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-72.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-73": {
+    "webp": [
+      "/assets/images/biblia/pagina-73-480.webp",
+      "/assets/images/biblia/pagina-73-960.webp",
+      "/assets/images/biblia/pagina-73-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-73.jpg",
+    "width": 1600,
+    "height": 1044
+  },
+  "pagina-74": {
+    "webp": [
+      "/assets/images/biblia/pagina-74-480.webp",
+      "/assets/images/biblia/pagina-74-960.webp",
+      "/assets/images/biblia/pagina-74-1600.webp"
+    ],
+    "fallback": "/assets/images/biblia/pagina-74.jpg",
+    "width": 1600,
+    "height": 1044
+  }
+}

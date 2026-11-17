@@ -52,8 +52,19 @@ const isObj = (v) => typeof v === "object" && v !== null && !Array.isArray(v);
 const PUBLIC = path.join(root, "site/public");
 const isLocal = (v) => isObj(v) && isObj(v.local);
 
-/** El archivo de mayor resolución que hay de una imagen: la variante WebP más ancha o, si no hay, el respaldo (SVG incluidos). */
+/**
+ * Originales opcionales: SEED_ORIGINALS=<archivo.json> con { "<carpeta>/<nombre>": { "file": "/ruta/absoluta", "hotspot"?: {x, y} } }.
+ * Si una imagen del seed tiene original, se sube ese archivo (a resolución completa) en vez de la variante web.
+ * La clave sale de la ruta de respaldo: /assets/images/<carpeta>/<nombre>.<ext>.
+ */
+const originals = process.env.SEED_ORIGINALS ? JSON.parse(await readFile(path.resolve(process.env.SEED_ORIGINALS), "utf8")) : {};
+const originalOf = (local) => originals[local.fallback.replace(/^\/assets\/images\//, "").replace(/\.[a-z0-9]+$/i, "")];
+const fileOf = (source) => (path.isAbsolute(source) && !source.startsWith("/assets/") ? source : path.join(PUBLIC, source));
+
+/** El archivo de mayor resolución que hay de una imagen: su original si se indicó; si no, la variante WebP más ancha o el respaldo (SVG incluidos). */
 function sourceOf(local) {
+  const original = originalOf(local);
+  if (original?.file) return original.file;
   const width = (u) => Number(u.match(/-(\d+)\.webp$/)?.[1] ?? 0);
   const widest = [...(local.webp ?? [])].sort((a, b) => width(b) - width(a))[0];
   return widest ?? local.fallback;
@@ -105,7 +116,8 @@ const shortHash = (s) => createHash("sha1").update(s).digest("hex").slice(0, 10)
 function toImage(img) {
   const _ref = assets.get(sourceOf(img.local));
   if (!_ref) throw new Error(`Imagen sin asset: ${img.local.fallback}`);
-  const { local: _local, alt, hotspot, ...rest } = img; // `rest` conserva `_key` (imágenes dentro de un arreglo)
+  const { local: _local, alt, hotspot: own, ...rest } = img; // `rest` conserva `_key` (imágenes dentro de un arreglo)
+  const hotspot = own ?? originalOf(img.local)?.hotspot; // el original puede traer más encuadre que la variante web: su punto focal lo compensa
   return {
     ...rest,
     _type: "image",
@@ -199,15 +211,15 @@ function problems(doc) {
 // ───────────────────────── Ejecución ─────────────────────────
 
 collect(seed);
-for (const file of assets.keys()) if (!existsSync(path.join(PUBLIC, file))) fail(`No existe site/public${file}`);
+for (const file of assets.keys()) if (!existsSync(fileOf(file))) fail(`No existe ${fileOf(file)}`);
 
 let client = null;
 if (dryRun) {
   // Sin red: el _id que Sanity le daría a cada asset es `image-<sha1 del archivo>-<ancho>x<alto>-<extensión>`.
   // Aquí el sha1 es real y las medidas son 0x0 (no se leen): basta para validar la forma.
   for (const file of assets.keys()) {
-    const sha1 = createHash("sha1").update(await readFile(path.join(PUBLIC, file))).digest("hex");
-    assets.set(file, `image-${sha1}-0x0-${path.extname(file).slice(1)}`);
+    const sha1 = createHash("sha1").update(await readFile(fileOf(file))).digest("hex");
+    assets.set(file, `image-${sha1}-0x0-${path.extname(file).slice(1).toLowerCase()}`);
   }
 } else {
   // @sanity/client se resuelve desde studio/ (este script no tiene node_modules propios).
@@ -216,7 +228,7 @@ if (dryRun) {
   let n = 0;
   for (const file of assets.keys()) {
     process.stdout.write(`[${++n}/${assets.size}] subiendo ${file}… `);
-    const asset = await client.assets.upload("image", createReadStream(path.join(PUBLIC, file)), {
+    const asset = await client.assets.upload("image", createReadStream(fileOf(file)), {
       filename: path.basename(file),
       ...(file.endsWith(".svg") ? { contentType: "image/svg+xml" } : {}),
     });

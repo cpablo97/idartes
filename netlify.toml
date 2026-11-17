@@ -6,8 +6,13 @@
 [build.environment]
   NODE_VERSION = "24"
   PUBLIC_SITE_URL = "https://ciudadycuerpo.com"
-  # Fase Sanity: al definir PUBLIC_SANITY_PROJECT_ID (y PUBLIC_SANITY_DATASET) aquí,
-  # getContent() deja de leer el seed local y consulta el CMS. Ver site/src/lib/content.ts.
+  # Identificadores públicos de Sanity (también se ven en cada URL de imagen). Con ellos el sitio se
+  # construye desde el CMS; si se quitan, vuelve a leer el seed local. Ver site/src/lib/content.ts.
+  PUBLIC_SANITY_PROJECT_ID = "1x40dsfz"
+  PUBLIC_SANITY_DATASET = "production"
+
+# El webhook de Sanity (proyecto → API → Webhooks) debe hacer POST a un Build Hook de Netlify
+# al crear, editar o borrar documentos "page" y "settings", para que cada publicación reconstruya el sitio.
 
 # Contraseña opcional (site/netlify/edge-functions/gate.js): solo actúa mientras exista
 # la variable SITE_PASSWORD en Netlify; sin ella deja pasar todo.

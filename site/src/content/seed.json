@@ -353,7 +353,7 @@
         {
           "_type": "video",
           "anchor": "microdocumental",
-          "youtubeId": "TODO_MICRODOCUMENTAL_ARIEL",
+          "youtubeId": "owJ4HOjgowI",
           "title": "Microdocumental: los recorridos de Ariel, recicladora de oficio",
           "intro": [
             {
@@ -6417,7 +6417,7 @@
         {
           "_type": "video",
           "anchor": "microdocumental",
-          "youtubeId": "TODO_MICRODOCUMENTAL_ARIEL",
+          "youtubeId": "owJ4HOjgowI",
           "title": "Microdocumental: los recorridos de Ariel, recicladora de oficio",
           "poster": {
             "local": {
@@ -6518,15 +6518,15 @@
               "image": {
                 "local": {
                   "webp": [
-                    "/assets/images/como-lo-hicimos/bitacora-lamina-1-480.webp",
-                    "/assets/images/como-lo-hicimos/bitacora-lamina-1-960.webp",
-                    "/assets/images/como-lo-hicimos/bitacora-lamina-1-1600.webp"
+                    "/assets/images/bitacora/lamina-1-480.webp",
+                    "/assets/images/bitacora/lamina-1-960.webp",
+                    "/assets/images/bitacora/lamina-1-1600.webp"
                   ],
-                  "fallback": "/assets/images/como-lo-hicimos/bitacora-lamina-1.jpg",
+                  "fallback": "/assets/images/bitacora/lamina-1.jpg",
                   "width": 1600,
-                  "height": 1068
+                  "height": 1065
                 },
-                "alt": "Lámina de la bitácora en tres franjas amarilla, azul y morada: «Nosotros, la ciudad y Chapinero», «Primeras exploraciones» y «Enfoque: ¿qué nos mueve?»"
+                "alt": "Lámina 1 de la bitácora: «Nosotros, la ciudad y Chapinero», «Primeras exploraciones» y «Enfoque: ¿qué nos mueve?»"
               },
               "_key": "cos6p0"
             },
@@ -6534,15 +6534,15 @@
               "image": {
                 "local": {
                   "webp": [
-                    "/assets/images/comun/lamina-pendiente-1-480.webp",
-                    "/assets/images/comun/lamina-pendiente-1-960.webp",
-                    "/assets/images/comun/lamina-pendiente-1-1320.webp"
+                    "/assets/images/bitacora/lamina-2-480.webp",
+                    "/assets/images/bitacora/lamina-2-960.webp",
+                    "/assets/images/bitacora/lamina-2-1600.webp"
                   ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-1.jpg",
-                  "width": 1320,
-                  "height": 852
+                  "fallback": "/assets/images/bitacora/lamina-2.jpg",
+                  "width": 1600,
+                  "height": 1065
                 },
-                "alt": "Lámina 2 de la bitácora (pendiente)"
+                "alt": "Lámina 2 de la bitácora: «Encontrarnos, escuchar y aprender», «Videojuego» y «Queremos ayudar»"
               },
               "_key": "cos6p1"
             },
@@ -6550,81 +6550,17 @@
               "image": {
                 "local": {
                   "webp": [
-                    "/assets/images/comun/lamina-pendiente-2-480.webp",
-                    "/assets/images/comun/lamina-pendiente-2-960.webp",
-                    "/assets/images/comun/lamina-pendiente-2-1320.webp"
+                    "/assets/images/bitacora/lamina-3-480.webp",
+                    "/assets/images/bitacora/lamina-3-960.webp",
+                    "/assets/images/bitacora/lamina-3-1600.webp"
                   ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-2.jpg",
-                  "width": 1320,
-                  "height": 852
+                  "fallback": "/assets/images/bitacora/lamina-3.jpg",
+                  "width": 1600,
+                  "height": 1065
                 },
-                "alt": "Lámina 3 de la bitácora (pendiente)"
+                "alt": "Lámina 3 de la bitácora: «Soluciones textiles», «A producir» y «Reflexiones: ¿qué ha cambiado?»"
               },
               "_key": "cos6p2"
-            },
-            {
-              "image": {
-                "local": {
-                  "webp": [
-                    "/assets/images/comun/lamina-pendiente-3-480.webp",
-                    "/assets/images/comun/lamina-pendiente-3-960.webp",
-                    "/assets/images/comun/lamina-pendiente-3-1320.webp"
-                  ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-3.jpg",
-                  "width": 1320,
-                  "height": 852
-                },
-                "alt": "Lámina 4 de la bitácora (pendiente)"
-              },
-              "_key": "cos6p3"
-            },
-            {
-              "image": {
-                "local": {
-                  "webp": [
-                    "/assets/images/comun/lamina-pendiente-4-480.webp",
-                    "/assets/images/comun/lamina-pendiente-4-960.webp",
-                    "/assets/images/comun/lamina-pendiente-4-1320.webp"
-                  ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-4.jpg",
-                  "width": 1320,
-                  "height": 852
-                },
-                "alt": "Lámina 5 de la bitácora (pendiente)"
-              },
-              "_key": "cos6p4"
-            },
-            {
-              "image": {
-                "local": {
-                  "webp": [
-                    "/assets/images/comun/lamina-pendiente-5-480.webp",
-                    "/assets/images/comun/lamina-pendiente-5-960.webp",
-                    "/assets/images/comun/lamina-pendiente-5-1320.webp"
-                  ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-5.jpg",
-                  "width": 1320,
-                  "height": 852
-                },
-                "alt": "Lámina 6 de la bitácora (pendiente)"
-              },
-              "_key": "cos6p5"
-            },
-            {
-              "image": {
-                "local": {
-                  "webp": [
-                    "/assets/images/comun/lamina-pendiente-6-480.webp",
-                    "/assets/images/comun/lamina-pendiente-6-960.webp",
-                    "/assets/images/comun/lamina-pendiente-6-1320.webp"
-                  ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-6.jpg",
-                  "width": 1320,
-                  "height": 852
-                },
-                "alt": "Lámina 7 de la bitácora (pendiente)"
-              },
-              "_key": "cos6p6"
             }
           ],
           "_key": "cos6"
@@ -8184,7 +8120,7 @@
             },
             "alt": "Proyección fragmentada sobre paneles de cartón: los pies de dos personas caminando por la calle"
           },
-          "youtubeId": "TODO_MICRODOCUMENTAL_EXHIBICION",
+          "youtubeId": "owJ4HOjgowI",
           "videoTitle": "Microdocumental: La ciudad que no vemos",
           "footnote": "Creado junto a recicladores de Chapinero.",
           "footnoteTone": "#0d0c19",
@@ -11957,15 +11893,15 @@
               "image": {
                 "local": {
                   "webp": [
-                    "/assets/images/comun/lamina-pendiente-1-480.webp",
-                    "/assets/images/comun/lamina-pendiente-1-960.webp",
-                    "/assets/images/comun/lamina-pendiente-1-1320.webp"
+                    "/assets/images/biblia/pagina-01-480.webp",
+                    "/assets/images/biblia/pagina-01-960.webp",
+                    "/assets/images/biblia/pagina-01-1600.webp"
                   ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-1.jpg",
-                  "width": 1320,
-                  "height": 852
+                  "fallback": "/assets/images/biblia/pagina-01.jpg",
+                  "width": 1600,
+                  "height": 1044
                 },
-                "alt": "Lámina 1 de la biblia del videojuego (pendiente)"
+                "alt": "Biblia de diseño de Chapicartón, página 1 de 74"
               },
               "_key": "vis9p0"
             },
@@ -11973,15 +11909,15 @@
               "image": {
                 "local": {
                   "webp": [
-                    "/assets/images/comun/lamina-pendiente-2-480.webp",
-                    "/assets/images/comun/lamina-pendiente-2-960.webp",
-                    "/assets/images/comun/lamina-pendiente-2-1320.webp"
+                    "/assets/images/biblia/pagina-02-480.webp",
+                    "/assets/images/biblia/pagina-02-960.webp",
+                    "/assets/images/biblia/pagina-02-1600.webp"
                   ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-2.jpg",
-                  "width": 1320,
-                  "height": 852
+                  "fallback": "/assets/images/biblia/pagina-02.jpg",
+                  "width": 1600,
+                  "height": 1044
                 },
-                "alt": "Lámina 2 de la biblia del videojuego (pendiente)"
+                "alt": "Biblia de diseño de Chapicartón, página 2 de 74"
               },
               "_key": "vis9p1"
             },
@@ -11989,15 +11925,15 @@
               "image": {
                 "local": {
                   "webp": [
-                    "/assets/images/comun/lamina-pendiente-3-480.webp",
-                    "/assets/images/comun/lamina-pendiente-3-960.webp",
-                    "/assets/images/comun/lamina-pendiente-3-1320.webp"
+                    "/assets/images/biblia/pagina-03-480.webp",
+                    "/assets/images/biblia/pagina-03-960.webp",
+                    "/assets/images/biblia/pagina-03-1600.webp"
                   ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-3.jpg",
-                  "width": 1320,
-                  "height": 852
+                  "fallback": "/assets/images/biblia/pagina-03.jpg",
+                  "width": 1600,
+                  "height": 1044
                 },
-                "alt": "Lámina 3 de la biblia del videojuego (pendiente)"
+                "alt": "Biblia de diseño de Chapicartón, página 3 de 74"
               },
               "_key": "vis9p2"
             },
@@ -12005,15 +11941,15 @@
               "image": {
                 "local": {
                   "webp": [
-                    "/assets/images/comun/lamina-pendiente-4-480.webp",
-                    "/assets/images/comun/lamina-pendiente-4-960.webp",
-                    "/assets/images/comun/lamina-pendiente-4-1320.webp"
+                    "/assets/images/biblia/pagina-04-480.webp",
+                    "/assets/images/biblia/pagina-04-960.webp",
+                    "/assets/images/biblia/pagina-04-1600.webp"
                   ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-4.jpg",
-                  "width": 1320,
-                  "height": 852
+                  "fallback": "/assets/images/biblia/pagina-04.jpg",
+                  "width": 1600,
+                  "height": 1044
                 },
-                "alt": "Lámina 4 de la biblia del videojuego (pendiente)"
+                "alt": "Biblia de diseño de Chapicartón, página 4 de 74"
               },
               "_key": "vis9p3"
             },
@@ -12021,15 +11957,15 @@
               "image": {
                 "local": {
                   "webp": [
-                    "/assets/images/comun/lamina-pendiente-5-480.webp",
-                    "/assets/images/comun/lamina-pendiente-5-960.webp",
-                    "/assets/images/comun/lamina-pendiente-5-1320.webp"
+                    "/assets/images/biblia/pagina-05-480.webp",
+                    "/assets/images/biblia/pagina-05-960.webp",
+                    "/assets/images/biblia/pagina-05-1600.webp"
                   ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-5.jpg",
-                  "width": 1320,
-                  "height": 852
+                  "fallback": "/assets/images/biblia/pagina-05.jpg",
+                  "width": 1600,
+                  "height": 1044
                 },
-                "alt": "Lámina 5 de la biblia del videojuego (pendiente)"
+                "alt": "Biblia de diseño de Chapicartón, página 5 de 74"
               },
               "_key": "vis9p4"
             },
@@ -12037,17 +11973,1105 @@
               "image": {
                 "local": {
                   "webp": [
-                    "/assets/images/comun/lamina-pendiente-6-480.webp",
-                    "/assets/images/comun/lamina-pendiente-6-960.webp",
-                    "/assets/images/comun/lamina-pendiente-6-1320.webp"
+                    "/assets/images/biblia/pagina-06-480.webp",
+                    "/assets/images/biblia/pagina-06-960.webp",
+                    "/assets/images/biblia/pagina-06-1600.webp"
                   ],
-                  "fallback": "/assets/images/comun/lamina-pendiente-6.jpg",
-                  "width": 1320,
-                  "height": 852
+                  "fallback": "/assets/images/biblia/pagina-06.jpg",
+                  "width": 1600,
+                  "height": 1044
                 },
-                "alt": "Lámina 6 de la biblia del videojuego (pendiente)"
+                "alt": "Biblia de diseño de Chapicartón, página 6 de 74"
               },
               "_key": "vis9p5"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-07-480.webp",
+                    "/assets/images/biblia/pagina-07-960.webp",
+                    "/assets/images/biblia/pagina-07-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-07.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 7 de 74"
+              },
+              "_key": "vis9p6"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-08-480.webp",
+                    "/assets/images/biblia/pagina-08-960.webp",
+                    "/assets/images/biblia/pagina-08-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-08.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 8 de 74"
+              },
+              "_key": "vis9p7"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-09-480.webp",
+                    "/assets/images/biblia/pagina-09-960.webp",
+                    "/assets/images/biblia/pagina-09-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-09.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 9 de 74"
+              },
+              "_key": "vis9p8"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-10-480.webp",
+                    "/assets/images/biblia/pagina-10-960.webp",
+                    "/assets/images/biblia/pagina-10-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-10.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 10 de 74"
+              },
+              "_key": "vis9p9"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-11-480.webp",
+                    "/assets/images/biblia/pagina-11-960.webp",
+                    "/assets/images/biblia/pagina-11-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-11.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 11 de 74"
+              },
+              "_key": "vis9p10"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-12-480.webp",
+                    "/assets/images/biblia/pagina-12-960.webp",
+                    "/assets/images/biblia/pagina-12-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-12.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 12 de 74"
+              },
+              "_key": "vis9p11"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-13-480.webp",
+                    "/assets/images/biblia/pagina-13-960.webp",
+                    "/assets/images/biblia/pagina-13-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-13.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 13 de 74"
+              },
+              "_key": "vis9p12"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-14-480.webp",
+                    "/assets/images/biblia/pagina-14-960.webp",
+                    "/assets/images/biblia/pagina-14-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-14.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 14 de 74"
+              },
+              "_key": "vis9p13"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-15-480.webp",
+                    "/assets/images/biblia/pagina-15-960.webp",
+                    "/assets/images/biblia/pagina-15-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-15.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 15 de 74"
+              },
+              "_key": "vis9p14"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-16-480.webp",
+                    "/assets/images/biblia/pagina-16-960.webp",
+                    "/assets/images/biblia/pagina-16-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-16.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 16 de 74"
+              },
+              "_key": "vis9p15"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-17-480.webp",
+                    "/assets/images/biblia/pagina-17-960.webp",
+                    "/assets/images/biblia/pagina-17-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-17.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 17 de 74"
+              },
+              "_key": "vis9p16"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-18-480.webp",
+                    "/assets/images/biblia/pagina-18-960.webp",
+                    "/assets/images/biblia/pagina-18-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-18.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 18 de 74"
+              },
+              "_key": "vis9p17"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-19-480.webp",
+                    "/assets/images/biblia/pagina-19-960.webp",
+                    "/assets/images/biblia/pagina-19-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-19.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 19 de 74"
+              },
+              "_key": "vis9p18"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-20-480.webp",
+                    "/assets/images/biblia/pagina-20-960.webp",
+                    "/assets/images/biblia/pagina-20-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-20.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 20 de 74"
+              },
+              "_key": "vis9p19"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-21-480.webp",
+                    "/assets/images/biblia/pagina-21-960.webp",
+                    "/assets/images/biblia/pagina-21-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-21.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 21 de 74"
+              },
+              "_key": "vis9p20"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-22-480.webp",
+                    "/assets/images/biblia/pagina-22-960.webp",
+                    "/assets/images/biblia/pagina-22-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-22.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 22 de 74"
+              },
+              "_key": "vis9p21"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-23-480.webp",
+                    "/assets/images/biblia/pagina-23-960.webp",
+                    "/assets/images/biblia/pagina-23-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-23.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 23 de 74"
+              },
+              "_key": "vis9p22"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-24-480.webp",
+                    "/assets/images/biblia/pagina-24-960.webp",
+                    "/assets/images/biblia/pagina-24-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-24.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 24 de 74"
+              },
+              "_key": "vis9p23"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-25-480.webp",
+                    "/assets/images/biblia/pagina-25-960.webp",
+                    "/assets/images/biblia/pagina-25-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-25.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 25 de 74"
+              },
+              "_key": "vis9p24"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-26-480.webp",
+                    "/assets/images/biblia/pagina-26-960.webp",
+                    "/assets/images/biblia/pagina-26-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-26.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 26 de 74"
+              },
+              "_key": "vis9p25"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-27-480.webp",
+                    "/assets/images/biblia/pagina-27-960.webp",
+                    "/assets/images/biblia/pagina-27-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-27.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 27 de 74"
+              },
+              "_key": "vis9p26"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-28-480.webp",
+                    "/assets/images/biblia/pagina-28-960.webp",
+                    "/assets/images/biblia/pagina-28-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-28.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 28 de 74"
+              },
+              "_key": "vis9p27"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-29-480.webp",
+                    "/assets/images/biblia/pagina-29-960.webp",
+                    "/assets/images/biblia/pagina-29-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-29.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 29 de 74"
+              },
+              "_key": "vis9p28"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-30-480.webp",
+                    "/assets/images/biblia/pagina-30-960.webp",
+                    "/assets/images/biblia/pagina-30-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-30.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 30 de 74"
+              },
+              "_key": "vis9p29"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-31-480.webp",
+                    "/assets/images/biblia/pagina-31-960.webp",
+                    "/assets/images/biblia/pagina-31-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-31.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 31 de 74"
+              },
+              "_key": "vis9p30"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-32-480.webp",
+                    "/assets/images/biblia/pagina-32-960.webp",
+                    "/assets/images/biblia/pagina-32-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-32.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 32 de 74"
+              },
+              "_key": "vis9p31"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-33-480.webp",
+                    "/assets/images/biblia/pagina-33-960.webp",
+                    "/assets/images/biblia/pagina-33-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-33.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 33 de 74"
+              },
+              "_key": "vis9p32"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-34-480.webp",
+                    "/assets/images/biblia/pagina-34-960.webp",
+                    "/assets/images/biblia/pagina-34-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-34.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 34 de 74"
+              },
+              "_key": "vis9p33"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-35-480.webp",
+                    "/assets/images/biblia/pagina-35-960.webp",
+                    "/assets/images/biblia/pagina-35-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-35.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 35 de 74"
+              },
+              "_key": "vis9p34"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-36-480.webp",
+                    "/assets/images/biblia/pagina-36-960.webp",
+                    "/assets/images/biblia/pagina-36-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-36.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 36 de 74"
+              },
+              "_key": "vis9p35"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-37-480.webp",
+                    "/assets/images/biblia/pagina-37-960.webp",
+                    "/assets/images/biblia/pagina-37-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-37.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 37 de 74"
+              },
+              "_key": "vis9p36"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-38-480.webp",
+                    "/assets/images/biblia/pagina-38-960.webp",
+                    "/assets/images/biblia/pagina-38-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-38.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 38 de 74"
+              },
+              "_key": "vis9p37"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-39-480.webp",
+                    "/assets/images/biblia/pagina-39-960.webp",
+                    "/assets/images/biblia/pagina-39-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-39.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 39 de 74"
+              },
+              "_key": "vis9p38"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-40-480.webp",
+                    "/assets/images/biblia/pagina-40-960.webp",
+                    "/assets/images/biblia/pagina-40-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-40.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 40 de 74"
+              },
+              "_key": "vis9p39"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-41-480.webp",
+                    "/assets/images/biblia/pagina-41-960.webp",
+                    "/assets/images/biblia/pagina-41-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-41.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 41 de 74"
+              },
+              "_key": "vis9p40"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-42-480.webp",
+                    "/assets/images/biblia/pagina-42-960.webp",
+                    "/assets/images/biblia/pagina-42-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-42.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 42 de 74"
+              },
+              "_key": "vis9p41"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-43-480.webp",
+                    "/assets/images/biblia/pagina-43-960.webp",
+                    "/assets/images/biblia/pagina-43-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-43.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 43 de 74"
+              },
+              "_key": "vis9p42"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-44-480.webp",
+                    "/assets/images/biblia/pagina-44-960.webp",
+                    "/assets/images/biblia/pagina-44-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-44.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 44 de 74"
+              },
+              "_key": "vis9p43"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-45-480.webp",
+                    "/assets/images/biblia/pagina-45-960.webp",
+                    "/assets/images/biblia/pagina-45-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-45.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 45 de 74"
+              },
+              "_key": "vis9p44"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-46-480.webp",
+                    "/assets/images/biblia/pagina-46-960.webp",
+                    "/assets/images/biblia/pagina-46-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-46.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 46 de 74"
+              },
+              "_key": "vis9p45"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-47-480.webp",
+                    "/assets/images/biblia/pagina-47-960.webp",
+                    "/assets/images/biblia/pagina-47-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-47.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 47 de 74"
+              },
+              "_key": "vis9p46"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-48-480.webp",
+                    "/assets/images/biblia/pagina-48-960.webp",
+                    "/assets/images/biblia/pagina-48-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-48.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 48 de 74"
+              },
+              "_key": "vis9p47"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-49-480.webp",
+                    "/assets/images/biblia/pagina-49-960.webp",
+                    "/assets/images/biblia/pagina-49-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-49.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 49 de 74"
+              },
+              "_key": "vis9p48"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-50-480.webp",
+                    "/assets/images/biblia/pagina-50-960.webp",
+                    "/assets/images/biblia/pagina-50-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-50.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 50 de 74"
+              },
+              "_key": "vis9p49"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-51-480.webp",
+                    "/assets/images/biblia/pagina-51-960.webp",
+                    "/assets/images/biblia/pagina-51-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-51.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 51 de 74"
+              },
+              "_key": "vis9p50"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-52-480.webp",
+                    "/assets/images/biblia/pagina-52-960.webp",
+                    "/assets/images/biblia/pagina-52-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-52.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 52 de 74"
+              },
+              "_key": "vis9p51"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-53-480.webp",
+                    "/assets/images/biblia/pagina-53-960.webp",
+                    "/assets/images/biblia/pagina-53-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-53.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 53 de 74"
+              },
+              "_key": "vis9p52"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-54-480.webp",
+                    "/assets/images/biblia/pagina-54-960.webp",
+                    "/assets/images/biblia/pagina-54-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-54.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 54 de 74"
+              },
+              "_key": "vis9p53"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-55-480.webp",
+                    "/assets/images/biblia/pagina-55-960.webp",
+                    "/assets/images/biblia/pagina-55-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-55.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 55 de 74"
+              },
+              "_key": "vis9p54"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-56-480.webp",
+                    "/assets/images/biblia/pagina-56-960.webp",
+                    "/assets/images/biblia/pagina-56-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-56.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 56 de 74"
+              },
+              "_key": "vis9p55"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-57-480.webp",
+                    "/assets/images/biblia/pagina-57-960.webp",
+                    "/assets/images/biblia/pagina-57-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-57.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 57 de 74"
+              },
+              "_key": "vis9p56"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-58-480.webp",
+                    "/assets/images/biblia/pagina-58-960.webp",
+                    "/assets/images/biblia/pagina-58-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-58.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 58 de 74"
+              },
+              "_key": "vis9p57"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-59-480.webp",
+                    "/assets/images/biblia/pagina-59-960.webp",
+                    "/assets/images/biblia/pagina-59-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-59.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 59 de 74"
+              },
+              "_key": "vis9p58"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-60-480.webp",
+                    "/assets/images/biblia/pagina-60-960.webp",
+                    "/assets/images/biblia/pagina-60-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-60.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 60 de 74"
+              },
+              "_key": "vis9p59"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-61-480.webp",
+                    "/assets/images/biblia/pagina-61-960.webp",
+                    "/assets/images/biblia/pagina-61-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-61.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 61 de 74"
+              },
+              "_key": "vis9p60"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-62-480.webp",
+                    "/assets/images/biblia/pagina-62-960.webp",
+                    "/assets/images/biblia/pagina-62-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-62.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 62 de 74"
+              },
+              "_key": "vis9p61"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-63-480.webp",
+                    "/assets/images/biblia/pagina-63-960.webp",
+                    "/assets/images/biblia/pagina-63-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-63.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 63 de 74"
+              },
+              "_key": "vis9p62"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-64-480.webp",
+                    "/assets/images/biblia/pagina-64-960.webp",
+                    "/assets/images/biblia/pagina-64-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-64.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 64 de 74"
+              },
+              "_key": "vis9p63"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-65-480.webp",
+                    "/assets/images/biblia/pagina-65-960.webp",
+                    "/assets/images/biblia/pagina-65-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-65.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 65 de 74"
+              },
+              "_key": "vis9p64"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-66-480.webp",
+                    "/assets/images/biblia/pagina-66-960.webp",
+                    "/assets/images/biblia/pagina-66-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-66.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 66 de 74"
+              },
+              "_key": "vis9p65"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-67-480.webp",
+                    "/assets/images/biblia/pagina-67-960.webp",
+                    "/assets/images/biblia/pagina-67-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-67.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 67 de 74"
+              },
+              "_key": "vis9p66"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-68-480.webp",
+                    "/assets/images/biblia/pagina-68-960.webp",
+                    "/assets/images/biblia/pagina-68-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-68.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 68 de 74"
+              },
+              "_key": "vis9p67"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-69-480.webp",
+                    "/assets/images/biblia/pagina-69-960.webp",
+                    "/assets/images/biblia/pagina-69-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-69.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 69 de 74"
+              },
+              "_key": "vis9p68"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-70-480.webp",
+                    "/assets/images/biblia/pagina-70-960.webp",
+                    "/assets/images/biblia/pagina-70-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-70.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 70 de 74"
+              },
+              "_key": "vis9p69"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-71-480.webp",
+                    "/assets/images/biblia/pagina-71-960.webp",
+                    "/assets/images/biblia/pagina-71-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-71.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 71 de 74"
+              },
+              "_key": "vis9p70"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-72-480.webp",
+                    "/assets/images/biblia/pagina-72-960.webp",
+                    "/assets/images/biblia/pagina-72-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-72.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 72 de 74"
+              },
+              "_key": "vis9p71"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-73-480.webp",
+                    "/assets/images/biblia/pagina-73-960.webp",
+                    "/assets/images/biblia/pagina-73-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-73.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 73 de 74"
+              },
+              "_key": "vis9p72"
+            },
+            {
+              "image": {
+                "local": {
+                  "webp": [
+                    "/assets/images/biblia/pagina-74-480.webp",
+                    "/assets/images/biblia/pagina-74-960.webp",
+                    "/assets/images/biblia/pagina-74-1600.webp"
+                  ],
+                  "fallback": "/assets/images/biblia/pagina-74.jpg",
+                  "width": 1600,
+                  "height": 1044
+                },
+                "alt": "Biblia de diseño de Chapicartón, página 74 de 74"
+              },
+              "_key": "vis9p73"
             }
           ],
           "_key": "vis9"

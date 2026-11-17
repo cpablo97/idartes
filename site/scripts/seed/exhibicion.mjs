@@ -43,8 +43,7 @@ export default {
       _type: "hero",
       anchor: "microdocumental",
       image: img("hero-proyeccion-pasos", "Proyección fragmentada sobre paneles de cartón: los pies de dos personas caminando por la calle"),
-      // TODO: reemplazar por el ID real del microdocumental en YouTube (lo que va después de "v=").
-      youtubeId: "TODO_MICRODOCUMENTAL_EXHIBICION",
+      youtubeId: "owJ4HOjgowI",
       videoTitle: "Microdocumental: La ciudad que no vemos",
       footnote: "Creado junto a recicladores de Chapinero.",
       footnoteTone: "#0d0c19",

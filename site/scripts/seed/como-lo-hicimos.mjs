@@ -3,7 +3,7 @@
 import { images, crop, t, b, i, a, body, canvas, image, text, title, rule, explora } from "./_lib.mjs";
 const img = images("como-lo-hicimos");
 const inicio = images("inicio");
-const comun = images("comun");
+const bitacora = images("bitacora");
 
 const MORADO = { weight: 500 }; // "P-morado": Schibsted Grotesk Medium 24 (el morado es el color por defecto)
 const V = "#023c0f"; // verde oscuro de las citas de la línea de tiempo
@@ -260,8 +260,8 @@ export default {
     {
       _type: "video",
       anchor: "microdocumental",
-      // TODO: reemplazar por el ID real del microdocumental en YouTube (lo que va después de "v=").
-      youtubeId: "TODO_MICRODOCUMENTAL_ARIEL",
+      // TODO: confirmar que el microdocumental de esta página es el mismo de Inicio y Exhibición (en Drive solo llegó un enlace).
+      youtubeId: "owJ4HOjgowI",
       title: "Microdocumental: los recorridos de Ariel, recicladora de oficio",
       poster: img("microdocumental-poster", "Fotograma del microdocumental: Ariel, recicladora de oficio, mira a la cámara junto a su carreta", crop(0, -3.66, 100, 107.04)),
     },
@@ -289,9 +289,9 @@ export default {
       intro: body([a("Ver más", "#bitacora")]),
       mode: "slider",
       pages: [
-        { image: img("bitacora-lamina-1", "Lámina de la bitácora en tres franjas amarilla, azul y morada: «Nosotros, la ciudad y Chapinero», «Primeras exploraciones» y «Enfoque: ¿qué nos mueve?»") },
-        // TODO: reemplazar por las láminas reales
-        ...[1, 2, 3, 4, 5, 6].map((n) => ({ image: comun(`lamina-pendiente-${n}`, `Lámina ${n + 1} de la bitácora (pendiente)`) })),
+        { image: bitacora("lamina-1", "Lámina 1 de la bitácora: «Nosotros, la ciudad y Chapinero», «Primeras exploraciones» y «Enfoque: ¿qué nos mueve?»") },
+        { image: bitacora("lamina-2", "Lámina 2 de la bitácora: «Encontrarnos, escuchar y aprender», «Videojuego» y «Queremos ayudar»") },
+        { image: bitacora("lamina-3", "Lámina 3 de la bitácora: «Soluciones textiles», «A producir» y «Reflexiones: ¿qué ha cambiado?»") },
       ],
     },
 

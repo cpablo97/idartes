@@ -1,0 +1,32 @@
+{
+  "lamina-1": {
+    "webp": [
+      "/assets/images/bitacora/lamina-1-480.webp",
+      "/assets/images/bitacora/lamina-1-960.webp",
+      "/assets/images/bitacora/lamina-1-1600.webp"
+    ],
+    "fallback": "/assets/images/bitacora/lamina-1.jpg",
+    "width": 1600,
+    "height": 1065
+  },
+  "lamina-2": {
+    "webp": [
+      "/assets/images/bitacora/lamina-2-480.webp",
+      "/assets/images/bitacora/lamina-2-960.webp",
+      "/assets/images/bitacora/lamina-2-1600.webp"
+    ],
+    "fallback": "/assets/images/bitacora/lamina-2.jpg",
+    "width": 1600,
+    "height": 1065
+  },
+  "lamina-3": {
+    "webp": [
+      "/assets/images/bitacora/lamina-3-480.webp",
+      "/assets/images/bitacora/lamina-3-960.webp",
+      "/assets/images/bitacora/lamina-3-1600.webp"
+    ],
+    "fallback": "/assets/images/bitacora/lamina-3.jpg",
+    "width": 1600,
+    "height": 1065
+  }
+}

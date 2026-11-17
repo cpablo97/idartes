@@ -37,8 +37,7 @@ export default {
     {
       _type: "video",
       anchor: "microdocumental",
-      // TODO: reemplazar por el ID real del microdocumental en YouTube (lo que va después de "v=").
-      youtubeId: "TODO_MICRODOCUMENTAL_ARIEL",
+      youtubeId: "owJ4HOjgowI",
       title: "Microdocumental: los recorridos de Ariel, recicladora de oficio",
       intro: body("Acompañamos a Ariel, recicladora de oficio, en algunos de sus recorridos por la ciudad."),
       caption: body("Este microdocumental nos acerca a su trabajo cotidiano y a las experiencias de quienes recuperan materiales y hacen parte de la vida de Chapinero."),

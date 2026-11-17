@@ -3,7 +3,7 @@ import { structureTool } from "sanity/structure";
 import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "./schemas";
 
-const projectId = process.env.SANITY_STUDIO_PROJECT_ID || "REPLACE_WITH_PROJECT_ID";
+const projectId = process.env.SANITY_STUDIO_PROJECT_ID || "1x40dsfz";
 const dataset = process.env.SANITY_STUDIO_DATASET || "production";
 
 // «Ajustes» es un documento único: no se puede crear otro, duplicarlo ni borrarlo.

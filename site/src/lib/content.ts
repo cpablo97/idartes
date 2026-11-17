@@ -14,8 +14,8 @@ export const sanityConfig = projectId ? { projectId, dataset } : null;
 // La consulta que debe devolver la forma de seed.json (tipo `Content`), con dos diferencias que
 // `normalize()` (lib/text.ts) resuelve: el texto enriquecido llega como Portable Text estándar
 // (enlaces en `markDefs`, titulares como un bloque) y los campos ausentes proyectados llegan como `null`.
-// Fase Sanity: `npm i @sanity/client @sanity/image-url`, descomentar el bloque marcado en
-// getContent() y en image.ts, y definir PUBLIC_SANITY_PROJECT_ID. Ningún componente cambia.
+// Con PUBLIC_SANITY_PROJECT_ID definido, getContent() consulta Sanity con esta QUERY; sin él, lee el seed local.
+// Ningún componente cambia entre un origen y otro.
 // La página de Inicio no tiene `slug` en Sanity (el tipo `slug` no admite un valor vacío): la consulta lo devuelve como "".
 const asset = `asset->{url, metadata{dimensions}}`;
 const image = `{..., ${asset}}`;
@@ -57,13 +57,12 @@ export function getContent(): Promise<Content> {
     cache = (async () => {
       if (!sanityConfig) return normalize<Content>(seed);
 
-      // ── Fase Sanity (descomentar; requiere @sanity/client) ──
-      // const { createClient } = await import("@sanity/client");
-      // const client = createClient({ ...sanityConfig, apiVersion: "2025-01-01", useCdn: false });
-      // const data = normalize<Content>(await client.fetch(QUERY));
-      // if (!data?.pages?.length) throw new Error("Sanity no devolvió páginas; publica primero los documentos.");
-      // return data;
-      throw new Error("PUBLIC_SANITY_PROJECT_ID está definido pero el cliente de Sanity aún no está conectado (ver src/lib/content.ts).");
+      // Con PUBLIC_SANITY_PROJECT_ID el contenido sale de Sanity (misma forma que el seed, tras normalize()).
+      const { createClient } = await import("@sanity/client");
+      const client = createClient({ ...sanityConfig, apiVersion: "2025-01-01", useCdn: false });
+      const data = normalize<Content>(await client.fetch(QUERY));
+      if (!data?.settings || !data?.pages?.length) throw new Error("Sanity no devolvió ajustes o páginas; publica primero los documentos.");
+      return data;
     })();
   }
   return cache;

@@ -2,7 +2,7 @@
 import { images, svg, crop, t, b, m, body, canvas, image, text, rule, explora } from "./_lib.mjs";
 const img = images("videojuego");
 const inicio = images("inicio");
-const comun = images("comun");
+const biblia = images("biblia");
 const panel = (name, w, alt) => svg(`/assets/images/videojuego/${name}.svg`, w, 234, alt);
 
 const jugar = canvas(1759.16); // banda ciudad teal
@@ -285,8 +285,8 @@ export default {
       anchor: "biblia",
       title: "Biblia del juego ",
       mode: "book",
-      // TODO: reemplazar por las láminas reales
-      pages: [1, 2, 3, 4, 5, 6].map((n) => ({ image: comun(`lamina-pendiente-${n}`, `Lámina ${n} de la biblia del videojuego (pendiente)`) })),
+      // Las 74 páginas de la biblia de diseño (35 BIBLIA.pdf), una imagen por página.
+      pages: Array.from({ length: 74 }, (_, n) => ({ image: biblia(`pagina-${String(n + 1).padStart(2, "0")}`, `Biblia de diseño de Chapicartón, página ${n + 1} de 74`) })),
     },
     explora([
       ["Lo que aprendimos de la calle", "/lo-que-aprendimos-de-la-calle/", inicio("card-calle", "Carreta de reciclaje cargada de costales en una calle de Chapinero", { x: 0.5, y: 0.35 })],
