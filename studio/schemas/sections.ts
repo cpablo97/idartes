@@ -8,7 +8,9 @@ import { HEX } from "./tones";
 
 const req = (r: any) => r.required();
 const count = (n: number | undefined, one: string, many: string) => `${n ?? 0} ${n === 1 ? one : many}`;
-const len = (v: unknown) => (Array.isArray(v) ? v.length : 0);
+/** En las vistas previas, Sanity entrega los arreglos de objetos como un objeto con claves "0", "1"…: se normaliza a arreglo. */
+const arr = (v: unknown): any[] => (Array.isArray(v) ? v : v && typeof v === "object" ? Object.values(v as Record<string, unknown>) : []);
+const len = (v: unknown) => arr(v).length;
 
 /** Banda de fondo a sangre detrás de una sección. */
 const bandField = () =>
@@ -51,7 +53,7 @@ export const collage = defineType({
   preview: {
     select: { items: "items", anchor: "anchor", media: "items.0.image" },
     prepare: ({ items, anchor }) => {
-      const list = (Array.isArray(items) ? items : []) as any[];
+      const list = arr(items) as any[];
       const first = list.find((i) => i?._type === "displayTitle" || i?._type === "textItem");
       return { title: plain(first?.text ?? first?.body, 60) || (anchor ? `#${anchor}` : "Collage"), subtitle: `Collage · ${count(list.length, "elemento", "elementos")}${anchor ? ` · #${anchor}` : ""}` };
     },
@@ -236,7 +238,7 @@ export const mapPlace = defineType({
           ],
           preview: {
             select: { days: "days", open: "open", close: "close" },
-            prepare: ({ days, open, close }) => ({ title: `${open ?? "?"}–${close ?? "?"}`, subtitle: (Array.isArray(days) ? days : []).map((d: number) => DAYS[d]?.title).filter(Boolean).join(", ") }),
+            prepare: ({ days, open, close }) => ({ title: `${open ?? "?"}–${close ?? "?"}`, subtitle: arr(days).map((d: number) => DAYS[d]?.title).filter(Boolean).join(", ") }),
           },
         }),
       ],
@@ -579,7 +581,7 @@ export const controls = defineType({
                       ],
                       preview: {
                         select: { keys: "keys", layout: "layout" },
-                        prepare: ({ keys, layout }) => ({ title: (Array.isArray(keys) ? keys : []).map((k: any) => k?.key).filter(Boolean).join(" · ") || "Teclas", subtitle: layout === "cross" ? "En cruz" : "En fila" }),
+                        prepare: ({ keys, layout }) => ({ title: arr(keys).map((k: any) => k?.key).filter(Boolean).join(" · ") || "Teclas", subtitle: layout === "cross" ? "En cruz" : "En fila" }),
                       },
                     }),
                   ],
@@ -694,7 +696,7 @@ export const data = defineType({
               name: "tableRow",
               title: "Fila",
               fields: [defineField({ name: "cells", title: "Celdas", type: "array", of: [defineArrayMember({ type: "string" })], description: "Una por columna. La primera celda es el encabezado de la fila.", validation: (r) => r.required().min(1) })],
-              preview: { select: { cells: "cells" }, prepare: ({ cells }) => ({ title: (Array.isArray(cells) ? cells : []).join(" · ") || "Fila vacía" }) },
+              preview: { select: { cells: "cells" }, prepare: ({ cells }) => ({ title: arr(cells).join(" · ") || "Fila vacía" }) },
             }),
           ],
           validation: (r) =>
