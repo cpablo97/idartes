@@ -11,7 +11,10 @@ export type Img = {
   alt: string;
 };
 
-/** Portable Text simplificado: párrafos con tramos marcados. `medium` = peso 500; `href` vuelve el tramo un enlace. */
+/**
+ * Portable Text simplificado: párrafos con tramos marcados. `medium` = peso 500; `href` vuelve el tramo un enlace.
+ * El Studio guarda Portable Text estándar (enlaces en `markDefs`); `normalize()` en text.ts lo trae a esta forma.
+ */
 export type Mark = "strong" | "em" | "medium" | "underline";
 export type Span = { _type: "span"; text: string; marks?: Mark[]; href?: string };
 export type Block = { _type: "block"; _key: string; style?: "normal"; children: Span[] };

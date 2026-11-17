@@ -1,5 +1,6 @@
 import type { Content, Page } from "./types";
 import seed from "../content/seed.json";
+import { normalize } from "./text";
 
 // Tolera valores pegados en la interfaz del hosting con comillas o espacios alrededor.
 const clean = (v: unknown) => (typeof v === "string" ? v.trim().replace(/^["']|["']$/g, "") : "");
@@ -10,9 +11,12 @@ const dataset = clean(import.meta.env.PUBLIC_SANITY_DATASET) || "production";
 export const sanityConfig = projectId ? { projectId, dataset } : null;
 
 // ───────────────────────────── PUNTO DE CAMBIO A SANITY ─────────────────────────────
-// La consulta que debe devolver exactamente la forma de seed.json (tipo `Content`).
+// La consulta que debe devolver la forma de seed.json (tipo `Content`), con dos diferencias que
+// `normalize()` (lib/text.ts) resuelve: el texto enriquecido llega como Portable Text estándar
+// (enlaces en `markDefs`, titulares como un bloque) y los campos ausentes proyectados llegan como `null`.
 // Fase Sanity: `npm i @sanity/client @sanity/image-url`, descomentar el bloque marcado en
 // getContent() y en image.ts, y definir PUBLIC_SANITY_PROJECT_ID. Ningún componente cambia.
+// La página de Inicio no tiene `slug` en Sanity (el tipo `slug` no admite un valor vacío): la consulta lo devuelve como "".
 const asset = `asset->{url, metadata{dimensions}}`;
 const image = `{..., ${asset}}`;
 export const QUERY = `{
@@ -23,6 +27,7 @@ export const QUERY = `{
   },
   "pages": *[_type == "page"]{
     ...,
+    "slug": {"current": coalesce(slug.current, "")},
     seo{..., ogImage${image}},
     sections[]{
       ...,
@@ -50,12 +55,12 @@ let cache: Promise<Content> | null = null;
 export function getContent(): Promise<Content> {
   if (!cache || import.meta.env.DEV) {
     cache = (async () => {
-      if (!sanityConfig) return seed as unknown as Content;
+      if (!sanityConfig) return normalize<Content>(seed);
 
       // ── Fase Sanity (descomentar; requiere @sanity/client) ──
       // const { createClient } = await import("@sanity/client");
       // const client = createClient({ ...sanityConfig, apiVersion: "2025-01-01", useCdn: false });
-      // const data = await client.fetch<Content>(QUERY);
+      // const data = normalize<Content>(await client.fetch(QUERY));
       // if (!data?.pages?.length) throw new Error("Sanity no devolvió páginas; publica primero los documentos.");
       // return data;
       throw new Error("PUBLIC_SANITY_PROJECT_ID está definido pero el cliente de Sanity aún no está conectado (ver src/lib/content.ts).");

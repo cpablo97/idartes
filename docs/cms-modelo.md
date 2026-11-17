@@ -1,17 +1,43 @@
 # Modelo de contenido para el CMS
 
-Este es el modelo que usa hoy el front con contenido local y el que hay que copiar a `studio/schemas` en la fase de Sanity.
-La fuente de verdad en código es `site/src/lib/types.ts`; el contenido de ejemplo es `site/src/content/seed.json`
-(generado con `npm run seed` desde `site/scripts/seed/*.mjs`).
+Este es el modelo que usa el front con contenido local y el que implementa el Studio de Sanity en `studio/schemas`
+(mismos nombres de tipo y de campo). La fuente de verdad en código es `site/src/lib/types.ts`; el contenido de ejemplo es
+`site/src/content/seed.json` (generado con `npm run seed` desde `site/scripts/seed/*.mjs`).
 
 Conectar Sanity significa:
 
-1. Crear `studio/` con estos esquemas y subir `seed.json` con `scripts/seed.mjs` (como en Estanza).
+1. Crear el proyecto en sanity.io, poner su ID en `SANITY_STUDIO_PROJECT_ID` y subir `seed.json` con
+   `scripts/seed.mjs` (ver «CMS» en el README). El Studio (`studio/`) ya está hecho.
 2. En `site/`: `npm i @sanity/client @sanity/image-url` y descomentar los dos bloques marcados "Fase Sanity"
    en `src/lib/content.ts` y `src/lib/image.ts`. La consulta GROQ (`QUERY`) ya está escrita.
 3. Definir `PUBLIC_SANITY_PROJECT_ID` (y `PUBLIC_SANITY_DATASET`) en `netlify.toml`.
 
 Ningún componente cambia: todos leen de `getContent()` y pintan imágenes con `Picture.astro`.
+
+## Lo que guarda el Studio frente a lo que pinta el sitio
+
+El sitio pinta la forma de `types.ts` (la del seed). El Studio guarda casi lo mismo, con estas diferencias, todas
+resueltas en un solo lugar para que ningún componente se entere:
+
+| En `types.ts` / seed | En Sanity | Quién lo convierte |
+|---|---|---|
+| Imagen `local { webp[], fallback, width, height }` | `{ _type: "image", asset → referencia, alt, hotspot }` | Consulta GROQ (`asset->{url, metadata}`) + `lib/image.ts` |
+| Tramo con `href` (enlace) | Portable Text estándar: anotación `link { href }` en `markDefs` del bloque y su clave en `marks` del tramo | `normalize()` en `site/src/lib/text.ts` |
+| Titulares `Span[]` (`displayTitle.text`, `settings.headerTitle`) | Un bloque de Portable Text de un solo párrafo (solo itálica) | `normalize()` |
+| `slug.current: ""` (Inicio) | Sin campo `slug` (el tipo `slug` de Sanity no admite vacío) | Consulta GROQ (`coalesce(slug.current, "")`) |
+| Campo ausente | `null` en las proyecciones GROQ (`poster{…}`) | `normalize()` los quita |
+| `alt: ""` (imagen decorativa) | Sin campo `alt` | `normalize()` lo repone como `""` |
+
+`normalize()` acepta las dos formas y es idempotente: `getContent()` la aplica también al seed local, que queda igual.
+`scripts/seed.mjs` hace la conversión inversa al sembrar.
+
+Los objetos de arreglo que en el seed no llevan `_type` lo reciben en Sanity (lo exige el Studio): `dotPatch` (tramas de
+`dots[]`), `videoEntry`, `legendEntry`, `mapPlace`, `openingHours`, `galleryImage`, `bitacoraPage`, `person`,
+`personLink`, `gamepadGroup`, `panelLabel`, `keyGroup`, `keyCluster`, `controlKey`, `dataSeries`, `tableRow`,
+`timelineStep`, `menuLink`, `footerLogo`. Y `place` lleva `_type: "place"`. El sitio no los lee.
+
+En el Studio, los campos de diseño de cada objeto (`place`, `rows`, `dots`, `variant`, `rotate`, `drift`, colores…)
+van plegados bajo «Composición»; los de contenido van primero.
 
 ## Tipos comunes
 
@@ -19,18 +45,23 @@ Ningún componente cambia: todos leen de `getContent()` y pintan imágenes con `
 | Campo | Tipo | Notas |
 |---|---|---|
 | `asset` | referencia | En el seed es `local { webp[], fallback, width, height }`. |
-| `alt` | string, **obligatorio** | Vacío solo si la imagen es decorativa. |
-| `hotspot` | `{ x, y }` (0–1) | Punto que se conserva al recortar (`object-position`). Es el hotspot nativo de Sanity. |
+| `alt` | string, **obligatorio** | Vacío solo si la imagen es decorativa. El Studio lo exige en todas las imágenes salvo las decorativas por naturaleza: `band.image`, `map.placeholder`, `controls.keyboard.photos[]` y `seo.ogImage`. |
+| `hotspot` | `{ x, y }` (0–1) | Punto que se conserva al recortar (`object-position`). Es el hotspot nativo de Sanity (que además guarda `width` y `height`). |
 
 ### Texto enriquecido (Portable Text simplificado)
 Arreglo de bloques `block` (un párrafo cada uno) con `children[]` de tipo `span { text, marks[], href? }`.
-Marcas: `strong` (negrita), `em` (itálica), `medium` (peso 500), `underline`. `href` vuelve el tramo un enlace
-(en Sanity: anotación `link`).
+Marcas: `strong` (negrita), `em` (itálica), `medium` (peso 500), `underline`. `href` vuelve el tramo un enlace.
+
+En el Studio es Portable Text estándar limitado a eso mismo: un solo estilo (párrafo), sin listas, esos cuatro
+decoradores y la anotación `link { href }` (acepta `https://…`, `/ruta/`, `#ancla`, `mailto:` y `tel:`).
+El enlace vive en `markDefs` y `normalize()` lo devuelve al `href` del tramo (ver la tabla de arriba).
 
 ### Color (`tone`)
 Un token de marca o un hex puntual. Tokens: `negro`, `blanco`, `morado` #5b0e96, `rosa` #e56aab, `magenta` #f756ef,
 `amarillo` #ffc130, `verde` #3eaf3f, `rojo` #ff6058, `cian` #30e0ff, `ocre` #b05400, `gris` #6b6b6b.
-En el Studio: lista de tokens + campo de color libre.
+En el Studio es el tipo `tone`: un string con un selector propio (`studio/schemas/ToneInput.tsx`) que ofrece los tokens
+como botones con muestra y un campo de hex libre; se valida que sea un token o un hex. Los tokens están en
+`studio/schemas/tones.ts`: si se agrega uno a `styles.css`, agregarlo también allí y en `Tone` (`types.ts`).
 
 ### Posición en la retícula (`place`)
 `{ col, row, cols, rows?, z? }`. El lienzo de escritorio tiene 144 columnas (1 unidad = 10 px en el diseño de 1440)
@@ -44,7 +75,7 @@ En tablet y móvil se ignora: los elementos fluyen **en el orden del arreglo**, 
 |---|---|---|
 | `siteName` | string | "Ciudad y Cuerpo" |
 | `siteUrl` | url | |
-| `headerTitle` | tramos | "ciudad *y* cuerpo" (la "y" con marca `em`) |
+| `headerTitle` | tramos | "ciudad *y* cuerpo" (la "y" con marca `em`). En el Studio: un bloque de un párrafo |
 | `brandLabel` | string | "LAB." |
 | `menuLabel` | string | "MENÚ" |
 | `menu[]` | `{ label, href }` | Los 7 enlaces del panel magenta |
@@ -58,7 +89,7 @@ En tablet y móvil se ignora: los elementos fluyen **en el orden del arreglo**, 
 | Campo | Tipo | Notas |
 |---|---|---|
 | `title` | string | |
-| `slug` | slug | Vacío para Inicio |
+| `slug` | slug | Vacío para Inicio. En Sanity «vacío» es no tener el campo; el Studio lo permite en una sola página y la consulta lo devuelve como `""` |
 | `header` | `display` \| `small` \| `none` | `display`: titular grande + "LAB." (Inicio). `small`: titular de 30 px sobre el hero. `none`: solo MENÚ. |
 | `menuTone` | color | Color de MENÚ cuando va sobre la foto del hero |
 | `footerTone` | color | Color del footer en esta página |
@@ -100,7 +131,7 @@ Todas llevan `_type`, `_key` y `anchor?` (id para enlaces internos).
 |---|---|
 | `imageItem` | `image`, `fit?` (`cover`/`contain`), `rotate?` (grados), `flip?` (`x`/`y`), `radius?` (px), `drift?` (parallax), `href?`, `caption?` |
 | `textItem` | `body` (texto enriquecido), `tone?`, `size?` (px de diseño; 24 por defecto), `font?` (`sans`/`mono`/`doto`/`serif`), `weight?`, `align?`, `nowrap?`, `level?` (1–3: el primer párrafo sale como encabezado) |
-| `displayTitle` | `text` (tramos; `em` = itálica, `\n` = salto), `tone`, `italic?`, `rotate?` (0/90/-90), `size?` (119.333 por defecto), `align?`, `level?` |
+| `displayTitle` | `text` (tramos; `em` = itálica, `\n` = salto; en el Studio, un bloque de un párrafo donde Mayús + Intro es el salto), `tone`, `italic?`, `rotate?` (0/90/-90), `size?` (119.333 por defecto), `align?`, `level?` |
 | `card` | `label`, `href`, `image`, `size` (`s`/`m`/`l`) |
 | `rule` | `bleed?` (cruza toda la ventana), `tone?` |
 | `notice` | `title`, `body`, `tone?` |
@@ -133,14 +164,14 @@ dibujados con los colores del sitio, sin mosaicos de terceros.
 | `center` | `{ lat, lng }` | Centro inicial |
 | `zoom` | number | 15 muestra Chapinero |
 | `baseMap?` | string | Archivo del mapa base propio (por defecto `/assets/mapa/chapinero.json`); se genera con `site/scripts/mapa-base.py` |
-| `places[]` | lugar | Ver abajo. En Sanity conviene un documento `place` y aquí referencias |
+| `places[]` | lugar | Ver abajo. En el Studio son objetos `mapPlace` dentro de la sección (no documentos aparte) |
 | `demoLabel?` | string | Aviso mientras haya lugares de relleno |
 | `placeholder?` | imagen | Se ve mientras carga el mapa o sin JavaScript |
 | `note?` | texto | Fuentes y fecha de actualización |
 
-**Lugar**: `name`, `category` (la `key` de la leyenda), `kind?` ("Comedor comunitario"), `lat`, `lng` (en Sanity: tipo `geopoint`),
+**Lugar**: `name`, `category` (la `key` de la leyenda), `kind?` ("Comedor comunitario"), `lat`, `lng` (números, grados decimales; no se usa `geopoint` para conservar la forma de `types.ts`),
 `address`, `service?`, `schedule?` (horario como se lee), `hours[]?` (`{ days[], open, close }`: días 0 = domingo a 6 = sábado,
-horas "HH:MM" en 24 h, hora de Bogotá; alimenta el chip Abierto/Cerrado), `photo?`, `demo?` (lugar inventado: la tarjeta dice "Ejemplo").
+horas "HH:MM" en 24 h, hora de Bogotá, con "24:00" como cierre de un lugar abierto todo el día; alimenta el chip Abierto/Cerrado), `photo?`, `demo?` (lugar inventado: la tarjeta dice "Ejemplo").
 
 ### `gallery`
 `title?`, `heading?`, `body?`, `images[]` (`{ image, caption? }`; entre 8 y 12 fotos).
