@@ -47,8 +47,12 @@
     });
   }
 
-  /* ---------- MENÚ con fondo blanco cuando ya no está sobre la cabecera ---------- */
-  const onScroll = () => root.classList.toggle("is-scrolled", scrollY > 40);
+  /* ---------- Estado de scroll: muestra el logo fijo al dejar atrás el encabezado ---------- */
+  const head = document.querySelector(".header--display");
+  const onScroll = () => {
+    root.classList.toggle("is-scrolled", scrollY > 40);
+    root.classList.toggle("is-past", scrollY > (head ? head.offsetTop + head.offsetHeight : innerHeight * 0.5)); // logo fijo
+  };
   addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 

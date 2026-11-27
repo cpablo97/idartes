@@ -90,7 +90,11 @@ main { display: block; }
 .menu-btn { position: absolute; top: 1.4rem; right: 1.6rem; display: flex; align-items: center; gap: .7rem; padding: .6rem .8rem; color: var(--menu-tone); transition: background-color .3s, color .3s; }
 .menu-btn__sq { width: 1.9rem; height: 1.9rem; background: currentColor; }
 .menu-btn__label { font-size: 1.6rem; font-weight: 600; letter-spacing: .1em; line-height: 1.5; text-decoration: underline; text-decoration-color: var(--rosa); text-decoration-thickness: 1px; text-underline-offset: .22em; }
-.is-scrolled .menu-btn, .menu-btn[aria-expanded="true"] { background: var(--blanco); color: var(--ocre); }
+/* Al bajar, MENÚ vuelve a su color (en las portadas oscuras arranca en blanco); nunca lleva fondo. */
+.is-scrolled .menu-btn, .menu-btn[aria-expanded="true"] { color: var(--ocre); }
+/* Logo fijo: en las páginas sin cabecera pequeña aparece al dejar atrás el encabezado. Sin fondo, siempre encima. */
+.logo-fixed { position: absolute; left: 2rem; top: 1.8rem; font-family: var(--mono); font-weight: 400; font-size: 2.4rem; line-height: 1.19; letter-spacing: 0; color: var(--negro); text-decoration: none; white-space: nowrap; opacity: 0; visibility: hidden; transition: opacity .3s, visibility .3s; }
+.is-past .logo-fixed { opacity: 1; visibility: visible; }
 .menu { position: absolute; top: 5.8rem; right: 1.6rem; max-width: calc(100vw - 3.2rem); padding: 3rem; background: var(--magenta); color: var(--blanco); display: flex; flex-direction: column; align-items: flex-end; gap: 3rem; }
 .menu[hidden] { display: none; }
 .menu__close { width: 2.4rem; height: 2.4rem; }
@@ -107,7 +111,7 @@ main { display: block; }
 .header__title a { text-decoration: none; }
 .header--display { padding: 7rem 2rem 0; }
 .header--display .header__title { font-size: clamp(4.4rem, 13.4vw, 9rem); margin-top: .4rem; }
-.header--small { position: absolute; left: 50%; translate: -50% 0; top: 0; height: 0; }
+.header--small { position: fixed; left: 50%; translate: -50% 0; top: 0; height: 0; z-index: 100; }
 .header--small .header__brand { display: none; }
 .header--small .header__title { position: absolute; left: 2rem; top: 1.8rem; font-size: 2.4rem; white-space: nowrap; }
 
@@ -265,7 +269,7 @@ main { display: block; }
   .explora__row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .explora .card__label { font-size: 1.3rem; }
   .header--display { padding-inline: 4rem; }
-  .header--small .header__title { left: 4rem; top: 2.2rem; font-size: 2.8rem; }
+  .header--small .header__title, .logo-fixed { left: 4rem; top: 2.2rem; font-size: 2.8rem; }
   .video__intro, .video__caption, .footer__in { padding-inline: 4rem; }
   .hero__note { left: 4rem; }
   .menu-btn { right: 3.2rem; top: 2rem; }
@@ -286,7 +290,7 @@ main { display: block; }
   .header--display { height: 12rem; padding: 0; }
   .header--display .header__brand { position: absolute; left: 6.1rem; top: 7.3rem; }
   .header--display .header__title { position: absolute; left: 9.9rem; top: .1rem; margin: 0; font-size: var(--display); white-space: nowrap; }
-  .header--small .header__title { left: 6.986rem; top: 6.7rem; font-size: 3.016rem; }
+  .header--small .header__title, .logo-fixed { left: 6.986rem; top: 6.7rem; font-size: 3.016rem; }
 
   .canvas { display: grid; grid-template-columns: repeat(144, 1rem); grid-template-rows: repeat(var(--rows, 1), 1rem); grid-auto-rows: 1rem; gap: 0; padding: 0; }
   .at { grid-column: var(--c) / span var(--w); grid-row: var(--r) / span var(--h, 1); z-index: var(--z, auto); min-width: 0; align-self: start; }
