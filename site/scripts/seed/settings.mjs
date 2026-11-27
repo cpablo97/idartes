@@ -27,7 +27,7 @@ export default {
       credits: [
         { role: "Escritura y organización de contenidos", name: "José Alberto Miranda Álvarez" },
         { role: "Diseño gráfico y visual", name: "Eduardo Antonio Castro Patiño" },
-        { role: "Desarrollo web", name: "Pablo Campuzano" },
+        { role: "Desarrollo web", name: "Órbita Studio" },
       ],
     },
     logos: [{ image: svg("/assets/images/comun/artefactum.svg", 285, 143, "ARTEfactum es Idartes") }],
