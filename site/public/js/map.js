@@ -95,7 +95,7 @@
       const state = card.querySelector("[data-state]");
       const open = isOpen(p.hours);
       state.hidden = open === null;
-      if (open !== null) { state.textContent = open ? "Abierto" : "Cerrado"; state.classList.toggle("is-closed", !open); }
+      if (open !== null) { state.textContent = open ? state.dataset.open : state.dataset.closed; state.classList.toggle("is-closed", !open); }
       // Deja el marcador a la vista: a la derecha de la tarjeta en escritorio, arriba de ella en móvil.
       const wide = frame.clientWidth >= 1000;
       const target = map.project([p.lat, p.lng], map.getZoom()).subtract(wide ? [card.offsetWidth / 2 + 40, 0] : [0, -frame.clientHeight / 4]);

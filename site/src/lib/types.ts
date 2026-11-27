@@ -405,7 +405,9 @@ export type Settings = {
     realization?: { title: string; credits: { _key: string; role: string; name: string }[] };
   };
   seo: { title: string; description: string; ogImage?: Img };
-  labels: Record<"menu" | "openMenu" | "closeMenu" | "skip" | "play" | "pending" | "prev" | "next" | "close" | "home", string>;
+  labels: Record<"menu" | "openMenu" | "closeMenu" | "skip" | "play" | "pending" | "prev" | "next" | "close" | "home" | "mapFilter" | "mapAddress" | "mapService" | "mapCost" | "mapSchedule" | "mapDirections" | "mapOutside" | "mapExample" | "open" | "closed", string>;
+  /** Página 404. `heading` y `emphasis` forman el título en dos renglones. */
+  notFound: { title: string; heading: string; emphasis: string; body: string };
 };
 
 export type Content = { settings: Settings; pages: Page[] };

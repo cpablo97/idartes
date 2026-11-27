@@ -5,11 +5,11 @@ import { getContent } from "../lib/content";
 const content = await getContent();
 const { settings } = content;
 ---
-<Base content={content} title="Página no encontrada" noindex>
+<Base content={content} title={settings.notFound.title} noindex>
   <section class="notfound">
     <p class="notfound__code" aria-hidden="true">404</p>
-    <h1 class="display" style="color:var(--rojo)">esta calle<br><em>no existe.</em></h1>
-    <p>La dirección que buscas no está en el mapa. Puedes volver al inicio o seguir por alguno de estos caminos:</p>
+    <h1 class="display" style="color:var(--rojo)">{settings.notFound.heading}<br><em>{settings.notFound.emphasis}</em></h1>
+    <p>{settings.notFound.body}</p>
     <ul>
       {settings.menu.map((m) => <li><a href={m.href}>{m.label}</a></li>)}
     </ul>

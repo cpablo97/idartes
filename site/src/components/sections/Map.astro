@@ -37,7 +37,7 @@ const data = JSON.stringify({
       {s.body && <div class="map__body">{paragraphs(s.body).map((h) => <p set:html={h} />)}</div>}
     </div>
     {s.legend.length > 0 && (
-      <ul class="map__legend" data-reveal="text" aria-label="Filtrar lugares por tipo">
+      <ul class="map__legend" data-reveal="text" aria-label={settings.labels.mapFilter}>
         {s.legend.map((l) => (
           <li><button class="map__filter" type="button" aria-pressed="true" data-cat={l.key}><span class="map__dot" style={`background:${l.color}`} aria-hidden="true"></span>{l.label}</button></li>
         ))}
@@ -62,16 +62,16 @@ const data = JSON.stringify({
           <div class="place__body">
             <h3 class="place__name" id={`lugar-${p._key}-nombre`} tabindex="-1">{p.name}</h3>
             <p class="place__chips">
-              <span class="place__chip place__chip--state" data-state hidden></span>
-              {p.demo && <span class="place__chip place__chip--demo">Ejemplo</span>}
+              <span class="place__chip place__chip--state" data-state data-open={settings.labels.open} data-closed={settings.labels.closed} hidden></span>
+              {p.demo && <span class="place__chip place__chip--demo">{settings.labels.mapExample}</span>}
             </p>
             <dl class="place__rows">
-              <div class="place__row"><dt>Dirección</dt><dd>{p.address}{p.locality && p.locality !== "Chapinero" ? ` · ${p.locality}` : ""}</dd></div>
-              {p.service && <div class="place__row"><dt>Servicio</dt><dd>{p.service}</dd></div>}
-              {p.cost && <div class="place__row"><dt>Costo</dt><dd>{p.cost}</dd></div>}
-              {p.schedule && <div class="place__row"><dt>Horario</dt><dd>{p.schedule}</dd></div>}
+              <div class="place__row"><dt>{settings.labels.mapAddress}</dt><dd>{p.address}{p.locality && p.locality !== "Chapinero" ? ` · ${p.locality}` : ""}</dd></div>
+              {p.service && <div class="place__row"><dt>{settings.labels.mapService}</dt><dd>{p.service}</dd></div>}
+              {p.cost && <div class="place__row"><dt>{settings.labels.mapCost}</dt><dd>{p.cost}</dd></div>}
+              {p.schedule && <div class="place__row"><dt>{settings.labels.mapSchedule}</dt><dd>{p.schedule}</dd></div>}
             </dl>
-            <a class="place__go" href={route(p)} target="_blank" rel="noopener"><span class="place__go-text">Cómo llegar<span class="sr"> a {p.name} (se abre en Google Maps)</span></span><span class="card__gt" aria-hidden="true">&gt;</span></a>
+            <a class="place__go" href={route(p)} target="_blank" rel="noopener"><span class="place__go-text">{settings.labels.mapDirections}<span class="sr"> a {p.name} (se abre en Google Maps)</span></span><span class="card__gt" aria-hidden="true">&gt;</span></a>
           </div>
         </article>
       ))}
@@ -90,10 +90,10 @@ const data = JSON.stringify({
               <li>
                 {p.lat != null && p.lng != null
                   ? <button class="map__goto" type="button" data-goto={p._key}>{p.name}</button>
-                  : <strong class="map__off">{p.name}<span> (fuera del área del mapa)</span></strong>}
-                {p.demo && <span class="place__chip place__chip--demo">Ejemplo</span>}
+                  : <strong class="map__off">{p.name}<span> {settings.labels.mapOutside}</span></strong>}
+                {p.demo && <span class="place__chip place__chip--demo">{settings.labels.mapExample}</span>}
                 <span>{[p.category !== l.key ? p.kind : "", `${p.address}${p.locality && p.locality !== "Chapinero" ? `, ${p.locality}` : ""}`, p.service, p.cost, p.schedule].filter(Boolean).join(" · ")}</span>
-                <a href={route(p)} target="_blank" rel="noopener">Cómo llegar<span class="sr"> a {p.name}</span></a>
+                <a href={route(p)} target="_blank" rel="noopener">{settings.labels.mapDirections}<span class="sr"> a {p.name}</span></a>
               </li>
             ))}
           </ul>
