@@ -443,7 +443,7 @@ export const person = defineType({
           name: "personLink",
           title: "Enlace",
           fields: [
-            defineField({ name: "label", title: "Texto", type: "string", description: "p. ej. Instagram", validation: req }),
+            defineField({ name: "label", title: "Texto", type: "string", description: "p. ej. Portafolio o Contacto", validation: req }),
             defineField({ name: "url", title: "Dirección", type: "url", validation: (r) => r.required().uri({ scheme: ["http", "https", "mailto"] }) }),
           ],
           preview: { select: { title: "label", subtitle: "url" } },

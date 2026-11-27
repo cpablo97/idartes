@@ -1,6 +1,7 @@
 // Inicio — frame 1:1289 (1440 × 7397). Las y son las del frame de Figma.
 import { images, crop, t, b, i, body, canvas, image, text, title, card } from "./_lib.mjs";
 const img = images("inicio");
+const como = images("como-lo-hicimos");
 
 const hero = canvas(200);
 const cards = canvas(2760);
@@ -38,6 +39,7 @@ export default {
       _type: "video",
       anchor: "microdocumental",
       youtubeId: "owJ4HOjgowI",
+      poster: como("microdocumental-poster", "Fotograma del microdocumental: Ariel, recicladora de oficio, mira a la cámara junto a su carreta"),
       title: "Microdocumental: los recorridos de Ariel, recicladora de oficio",
       intro: body("Acompañamos a Ariel, recicladora de oficio, en algunos de sus recorridos por la ciudad."),
       caption: body("Este microdocumental nos acerca a su trabajo cotidiano y a las experiencias de quienes recuperan materiales y hacen parte de la vida de Chapinero."),

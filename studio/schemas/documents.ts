@@ -167,6 +167,32 @@ export const settings = defineType({
           ],
         }),
         toneField("tone", "Color de la franja", { description: "Color por defecto del pie; cada página puede cambiarlo.", validation: req }),
+        defineField({
+          name: "realization",
+          title: "Créditos de realización",
+          type: "object",
+          description: "Quiénes hicieron el sitio. Se muestra en letra pequeña al cierre del pie.",
+          fields: [
+            defineField({ name: "title", title: "Título", type: "string" }),
+            defineField({
+              name: "credits",
+              title: "Créditos",
+              type: "array",
+              of: [
+                defineArrayMember({
+                  type: "object",
+                  name: "realizationCredit",
+                  title: "Crédito",
+                  fields: [
+                    defineField({ name: "role", title: "Rol", type: "string", validation: req }),
+                    defineField({ name: "name", title: "Nombre", type: "string", validation: req }),
+                  ],
+                  preview: { select: { title: "name", subtitle: "role" } },
+                }),
+              ],
+            }),
+          ],
+        }),
       ],
       validation: req,
     }),

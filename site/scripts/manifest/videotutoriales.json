@@ -1,0 +1,52 @@
+{
+  "video-1": {
+    "webp": [
+      "/assets/images/videotutoriales/video-1-480.webp",
+      "/assets/images/videotutoriales/video-1-960.webp",
+      "/assets/images/videotutoriales/video-1-1600.webp"
+    ],
+    "fallback": "/assets/images/videotutoriales/video-1.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "video-2": {
+    "webp": [
+      "/assets/images/videotutoriales/video-2-480.webp",
+      "/assets/images/videotutoriales/video-2-960.webp",
+      "/assets/images/videotutoriales/video-2-1600.webp"
+    ],
+    "fallback": "/assets/images/videotutoriales/video-2.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "video-3": {
+    "webp": [
+      "/assets/images/videotutoriales/video-3-480.webp",
+      "/assets/images/videotutoriales/video-3-960.webp",
+      "/assets/images/videotutoriales/video-3-1600.webp"
+    ],
+    "fallback": "/assets/images/videotutoriales/video-3.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "video-4": {
+    "webp": [
+      "/assets/images/videotutoriales/video-4-480.webp",
+      "/assets/images/videotutoriales/video-4-960.webp",
+      "/assets/images/videotutoriales/video-4-1600.webp"
+    ],
+    "fallback": "/assets/images/videotutoriales/video-4.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  "video-5": {
+    "webp": [
+      "/assets/images/videotutoriales/video-5-480.webp",
+      "/assets/images/videotutoriales/video-5-960.webp",
+      "/assets/images/videotutoriales/video-5-1600.webp"
+    ],
+    "fallback": "/assets/images/videotutoriales/video-5.jpg",
+    "width": 1600,
+    "height": 900
+  }
+}

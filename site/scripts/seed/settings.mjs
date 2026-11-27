@@ -22,6 +22,14 @@ export default {
     // El nodo de Figma termina en "(IDARTES), " (frase sin cerrar); se cierra con punto como en el render.
     credit: "Proyecto resultado de ARTEFACTUM — Laboratorio Artístico de Innovación Social: El diseño y lo digital en Chapinero 2026. Instituto Distrital de las Artes (IDARTES).",
     tone: "rosa",
+    realization: {
+      title: "Realización y desarrollo de esta plataforma",
+      credits: [
+        { role: "Escritura y organización de contenidos", name: "José Alberto Miranda Álvarez" },
+        { role: "Diseño gráfico y visual", name: "Eduardo Antonio Castro Patiño" },
+        { role: "Desarrollo web", name: "Pablo Campuzano" },
+      ],
+    },
     logos: [{ image: svg("/assets/images/comun/artefactum.svg", 285, 143, "ARTEfactum es Idartes") }],
   },
   seo: {

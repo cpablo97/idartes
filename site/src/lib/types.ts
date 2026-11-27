@@ -397,7 +397,13 @@ export type Settings = {
   brandLabel: string; // "LAB."
   menuLabel: string; // "MENÚ"
   menu: { _key: string; label: string; href: string }[];
-  footer: { credit: string; tone: Tone; logos: { _key: string; image: Img; url?: string }[] };
+  footer: {
+    credit: string;
+    tone: Tone;
+    logos: { _key: string; image: Img; url?: string }[];
+    /** Créditos de quienes hicieron el sitio, en letra pequeña al cierre del pie. */
+    realization?: { title: string; credits: { _key: string; role: string; name: string }[] };
+  };
   seo: { title: string; description: string; ogImage?: Img };
   labels: Record<"menu" | "openMenu" | "closeMenu" | "skip" | "play" | "pending" | "prev" | "next" | "close" | "home", string>;
 };

@@ -11,6 +11,15 @@ const cierre = canvas(14618);
  * se traduce a punto focal (`crop()` → hotspot) + `zoom` (ancho del recorte / 100, porque todas las fotos llenan el marco por el ancho).
  * Con `flip` la foto va espejada: el punto focal se da sobre la foto original, por eso su x se invierte.
  */
+// Portafolios y redes (hoja "portafolios_participantes"). Las etiquetas no nombran la plataforma, como pidió el cliente.
+// TODO: la hoja asigna https://www.andressaray.com/ a Sebastián Espitia Riaño; por el dominio parece ser de Carlos Andrés Saray. Sin confirmar, no se enlaza.
+const ENLACES = {
+  "Diana Carolina Castañeda Barragán": [{ label: "Portafolio", url: "https://www.behance.net/dianalacastaneda" }],
+  "Camilo Fernando Castañeda Murcia": [{ label: "Portafolio", url: "https://www.behance.net/camilo_castaneda" }, { label: "Contacto", url: "https://www.linkedin.com/in/camilo-casta%C3%B1eda" }],
+  "José Alberto Miranda Álvarez": [{ label: "Portafolio", url: "https://www.behance.net/josemiranda95" }],
+  "Eduardo Antonio Castro Patiño": [{ label: "Portafolio", url: "https://www.behance.net/eduardocastro120" }],
+  "Nelson Mauricio Rodríguez Ayala": [{ label: "Contacto", url: "https://www.instagram.com/mauricio_rodriguez_145" }],
+};
 function persona(name, role, bio, archivo, alt, recorte, flip = false) {
   let hotspot;
   let zoom;
@@ -20,7 +29,7 @@ function persona(name, role, bio, archivo, alt, recorte, flip = false) {
     if (flip) hotspot.x = Math.round((1 - hotspot.x) * 100) / 100;
     if (width > 100.5) zoom = Math.round(width * 100) / 10000;
   }
-  return { name, role, bio: body(bio), photo: img(archivo, alt, hotspot), ...(zoom ? { zoom } : {}), ...(flip ? { flip: true } : {}) };
+  return { name, role, bio: body(bio), photo: img(archivo, alt, hotspot), ...(zoom ? { zoom } : {}), ...(flip ? { flip: true } : {}), ...(ENLACES[name] ? { links: ENLACES[name] } : {}) };
 }
 
 export default {

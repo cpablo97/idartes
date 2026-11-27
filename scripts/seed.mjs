@@ -107,6 +107,7 @@ const MEMBER_TYPES = {
   steps: "timelineStep",
   menu: "menuLink",
   logos: "footerLogo",
+  credits: "realizationCredit",
 };
 /** Campos que en el seed son `Span[]` y en el Studio un bloque de Portable Text. */
 const SPAN_FIELDS = new Set(["text", "headerTitle"]);

@@ -15,5 +15,13 @@ const tone = color(page?.footerTone ?? settings.footer.tone);
         <li>{l.url ? <a href={l.url} target="_blank" rel="noopener"><Picture img={l.image} sizes="285px" /></a> : <Picture img={l.image} sizes="285px" />}</li>
       ))}
     </ul>
+    {settings.footer.realization && settings.footer.realization.credits.length > 0 && (
+      <div class="footer__made">
+        <p class="footer__made-title">{settings.footer.realization.title}</p>
+        <ul>
+          {settings.footer.realization.credits.map((c) => <li><span>{c.role}:</span> {c.name}</li>)}
+        </ul>
+      </div>
+    )}
   </div>
 </footer>

@@ -1,6 +1,7 @@
 // Para recicladores — frame 1:133 (1440 × 16776). Las y son las del frame de Figma.
 import { images, crop, t, b, m, a, body, canvas, image, text, title, rule, explora } from "./_lib.mjs";
 const img = images("para-recicladores");
+const tuto = images("videotutoriales");
 const inicio = images("inicio");
 
 const intro = canvas(927);
@@ -145,31 +146,36 @@ export default {
       videos: [
         {
           label: "Video 1",
-          youtubeId: "TODO_VIDEO_1", // TODO: ID real de YouTube (lo que va después de "v=").
+          youtubeId: "tEkV2sXb8CE",
+          poster: tuto("video-1", "Portada del videotutorial 1: Calentamiento antes de salir a reciclar"),
           title: "Prepara tu cuerpo antes de salir",
           description: "Antes de arrancar la jornada, dedica unos minutos a mover hombros, escápulas y muñecas. Son zonas que usas constantemente al empujar, levantar y cargar material.",
         },
         {
           label: "Video 2",
-          youtubeId: "TODO_VIDEO_2", // TODO: ID real de YouTube.
+          youtubeId: "h4_8pcst8U4",
+          poster: tuto("video-2", "Portada del videotutorial 2: Ejercicios de piernas y forma de agacharse"),
           title: "Tren inferior: dale fuerza a tus piernas",
           description: "En este video aprenderás ejercicios como sentadillas, estocadas y elevaciones de talón, además de formas de recoger material del suelo cuidando la postura.",
         },
         {
           label: "Video 3",
-          youtubeId: "TODO_VIDEO_3", // TODO: ID real de YouTube.
+          youtubeId: "GRp43h0o3VY",
+          poster: tuto("video-3", "Portada del videotutorial 3: Ejercicios de espalda y hombros"),
           title: "Trabajo escapular: mueve mejor tus hombros",
           description: "Al empujar la carreta y cargar material, tus hombros y tu espalda hacen un gran esfuerzo. Aquí encontrarás ejercicios para trabajar las escápulas y mejorar el control de los hombros.",
         },
         {
           label: "Video 4",
-          youtubeId: "TODO_VIDEO_4", // TODO: ID real de YouTube.
+          youtubeId: "takQTBJNOVY",
+          poster: tuto("video-4", "Portada del videotutorial 4: Ejercicios de abdomen"),
           title: "Abdomen: encuentra tu punto de apoyo",
           description: "En este video encontrarás ejercicios de distintos niveles, que puedes hacer en el piso, con apoyo o colgado de una barra, para trabajar la estabilidad del cuerpo.",
         },
         {
           label: "Video 5",
-          youtubeId: "TODO_VIDEO_5", // TODO: ID real de YouTube.
+          youtubeId: "mXYVKL0HkSo",
+          poster: tuto("video-5", "Portada del videotutorial 5: Estiramientos al terminar la jornada"),
           title: "Tracciones: dale un respiro a tu espalda",
           description: "En este video encontrarás ejercicios de estiramiento y tracción, incluidas algunas opciones con una barra. Hazlos con calma y sin forzar el movimiento.",
         },

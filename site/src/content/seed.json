@@ -66,6 +66,26 @@
     "footer": {
       "credit": "Proyecto resultado de ARTEFACTUM — Laboratorio Artístico de Innovación Social: El diseño y lo digital en Chapinero 2026. Instituto Distrital de las Artes (IDARTES).",
       "tone": "rosa",
+      "realization": {
+        "title": "Realización y desarrollo de esta plataforma",
+        "credits": [
+          {
+            "role": "Escritura y organización de contenidos",
+            "name": "José Alberto Miranda Álvarez",
+            "_key": "sfrc0"
+          },
+          {
+            "role": "Diseño gráfico y visual",
+            "name": "Eduardo Antonio Castro Patiño",
+            "_key": "sfrc1"
+          },
+          {
+            "role": "Desarrollo web",
+            "name": "Pablo Campuzano",
+            "_key": "sfrc2"
+          }
+        ]
+      },
       "logos": [
         {
           "image": {
@@ -354,6 +374,19 @@
           "_type": "video",
           "anchor": "microdocumental",
           "youtubeId": "owJ4HOjgowI",
+          "poster": {
+            "local": {
+              "webp": [
+                "/assets/images/como-lo-hicimos/microdocumental-poster-480.webp",
+                "/assets/images/como-lo-hicimos/microdocumental-poster-960.webp",
+                "/assets/images/como-lo-hicimos/microdocumental-poster-1600.webp"
+              ],
+              "fallback": "/assets/images/como-lo-hicimos/microdocumental-poster.jpg",
+              "width": 1600,
+              "height": 900
+            },
+            "alt": "Fotograma del microdocumental: Ariel, recicladora de oficio, mira a la cámara junto a su carreta"
+          },
           "title": "Microdocumental: los recorridos de Ariel, recicladora de oficio",
           "intro": [
             {
@@ -2030,35 +2063,100 @@
           "videos": [
             {
               "label": "Video 1",
-              "youtubeId": "TODO_VIDEO_1",
+              "youtubeId": "tEkV2sXb8CE",
+              "poster": {
+                "local": {
+                  "webp": [
+                    "/assets/images/videotutoriales/video-1-480.webp",
+                    "/assets/images/videotutoriales/video-1-960.webp",
+                    "/assets/images/videotutoriales/video-1-1600.webp"
+                  ],
+                  "fallback": "/assets/images/videotutoriales/video-1.jpg",
+                  "width": 1600,
+                  "height": 900
+                },
+                "alt": "Portada del videotutorial 1: Calentamiento antes de salir a reciclar"
+              },
               "title": "Prepara tu cuerpo antes de salir",
               "description": "Antes de arrancar la jornada, dedica unos minutos a mover hombros, escápulas y muñecas. Son zonas que usas constantemente al empujar, levantar y cargar material.",
               "_key": "pas4v0"
             },
             {
               "label": "Video 2",
-              "youtubeId": "TODO_VIDEO_2",
+              "youtubeId": "h4_8pcst8U4",
+              "poster": {
+                "local": {
+                  "webp": [
+                    "/assets/images/videotutoriales/video-2-480.webp",
+                    "/assets/images/videotutoriales/video-2-960.webp",
+                    "/assets/images/videotutoriales/video-2-1600.webp"
+                  ],
+                  "fallback": "/assets/images/videotutoriales/video-2.jpg",
+                  "width": 1600,
+                  "height": 900
+                },
+                "alt": "Portada del videotutorial 2: Ejercicios de piernas y forma de agacharse"
+              },
               "title": "Tren inferior: dale fuerza a tus piernas",
               "description": "En este video aprenderás ejercicios como sentadillas, estocadas y elevaciones de talón, además de formas de recoger material del suelo cuidando la postura.",
               "_key": "pas4v1"
             },
             {
               "label": "Video 3",
-              "youtubeId": "TODO_VIDEO_3",
+              "youtubeId": "GRp43h0o3VY",
+              "poster": {
+                "local": {
+                  "webp": [
+                    "/assets/images/videotutoriales/video-3-480.webp",
+                    "/assets/images/videotutoriales/video-3-960.webp",
+                    "/assets/images/videotutoriales/video-3-1600.webp"
+                  ],
+                  "fallback": "/assets/images/videotutoriales/video-3.jpg",
+                  "width": 1600,
+                  "height": 900
+                },
+                "alt": "Portada del videotutorial 3: Ejercicios de espalda y hombros"
+              },
               "title": "Trabajo escapular: mueve mejor tus hombros",
               "description": "Al empujar la carreta y cargar material, tus hombros y tu espalda hacen un gran esfuerzo. Aquí encontrarás ejercicios para trabajar las escápulas y mejorar el control de los hombros.",
               "_key": "pas4v2"
             },
             {
               "label": "Video 4",
-              "youtubeId": "TODO_VIDEO_4",
+              "youtubeId": "takQTBJNOVY",
+              "poster": {
+                "local": {
+                  "webp": [
+                    "/assets/images/videotutoriales/video-4-480.webp",
+                    "/assets/images/videotutoriales/video-4-960.webp",
+                    "/assets/images/videotutoriales/video-4-1600.webp"
+                  ],
+                  "fallback": "/assets/images/videotutoriales/video-4.jpg",
+                  "width": 1600,
+                  "height": 900
+                },
+                "alt": "Portada del videotutorial 4: Ejercicios de abdomen"
+              },
               "title": "Abdomen: encuentra tu punto de apoyo",
               "description": "En este video encontrarás ejercicios de distintos niveles, que puedes hacer en el piso, con apoyo o colgado de una barra, para trabajar la estabilidad del cuerpo.",
               "_key": "pas4v3"
             },
             {
               "label": "Video 5",
-              "youtubeId": "TODO_VIDEO_5",
+              "youtubeId": "mXYVKL0HkSo",
+              "poster": {
+                "local": {
+                  "webp": [
+                    "/assets/images/videotutoriales/video-5-480.webp",
+                    "/assets/images/videotutoriales/video-5-960.webp",
+                    "/assets/images/videotutoriales/video-5-1600.webp"
+                  ],
+                  "fallback": "/assets/images/videotutoriales/video-5.jpg",
+                  "width": 1600,
+                  "height": 900
+                },
+                "alt": "Portada del videotutorial 5: Estiramientos al terminar la jornada"
+              },
               "title": "Tracciones: dale un respiro a tu espalda",
               "description": "En este video encontrarás ejercicios de estiramiento y tracción, incluidas algunas opciones con una barra. Hazlos con calma y sin forzar el movimiento.",
               "_key": "pas4v4"
@@ -7827,6 +7925,13 @@
                 }
               },
               "zoom": 1.2235,
+              "links": [
+                {
+                  "label": "Portafolio",
+                  "url": "https://www.behance.net/josemiranda95",
+                  "_key": "eqs2p2l0"
+                }
+              ],
               "_key": "eqs2p2"
             },
             {
@@ -7864,6 +7969,13 @@
                 }
               },
               "zoom": 1.3463,
+              "links": [
+                {
+                  "label": "Portafolio",
+                  "url": "https://www.behance.net/eduardocastro120",
+                  "_key": "eqs2p3l0"
+                }
+              ],
               "_key": "eqs2p3"
             },
             {
@@ -7939,6 +8051,18 @@
                 }
               },
               "zoom": 2.7261,
+              "links": [
+                {
+                  "label": "Portafolio",
+                  "url": "https://www.behance.net/camilo_castaneda",
+                  "_key": "eqs2p5l0"
+                },
+                {
+                  "label": "Contacto",
+                  "url": "https://www.linkedin.com/in/camilo-casta%C3%B1eda",
+                  "_key": "eqs2p5l1"
+                }
+              ],
               "_key": "eqs2p5"
             },
             {
@@ -8052,6 +8176,13 @@
                 }
               },
               "flip": true,
+              "links": [
+                {
+                  "label": "Portafolio",
+                  "url": "https://www.behance.net/dianalacastaneda",
+                  "_key": "eqs2p8l0"
+                }
+              ],
               "_key": "eqs2p8"
             },
             {
@@ -8090,6 +8221,13 @@
               },
               "zoom": 1.0332,
               "flip": true,
+              "links": [
+                {
+                  "label": "Contacto",
+                  "url": "https://www.instagram.com/mauricio_rodriguez_145",
+                  "_key": "eqs2p9l0"
+                }
+              ],
               "_key": "eqs2p9"
             },
             {

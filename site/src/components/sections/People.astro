@@ -30,7 +30,7 @@ const pct = (n: number) => `${Math.round(n * 100)}%`;
             {p.bio && <div class="person__bio">{paragraphs(p.bio).map((html) => <p set:html={html} />)}</div>}
             {p.links && p.links.length > 0 && (
               <ul class="person__links">
-                {p.links.map((l) => <li><a href={l.url} target="_blank" rel="noopener">{l.label}</a></li>)}
+                {p.links.map((l) => <li><a class="person__link" href={l.url} target="_blank" rel="noopener"><span class="person__link-text">{l.label}<span class="sr"> de {p.name} (se abre en otra pestaña)</span></span><span class="card__gt" aria-hidden="true">&gt;</span></a></li>)}
               </ul>
             )}
           </div>
