@@ -44,7 +44,7 @@
 
     const [west, south, east, north] = base.bbox;
     const map = L.map(canvas, {
-      center: [data.center.lat, data.center.lng], zoom: data.zoom, minZoom: 14, maxZoom: 18,
+      center: [data.center.lat, data.center.lng], zoom: data.zoom, minZoom: 13, maxZoom: 18,
       maxBounds: [[south, west], [north, east]], maxBoundsViscosity: 1,
       preferCanvas: true, scrollWheelZoom: false, zoomControl: false,
       zoomAnimation: !reduced, fadeAnimation: !reduced, markerZoomAnimation: !reduced,
@@ -118,7 +118,8 @@
       if (on) hidden.delete(cat); else hidden.add(cat);
       for (const p of data.places) {
         const m = markers.get(p.id);
-        if (hidden.has(p.category)) { m.remove(); if (active === p.id) close(false); } else m.addTo(map);
+        // Un lugar con varias categorías (comedor con baño) sigue visible mientras alguna esté activa.
+        if ((p.cats || [p.category]).every((c) => hidden.has(c))) { m.remove(); if (active === p.id) close(false); } else m.addTo(map);
       }
       root.querySelectorAll(".map__group").forEach((g) => (g.hidden = hidden.has(g.dataset.cat)));
     }));

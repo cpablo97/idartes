@@ -216,9 +216,12 @@ export const mapPlace = defineType({
   fieldsets: [{ name: "ubicacion", title: "Ubicación en el mapa", description: "Coordenadas del marcador. En Google Maps: clic derecho sobre el lugar → el primer renglón del menú son latitud y longitud.", options: { columns: 2 } }],
   fields: [
     defineField({ name: "name", title: "Nombre", type: "string", validation: req }),
-    defineField({ name: "category", title: "Categoría", type: "string", description: "La «clave» de una de las categorías de la leyenda de este mapa (p. ej. comedor, bano, acopio). Define el color del marcador.", validation: req }),
+    defineField({ name: "category", title: "Categoría", type: "string", description: "La «clave» de una de las categorías de la leyenda de este mapa (p. ej. comedor, bano, ccr, acopio). Define el color del marcador.", validation: req }),
     defineField({ name: "kind", title: "Tipo de lugar", type: "string", description: "Se lee bajo el nombre (p. ej. «Comedor comunitario»)." }),
+    defineField({ name: "also", title: "También es…", type: "array", of: [defineArrayMember({ type: "string" })], description: "Otras categorías que cumple este lugar (claves de la leyenda). Ejemplo: un comedor que además tiene baño lleva «bano», y aparece también al filtrar por baños." }),
     defineField({ name: "address", title: "Dirección", type: "string", validation: req }),
+    defineField({ name: "locality", title: "Localidad", type: "string", description: "Solo si no es Chapinero (p. ej. «Barrios Unidos»)." }),
+    defineField({ name: "cost", title: "Costo", type: "string", description: "P. ej. «Sin costo» o «Posible costo: $2.500 COP (por confirmar)»." }),
     defineField({ name: "service", title: "Servicio", type: "text", rows: 2, description: "Qué ofrece el lugar." }),
     defineField({ name: "schedule", title: "Horario (como se lee)", type: "string", description: "Tal cual debe aparecer en la tarjeta (p. ej. «Sábados · 12:00–3:00 p. m.»)." }),
     defineField({
@@ -245,8 +248,9 @@ export const mapPlace = defineType({
     }),
     imageField("photo", "Foto del lugar"),
     defineField({ name: "demo", title: "Lugar de ejemplo", type: "boolean", description: "Marca los lugares inventados de relleno: su tarjeta dice «Ejemplo». Desactívalo en los lugares reales." }),
-    { ...latField(), fieldset: "ubicacion" },
-    { ...lngField(), fieldset: "ubicacion" },
+    // En un lugar las coordenadas son opcionales: sin ellas no lleva marcador y solo aparece en la lista (queda fuera del área del mapa).
+    defineField({ name: "lat", title: "Latitud", type: "number", fieldset: "ubicacion", description: "Grados decimales; en Bogotá ronda 4,6 (p. ej. 4.6486). Vacío = el lugar solo sale en la lista.", validation: (r) => r.min(-90).max(90) }),
+    defineField({ name: "lng", title: "Longitud", type: "number", fieldset: "ubicacion", description: "Grados decimales; en Bogotá ronda −74 (p. ej. -74.0628).", validation: (r) => r.min(-180).max(180) }),
   ],
   preview: {
     select: { title: "name", kind: "kind", address: "address", demo: "demo", media: "photo" },

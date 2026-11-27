@@ -17,12 +17,16 @@ const ink = (hex?: string) => {
   const [r, g, b] = [0, 2, 4].map((i) => parseInt(m[1].slice(i, i + 2), 16));
   return 0.299 * r + 0.587 * g + 0.114 * b > 150 ? "#000" : "#fff";
 };
-const route = (lat: number, lng: number) => `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+// "Cómo llegar": por coordenadas si las hay; si no, por dirección.
+const route = (p: { lat?: number; lng?: number; address: string; locality?: string }) =>
+  `https://www.google.com/maps/dir/?api=1&destination=${p.lat != null && p.lng != null ? `${p.lat},${p.lng}` : encodeURIComponent(`${p.address}, ${p.locality ?? ""} Bogotá`)}`;
+const onMap = s.places.filter((p) => p.lat != null && p.lng != null);
+const cats = (p: { category: string; also?: string[] }) => [p.category, ...(p.also ?? [])];
 const data = JSON.stringify({
   center: s.center,
   zoom: s.zoom,
   base: s.baseMap ?? "/assets/mapa/chapinero.json",
-  places: s.places.map((p) => ({ id: p._key, name: p.name, category: p.category, color: cat(p.category)?.color ?? "#000", lat: p.lat, lng: p.lng, hours: p.hours ?? null })),
+  places: onMap.map((p) => ({ id: p._key, name: p.name, category: p.category, cats: cats(p), color: cat(p.category)?.color ?? "#000", lat: p.lat, lng: p.lng, hours: p.hours ?? null })),
 }).replace(/</g, "\\u003c");
 ---
 <section class="sec map" id={s.anchor} data-map>
@@ -46,7 +50,7 @@ const data = JSON.stringify({
     <div class="map__canvas" role="region" aria-label={`Mapa: ${s.title}`}></div>
     {s.demoLabel && <p class="map__pending">{s.demoLabel}</p>}
     <div class="map__cards">
-      {s.places.map((p) => (
+      {onMap.map((p) => (
         <article class="place" id={`lugar-${p._key}`} data-place={p._key} aria-labelledby={`lugar-${p._key}-nombre`} style={`--cat:${cat(p.category)?.color};--cat-ink:${ink(cat(p.category)?.color)}`} hidden>
           <header class="place__top">
             <p class="place__kind">{p.kind ?? cat(p.category)?.label}</p>
@@ -62,11 +66,12 @@ const data = JSON.stringify({
               {p.demo && <span class="place__chip place__chip--demo">Ejemplo</span>}
             </p>
             <dl class="place__rows">
-              <div class="place__row"><dt>Dirección</dt><dd>{p.address}</dd></div>
+              <div class="place__row"><dt>Dirección</dt><dd>{p.address}{p.locality && p.locality !== "Chapinero" ? ` · ${p.locality}` : ""}</dd></div>
               {p.service && <div class="place__row"><dt>Servicio</dt><dd>{p.service}</dd></div>}
+              {p.cost && <div class="place__row"><dt>Costo</dt><dd>{p.cost}</dd></div>}
               {p.schedule && <div class="place__row"><dt>Horario</dt><dd>{p.schedule}</dd></div>}
             </dl>
-            <a class="place__go" href={route(p.lat, p.lng)} target="_blank" rel="noopener"><span class="place__go-text">Cómo llegar<span class="sr"> a {p.name} (se abre en Google Maps)</span></span><span class="card__gt" aria-hidden="true">&gt;</span></a>
+            <a class="place__go" href={route(p)} target="_blank" rel="noopener"><span class="place__go-text">Cómo llegar<span class="sr"> a {p.name} (se abre en Google Maps)</span></span><span class="card__gt" aria-hidden="true">&gt;</span></a>
           </div>
         </article>
       ))}
@@ -76,16 +81,19 @@ const data = JSON.stringify({
   <details class="map__list">
     <summary>Ver la lista de lugares ({s.places.length})</summary>
     {s.legend.map((l) => {
-      const places = s.places.filter((p) => p.category === l.key);
+      const places = s.places.filter((p) => cats(p).includes(l.key));
       return places.length > 0 && (
         <div class="map__group" data-cat={l.key}>
           <h3><span class="map__dot" style={`background:${l.color}`} aria-hidden="true"></span>{l.label}</h3>
           <ul>
             {places.map((p) => (
               <li>
-                <button class="map__goto" type="button" data-goto={p._key}>{p.name}</button>{p.demo && <span class="place__chip place__chip--demo">Ejemplo</span>}
-                <span>{[p.address, p.service, p.schedule].filter(Boolean).join(" · ")}</span>
-                <a href={route(p.lat, p.lng)} target="_blank" rel="noopener">Cómo llegar<span class="sr"> a {p.name}</span></a>
+                {p.lat != null && p.lng != null
+                  ? <button class="map__goto" type="button" data-goto={p._key}>{p.name}</button>
+                  : <strong class="map__off">{p.name}<span> (fuera del área del mapa)</span></strong>}
+                {p.demo && <span class="place__chip place__chip--demo">Ejemplo</span>}
+                <span>{[p.category !== l.key ? p.kind : "", `${p.address}${p.locality && p.locality !== "Chapinero" ? `, ${p.locality}` : ""}`, p.service, p.cost, p.schedule].filter(Boolean).join(" · ")}</span>
+                <a href={route(p)} target="_blank" rel="noopener">Cómo llegar<span class="sr"> a {p.name}</span></a>
               </li>
             ))}
           </ul>

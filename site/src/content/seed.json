@@ -1036,67 +1036,41 @@
             },
             {
               "key": "bano",
-              "label": "Baños publicos",
+              "label": "Baños públicos",
               "color": "#95ff00",
               "_key": "pas2l1"
             },
             {
-              "key": "acopio",
-              "label": "Centros de acopio",
-              "color": "#ffe100",
+              "key": "ccr",
+              "label": "Centros de cuidado al reciclador",
+              "color": "#f756ef",
               "_key": "pas2l2"
+            },
+            {
+              "key": "acopio",
+              "label": "Asociaciones y centros de acopio",
+              "color": "#ffe100",
+              "_key": "pas2l3"
             }
           ],
           "center": {
-            "lat": 4.6448,
-            "lng": -74.0652
+            "lat": 4.6475,
+            "lng": -74.0655
           },
           "zoom": 15,
-          "demoLabel": "Lugares de ejemplo",
           "places": [
             {
-              "name": "Toku",
+              "name": "Lourdes",
               "category": "comedor",
-              "kind": "Comedor comunitario",
-              "lat": 4.6441,
-              "lng": -74.0627,
-              "address": "Carrera 7 #57-05",
-              "service": "Almuerzos, alimentación comunitaria",
-              "schedule": "Sábados · 12:00–3:00 p. m.",
-              "hours": [
-                {
-                  "days": [
-                    6
-                  ],
-                  "open": "12:00",
-                  "close": "15:00",
-                  "_key": "pas2p0h0"
-                }
+              "also": [
+                "bano"
               ],
-              "photo": {
-                "local": {
-                  "webp": [
-                    "/assets/images/mapa/toku-480.webp",
-                    "/assets/images/mapa/toku-592.webp"
-                  ],
-                  "fallback": "/assets/images/mapa/toku.png",
-                  "width": 592,
-                  "height": 240
-                },
-                "alt": "Letrero de Toku entre plantas"
-              },
-              "demo": true,
-              "_key": "pas2p0"
-            },
-            {
-              "name": "La Olla Común",
-              "category": "comedor",
               "kind": "Comedor comunitario",
-              "lat": 4.6519,
-              "lng": -74.0661,
-              "address": "Calle 63 #9-40",
-              "service": "Desayunos y almuerzos",
-              "schedule": "Lunes a viernes · 7:00 a. m.–2:00 p. m.",
+              "lat": 4.6436,
+              "lng": -74.06571,
+              "address": "Carrera 14 # 56-34, Local 2",
+              "service": "Tiene baño público, sin costo",
+              "schedule": "Lunes a viernes: 10:30 a. m. a 3:00 p. m. · Sábados: 10:30 a. m. a 2:00 p. m. · No abre en festivos ni el sábado de Semana Santa",
               "hours": [
                 {
                   "days": [
@@ -1106,23 +1080,67 @@
                     4,
                     5
                   ],
-                  "open": "07:00",
+                  "open": "10:30",
+                  "close": "15:00",
+                  "_key": "pas2p0h0"
+                },
+                {
+                  "days": [
+                    6
+                  ],
+                  "open": "10:30",
                   "close": "14:00",
-                  "_key": "pas2p1h0"
+                  "_key": "pas2p0h1"
                 }
               ],
-              "demo": true,
+              "_key": "pas2p0"
+            },
+            {
+              "name": "Moraci",
+              "category": "comedor",
+              "also": [
+                "bano"
+              ],
+              "kind": "Comedor comunitario",
+              "address": "Calle 98 # 5-78 Este",
+              "service": "Tiene baño público, sin costo",
+              "schedule": "Lunes a viernes: 10:30 a. m. a 3:00 p. m. · Sábados: 10:30 a. m. a 2:00 p. m. · No abre en festivos ni el sábado de Semana Santa",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "open": "10:30",
+                  "close": "15:00",
+                  "_key": "pas2p1h0"
+                },
+                {
+                  "days": [
+                    6
+                  ],
+                  "open": "10:30",
+                  "close": "14:00",
+                  "_key": "pas2p1h1"
+                }
+              ],
               "_key": "pas2p1"
             },
             {
-              "name": "El Fogón de la 45",
+              "name": "Pardo Rubio",
               "category": "comedor",
+              "also": [
+                "bano"
+              ],
               "kind": "Comedor comunitario",
-              "lat": 4.6337,
-              "lng": -74.0669,
-              "address": "Carrera 13 #45-20",
-              "service": "Almuerzos",
-              "schedule": "Lunes a sábado · 11:30 a. m.–2:30 p. m.",
+              "lat": 4.63265,
+              "lng": -74.05867,
+              "address": "Calle 47B # 3-26 Este",
+              "service": "Tiene baño público, sin costo",
+              "schedule": "Lunes a viernes: 10:30 a. m. a 3:00 p. m. · Sábados: 10:30 a. m. a 2:00 p. m. · No abre en festivos ni el sábado de Semana Santa",
               "hours": [
                 {
                   "days": [
@@ -1130,30 +1148,76 @@
                     2,
                     3,
                     4,
-                    5,
+                    5
+                  ],
+                  "open": "10:30",
+                  "close": "15:00",
+                  "_key": "pas2p2h0"
+                },
+                {
+                  "days": [
                     6
                   ],
-                  "open": "11:30",
-                  "close": "14:30",
-                  "_key": "pas2p2h0"
+                  "open": "10:30",
+                  "close": "14:00",
+                  "_key": "pas2p2h1"
                 }
               ],
-              "demo": true,
               "_key": "pas2p2"
             },
             {
-              "name": "Baño público Calle 60",
-              "category": "bano",
-              "kind": "Baño público",
-              "lat": 4.6468,
-              "lng": -74.0644,
-              "address": "Calle 60 con carrera 9",
-              "service": "Baños y lavamanos, sin costo",
-              "schedule": "Todos los días · 6:00 a. m.–8:00 p. m.",
+              "name": "Doce de Octubre",
+              "category": "comedor",
+              "also": [
+                "bano"
+              ],
+              "kind": "Comedor comunitario",
+              "lat": 4.67291,
+              "lng": -74.07764,
+              "address": "Calle 74 # 57A-17",
+              "locality": "Barrios Unidos",
+              "service": "Tiene baño público, sin costo",
+              "schedule": "Lunes a viernes: 10:30 a. m. a 3:00 p. m. · Sábados: 10:30 a. m. a 2:00 p. m. · No abre en festivos ni el sábado de Semana Santa",
               "hours": [
                 {
                   "days": [
-                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "open": "10:30",
+                  "close": "15:00",
+                  "_key": "pas2p3h0"
+                },
+                {
+                  "days": [
+                    6
+                  ],
+                  "open": "10:30",
+                  "close": "14:00",
+                  "_key": "pas2p3h1"
+                }
+              ],
+              "_key": "pas2p3"
+            },
+            {
+              "name": "CCR Los Mártires (1)",
+              "category": "ccr",
+              "also": [
+                "bano"
+              ],
+              "kind": "Centro de Cuidado al Reciclador",
+              "lat": 4.61292,
+              "lng": -74.07911,
+              "address": "Calle 21 # 18A-59",
+              "locality": "Los Mártires",
+              "service": "Tiene baño público, sin costo",
+              "schedule": "Lunes a sábado: 7:00 a. m. a 10:30 p. m.",
+              "hours": [
+                {
+                  "days": [
                     1,
                     2,
                     3,
@@ -1161,23 +1225,26 @@
                     5,
                     6
                   ],
-                  "open": "06:00",
-                  "close": "20:00",
-                  "_key": "pas2p3h0"
+                  "open": "07:00",
+                  "close": "22:30",
+                  "_key": "pas2p4h0"
                 }
               ],
-              "demo": true,
-              "_key": "pas2p3"
+              "_key": "pas2p4"
             },
             {
-              "name": "Baño público Calle 53",
-              "category": "bano",
-              "kind": "Baño público",
-              "lat": 4.6402,
-              "lng": -74.0655,
-              "address": "Calle 53 con carrera 13",
-              "service": "Baños, lavamanos y punto de agua",
-              "schedule": "Lunes a sábado · 7:00 a. m.–6:00 p. m.",
+              "name": "CCR Los Mártires (2)",
+              "category": "ccr",
+              "also": [
+                "bano"
+              ],
+              "kind": "Centro de Cuidado al Reciclador",
+              "lat": 4.6104,
+              "lng": -74.0768,
+              "address": "Calle 20 # 15-46",
+              "locality": "Los Mártires",
+              "service": "Tiene baño público, sin costo",
+              "schedule": "Lunes a sábado: 7:00 a. m. a 10:00 p. m.",
               "hours": [
                 {
                   "days": [
@@ -1186,30 +1253,91 @@
                     3,
                     4,
                     5,
+                    6
+                  ],
+                  "open": "07:00",
+                  "close": "22:00",
+                  "_key": "pas2p5h0"
+                }
+              ],
+              "_key": "pas2p5"
+            },
+            {
+              "name": "CCR Barrios Unidos",
+              "category": "ccr",
+              "also": [
+                "bano"
+              ],
+              "kind": "Centro de Cuidado al Reciclador",
+              "lat": 4.66775,
+              "lng": -74.07199,
+              "address": "Calle 73 # 29B-20",
+              "locality": "Barrios Unidos",
+              "service": "Tiene baño público, sin costo",
+              "schedule": "Lunes a viernes: 24 horas · Sábados: 7:00 a. m. a 6:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "open": "00:00",
+                  "close": "24:00",
+                  "_key": "pas2p6h0"
+                },
+                {
+                  "days": [
                     6
                   ],
                   "open": "07:00",
                   "close": "18:00",
-                  "_key": "pas2p4h0"
+                  "_key": "pas2p6h1"
                 }
               ],
-              "demo": true,
-              "_key": "pas2p4"
+              "_key": "pas2p6"
             },
             {
-              "name": "Baño público Calle 67",
-              "category": "bano",
-              "kind": "Baño público",
-              "lat": 4.6556,
-              "lng": -74.0612,
-              "address": "Calle 67 con carrera 7",
-              "service": "Baños y lavamanos",
-              "schedule": "Todos los días · 24 horas",
+              "name": "CCR Usaquén",
+              "category": "ccr",
+              "also": [
+                "bano"
+              ],
+              "kind": "Centro de Cuidado al Reciclador",
+              "address": "Calle 163A # 19A-85",
+              "locality": "Usaquén",
+              "service": "Tiene baño público, sin costo",
+              "schedule": "Lunes a viernes: 7:00 a. m. a 3:00 p. m. y de 9:30 p. m. a 7:00 a. m. · Sábados: 7:00 a. m. a 3:00 p. m.",
               "hours": [
                 {
                   "days": [
-                    0,
                     1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "open": "07:00",
+                  "close": "15:00",
+                  "_key": "pas2p7h0"
+                },
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "open": "21:30",
+                  "close": "24:00",
+                  "_key": "pas2p7h1"
+                },
+                {
+                  "days": [
                     2,
                     3,
                     4,
@@ -1217,49 +1345,20 @@
                     6
                   ],
                   "open": "00:00",
-                  "close": "24:00",
-                  "_key": "pas2p5h0"
+                  "close": "07:00",
+                  "_key": "pas2p7h2"
                 }
               ],
-              "demo": true,
-              "_key": "pas2p5"
+              "_key": "pas2p7"
             },
             {
-              "name": "Bodega La Balanza",
+              "name": "MAPRONAL - Asociación de Recicladores Manejo de Aprovechamiento Nacional",
               "category": "acopio",
-              "kind": "Centro de acopio",
-              "lat": 4.6489,
-              "lng": -74.0697,
-              "address": "Avenida Caracas #61-18",
-              "service": "Compra de cartón, papel, plástico y vidrio",
-              "schedule": "Lunes a sábado · 6:00 a. m.–6:00 p. m.",
-              "hours": [
-                {
-                  "days": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6
-                  ],
-                  "open": "06:00",
-                  "close": "18:00",
-                  "_key": "pas2p6h0"
-                }
-              ],
-              "demo": true,
-              "_key": "pas2p6"
-            },
-            {
-              "name": "Acopio El Cartón",
-              "category": "acopio",
-              "kind": "Centro de acopio",
-              "lat": 4.6381,
-              "lng": -74.0702,
-              "address": "Avenida Caracas #49-32",
-              "service": "Compra de cartón, archivo y chatarra",
-              "schedule": "Lunes a viernes · 7:00 a. m.–5:00 p. m.",
+              "kind": "Asociación de recicladores y centro de acopio",
+              "lat": 4.65982,
+              "lng": -74.06354,
+              "address": "Carrera 17 # 71A-19",
+              "schedule": "Lunes a viernes: 8:00 a. m. a 6:00 p. m. · Sábados: 8:00 a. m. a 12:00 del mediodía",
               "hours": [
                 {
                   "days": [
@@ -1269,27 +1368,172 @@
                     4,
                     5
                   ],
-                  "open": "07:00",
-                  "close": "17:00",
-                  "_key": "pas2p7h0"
+                  "open": "08:00",
+                  "close": "18:00",
+                  "_key": "pas2p8h0"
+                },
+                {
+                  "days": [
+                    6
+                  ],
+                  "open": "08:00",
+                  "close": "12:00",
+                  "_key": "pas2p8h1"
                 }
               ],
-              "demo": true,
-              "_key": "pas2p7"
+              "_key": "pas2p8"
             },
             {
-              "name": "Punto de acopio La 39",
+              "name": "Asociación Reciclando Ando",
               "category": "acopio",
-              "kind": "Centro de acopio",
-              "lat": 4.6292,
-              "lng": -74.0676,
-              "address": "Calle 39 #13-50",
-              "service": "Compra de PET, aluminio y cartón",
-              "schedule": "Lunes a domingo · 8:00 a. m.–8:00 p. m.",
+              "kind": "Asociación de recicladores y centro de acopio",
+              "lat": 4.64453,
+              "lng": -74.05402,
+              "address": "Carrera 1 # 63-40, Interior 9",
+              "schedule": "Lunes a viernes: 8:00 a. m. a 6:00 p. m. · Sábados: 8:00 a. m. a 12:00 del mediodía",
               "hours": [
                 {
                   "days": [
-                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "open": "08:00",
+                  "close": "18:00",
+                  "_key": "pas2p9h0"
+                },
+                {
+                  "days": [
+                    6
+                  ],
+                  "open": "08:00",
+                  "close": "12:00",
+                  "_key": "pas2p9h1"
+                }
+              ],
+              "_key": "pas2p9"
+            },
+            {
+              "name": "ASORELLE - Asociación de Recicladores",
+              "category": "acopio",
+              "kind": "Asociación de recicladores y centro de acopio",
+              "lat": 4.65784,
+              "lng": -74.06789,
+              "address": "Carrera 21 # 68-57",
+              "locality": "Barrios Unidos",
+              "schedule": "Lunes a viernes: 8:00 a. m. a 6:00 p. m. · Sábados: 8:00 a. m. a 12:00 del mediodía",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "open": "08:00",
+                  "close": "18:00",
+                  "_key": "pas2p10h0"
+                },
+                {
+                  "days": [
+                    6
+                  ],
+                  "open": "08:00",
+                  "close": "12:00",
+                  "_key": "pas2p10h1"
+                }
+              ],
+              "_key": "pas2p10"
+            },
+            {
+              "name": "Asociación de Recicladores Julio Flores y 12 de Octubre",
+              "category": "acopio",
+              "kind": "Asociación de recicladores y centro de acopio",
+              "lat": 4.68143,
+              "lng": -74.08589,
+              "address": "Carrera 68G # 73A-42",
+              "locality": "Barrios Unidos",
+              "schedule": "Lunes a viernes: 8:00 a. m. a 6:00 p. m. · Sábados: 8:00 a. m. a 12:00 del mediodía",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                  ],
+                  "open": "08:00",
+                  "close": "18:00",
+                  "_key": "pas2p11h0"
+                },
+                {
+                  "days": [
+                    6
+                  ],
+                  "open": "08:00",
+                  "close": "12:00",
+                  "_key": "pas2p11h1"
+                }
+              ],
+              "_key": "pas2p11"
+            },
+            {
+              "name": "Avenida Chile",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.65648,
+              "lng": -74.05787,
+              "address": "Calle 72 # 10-34",
+              "cost": "Sin costo",
+              "schedule": "Lunes a jueves: 8:00 a. m. a 9:00 p. m. · Viernes y sábados: 8:00 a. m. a 10:00 p. m. · Domingos: 8:30 a. m. a 9:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  "open": "08:00",
+                  "close": "21:00",
+                  "_key": "pas2p12h0"
+                },
+                {
+                  "days": [
+                    5,
+                    6
+                  ],
+                  "open": "08:00",
+                  "close": "22:00",
+                  "_key": "pas2p12h1"
+                },
+                {
+                  "days": [
+                    0
+                  ],
+                  "open": "08:30",
+                  "close": "21:00",
+                  "_key": "pas2p12h2"
+                }
+              ],
+              "_key": "pas2p12"
+            },
+            {
+              "name": "Centro de Alta Tecnología",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.66355,
+              "lng": -74.05783,
+              "address": "Carrera 15 # 77-05",
+              "cost": "Posible costo: $2.500 COP (por confirmar)",
+              "schedule": "Lunes a sábado: 8:00 a. m. a 8:00 p. m. · Domingos: 10:00 a. m. a 6:00 p. m.",
+              "hours": [
+                {
+                  "days": [
                     1,
                     2,
                     3,
@@ -1299,11 +1543,239 @@
                   ],
                   "open": "08:00",
                   "close": "20:00",
-                  "_key": "pas2p8h0"
+                  "_key": "pas2p13h0"
+                },
+                {
+                  "days": [
+                    0
+                  ],
+                  "open": "10:00",
+                  "close": "18:00",
+                  "_key": "pas2p13h1"
                 }
               ],
-              "demo": true,
-              "_key": "pas2p8"
+              "_key": "pas2p13"
+            },
+            {
+              "name": "Cosmos 64",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.6504,
+              "lng": -74.06265,
+              "address": "Calle 64 # 11-37",
+              "cost": "Posible costo: $2.500 COP (por confirmar)",
+              "schedule": "Todos los días: 9:00 a. m. a 8:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "open": "09:00",
+                  "close": "20:00",
+                  "_key": "pas2p14h0"
+                }
+              ],
+              "_key": "pas2p14"
+            },
+            {
+              "name": "Unilago",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.6646,
+              "lng": -74.0572,
+              "address": "Carrera 15 # 78-33",
+              "cost": "Posible costo: $2.500 COP (por confirmar)",
+              "schedule": "Todos los días: 9:00 a. m. a 8:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "open": "09:00",
+                  "close": "20:00",
+                  "_key": "pas2p15h0"
+                }
+              ],
+              "_key": "pas2p15"
+            },
+            {
+              "name": "Chapi Centro",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.64846,
+              "lng": -74.06368,
+              "address": "Carrera 13 # 61-65",
+              "cost": "Posible costo: $2.500 COP (por confirmar)",
+              "schedule": "8:00 a. m. a 10:00 p. m. (días por confirmar)",
+              "_key": "pas2p16"
+            },
+            {
+              "name": "Plaza 39",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.62614,
+              "lng": -74.066,
+              "address": "Diagonal 40A # 7-40",
+              "cost": "Posible costo: $2.500 COP (por confirmar)",
+              "schedule": "Lunes a sábado: 8:00 a. m. a 8:30 p. m. · Domingos: 9:00 a. m. a 8:30 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "open": "08:00",
+                  "close": "20:30",
+                  "_key": "pas2p17h0"
+                },
+                {
+                  "days": [
+                    0
+                  ],
+                  "open": "09:00",
+                  "close": "20:30",
+                  "_key": "pas2p17h1"
+                }
+              ],
+              "_key": "pas2p17"
+            },
+            {
+              "name": "Aquarium Centro Comercial y Empresarial",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.64629,
+              "lng": -74.06288,
+              "address": "Calle 60 # 9-83",
+              "cost": "Posible costo: $2.500 COP (por confirmar)",
+              "schedule": "Lunes a sábado: 9:00 a. m. a 8:00 p. m. · Domingos: por confirmar",
+              "_key": "pas2p18"
+            },
+            {
+              "name": "Plaza Shopping 59",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.64628,
+              "lng": -74.06405,
+              "address": "Carrera 13 # 59-38",
+              "cost": "Por confirmar",
+              "schedule": "Lunes a sábado: 9:00 a. m. a 6:00 p. m. · Domingos: 9:00 a. m. a 5:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                  ],
+                  "open": "09:00",
+                  "close": "18:00",
+                  "_key": "pas2p19h0"
+                },
+                {
+                  "days": [
+                    0
+                  ],
+                  "open": "09:00",
+                  "close": "17:00",
+                  "_key": "pas2p19h1"
+                }
+              ],
+              "_key": "pas2p19"
+            },
+            {
+              "name": "Centro Comercial Galerías",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.64335,
+              "lng": -74.07484,
+              "address": "Calle 53B # 25-21",
+              "locality": "Teusaquillo",
+              "cost": "Sin costo",
+              "schedule": "Lunes a jueves: 8:30 a. m. a 8:30 p. m. · Viernes y sábados: 8:30 a. m. a 9:00 p. m. · Domingos y festivos: 9:30 a. m. a 8:00 p. m.",
+              "hours": [
+                {
+                  "days": [
+                    1,
+                    2,
+                    3,
+                    4
+                  ],
+                  "open": "08:30",
+                  "close": "20:30",
+                  "_key": "pas2p20h0"
+                },
+                {
+                  "days": [
+                    5,
+                    6
+                  ],
+                  "open": "08:30",
+                  "close": "21:00",
+                  "_key": "pas2p20h1"
+                },
+                {
+                  "days": [
+                    0
+                  ],
+                  "open": "09:30",
+                  "close": "20:00",
+                  "_key": "pas2p20h2"
+                }
+              ],
+              "_key": "pas2p20"
+            },
+            {
+              "name": "Pasaje Comercial 7 de Agosto",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.65814,
+              "lng": -74.07086,
+              "address": "Carrera 25 # 66-61",
+              "locality": "Barrios Unidos",
+              "cost": "Por confirmar",
+              "schedule": "8:00 a. m. a 5:00 p. m. (días por confirmar)",
+              "_key": "pas2p21"
+            },
+            {
+              "name": "Parque Nacional Enrique Olaya Herrera",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.6243,
+              "lng": -74.0662,
+              "address": "Carrera 7 entre calles 36 y 39",
+              "locality": "Santa Fe",
+              "cost": "Sin costo",
+              "schedule": "9:00 a. m. a 6:00 p. m. (horario administrativo; días por confirmar)",
+              "_key": "pas2p22"
+            },
+            {
+              "name": "Centro Felicidad Chapinero (CEFE Chapinero)",
+              "category": "bano",
+              "kind": "Baño público",
+              "lat": 4.6655,
+              "lng": -74.0526,
+              "address": "Calle 82 # 10-69",
+              "cost": "Sin costo",
+              "schedule": "9:00 a. m. a 6:00 p. m. (horario administrativo; días por confirmar)",
+              "_key": "pas2p23"
             }
           ],
           "placeholder": {
@@ -1333,7 +1805,7 @@
                 },
                 {
                   "_type": "span",
-                  "text": "La información del mapa viene de [fuentes: Secretaría de Integración Social, UAESP, Alcaldía Local de Chapinero, recorridos del equipo]. La revisamos por última vez el [fecha]. Los horarios pueden cambiar: si encuentras algo distinto, cuéntanos en Instagram ",
+                  "text": "La información del mapa viene de la Secretaría Distrital de Integración Social (SDIS), la Unidad Administrativa Especial de Servicios Públicos (UAESP), IDECA y la Alcaldía Mayor de Bogotá, con consulta complementaria en Google Maps y observación directa del Laboratorio. Los horarios y costos pueden cambiar: si encuentras algo distinto, cuéntanos en Instagram ",
                   "_key": "pas2n0c1"
                 },
                 {

@@ -13,7 +13,7 @@ Datos © colaboradores de OpenStreetMap (ODbL): el mapa muestra esa atribución.
 import sys, json, math
 import xml.etree.ElementTree as ET
 
-BBOX = (-74.110, 4.617, -74.030, 4.676)  # izq, abajo, der, arriba
+BBOX = (-74.100, 4.600, -74.030, 4.695)  # izq, abajo, der, arriba
 MAJOR = {"motorway", "trunk", "primary", "secondary", "motorway_link", "trunk_link", "primary_link", "secondary_link"}
 MID = {"tertiary", "tertiary_link"}
 MINOR = {"residential", "unclassified", "living_street", "pedestrian"}

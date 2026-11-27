@@ -154,10 +154,17 @@ export type MapPlace = {
   category: string;
   /** Tipo de lugar que se lee bajo el nombre ("Comedor comunitario"). */
   kind?: string;
-  lat: number;
-  lng: number;
+  /** Otras categorías que también cumple (un comedor que además tiene baño): aparece al filtrar por cualquiera de ellas. */
+  also?: string[];
+  /** Sin coordenadas el lugar no lleva marcador (queda fuera del área del mapa) y solo aparece en la lista. */
+  lat?: number;
+  lng?: number;
   address: string;
+  /** Localidad, si no es obvia ("Barrios Unidos", "Usaquén"). */
+  locality?: string;
   service?: string;
+  /** Costo del servicio ("Sin costo", "Posible costo: $2.500 COP (por confirmar)"). */
+  cost?: string;
   /** Horario tal como se lee ("Sábados · 12:00–3:00 p. m."). */
   schedule?: string;
   /** Horario estructurado para el chip Abierto/Cerrado: días 0 (domingo) a 6 (sábado), horas en 24 h "HH:MM", hora de Bogotá. */
