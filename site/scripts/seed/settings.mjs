@@ -47,6 +47,6 @@ export default {
     prev: "Anterior",
     next: "Siguiente",
     close: "Cerrar",
-    home: "Ciudad y Cuerpo, ir al inicio",
+    home: "LAB. Ciudad y Cuerpo, ir al inicio",
   },
 };
