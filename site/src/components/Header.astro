@@ -21,8 +21,8 @@ const Title = isHome ? "h1" : "p";
       {settings.menu.map((m) => <li><a href={m.href} aria-current={m.href === here ? "page" : undefined}>{m.label}</a></li>)}
     </ul>
   </nav>
-  {variant !== "small" && <a class="logo-fixed" href="/" set:html={spans(settings.headerTitle)} />}
 </div>
+{variant !== "small" && <div class="logobar"><a class="logo-fixed" href="/" set:html={spans(settings.headerTitle)} /></div>}
 {variant !== "none" && (
   <header class:list={["header", `header--${variant}`]}>
     <a class="header__brand" href="/" aria-label={settings.labels.home}>{settings.brandLabel}</a>

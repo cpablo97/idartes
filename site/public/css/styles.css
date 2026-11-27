@@ -92,8 +92,13 @@ main { display: block; }
 .menu-btn__label { font-size: 1.6rem; font-weight: 600; letter-spacing: .1em; line-height: 1.5; text-decoration: underline; text-decoration-color: var(--rosa); text-decoration-thickness: 1px; text-underline-offset: .22em; }
 /* Al bajar, MENÚ vuelve a su color (en las portadas oscuras arranca en blanco); nunca lleva fondo. */
 .is-scrolled .menu-btn, .menu-btn[aria-expanded="true"] { color: var(--ocre); }
-/* Logo fijo: en las páginas sin cabecera pequeña aparece al dejar atrás el encabezado. Sin fondo, siempre encima. */
-.logo-fixed { position: absolute; left: 2rem; top: 1.8rem; font-family: var(--mono); font-weight: 400; font-size: 2.4rem; line-height: 1.19; letter-spacing: 0; color: var(--negro); text-decoration: none; white-space: nowrap; opacity: 0; visibility: hidden; transition: opacity .3s, visibility .3s; }
+/* Logo fijo: en las páginas sin cabecera pequeña aparece al dejar atrás el encabezado. Sin fondo, siempre encima.
+   Va en blanco con mezcla «difference»: sobre claro se ve negro y sobre oscuro, claro. La mezcla debe ir en el
+   elemento fijo (un contexto de apilamiento aísla la mezcla de sus hijos). */
+.logobar { position: fixed; top: 0; left: 50%; translate: -50% 0; width: min(144rem, 100%); height: 0; z-index: 99; }
+.logobar, .header--small { mix-blend-mode: difference; }
+.header--small .header__title, .header--small .header__title a { color: #fff; }
+.logo-fixed { position: absolute; left: 2rem; top: 1.8rem; font-family: var(--mono); font-weight: 400; font-size: 2.4rem; line-height: 1.19; letter-spacing: 0; color: #fff; text-decoration: none; white-space: nowrap; opacity: 0; visibility: hidden; transition: opacity .3s, visibility .3s; }
 .is-past .logo-fixed { opacity: 1; visibility: visible; }
 .menu { position: absolute; top: 5.8rem; right: 1.6rem; max-width: calc(100vw - 3.2rem); padding: 3rem; background: var(--magenta); color: var(--blanco); display: flex; flex-direction: column; align-items: flex-end; gap: 3rem; }
 .menu[hidden] { display: none; }
