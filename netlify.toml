@@ -6,8 +6,8 @@
 [build.environment]
   NODE_VERSION = "24"
   PUBLIC_SITE_URL = "https://ciudadycuerpo.com"
-  # Identificadores públicos de Sanity (también se ven en cada URL de imagen). Con ellos el sitio se
-  # construye desde el CMS; si se quitan, vuelve a leer el seed local. Ver site/src/lib/content.ts.
+  # Identificadores públicos de Sanity (también se ven en cada URL de imagen). Todo el contenido sale
+  # del CMS: sin ellos el build se detiene. Ver site/src/lib/content.ts.
   PUBLIC_SANITY_PROJECT_ID = "1x40dsfz"
   PUBLIC_SANITY_DATASET = "production"
 

@@ -13,5 +13,5 @@ studio/dist/
 studio/.sanity/
 .claude/
 
-# Originales pesados exportados de Figma / Drive (entrada de site/scripts/images.mjs)
+# Originales pesados exportados de Figma / Drive
 assets/originales/

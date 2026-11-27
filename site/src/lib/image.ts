@@ -4,7 +4,7 @@ import { sanityConfig } from "./content";
 
 export type Sources = { srcset: string; fallback: string; width: number; height: number };
 
-/** srcset WebP + respaldo para una imagen `local` del seed o para un `asset` de Sanity.
+/** srcset WebP + respaldo para un `asset` de Sanity.
  *  Los componentes nunca leen rutas de imagen: siempre pasan por aquí vía Picture.astro. */
 export function sources(img: Img | undefined, widths: number[] = [480, 960, 1600]): Sources | null {
   if (!img) return null;
@@ -15,7 +15,7 @@ export function sources(img: Img | undefined, widths: number[] = [480, 960, 1600
     const height = dims?.height ?? max;
     // Los SVG no se transforman: se sirven tal cual.
     if (/\.svg(\?|$)/.test(img.asset.url)) return { srcset: "", fallback: img.asset.url, width, height };
-    // Solo se usa el asset: el recorte lo hace el CSS (object-fit + object-position con el hotspot), igual que con el seed local.
+    // Solo se usa el asset: el recorte lo hace el CSS (object-fit + object-position con el hotspot).
     const b = imageUrlBuilder(sanityConfig).image({ asset: { url: img.asset.url } });
     // Nunca se pide más ancho que el original; auto=format deja que el CDN elija el formato y conserva la transparencia.
     const ws = [...new Set(widths.map((w) => Math.min(w, width)))];
@@ -25,13 +25,6 @@ export function sources(img: Img | undefined, widths: number[] = [480, 960, 1600
       width,
       height,
     };
-  }
-  if (img.local) {
-    // El ancho de cada variante va en el nombre del archivo: foto-960.webp → 960w.
-    const srcset = img.local.webp
-      .map((u, i) => `${u} ${u.match(/-(\d+)\.webp$/)?.[1] ?? widths[i] ?? img.local!.width}w`)
-      .join(", ");
-    return { srcset, fallback: img.local.fallback, width: img.local.width, height: img.local.height };
   }
   return null;
 }

@@ -1,13 +1,12 @@
-// Tipos del contenido. El seed (src/content/seed.json) tiene exactamente la forma que
-// devolverá la consulta GROQ de Sanity; docs/cms-modelo.md describe el mismo modelo en prosa.
+// Tipos del contenido: la forma que devuelve la consulta GROQ de Sanity tras normalize().
+// docs/cms-modelo.md describe el mismo modelo en prosa.
 
-/** Imagen: hoy `local` (variantes generadas por scripts/images.mjs); mañana `asset` de Sanity. `alt` es obligatorio. */
+/** Imagen: `asset` de Sanity. `alt` es obligatorio. */
 export type Img = {
   asset?: { url: string; metadata?: { dimensions?: { width: number; height: number } } };
   /** Punto focal (0–1) como el hotspot de Sanity: decide qué parte se conserva al recortar. */
   hotspot?: { x: number; y: number };
   crop?: unknown;
-  local?: { webp: string[]; fallback: string; width: number; height: number };
   alt: string;
 };
 

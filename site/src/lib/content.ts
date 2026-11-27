@@ -1,5 +1,4 @@
 import type { Content, Page } from "./types";
-import seed from "../content/seed.json";
 import { normalize } from "./text";
 
 // Tolera valores pegados en la interfaz del hosting con comillas o espacios alrededor.
@@ -7,15 +6,13 @@ const clean = (v: unknown) => (typeof v === "string" ? v.trim().replace(/^["']|[
 const projectId = clean(import.meta.env.PUBLIC_SANITY_PROJECT_ID) || undefined;
 const dataset = clean(import.meta.env.PUBLIC_SANITY_DATASET) || "production";
 
-/** null mientras no haya proyecto de Sanity; image.ts lo usa para decidir entre `asset` y `local`. */
+/** null si falta PUBLIC_SANITY_PROJECT_ID (el build se detiene con un mensaje claro). */
 export const sanityConfig = projectId ? { projectId, dataset } : null;
 
-// ───────────────────────────── PUNTO DE CAMBIO A SANITY ─────────────────────────────
-// La consulta que debe devolver la forma de seed.json (tipo `Content`), con dos diferencias que
-// `normalize()` (lib/text.ts) resuelve: el texto enriquecido llega como Portable Text estándar
-// (enlaces en `markDefs`, titulares como un bloque) y los campos ausentes proyectados llegan como `null`.
-// Con PUBLIC_SANITY_PROJECT_ID definido, getContent() consulta Sanity con esta QUERY; sin él, lee el seed local.
-// Ningún componente cambia entre un origen y otro.
+// Todo el contenido (textos e imágenes) vive en Sanity; el repositorio no guarda copia.
+// La consulta devuelve la forma del tipo `Content`, con dos diferencias que `normalize()` (lib/text.ts)
+// resuelve: el texto enriquecido llega como Portable Text estándar (enlaces en `markDefs`, titulares
+// como un bloque) y los campos ausentes proyectados llegan como `null`.
 // La página de Inicio no tiene `slug` en Sanity (el tipo `slug` no admite un valor vacío): la consulta lo devuelve como "".
 const asset = `asset->{url, metadata{dimensions}}`;
 const image = `{..., ${asset}}`;
@@ -50,14 +47,12 @@ export const QUERY = `{
 
 let cache: Promise<Content> | null = null;
 
-/** Todo el contenido del sitio. Hoy: el seed local. Con PUBLIC_SANITY_PROJECT_ID: Sanity (misma forma).
+/** Todo el contenido del sitio, leído de Sanity.
  *  Se resuelve una vez por build; en `astro dev` se vuelve a leer en cada carga. */
 export function getContent(): Promise<Content> {
   if (!cache || import.meta.env.DEV) {
     cache = (async () => {
-      if (!sanityConfig) return normalize<Content>(seed);
-
-      // Con PUBLIC_SANITY_PROJECT_ID el contenido sale de Sanity (misma forma que el seed, tras normalize()).
+      if (!sanityConfig) throw new Error("Falta PUBLIC_SANITY_PROJECT_ID: el contenido del sitio vive en Sanity (ver netlify.toml y site/.env.example).");
       const { createClient } = await import("@sanity/client");
       const client = createClient({ ...sanityConfig, apiVersion: "2025-01-01", useCdn: false });
       const data = normalize<Content>(await client.fetch(QUERY));

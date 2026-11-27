@@ -1,18 +1,9 @@
 # Modelo de contenido para el CMS
 
-Este es el modelo que usa el front con contenido local y el que implementa el Studio de Sanity en `studio/schemas`
-(mismos nombres de tipo y de campo). La fuente de verdad en código es `site/src/lib/types.ts`; el contenido de ejemplo es
-`site/src/content/seed.json` (generado con `npm run seed` desde `site/scripts/seed/*.mjs`).
-
-Conectar Sanity significa:
-
-1. Crear el proyecto en sanity.io, poner su ID en `SANITY_STUDIO_PROJECT_ID` y subir `seed.json` con
-   `scripts/seed.mjs` (ver «CMS» en el README). El Studio (`studio/`) ya está hecho.
-2. En `site/`: `npm i @sanity/client @sanity/image-url` y descomentar los dos bloques marcados "Fase Sanity"
-   en `src/lib/content.ts` y `src/lib/image.ts`. La consulta GROQ (`QUERY`) ya está escrita.
-3. Definir `PUBLIC_SANITY_PROJECT_ID` (y `PUBLIC_SANITY_DATASET`) en `netlify.toml`.
-
-Ningún componente cambia: todos leen de `getContent()` y pintan imágenes con `Picture.astro`.
+Este es el modelo de contenido del sitio, implementado en el Studio de Sanity (`studio/schemas`, mismos nombres de
+tipo y de campo). La fuente de verdad en código es `site/src/lib/types.ts`. Todo el contenido vive en Sanity; el
+repositorio no guarda copia. Donde este documento dice «seed» se refiere a la forma simplificada que pinta el sitio
+(la de `types.ts`), que es la que tuvo el contenido inicial antes de subirse al CMS.
 
 ## Lo que guarda el Studio frente a lo que pinta el sitio
 
@@ -200,12 +191,8 @@ horas "HH:MM" en 24 h, hora de Bogotá, con "24:00" como cierre de un lugar abie
 `title?` (encabezado solo para lectores de pantalla), `band?`, `dots[]?` y `steps[]`: `{ title, rows, items[] }`.
 Cada paso es un pequeño lienzo (los mismos elementos de `collage`); la fila 1 es la del punto y su título.
 
-## Contenido marcado como pendiente en el seed
+## Contenido pendiente
 
-Buscar `TODO` en `site/scripts/seed/*.mjs`:
-
-- IDs de YouTube: microdocumentales (Inicio, ¿Cómo lo hicimos?, Exhibición) y los cinco videotutoriales.
-- Lugares reales del mapa (hoy son inventados, marcados `demo`), y los textos "[fuentes: …]" y "[fecha]" de su nota.
-- URL del embed de itch.io de Chapicartón.
-- Láminas reales de la bitácora (hoy hay láminas de relleno) y fotos definitivas de la galería.
-- URL del Excel "Chapinero 2025 en los medios".
+- URL del embed de itch.io de Chapicartón (sección «Juego» de la página Videojuego, hoy marcada como pendiente).
+- Fotos definitivas de la galería de Para recicladores.
+- Originales en alta de algunas fotos de ¿Cómo lo hicimos?, Equipo, Exhibición y Videojuego.
